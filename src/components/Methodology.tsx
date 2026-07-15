@@ -37,10 +37,11 @@ export function Methodology() {
         </Row>
         <Row term="Members">
           Averages cover voting members only: senators, and representatives of the fifty states. The{' '}
-          {n.houseDelegatesExcluded} non-voting delegates and the Resident Commissioner of Puerto
-          Rico are excluded. Vacant seats reduce the divisor rather than being imputed — figures are
-          currently based on {data.senate.count} sitting senators (of 100 seats) and{' '}
-          {data.house.count} voting representatives (of 435 seats).
+          {n.houseDelegatesExcluded} non-voting House members — the territorial delegates and the
+          Resident Commissioner of Puerto Rico — are excluded from House averages. Vacant seats
+          reduce the divisor rather than being imputed — figures are currently based on{' '}
+          {data.senate.count} sitting senators (of 100 seats) and {data.house.count} voting
+          representatives (of 435 seats).
         </Row>
         <Row term="Sources">
           Membership, birth dates, party, and term histories come from the{' '}
