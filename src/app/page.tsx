@@ -1,5 +1,8 @@
 import type { ReactNode } from 'react'
 import { Section } from '@/components/Section'
+import { Hero } from '@/components/Hero'
+import { ContextStrip } from '@/components/ContextStrip'
+import contextLines from '@/data/context-lines.json'
 
 /**
  * Provisional caption for a section whose data component lands in a later task.
@@ -13,22 +16,9 @@ function Placeholder({ children }: { children: ReactNode }) {
 export default function Page() {
   return (
     <main className="mx-auto max-w-5xl px-5 pb-24">
-      {/* ───────────────────────────────────────────────────────────
-          Hero (Task 13) — the headline, the live age Clock (Task 12),
-          and the framing deck mount here. The markup below is a shell
-          placeholder and is replaced wholesale in Task 13.
-         ─────────────────────────────────────────────────────────── */}
-      <header className="pt-16">
-        <p className="smallcaps text-[0.8125rem] text-[var(--ink-soft)]">
-          The 119th United States Congress
-        </p>
-        <h1 className="mt-3 text-5xl font-medium leading-[1.03] tracking-[-0.015em] sm:text-6xl">
-          The Age of Congress
-        </h1>
-        {/* Live Clock (Task 12) + framing deck copy arrive in Task 13 */}
-      </header>
+      <Hero />
 
-      {/* ContextStrip (Task 13) — the one-line "older than…" comparisons */}
+      <ContextStrip lines={contextLines} />
 
       <Section title="The Two Chambers">
         {/* ChamberSplit (Task 14) */}

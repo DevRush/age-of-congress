@@ -15,3 +15,8 @@ body { background: var(--paper); color: var(--ink); }
 .smallcaps { font-variant-caps: all-small-caps; letter-spacing: 0.08em; }
 .tnum { font-variant-numeric: tabular-nums; }
 .digit { display: inline-block; width: 0.58em; text-align: center; }
+
+/* Rotating context line fades in on change; held still under reduced motion. */
+@keyframes ctx-fade { from { opacity: 0; } to { opacity: 1; } }
+.ctx-line { animation: ctx-fade 460ms ease both; }
+@media (prefers-reduced-motion: reduce) { .ctx-line { animation: none; } }
