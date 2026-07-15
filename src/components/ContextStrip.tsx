@@ -53,10 +53,16 @@ export function ContextStrip({ lines }: { lines: ContextLine[] }) {
         look
       </span>
       <span aria-hidden className="hidden h-9 w-px shrink-0 bg-[var(--rule-strong)] sm:block" />
-      <p key={i} className="ctx-line serif min-w-0 flex-1 text-pretty text-[1.05rem] italic leading-snug sm:text-[1.15rem]">
-        {line.text}
-        <sup className="not-italic text-[var(--ink-faint)]">‡</sup>
-      </p>
+      {/* Stable live region: the button's aria-label overrides the inner text for
+          its name, so the rotating comparison is announced here instead. The
+          wrapper persists across changes while the keyed <p> is swapped, so each
+          new line is a mutation the screen reader reads aloud. */}
+      <div aria-live="polite" aria-atomic="true" className="min-w-0 flex-1">
+        <p key={i} className="ctx-line serif text-pretty text-[1.05rem] italic leading-snug sm:text-[1.15rem]">
+          {line.text}
+          <sup aria-hidden className="not-italic text-[var(--ink-faint)]">‡</sup>
+        </p>
+      </div>
       <span className="meta tnum hidden shrink-0 text-[0.6875rem] tracking-[0.02em] text-[var(--ink-faint)] sm:block">
         {i + 1} / {lines.length}
       </span>

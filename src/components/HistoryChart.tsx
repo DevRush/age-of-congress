@@ -52,19 +52,23 @@ export function HistoryChart() {
   const points = historical as HistoricalPoint[]
 
   // One path through a chamber's solid-coverage points, or through its
-  // low-coverage points — a single clean filter selects which. Because the
-  // low-coverage Congresses form one contiguous run at the start (1789–1841),
-  // each call returns a single unbroken segment.
-  const seg = (chamber: 'senateMean' | 'houseMean', wantSolid: boolean) =>
-    linePath(
-      points
-        .filter(
-          (p) =>
-            p[chamber] !== null &&
-            (p.birthdayCoverage >= COVERAGE_FLOOR) === wantSolid,
-        )
-        .map((p) => ({ x: x(p.year), y: y(p[chamber]!) })),
-    )
+  // low-coverage points. Because the low-coverage Congresses form one contiguous
+  // run at the start (1789–1841), each call returns a single unbroken segment.
+  // The dashed (low-coverage) run additionally extends to the first solid point
+  // so the two paths meet across the coverage boundary instead of leaving a
+  // ~5px break between the last dashed Congress (~1841) and the first solid one.
+  const seg = (chamber: 'senateMean' | 'houseMean', wantSolid: boolean) => {
+    const valid = points.filter((p) => p[chamber] !== null)
+    const isSolid = (p: HistoricalPoint) => p.birthdayCoverage >= COVERAGE_FLOOR
+    const chosen = valid.filter((p) => isSolid(p) === wantSolid)
+    if (!wantSolid) {
+      // Bridge to the solid era: append the first solid point (which falls right
+      // after the contiguous low-coverage run) so the dashed line reaches it.
+      const firstSolid = valid.find(isSolid)
+      if (firstSolid) chosen.push(firstSolid)
+    }
+    return linePath(chosen.map((p) => ({ x: x(p.year), y: y(p[chamber]!) })))
+  }
 
   const last = points[points.length - 1]
   const senateEnd = last.senateMean!
