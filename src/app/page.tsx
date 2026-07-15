@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { Section } from '@/components/Section'
 import { Hero } from '@/components/Hero'
 import { ContextStrip } from '@/components/ContextStrip'
+import { ChamberSplit } from '@/components/ChamberSplit'
 import contextLines from '@/data/context-lines.json'
 
 /**
@@ -21,8 +22,7 @@ export default function Page() {
       <ContextStrip lines={contextLines} />
 
       <Section title="The Two Chambers">
-        {/* ChamberSplit (Task 14) */}
-        <Placeholder>Senate and House averages, set side by side.</Placeholder>
+        <ChamberSplit />
       </Section>
 
       <Section title="The Rankings">
