@@ -29,43 +29,48 @@ export function ContextStrip({ lines }: { lines: ContextLine[] }) {
   const line = lines[i]
 
   return (
-    <div
-      className="mx-auto mt-6 flex cursor-pointer select-none items-center gap-4 rounded-xl border border-[var(--rule)] bg-[var(--surface)] px-5 py-4 outline-none focus-visible:ring-2 focus-visible:ring-[var(--ink-soft)]"
-      onClick={advance}
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-      onFocus={() => setPaused(true)}
-      onBlur={() => setPaused(false)}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault()
-          advance()
-        }
-      }}
-      role="button"
-      tabIndex={0}
-      aria-label={`Historical comparison ${i + 1} of ${lines.length}. Activate for another.`}
-      title={line.footnote}
-    >
-      <span className="smallcaps hidden shrink-0 text-[0.625rem] leading-tight tracking-[0.14em] text-[var(--ink-faint)] sm:block">
-        A closer
-        <br />
-        look
-      </span>
-      <span aria-hidden className="hidden h-9 w-px shrink-0 bg-[var(--rule-strong)] sm:block" />
-      {/* Stable live region: the button's aria-label overrides the inner text for
-          its name, so the rotating comparison is announced here instead. The
-          wrapper persists across changes while the keyed <p> is swapped, so each
-          new line is a mutation the screen reader reads aloud. */}
-      <div aria-live="polite" aria-atomic="true" className="min-w-0 flex-1">
-        <p key={i} className="ctx-line serif text-pretty text-[1.05rem] italic leading-snug sm:text-[1.15rem]">
+    <>
+      <div
+        className="mx-auto mt-6 flex cursor-pointer select-none items-center gap-4 rounded-xl border border-[var(--rule)] bg-[var(--surface)] px-5 py-4 outline-none focus-visible:ring-2 focus-visible:ring-[var(--ink-soft)]"
+        onClick={advance}
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+        onFocus={() => setPaused(true)}
+        onBlur={() => setPaused(false)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault()
+            advance()
+          }
+        }}
+        role="button"
+        tabIndex={0}
+        aria-label={`Historical comparison ${i + 1} of ${lines.length}. Activate for another.`}
+        title={line.footnote}
+      >
+        <span className="smallcaps hidden shrink-0 text-[0.625rem] leading-tight tracking-[0.14em] text-[var(--ink-faint)] sm:block">
+          A closer
+          <br />
+          look
+        </span>
+        <span aria-hidden className="hidden h-9 w-px shrink-0 bg-[var(--rule-strong)] sm:block" />
+        <p key={i} className="ctx-line serif min-w-0 flex-1 text-pretty text-[1.05rem] italic leading-snug sm:text-[1.15rem]">
           {line.text}
-          <sup aria-hidden className="not-italic text-[var(--ink-faint)]">‡</sup>
+          <sup className="not-italic text-[var(--ink-faint)]">‡</sup>
         </p>
+        <span className="meta tnum hidden shrink-0 text-[0.6875rem] tracking-[0.02em] text-[var(--ink-faint)] sm:block">
+          {i + 1} / {lines.length}
+        </span>
       </div>
-      <span className="meta tnum hidden shrink-0 text-[0.6875rem] tracking-[0.02em] text-[var(--ink-faint)] sm:block">
-        {i + 1} / {lines.length}
-      </span>
-    </div>
+      {/* Announcing live region — a SIBLING of the button, never a descendant:
+          role="button" gives its subtree presentational children, so Chromium
+          prunes it to the aria-label and any nested live region stays silent.
+          This stable, visually-hidden region persists across rotations (no key),
+          mirrors only the current comparison sentence, and is the element that
+          screen readers actually speak when the line changes. */}
+      <div aria-live="polite" aria-atomic="true" className="sr-only">
+        {line.text}
+      </div>
+    </>
   )
 }
