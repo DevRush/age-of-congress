@@ -97,7 +97,7 @@ export function Histogram() {
         <div
           role="group"
           aria-label="Filter by chamber"
-          className="inline-flex self-start border border-[var(--rule)]"
+          className="inline-flex self-start gap-1 rounded-full border border-[var(--surface-line)] bg-[var(--surface)] p-1"
         >
           {VIEWS.map((v) => {
             const active = v.key === view
@@ -107,7 +107,7 @@ export function Histogram() {
                 type="button"
                 aria-pressed={active}
                 onClick={() => setView(v.key)}
-                className="smallcaps border-l border-[var(--rule)] px-3.5 py-1.5 text-[0.75rem] tracking-[0.1em] transition-colors first:border-l-0"
+                className="smallcaps rounded-full px-3.5 py-1 text-[0.6875rem] tracking-[0.1em] transition-colors"
                 style={{
                   background: active ? 'var(--ink)' : 'transparent',
                   color: active ? 'var(--paper)' : 'var(--ink-soft)',

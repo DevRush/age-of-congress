@@ -14,10 +14,9 @@ export default function Page() {
     <main className="mx-auto max-w-5xl px-5 pb-24">
       <Hero />
 
-      <ContextStrip lines={contextLines} />
-
       <Section title="The Two Chambers">
         <ChamberSplit />
+        <ContextStrip lines={contextLines} />
       </Section>
 
       <Section title="The Rankings">

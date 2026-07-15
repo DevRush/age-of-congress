@@ -2,14 +2,15 @@ import data from '@/data/congress.json'
 import { Clock } from './Clock'
 
 /**
- * The leaderboard. This is the one section where party color is allowed onto
- * the page — and only in a single place per member: a sharp-cornered party–state
- * chip that reads like a stock ticker's dateline. Everything else stays in the
- * paper's monochrome: hairline rules between rows, newspaper-cut portraits, and
- * a right-hand column of live ages all ticking at once and aligned to the digit.
+ * The leaderboard. This is the one section, with the histogram, where party color
+ * is allowed onto the page — carried in two coordinated places per member: a
+ * rounded party–state pill, and a matching hairline ring around the circular
+ * portrait, so a whole column can be scanned by color at a glance. Everything
+ * else stays in the paper's monochrome: light rules between rows and a right-hand
+ * column of live ages all ticking at once and aligned to the digit.
  *
  * Numbering is earned here — these lists are a genuine ranked order (by age), so
- * the rank figure leading each row carries real information rather than decoration.
+ * the rank figure leading each row carries real information, not decoration.
  */
 
 // Senate cards in the roster carry no `district`; House cards do. Widen the
@@ -34,21 +35,19 @@ function partyState(m: Card): string {
 }
 
 /**
- * The page's sole saturated element. The party hue is concentrated into a tinted,
- * hairline-bordered tag — enough to scan a column by color, restrained enough not
- * to shout across forty rows.
+ * A rounded party–state tag. The hue is concentrated into a tinted pill — enough
+ * to scan a column by color, restrained enough not to shout across forty rows.
  */
 function PartyChip({ m, compact = false }: { m: Card; compact?: boolean }) {
   const hue = PARTY_VAR[m.party]
   return (
     <span
-      className={`smallcaps tnum inline-block whitespace-nowrap border font-semibold tracking-[0.06em] ${
-        compact ? 'px-1 py-px text-[0.625rem]' : 'px-1.5 py-0.5 text-[0.6875rem]'
+      className={`smallcaps tnum inline-block whitespace-nowrap rounded-full font-semibold tracking-[0.04em] ${
+        compact ? 'px-1.5 py-px text-[0.625rem]' : 'px-2 py-0.5 text-[0.6875rem]'
       }`}
       style={{
         color: hue,
-        borderColor: `color-mix(in srgb, ${hue} 34%, transparent)`,
-        backgroundColor: `color-mix(in srgb, ${hue} 8%, transparent)`,
+        backgroundColor: `color-mix(in srgb, ${hue} 11%, transparent)`,
       }}
     >
       {partyState(m)}
@@ -58,20 +57,23 @@ function PartyChip({ m, compact = false }: { m: Card; compact?: boolean }) {
 
 /**
  * One member. The big variant leads the oldest lists; the compact variant forms
- * the subordinate "youngest" strip beneath. The live age sits in a fixed right
- * column so the ticking figures align into a single running ledger.
+ * the subordinate "youngest" strip beneath. The circular portrait wears a party-
+ * colored ring; the live age sits in a fixed right column so the ticking figures
+ * align into a single running ledger.
  */
 function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
   const img = compact ? m.photo.replace('-320', '-160') : m.photo
+  const hue = PARTY_VAR[m.party]
+  const size = compact ? 30 : 48
   return (
     <li
       className={`flex items-center border-t border-[var(--rule)] ${
-        compact ? 'gap-2.5 py-1.5' : 'gap-3.5 py-3'
+        compact ? 'gap-2.5 py-2' : 'gap-3.5 py-2.5'
       }`}
     >
       <span
-        className={`shrink-0 text-right tabular-nums text-[var(--ink-soft)] ${
-          compact ? 'w-4 text-[0.8125rem]' : 'w-6 text-[1rem]'
+        className={`shrink-0 text-right tabular-nums text-[var(--ink-faint)] ${
+          compact ? 'w-4 text-[0.75rem]' : 'w-6 text-[0.9375rem] font-medium'
         }`}
       >
         {m.rank}
@@ -80,16 +82,22 @@ function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
       <img
         src={img}
         alt={m.name}
-        width={compact ? 28 : 56}
-        height={compact ? 34 : 68}
+        width={size}
+        height={size}
         loading="lazy"
         decoding="async"
-        className="shrink-0 border border-[var(--rule)] object-cover"
+        className="shrink-0 rounded-full object-cover"
+        style={{
+          width: size,
+          height: size,
+          objectPosition: '50% 20%',
+          boxShadow: `0 0 0 1.5px var(--paper), 0 0 0 ${compact ? 2.5 : 3}px color-mix(in srgb, ${hue} 60%, transparent)`,
+        }}
       />
 
       <div className="min-w-0 flex-1">
         <p
-          className={`truncate font-medium leading-tight ${
+          className={`truncate font-semibold leading-tight ${
             compact ? 'text-[0.875rem]' : 'text-[1.0625rem]'
           }`}
         >
@@ -109,8 +117,8 @@ function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
       </div>
 
       <span
-        className={`shrink-0 text-right tabular-nums tracking-[-0.01em] text-[var(--ink)] ${
-          compact ? 'text-[0.8125rem]' : 'text-[0.9375rem] sm:text-[1.0625rem]'
+        className={`serif shrink-0 text-right tabular-nums tracking-[-0.01em] text-[var(--ink)] ${
+          compact ? 'text-[0.875rem]' : 'text-[1rem] sm:text-[1.125rem]'
         }`}
       >
         <Clock dobMs={m.dobMs} decimals={7} dim={2} baselineMs={baselineMs} />
@@ -134,7 +142,7 @@ function ChamberColumn({
 }) {
   return (
     <div>
-      <h3 className="mb-3 text-[1.375rem] font-semibold leading-tight tracking-[-0.01em]">
+      <h3 className="mb-3 text-[1.375rem] font-bold leading-tight tracking-[-0.015em]">
         {title}
       </h3>
       <ol>
@@ -143,7 +151,7 @@ function ChamberColumn({
         ))}
       </ol>
 
-      <h4 className="smallcaps mt-9 mb-2 text-[0.8125rem] tracking-[0.1em] text-[var(--ink-soft)]">
+      <h4 className="smallcaps mt-9 mb-2 text-[0.75rem] tracking-[0.14em] text-[var(--ink-faint)]">
         …and the ten youngest
       </h4>
       <ol>
@@ -156,8 +164,8 @@ function ChamberColumn({
 }
 
 /**
- * The two chambers set side by side and split by a broadsheet gutter rule — a
- * vertical hairline on wide screens, a horizontal one once they stack.
+ * The two chambers set side by side and split by a gutter rule — a vertical
+ * hairline on wide screens, a horizontal one once they stack.
  */
 export function Rankings() {
   return (

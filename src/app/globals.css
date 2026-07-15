@@ -1,22 +1,61 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #faf9f4;
-  --ink: #1c1a16;
-  --ink-soft: #57534a;
-  --rule: #e2ded4;
-  --dem: #2f6bb3;
-  --rep: #bf3b30;
-  --ind: #857f73;
+  /* Canvas — a clean, cool newsroom white rather than a warm broadsheet cream,
+     so the party hues read true and the page feels current, not archival. */
+  --paper: #ffffff;
+  --surface: #f5f6f8;      /* raised panels: the chamber stat pair */
+  --surface-line: #e9ebef; /* border for those panels */
+  --ink: #14161b;          /* cool near-black */
+  --ink-soft: #565c66;     /* labels, metadata */
+  --ink-faint: #8b909a;    /* faintest captions */
+  --rule: #e5e7eb;         /* hairlines */
+  --rule-strong: #d3d7de;
+
+  /* Party — the confident, citable election palette. Reserved for member-level
+     data (rankings, histogram), where hue separates one person from the next. */
+  --dem: #2560c9;
+  --rep: #d1382c;
+  --ind: #6a6f78;
 }
 
-body { background: var(--paper); color: var(--ink); }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* The display face: every big figure and every serif dek opts in explicitly. */
+.serif { font-family: var(--font-serif, Georgia, 'Times New Roman', serif); }
+
 .rule { border-top: 1px solid var(--rule); }
-.smallcaps { font-variant-caps: all-small-caps; letter-spacing: 0.08em; }
+
+/* Eyebrow / kicker — the gothic label voice: uppercase, tracked, deliberate. */
+.smallcaps {
+  font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-weight: 600;
+}
+
+/* Quiet metadata — sans, sentence case, so credit lines stay readable and low. */
+.meta { font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); }
+
 .tnum { font-variant-numeric: tabular-nums; }
-.digit { display: inline-block; width: 0.58em; text-align: center; }
+.digit { display: inline-block; width: 0.56em; text-align: center; }
 
 /* Rotating context line fades in on change; held still under reduced motion. */
-@keyframes ctx-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ctx-fade { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
 .ctx-line { animation: ctx-fade 460ms ease both; }
-@media (prefers-reduced-motion: reduce) { .ctx-line { animation: none; } }
+
+/* A slow pulse on the hero's live dot signals the counter is running. */
+@keyframes live-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+.live-dot { animation: live-pulse 2.2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ctx-line { animation: none; }
+  .live-dot { animation: none; }
+}

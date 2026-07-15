@@ -82,7 +82,7 @@ export function Methodology() {
         </p>
       </div>
 
-      <p className="smallcaps mt-6 text-[0.6875rem] tracking-[0.1em]">
+      <p className="meta mt-6 text-[0.6875rem] tracking-[0.02em] text-[var(--ink-soft)]">
         Built by{' '}
         <a className={link} href="https://annasrahman.com">
           Annas Rahman

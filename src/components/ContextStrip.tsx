@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react'
 import type { ContextLine } from '@/lib/types'
 
 /**
- * A single rotating standfirst below the hero: one computed "born closer to…"
- * comparison at a time, drawn in italic display type like a pulled quote. It
+ * A subordinate band of rotating context: one computed "born closer to…"
+ * comparison at a time, set small and quiet beneath the chamber stats so it
+ * adds texture without breaking the counter → chambers → rankings spine. It
  * advances on its own every eight seconds, pauses while pointed at or focused,
  * and steps forward on click or Enter. Motion is opt-out: with reduced motion
  * it holds still and waits to be advanced by hand. Each line's sources live in
@@ -29,7 +30,7 @@ export function ContextStrip({ lines }: { lines: ContextLine[] }) {
 
   return (
     <div
-      className="rule mx-auto mt-2 max-w-3xl cursor-pointer select-none py-9 text-center outline-none focus-visible:ring-1 focus-visible:ring-[var(--ink-soft)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--paper)]"
+      className="mx-auto mt-6 flex cursor-pointer select-none items-center gap-4 rounded-xl border border-[var(--rule)] bg-[var(--surface)] px-5 py-4 outline-none focus-visible:ring-2 focus-visible:ring-[var(--ink-soft)]"
       onClick={advance}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
@@ -46,16 +47,19 @@ export function ContextStrip({ lines }: { lines: ContextLine[] }) {
       aria-label={`Historical comparison ${i + 1} of ${lines.length}. Activate for another.`}
       title={line.footnote}
     >
-      <p
-        key={i}
-        className="ctx-line mx-auto max-w-2xl text-balance text-xl italic leading-snug sm:text-[1.6rem]"
-      >
+      <span className="smallcaps hidden shrink-0 text-[0.625rem] leading-tight tracking-[0.14em] text-[var(--ink-faint)] sm:block">
+        A closer
+        <br />
+        look
+      </span>
+      <span aria-hidden className="hidden h-9 w-px shrink-0 bg-[var(--rule-strong)] sm:block" />
+      <p key={i} className="ctx-line serif min-w-0 flex-1 text-pretty text-[1.05rem] italic leading-snug sm:text-[1.15rem]">
         {line.text}
-        <sup className="not-italic text-[var(--ink-soft)]">‡</sup>
+        <sup className="not-italic text-[var(--ink-faint)]">‡</sup>
       </p>
-      <p className="smallcaps mt-4 text-[0.6875rem] tracking-[0.12em] text-[var(--ink-soft)]">
-        {i + 1} / {lines.length} · click or press enter for another
-      </p>
+      <span className="meta tnum hidden shrink-0 text-[0.6875rem] tracking-[0.02em] text-[var(--ink-faint)] sm:block">
+        {i + 1} / {lines.length}
+      </span>
     </div>
   )
 }

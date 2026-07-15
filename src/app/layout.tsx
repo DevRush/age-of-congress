@@ -1,13 +1,26 @@
 import type { Metadata } from 'next'
-import { Newsreader } from 'next/font/google'
+import { Newsreader, Libre_Franklin } from 'next/font/google'
 import data from '@/data/congress.json'
 import { ageYears } from '@/lib/age'
 import './globals.css'
 
-const newsreader = Newsreader({
+// The editorial pairing: a serif carries the big display figures (the clocks and
+// deks), a gothic sans carries every label, control, and line of metadata — the
+// NYT / Vox division of labor. Both are self-hosted by next/font so the static
+// export stays hermetic. Exposed as CSS variables and switched per element.
+const serif = Newsreader({
   subsets: ['latin'],
   style: ['normal', 'italic'],
   weight: ['400', '500', '600', '700'],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
+const sans = Libre_Franklin({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-sans',
+  display: 'swap',
 })
 
 // Stamped at build time from the same data the page reads, so the search and
@@ -22,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={newsreader.className}>
+    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <body>{children}</body>
     </html>
   )
