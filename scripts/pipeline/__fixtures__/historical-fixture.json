@@ -1,0 +1,5 @@
+[
+  { "id": { "bioguide": "H000001" }, "name": { "first": "Old", "last": "Rep" }, "bio": { "birthday": "1750-01-01" }, "terms": [ { "type": "rep", "start": "1789-03-04", "end": "1791-03-03", "state": "VA", "party": "Pro-Administration" } ] },
+  { "id": { "bioguide": "H000002" }, "name": { "first": "No", "last": "Birthday" }, "bio": {}, "terms": [ { "type": "rep", "start": "1789-03-04", "end": "1791-03-03", "state": "PA" } ] },
+  { "id": { "bioguide": "H000003" }, "name": { "first": "First", "last": "Senator" }, "bio": { "birthday": "1739-06-15" }, "terms": [ { "type": "sen", "start": "1789-03-04", "end": "1795-03-03", "state": "NY" } ] }
+]
