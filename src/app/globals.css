@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #faf9f4;
+  --ink: #1c1a16;
+  --ink-soft: #57534a;
+  --rule: #e2ded4;
+  --dem: #2f6bb3;
+  --rep: #bf3b30;
+  --ind: #857f73;
+}
+
+body { background: var(--paper); color: var(--ink); }
+.rule { border-top: 1px solid var(--rule); }
+.smallcaps { font-variant-caps: all-small-caps; letter-spacing: 0.08em; }
+.tnum { font-variant-numeric: tabular-nums; }
+.digit { display: inline-block; width: 0.58em; text-align: center; }
