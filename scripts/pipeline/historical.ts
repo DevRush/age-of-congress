@@ -36,7 +36,7 @@ export function computeHistorical(terms: TermRec[], todayIso: string): Historica
     const seen = new Set<string>()
     let sSum = 0, sN = 0, hSum = 0, hN = 0, missing = 0
     for (const t of terms) {
-      if (!(t.start <= conv && conv < t.end)) continue
+      if (!(t.start < conveningDate(n + 1) && t.end > conv)) continue
       if (t.type === 'rep' && !STATES_50.has(t.state)) continue
       if (seen.has(t.pid)) continue
       seen.add(t.pid)

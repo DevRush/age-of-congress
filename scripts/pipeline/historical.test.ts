@@ -24,13 +24,19 @@ describe('computeHistorical', () => {
   it('covers congresses 1..current', () => {
     expect(points.map((p) => p.congress)).toEqual([1, 2, 3])
   })
-  it('1st Congress: one rep aged ~39.2, one senator ~49.7, one missing birthday', () => {
-    expect(at(1).houseN).toBe(1)
+  it('1st Congress: two reps (one seated late) ~36.4, one senator ~49.7, one missing birthday', () => {
+    expect(at(1).houseN).toBe(2)
     expect(at(1).senateN).toBe(1)
     expect(at(1).missingBirthday).toBe(1)
-    expect(at(1).houseMean!).toBeCloseTo(39.2, 1)
+    expect(at(1).houseMean!).toBeCloseTo(36.4, 1)
     expect(at(1).senateMean!).toBeCloseTo(49.7, 1)
-    expect(at(1).birthdayCoverage).toBeCloseTo(2 / 3, 5)
+    expect(at(1).birthdayCoverage).toBeCloseTo(3 / 4, 5)
+  })
+  it('counts a representative first seated after the constitutional convening (H000004)', () => {
+    // guards the "term seated after constitutional convening" overlap bug
+    const lateOnly = (raw as any[]).filter((p) => p.id.bioguide === 'H000004')
+    const p1 = computeHistorical(flattenTerms(lateOnly), '1795-01-01').find((p) => p.congress === 1)!
+    expect(p1.houseN).toBe(1)
   })
   it('2nd Congress: rep terms ended 1791-03-03, senator continues', () => {
     expect(at(2).houseN).toBe(0)
