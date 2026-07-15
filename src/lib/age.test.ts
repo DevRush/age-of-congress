@@ -29,4 +29,8 @@ describe('age math', () => {
     expect(agePartsAt(0, now, 8).int).toBe('60')
     expect(agePartsAt(0, now, 8).frac).toBe('99999999')
   })
+  it('meanDobMs and medianDobMs throw on empty lists', () => {
+    expect(() => meanDobMs([])).toThrow('empty')
+    expect(() => medianDobMs([])).toThrow('empty')
+  })
 })
