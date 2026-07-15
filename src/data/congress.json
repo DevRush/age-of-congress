@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-07-15T03:32:47.049Z",
+  "generatedAt": "2026-07-15T23:01:07.496Z",
   "congress": 119,
   "overall": {
-    "meanDobMs": -113152632453,
-    "medianDobMs": -116103600000,
-    "count": 530,
+    "meanDobMs": -113269647458,
+    "medianDobMs": -116449200000,
+    "count": 531,
     "seats": 535
   },
   "senate": {
-    "meanDobMs": -287160763636,
-    "medianDobMs": -304369200000,
-    "count": 99,
+    "meanDobMs": -286042032000,
+    "medianDobMs": -303721200000,
+    "count": 100,
     "seats": 100
   },
   "house": {
@@ -20,7 +20,7 @@
     "seats": 435
   },
   "notes": {
-    "senateVacancies": 1,
+    "senateVacancies": 0,
     "houseVacancies": 4,
     "houseDelegatesExcluded": 6,
     "excludedNoBirthday": []
@@ -3269,6 +3269,11 @@
       "birthYear": 1981,
       "party": "R",
       "chamber": "house"
+    },
+    {
+      "birthYear": 1964,
+      "party": "R",
+      "chamber": "senate"
     }
   ]
 }

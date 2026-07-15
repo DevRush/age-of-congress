@@ -1419,10 +1419,10 @@
     "congress": 119,
     "year": 2025,
     "convening": "2025-01-03",
-    "senateMean": 63.666173112410824,
+    "senateMean": 63.63633013050866,
     "houseMean": 57.387834926024205,
-    "overallMean": 58.57221007840116,
-    "senateN": 103,
+    "overallMean": 58.575848639491085,
+    "senateN": 104,
     "houseN": 443,
     "missingBirthday": 0,
     "birthdayCoverage": 1
