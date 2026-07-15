@@ -4,7 +4,9 @@ import { Hero } from '@/components/Hero'
 import { ContextStrip } from '@/components/ContextStrip'
 import { ChamberSplit } from '@/components/ChamberSplit'
 import { Rankings } from '@/components/Rankings'
+import { Histogram } from '@/components/Histogram'
 import contextLines from '@/data/context-lines.json'
+import population from '@/data/population.json'
 
 /**
  * Provisional caption for a section whose data component lands in a later task.
@@ -30,9 +32,16 @@ export default function Page() {
         <Rankings />
       </Section>
 
-      <Section title="The Shape of Congress">
-        {/* Histogram (Task 16) */}
-        <Placeholder>The distribution of ages across all 535 seats.</Placeholder>
+      <Section
+        title="The Shape of Congress"
+        footnote={
+          <>
+            Voting members binned by age at the edition date; each dot is one member.
+            Population silhouette: {population.source}, rescaled to the member count.
+          </>
+        }
+      >
+        <Histogram />
       </Section>
 
       <Section title="The Long View">
