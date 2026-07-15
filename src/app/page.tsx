@@ -5,6 +5,7 @@ import { ContextStrip } from '@/components/ContextStrip'
 import { ChamberSplit } from '@/components/ChamberSplit'
 import { Rankings } from '@/components/Rankings'
 import { Histogram } from '@/components/Histogram'
+import { HistoryChart } from '@/components/HistoryChart'
 import contextLines from '@/data/context-lines.json'
 import population from '@/data/population.json'
 
@@ -44,9 +45,17 @@ export default function Page() {
         <Histogram />
       </Section>
 
-      <Section title="The Long View">
-        {/* HistoryChart (Task 17) */}
-        <Placeholder>How the average age has drifted across the decades.</Placeholder>
+      <Section
+        title="The Long View"
+        footnote={
+          <>
+            Two centuries of a slow, uneven climb. Averages are computed from each
+            Congress&rsquo;s roster on its convening date; the earliest figures rest
+            on incomplete birth records and are drawn accordingly.
+          </>
+        }
+      >
+        <HistoryChart />
       </Section>
 
       <Section title="Methodology">
