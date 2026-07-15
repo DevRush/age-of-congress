@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react'
 import { Section } from '@/components/Section'
 import { Hero } from '@/components/Hero'
 import { ContextStrip } from '@/components/ContextStrip'
@@ -6,17 +5,9 @@ import { ChamberSplit } from '@/components/ChamberSplit'
 import { Rankings } from '@/components/Rankings'
 import { Histogram } from '@/components/Histogram'
 import { HistoryChart } from '@/components/HistoryChart'
+import { Methodology } from '@/components/Methodology'
 import contextLines from '@/data/context-lines.json'
 import population from '@/data/population.json'
-
-/**
- * Provisional caption for a section whose data component lands in a later task.
- * Kept deliberately muted so the shell reads as scaffolding, not finished copy.
- * Each of these is replaced wholesale when its component arrives.
- */
-function Placeholder({ children }: { children: ReactNode }) {
-  return <p className="text-[0.9375rem] italic text-[var(--ink-soft)]">{children}</p>
-}
 
 export default function Page() {
   return (
@@ -59,8 +50,7 @@ export default function Page() {
       </Section>
 
       <Section title="Methodology">
-        {/* Methodology (Task 18) */}
-        <Placeholder>Sources, definitions, and how the figures are computed.</Placeholder>
+        <Methodology />
       </Section>
     </main>
   )
