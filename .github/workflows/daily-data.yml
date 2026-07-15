@@ -1,0 +1,23 @@
+name: daily-data
+on:
+  schedule:
+    - cron: '0 10 * * *'   # 10:00 UTC ≈ 6 am ET, daily
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npm test
+      - run: npm run pipeline
+      - name: Commit if changed
+        run: |
+          git config user.name "age-of-congress-bot"
+          git config user.email "actions@github.com"
+          git add src/data public/images/members
+          git diff --cached --quiet || { git commit -m "data: daily refresh $(date -u +%F)"; git push; }
