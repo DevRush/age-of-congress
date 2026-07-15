@@ -3,6 +3,7 @@ import { Section } from '@/components/Section'
 import { Hero } from '@/components/Hero'
 import { ContextStrip } from '@/components/ContextStrip'
 import { ChamberSplit } from '@/components/ChamberSplit'
+import { Rankings } from '@/components/Rankings'
 import contextLines from '@/data/context-lines.json'
 
 /**
@@ -26,8 +27,7 @@ export default function Page() {
       </Section>
 
       <Section title="The Rankings">
-        {/* Rankings (Task 15) */}
-        <Placeholder>The oldest and youngest members, with portraits.</Placeholder>
+        <Rankings />
       </Section>
 
       <Section title="The Shape of Congress">
