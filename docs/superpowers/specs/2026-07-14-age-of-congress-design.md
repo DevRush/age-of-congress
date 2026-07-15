@@ -46,8 +46,9 @@ enough for press to cite.
 
 ### 2.3 Chamber split
 - Two columns: **Senate** and **House**.
-- Each shows: its own ticking average (4 decimals), sitting-member count, median age,
-  and the chamber's oldest member (thumbnail + name).
+- Each shows: its own ticking average (7 decimals — at 4 the last digit would move only
+  every ~53 minutes), sitting-member count, median age, and the chamber's oldest member
+  (thumbnail + name).
 - Footnotes handle vacancies and delegate exclusions (see §5).
 
 ### 2.4 Rankings
