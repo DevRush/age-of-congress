@@ -47,12 +47,13 @@ export function verifyBirthdays(
   for (const m of members) {
     const rows = dobs.get(m.bioguide)
     if (!rows?.length) { errs.push(`${m.bioguide} ${m.name}: not found in Wikidata`); continue }
-    if (rows.length > 1) { errs.push(`${m.bioguide} ${m.name}: multiple Wikidata birth dates (${rows.map((r) => r.date).join(', ')}) — resolve manually`); continue }
-    const w = rows[0]
-    const len = w.precision >= 11 ? 10 : w.precision === 10 ? 7 : 4
-    if (w.date.slice(0, len) !== m.birthday.slice(0, len)) {
-      errs.push(`${m.bioguide} ${m.name}: roster ${m.birthday} vs Wikidata ${w.date} (precision ${w.precision})`)
+    const matches = (w: WdDob) => {
+      const len = w.precision >= 11 ? 10 : w.precision === 10 ? 7 : 4
+      return w.date.slice(0, len) === m.birthday.slice(0, len)
     }
+    if (rows.some(matches)) continue
+    const shown = rows.map((r) => r.date).join(', ')
+    errs.push(`${m.bioguide} ${m.name}: roster ${m.birthday} not corroborated by Wikidata (${shown})`)
   }
   return errs
 }

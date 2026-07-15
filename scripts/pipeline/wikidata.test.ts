@@ -36,23 +36,32 @@ describe('wikidata verification', () => {
     )
     expect(errs).toEqual([])
   })
-  it('reports mismatches, missing entries, and ambiguity', () => {
+  it('reports uncorroborated dates and missing entries; accepts a roster date corroborated among multiple Wikidata statements', () => {
     const dobs = extractDobs(resp([
       binding('A1', '1950-06-16', 11),
       binding('A3', '1970-01-01', 11),
       binding('A3', '1971-01-01', 11),
+      binding('A4', '1980-05-05', 11),
+      binding('A4', '1981-06-06', 11),
     ]))
     const errs = verifyBirthdays(
       [
         { bioguide: 'A1', name: 'A One', birthday: '1950-06-15' },
         { bioguide: 'A2', name: 'A Two', birthday: '1960-09-30' },
         { bioguide: 'A3', name: 'A Three', birthday: '1970-01-01' },
+        { bioguide: 'A4', name: 'A Four', birthday: '1990-12-12' },
       ],
       dobs,
     )
     expect(errs).toHaveLength(3)
+    // A1: single Wikidata date that does not match the roster date
     expect(errs[0]).toContain('1950-06-16')
+    expect(errs[0]).toContain('not corroborated')
+    // A2: absent from Wikidata
     expect(errs[1]).toContain('not found')
-    expect(errs[2]).toContain('multiple')
+    // A4: roster date matches NONE of its multiple Wikidata dates
+    expect(errs[2]).toContain('not corroborated')
+    // A3 (Waters/Britt case): roster date matches ONE of multiple Wikidata dates -> verified
+    expect(errs.some((e) => e.includes('A3'))).toBe(false)
   })
 })
