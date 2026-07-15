@@ -21,9 +21,9 @@ export function Hero() {
     <header className="pb-14 sm:pb-16">
       {/* Masthead — wordmark on the left, edition folio on the right. */}
       <div className="flex items-baseline justify-between gap-4 border-b border-[var(--ink)] pt-6 pb-3">
-        <span className="smallcaps text-[0.9375rem] font-extrabold tracking-[0.16em] text-[var(--ink)] sm:text-[1.0625rem]">
+        <h1 className="smallcaps text-[0.9375rem] font-extrabold tracking-[0.16em] text-[var(--ink)] sm:text-[1.0625rem]">
           The Age of Congress
-        </span>
+        </h1>
         <span className="meta text-[0.6875rem] leading-tight tracking-[0.02em] text-[var(--ink-soft)] sm:text-[0.75rem]">
           {ordinal(data.congress)} Congress · {data.overall.count} voting members
         </span>
