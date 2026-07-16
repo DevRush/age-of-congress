@@ -92,7 +92,10 @@ export function HistoryChart() {
   const bandRight = x(1842)
 
   return (
-    <figure className="m-0">
+    // The figure column is exactly as wide as the plot and centers itself on
+    // desktop. `maxWidth` only caps: on a phone the column is the screen, and
+    // the plot keeps scrolling inside its own overflow container below.
+    <figure className="mx-auto my-0" style={{ maxWidth: W }}>
       <div className="overflow-x-auto">
         <svg
           width={W}

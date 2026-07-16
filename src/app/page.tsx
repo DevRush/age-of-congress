@@ -1,12 +1,10 @@
 import { Section } from '@/components/Section'
 import { Hero } from '@/components/Hero'
-import { ContextStrip } from '@/components/ContextStrip'
 import { ChamberSplit } from '@/components/ChamberSplit'
 import { Rankings } from '@/components/Rankings'
 import { Histogram } from '@/components/Histogram'
 import { HistoryChart } from '@/components/HistoryChart'
 import { Methodology } from '@/components/Methodology'
-import contextLines from '@/data/context-lines.json'
 import population from '@/data/population.json'
 
 export default function Page() {
@@ -16,7 +14,6 @@ export default function Page() {
 
       <Section title="The Two Chambers">
         <ChamberSplit />
-        <ContextStrip lines={contextLines} />
       </Section>
 
       <Section title="The Rankings">

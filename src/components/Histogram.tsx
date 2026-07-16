@@ -91,7 +91,12 @@ export function Histogram() {
       .join(' ')
 
   return (
-    <figure className="m-0">
+    // The figure column is exactly as wide as the graphic and centers itself, so
+    // on desktop the controls, the plot, and the caption sit as one centered
+    // unit rather than the plot floating inside a wider frame. `maxWidth` only
+    // caps: on a phone the column is simply the screen, and the plot keeps
+    // scrolling inside its own overflow container below.
+    <figure className="mx-auto my-0" style={{ maxWidth: width }}>
       {/* Controls + legend share one row on wide screens, stack on narrow. */}
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div

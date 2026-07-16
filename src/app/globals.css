@@ -47,15 +47,10 @@ body {
 .tnum { font-variant-numeric: tabular-nums; }
 .digit { display: inline-block; width: 0.56em; text-align: center; }
 
-/* Rotating context line fades in on change; held still under reduced motion. */
-@keyframes ctx-fade { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
-.ctx-line { animation: ctx-fade 460ms ease both; }
-
 /* A slow pulse on the hero's live dot signals the counter is running. */
 @keyframes live-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 .live-dot { animation: live-pulse 2.2s ease-in-out infinite; }
 
 @media (prefers-reduced-motion: reduce) {
-  .ctx-line { animation: none; }
   .live-dot { animation: none; }
 }

@@ -71,14 +71,11 @@ export function Methodology() {
         </Row>
       </dl>
 
-      <div className="rule mt-7 space-y-1.5 pt-4 text-[0.75rem]">
+      <div className="rule mt-7 pt-4 text-[0.75rem]">
         <p>
           <sup>†</sup> Population comparison uses the {population.source} (as of {population.asOf});
           &ldquo;average American adult&rdquo; is the mean age of residents 18 and older (
           {population.adultMeanAge18} years).
-        </p>
-        <p>
-          <sup>‡</sup> Context-line milestone dates and sources appear on each line (hover or tap).
         </p>
       </div>
 
