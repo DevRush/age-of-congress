@@ -1,8 +1,17 @@
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
 import { ageYears } from '../../src/lib/age'
 import type { Member } from '../../src/lib/types'
 import { generateContextLines } from './context-lines'
+import {
+  CENSUS_SOURCE,
+  GAP_RANGE,
+  HEX_LAYOUT_CREDIT,
+  assertDistrictAges,
+  buildDistrictRows,
+  districtGapStats,
+  fetchDistrictAges,
+} from './districts'
 import { computeHistorical, congressNumber, flattenTerms } from './historical'
 import { httpGet } from './http'
 import overrides from './photo-overrides.json'
@@ -69,6 +78,30 @@ async function main() {
   const contextLines = generateContextLines(overall.meanDobMs, overall.count)
   gate(contextLines.length >= 4, `only ${contextLines.length} context lines generated`)
 
+  console.log('Fetching district ages (ACS B01001, adult 18+ basis)…')
+  const parsed = await fetchDistrictAges()
+  assertDistrictAges(parsed) // 435 districts, 119th-Congress vintage, national ≈47.5
+  const { rows: districtRows, unmatchedMembers } = buildDistrictRows(parsed.districts, members, nowMs)
+  const gaps = districtGapStats(districtRows)
+
+  gate(unmatchedMembers.length === 0, `House members matched no district: ${unmatchedMembers.join(', ')}`)
+  gate(gaps.joined === house.count, `${gaps.joined} districts joined a member but the House roster has ${house.count}`)
+  gate(gaps.vacant === 435 - house.count, `${gaps.vacant} district(s) without a member vs ${435 - house.count} House vacancies`)
+  gate(
+    gaps.minGap >= GAP_RANGE.min && gaps.maxGap <= GAP_RANGE.max,
+    `age gap out of sane range: ${gaps.minGap} … ${gaps.maxGap} (expected ${GAP_RANGE.min}…${GAP_RANGE.max})`,
+  )
+
+  // The hex layout is committed, not fetched — but a roster/vintage shift must not silently
+  // leave a district with no hex to colour, so re-verify the 435↔435 join every build.
+  const hexTopo = JSON.parse(await readFile('src/data/hex435.topo.json', 'utf8'))
+  const hexGeoids = new Set<string>(
+    (hexTopo.objects.HexCDv31.geometries as { properties: { GEOID: string } }[]).map((g) => g.properties.GEOID),
+  )
+  gate(hexGeoids.size === 435, `hex layout has ${hexGeoids.size} districts, expected 435`)
+  const missingHex = districtRows.filter((r) => !hexGeoids.has(r.geoid)).map((r) => r.geoid)
+  gate(missingHex.length === 0, `districts with no hex in the layout: ${missingHex.join(', ')}`)
+
   const toCard = (m: Member & { rank: number }) => ({ ...m, photo: `/images/members/${m.bioguide}-320.webp` })
   const siteData = {
     generatedAt: nowIso,
@@ -91,7 +124,27 @@ async function main() {
   await writeFile('src/data/congress.json', JSON.stringify(siteData, null, 2))
   await writeFile('src/data/historical.json', JSON.stringify(historical, null, 2))
   await writeFile('src/data/context-lines.json', JSON.stringify(contextLines, null, 2))
+  await writeFile(
+    'src/data/districts.json',
+    JSON.stringify(
+      {
+        generatedAt: nowIso, // gapYears are ages as of this instant
+        source: CENSUS_SOURCE,
+        layout: HEX_LAYOUT_CREDIT, // CC BY 4.0 — attribution is required wherever the hexmap renders
+        nationalAdultMedianAge: parsed.nationalAdultMedianAge,
+        stats: gaps,
+        districts: districtRows,
+      },
+      null,
+      2,
+    ),
+  )
   console.log(`OK — ${overall.count} voting members, mean age ${meanAge.toFixed(2)}, ${ranked.length} portraits, ${contextLines.length} context lines, ${historical.length} congresses`)
+  console.log(
+    `   districts — ${districtRows.length} seats (${gaps.joined} joined, ${gaps.vacant} vacant), ` +
+      `national adult median ${parsed.nationalAdultMedianAge?.toFixed(2)}, mean gap ${gaps.meanGap.toFixed(2)}, ` +
+      `${(gaps.pctOlder * 100).toFixed(1)}% older than their district, range ${gaps.minGap}…${gaps.maxGap}`,
+  )
 }
 
 main().catch((e) => { console.error(e); process.exit(1) })

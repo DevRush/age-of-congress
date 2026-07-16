@@ -1,0 +1,5663 @@
+{
+  "generatedAt": "2026-07-16T04:07:35.540Z",
+  "source": {
+    "table": "B01001 (Sex by Age)",
+    "survey": "U.S. Census Bureau, 2024 American Community Survey 1-Year Estimates",
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/1YRData/acsdt1y2024-b01001.dat",
+    "basis": "Median age of adults 18+, linearly interpolated across the 18+ age brackets"
+  },
+  "layout": {
+    "layout": "Daily Kos / Downballot Hexmap v3.1",
+    "author": "Daniel Donner / The Downballot",
+    "url": "https://the-db.co/maps",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "nationalAdultMedianAge": 47.49766306122099,
+  "stats": {
+    "joined": 431,
+    "vacant": 4,
+    "meanGap": 11.247563805104406,
+    "medianGap": 10.8,
+    "pctOlder": 0.7819025522041764,
+    "minGap": -19.3,
+    "maxGap": 45
+  },
+  "districts": [
+    {
+      "geoid": "0101",
+      "state": "AL",
+      "district": 1,
+      "adultMedianAge": 50.9,
+      "member": {
+        "bioguide": "M001212",
+        "name": "Barry Moore",
+        "party": "R",
+        "dobMs": -103057200000
+      },
+      "gapYears": 8.9
+    },
+    {
+      "geoid": "0102",
+      "state": "AL",
+      "district": 2,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "F000481",
+        "name": "Shomari Figures",
+        "party": "D",
+        "dobMs": 494571600000
+      },
+      "gapYears": -7
+    },
+    {
+      "geoid": "0103",
+      "state": "AL",
+      "district": 3,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "R000575",
+        "name": "Mike Rogers",
+        "party": "R",
+        "dobMs": -361738800000
+      },
+      "gapYears": 19.6
+    },
+    {
+      "geoid": "0104",
+      "state": "AL",
+      "district": 4,
+      "adultMedianAge": 50,
+      "member": {
+        "bioguide": "A000055",
+        "name": "Robert B. Aderholt",
+        "party": "R",
+        "dobMs": -140295600000
+      },
+      "gapYears": 11
+    },
+    {
+      "geoid": "0105",
+      "state": "AL",
+      "district": 5,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "S001220",
+        "name": "Dale W. Strong",
+        "party": "R",
+        "dobMs": 10990800000
+      },
+      "gapYears": 8.3
+    },
+    {
+      "geoid": "0106",
+      "state": "AL",
+      "district": 6,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "P000609",
+        "name": "Gary J. Palmer",
+        "party": "R",
+        "dobMs": -493412400000
+      },
+      "gapYears": 24.3
+    },
+    {
+      "geoid": "0107",
+      "state": "AL",
+      "district": 7,
+      "adultMedianAge": 46.2,
+      "member": {
+        "bioguide": "S001185",
+        "name": "Terri A. Sewell",
+        "party": "D",
+        "dobMs": -157748400000
+      },
+      "gapYears": 15.3
+    },
+    {
+      "geoid": "0200",
+      "state": "AK",
+      "district": 0,
+      "adultMedianAge": 44.3,
+      "member": {
+        "bioguide": "B001323",
+        "name": "Nicholas J. Begich III",
+        "party": "R",
+        "dobMs": 246258000000
+      },
+      "gapYears": 4.4
+    },
+    {
+      "geoid": "0401",
+      "state": "AZ",
+      "district": 1,
+      "adultMedianAge": 50.6,
+      "member": {
+        "bioguide": "S001183",
+        "name": "David Schweikert",
+        "party": "R",
+        "dobMs": -247172400000
+      },
+      "gapYears": 13.8
+    },
+    {
+      "geoid": "0402",
+      "state": "AZ",
+      "district": 2,
+      "adultMedianAge": 51.7,
+      "member": {
+        "bioguide": "C001132",
+        "name": "Elijah Crane",
+        "party": "R",
+        "dobMs": 315723600000
+      },
+      "gapYears": -5.2
+    },
+    {
+      "geoid": "0403",
+      "state": "AZ",
+      "district": 3,
+      "adultMedianAge": 39.8,
+      "member": {
+        "bioguide": "A000381",
+        "name": "Yassamin Ansari",
+        "party": "D",
+        "dobMs": 702622800000
+      },
+      "gapYears": -5.5
+    },
+    {
+      "geoid": "0404",
+      "state": "AZ",
+      "district": 4,
+      "adultMedianAge": 43.1,
+      "member": {
+        "bioguide": "S001211",
+        "name": "Greg Stanton",
+        "party": "D",
+        "dobMs": 5720400000
+      },
+      "gapYears": 13.3
+    },
+    {
+      "geoid": "0405",
+      "state": "AZ",
+      "district": 5,
+      "adultMedianAge": 47.2,
+      "member": {
+        "bioguide": "B001302",
+        "name": "Andy Biggs",
+        "party": "R",
+        "dobMs": -351889200000
+      },
+      "gapYears": 20.5
+    },
+    {
+      "geoid": "0406",
+      "state": "AZ",
+      "district": 6,
+      "adultMedianAge": 52.8,
+      "member": {
+        "bioguide": "C001133",
+        "name": "Juan Ciscomani",
+        "party": "R",
+        "dobMs": 399531600000
+      },
+      "gapYears": -8.9
+    },
+    {
+      "geoid": "0407",
+      "state": "AZ",
+      "district": 7,
+      "adultMedianAge": 43.3,
+      "member": {
+        "bioguide": "G000606",
+        "name": "Adelita S. Grijalva",
+        "party": "D",
+        "dobMs": 26110800000
+      },
+      "gapYears": 12.4
+    },
+    {
+      "geoid": "0408",
+      "state": "AZ",
+      "district": 8,
+      "adultMedianAge": 51.8,
+      "member": {
+        "bioguide": "H001098",
+        "name": "Abraham J. Hamadeh",
+        "party": "R",
+        "dobMs": 674283600000
+      },
+      "gapYears": -16.6
+    },
+    {
+      "geoid": "0409",
+      "state": "AZ",
+      "district": 9,
+      "adultMedianAge": 50.8,
+      "member": {
+        "bioguide": "G000565",
+        "name": "Paul A. Gosar",
+        "party": "R",
+        "dobMs": -350593200000
+      },
+      "gapYears": 16.8
+    },
+    {
+      "geoid": "0501",
+      "state": "AR",
+      "district": 1,
+      "adultMedianAge": 49.5,
+      "member": {
+        "bioguide": "C001087",
+        "name": "Eric A. \"Rick\" Crawford",
+        "party": "R",
+        "dobMs": -124398000000
+      },
+      "gapYears": 11
+    },
+    {
+      "geoid": "0502",
+      "state": "AR",
+      "district": 2,
+      "adultMedianAge": 47.7,
+      "member": {
+        "bioguide": "H001072",
+        "name": "J. French Hill",
+        "party": "R",
+        "dobMs": -412542000000
+      },
+      "gapYears": 21.9
+    },
+    {
+      "geoid": "0503",
+      "state": "AR",
+      "district": 3,
+      "adultMedianAge": 44.5,
+      "member": {
+        "bioguide": "W000809",
+        "name": "Steve Womack",
+        "party": "R",
+        "dobMs": -406062000000
+      },
+      "gapYears": 24.9
+    },
+    {
+      "geoid": "0504",
+      "state": "AR",
+      "district": 4,
+      "adultMedianAge": 50.4,
+      "member": {
+        "bioguide": "W000821",
+        "name": "Bruce Westerman",
+        "party": "R",
+        "dobMs": -66942000000
+      },
+      "gapYears": 8.3
+    },
+    {
+      "geoid": "0601",
+      "state": "CA",
+      "district": 1,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "G000607",
+        "name": "James Gallagher",
+        "party": "R",
+        "dobMs": 352789200000
+      },
+      "gapYears": -2.6
+    },
+    {
+      "geoid": "0602",
+      "state": "CA",
+      "district": 2,
+      "adultMedianAge": 52.8,
+      "member": {
+        "bioguide": "H001068",
+        "name": "Jared Huffman",
+        "party": "D",
+        "dobMs": -185223600000
+      },
+      "gapYears": 9.6
+    },
+    {
+      "geoid": "0603",
+      "state": "CA",
+      "district": 3,
+      "adultMedianAge": 51,
+      "member": {
+        "bioguide": "K000401",
+        "name": "Kevin Kiley",
+        "party": "I",
+        "dobMs": 475909200000
+      },
+      "gapYears": -9.5
+    },
+    {
+      "geoid": "0604",
+      "state": "CA",
+      "district": 4,
+      "adultMedianAge": 47.4,
+      "member": {
+        "bioguide": "T000460",
+        "name": "Mike Thompson",
+        "party": "D",
+        "dobMs": -597610800000
+      },
+      "gapYears": 28.1
+    },
+    {
+      "geoid": "0605",
+      "state": "CA",
+      "district": 5,
+      "adultMedianAge": 51.1,
+      "member": {
+        "bioguide": "M001177",
+        "name": "Tom McClintock",
+        "party": "R",
+        "dobMs": -425329200000
+      },
+      "gapYears": 18.9
+    },
+    {
+      "geoid": "0606",
+      "state": "CA",
+      "district": 6,
+      "adultMedianAge": 44.9,
+      "member": {
+        "bioguide": "B001287",
+        "name": "Ami Bera",
+        "party": "D",
+        "dobMs": -152564400000
+      },
+      "gapYears": 16.5
+    },
+    {
+      "geoid": "0607",
+      "state": "CA",
+      "district": 7,
+      "adultMedianAge": 45.5,
+      "member": {
+        "bioguide": "M001163",
+        "name": "Doris O. Matsui",
+        "party": "D",
+        "dobMs": -797367600000
+      },
+      "gapYears": 36.3
+    },
+    {
+      "geoid": "0608",
+      "state": "CA",
+      "district": 8,
+      "adultMedianAge": 46.8,
+      "member": {
+        "bioguide": "G000559",
+        "name": "John Garamendi",
+        "party": "D",
+        "dobMs": -786913200000
+      },
+      "gapYears": 34.7
+    },
+    {
+      "geoid": "0609",
+      "state": "CA",
+      "district": 9,
+      "adultMedianAge": 45.2,
+      "member": {
+        "bioguide": "H001090",
+        "name": "Josh Harder",
+        "party": "D",
+        "dobMs": 523256400000
+      },
+      "gapYears": -5.2
+    },
+    {
+      "geoid": "0610",
+      "state": "CA",
+      "district": 10,
+      "adultMedianAge": 49.3,
+      "member": {
+        "bioguide": "D000623",
+        "name": "Mark DeSaulnier",
+        "party": "D",
+        "dobMs": -560286000000
+      },
+      "gapYears": 25
+    },
+    {
+      "geoid": "0611",
+      "state": "CA",
+      "district": 11,
+      "adultMedianAge": 44.1,
+      "member": {
+        "bioguide": "P000197",
+        "name": "Nancy Pelosi",
+        "party": "D",
+        "dobMs": -939409200000
+      },
+      "gapYears": 42.2
+    },
+    {
+      "geoid": "0612",
+      "state": "CA",
+      "district": 12,
+      "adultMedianAge": 44,
+      "member": {
+        "bioguide": "S001231",
+        "name": "Lateefah Simon",
+        "party": "D",
+        "dobMs": 223362000000
+      },
+      "gapYears": 5.5
+    },
+    {
+      "geoid": "0613",
+      "state": "CA",
+      "district": 13,
+      "adultMedianAge": 42.1,
+      "member": {
+        "bioguide": "G000605",
+        "name": "Adam Gray",
+        "party": "D",
+        "dobMs": 243838800000
+      },
+      "gapYears": 6.7
+    },
+    {
+      "geoid": "0614",
+      "state": "CA",
+      "district": 14,
+      "adultMedianAge": 47.9,
+      "member": null,
+      "gapYears": null
+    },
+    {
+      "geoid": "0615",
+      "state": "CA",
+      "district": 15,
+      "adultMedianAge": 48.1,
+      "member": {
+        "bioguide": "M001225",
+        "name": "Kevin Mullin",
+        "party": "D",
+        "dobMs": 14274000000
+      },
+      "gapYears": 8
+    },
+    {
+      "geoid": "0616",
+      "state": "CA",
+      "district": 16,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "L000607",
+        "name": "Sam T. Liccardo",
+        "party": "D",
+        "dobMs": 9090000000
+      },
+      "gapYears": 8.3
+    },
+    {
+      "geoid": "0617",
+      "state": "CA",
+      "district": 17,
+      "adultMedianAge": 42.9,
+      "member": {
+        "bioguide": "K000389",
+        "name": "Ro Khanna",
+        "party": "D",
+        "dobMs": 211438800000
+      },
+      "gapYears": 6.9
+    },
+    {
+      "geoid": "0618",
+      "state": "CA",
+      "district": 18,
+      "adultMedianAge": 43.5,
+      "member": {
+        "bioguide": "L000397",
+        "name": "Zoe Lofgren",
+        "party": "D",
+        "dobMs": -695242800000
+      },
+      "gapYears": 35.1
+    },
+    {
+      "geoid": "0619",
+      "state": "CA",
+      "district": 19,
+      "adultMedianAge": 50,
+      "member": {
+        "bioguide": "P000613",
+        "name": "Jimmy Panetta",
+        "party": "D",
+        "dobMs": -7930800000
+      },
+      "gapYears": 6.8
+    },
+    {
+      "geoid": "0620",
+      "state": "CA",
+      "district": 20,
+      "adultMedianAge": 44.7,
+      "member": {
+        "bioguide": "F000480",
+        "name": "Vince Fong",
+        "party": "R",
+        "dobMs": 309589200000
+      },
+      "gapYears": 2
+    },
+    {
+      "geoid": "0621",
+      "state": "CA",
+      "district": 21,
+      "adultMedianAge": 42.2,
+      "member": {
+        "bioguide": "C001059",
+        "name": "Jim Costa",
+        "party": "D",
+        "dobMs": -559162800000
+      },
+      "gapYears": 32.1
+    },
+    {
+      "geoid": "0622",
+      "state": "CA",
+      "district": 22,
+      "adultMedianAge": 41.4,
+      "member": {
+        "bioguide": "V000129",
+        "name": "David G. Valadao",
+        "party": "R",
+        "dobMs": 229842000000
+      },
+      "gapYears": 7.9
+    },
+    {
+      "geoid": "0623",
+      "state": "CA",
+      "district": 23,
+      "adultMedianAge": 45.3,
+      "member": {
+        "bioguide": "O000019",
+        "name": "Jay Obernolte",
+        "party": "R",
+        "dobMs": 19803600000
+      },
+      "gapYears": 10.6
+    },
+    {
+      "geoid": "0624",
+      "state": "CA",
+      "district": 24,
+      "adultMedianAge": 46,
+      "member": {
+        "bioguide": "C001112",
+        "name": "Salud O. Carbajal",
+        "party": "D",
+        "dobMs": -161550000000
+      },
+      "gapYears": 15.7
+    },
+    {
+      "geoid": "0625",
+      "state": "CA",
+      "district": 25,
+      "adultMedianAge": 46.8,
+      "member": {
+        "bioguide": "R000599",
+        "name": "Raul Ruiz",
+        "party": "D",
+        "dobMs": 83566800000
+      },
+      "gapYears": 7.1
+    },
+    {
+      "geoid": "0626",
+      "state": "CA",
+      "district": 26,
+      "adultMedianAge": 48.8,
+      "member": {
+        "bioguide": "B001285",
+        "name": "Julia Brownley",
+        "party": "D",
+        "dobMs": -547326000000
+      },
+      "gapYears": 25.1
+    },
+    {
+      "geoid": "0627",
+      "state": "CA",
+      "district": 27,
+      "adultMedianAge": 47,
+      "member": {
+        "bioguide": "W000830",
+        "name": "George Whitesides",
+        "party": "D",
+        "dobMs": 131518800000
+      },
+      "gapYears": 5.4
+    },
+    {
+      "geoid": "0628",
+      "state": "CA",
+      "district": 28,
+      "adultMedianAge": 49.4,
+      "member": {
+        "bioguide": "C001080",
+        "name": "Judy Chu",
+        "party": "D",
+        "dobMs": -520282800000
+      },
+      "gapYears": 23.6
+    },
+    {
+      "geoid": "0629",
+      "state": "CA",
+      "district": 29,
+      "adultMedianAge": 44.8,
+      "member": {
+        "bioguide": "R000620",
+        "name": "Luz M. Rivas",
+        "party": "D",
+        "dobMs": 129358800000
+      },
+      "gapYears": 7.6
+    },
+    {
+      "geoid": "0630",
+      "state": "CA",
+      "district": 30,
+      "adultMedianAge": 44.6,
+      "member": {
+        "bioguide": "F000483",
+        "name": "Laura Friedman",
+        "party": "D",
+        "dobMs": -97182000000
+      },
+      "gapYears": 15
+    },
+    {
+      "geoid": "0631",
+      "state": "CA",
+      "district": 31,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "C001123",
+        "name": "Gilbert Ray Cisneros, Jr.",
+        "party": "D",
+        "dobMs": 35182800000
+      },
+      "gapYears": 7
+    },
+    {
+      "geoid": "0632",
+      "state": "CA",
+      "district": 32,
+      "adultMedianAge": 47.7,
+      "member": {
+        "bioguide": "S000344",
+        "name": "Brad Sherman",
+        "party": "D",
+        "dobMs": -479329200000
+      },
+      "gapYears": 24
+    },
+    {
+      "geoid": "0633",
+      "state": "CA",
+      "district": 33,
+      "adultMedianAge": 42.9,
+      "member": {
+        "bioguide": "A000371",
+        "name": "Pete Aguilar",
+        "party": "D",
+        "dobMs": 298616400000
+      },
+      "gapYears": 4.2
+    },
+    {
+      "geoid": "0634",
+      "state": "CA",
+      "district": 34,
+      "adultMedianAge": 42.6,
+      "member": {
+        "bioguide": "G000585",
+        "name": "Jimmy Gomez",
+        "party": "D",
+        "dobMs": 154587600000
+      },
+      "gapYears": 9
+    },
+    {
+      "geoid": "0635",
+      "state": "CA",
+      "district": 35,
+      "adultMedianAge": 43.4,
+      "member": {
+        "bioguide": "T000474",
+        "name": "Norma J. Torres",
+        "party": "D",
+        "dobMs": -149713200000
+      },
+      "gapYears": 17.9
+    },
+    {
+      "geoid": "0636",
+      "state": "CA",
+      "district": 36,
+      "adultMedianAge": 45.3,
+      "member": {
+        "bioguide": "L000582",
+        "name": "Ted Lieu",
+        "party": "D",
+        "dobMs": -24001200000
+      },
+      "gapYears": 12
+    },
+    {
+      "geoid": "0637",
+      "state": "CA",
+      "district": 37,
+      "adultMedianAge": 43.2,
+      "member": {
+        "bioguide": "K000400",
+        "name": "Sydney Kamlager-Dove",
+        "party": "D",
+        "dobMs": 80456400000
+      },
+      "gapYears": 10.8
+    },
+    {
+      "geoid": "0638",
+      "state": "CA",
+      "district": 38,
+      "adultMedianAge": 48.6,
+      "member": {
+        "bioguide": "S001156",
+        "name": "Linda T. Sánchez",
+        "party": "D",
+        "dobMs": -29185200000
+      },
+      "gapYears": 8.9
+    },
+    {
+      "geoid": "0639",
+      "state": "CA",
+      "district": 39,
+      "adultMedianAge": 41.7,
+      "member": {
+        "bioguide": "T000472",
+        "name": "Mark Takano",
+        "party": "D",
+        "dobMs": -285879600000
+      },
+      "gapYears": 23.9
+    },
+    {
+      "geoid": "0640",
+      "state": "CA",
+      "district": 40,
+      "adultMedianAge": 50.6,
+      "member": {
+        "bioguide": "K000397",
+        "name": "Young Kim",
+        "party": "R",
+        "dobMs": -227386800000
+      },
+      "gapYears": 13.1
+    },
+    {
+      "geoid": "0641",
+      "state": "CA",
+      "district": 41,
+      "adultMedianAge": 49.3,
+      "member": {
+        "bioguide": "C000059",
+        "name": "Ken Calvert",
+        "party": "R",
+        "dobMs": -522788400000
+      },
+      "gapYears": 23.8
+    },
+    {
+      "geoid": "0642",
+      "state": "CA",
+      "district": 42,
+      "adultMedianAge": 44,
+      "member": {
+        "bioguide": "G000598",
+        "name": "Robert Garcia",
+        "party": "D",
+        "dobMs": 249886800000
+      },
+      "gapYears": 4.6
+    },
+    {
+      "geoid": "0643",
+      "state": "CA",
+      "district": 43,
+      "adultMedianAge": 45.3,
+      "member": {
+        "bioguide": "W000187",
+        "name": "Maxine Waters",
+        "party": "D",
+        "dobMs": -990298800000
+      },
+      "gapYears": 42.6
+    },
+    {
+      "geoid": "0644",
+      "state": "CA",
+      "district": 44,
+      "adultMedianAge": 46.9,
+      "member": {
+        "bioguide": "B001300",
+        "name": "Nanette Diaz Barragán",
+        "party": "D",
+        "dobMs": 211611600000
+      },
+      "gapYears": 2.9
+    },
+    {
+      "geoid": "0645",
+      "state": "CA",
+      "district": 45,
+      "adultMedianAge": 50.3,
+      "member": {
+        "bioguide": "T000491",
+        "name": "Derek Tran",
+        "party": "D",
+        "dobMs": 346309200000
+      },
+      "gapYears": -4.7
+    },
+    {
+      "geoid": "0646",
+      "state": "CA",
+      "district": 46,
+      "adultMedianAge": 43.5,
+      "member": {
+        "bioguide": "C001110",
+        "name": "J. Luis Correa",
+        "party": "D",
+        "dobMs": -376686000000
+      },
+      "gapYears": 25
+    },
+    {
+      "geoid": "0647",
+      "state": "CA",
+      "district": 47,
+      "adultMedianAge": 45.8,
+      "member": {
+        "bioguide": "M001241",
+        "name": "Dave Min",
+        "party": "D",
+        "dobMs": 194850000000
+      },
+      "gapYears": 4.6
+    },
+    {
+      "geoid": "0648",
+      "state": "CA",
+      "district": 48,
+      "adultMedianAge": 47.8,
+      "member": {
+        "bioguide": "I000056",
+        "name": "Darrell Issa",
+        "party": "R",
+        "dobMs": -510174000000
+      },
+      "gapYears": 24.9
+    },
+    {
+      "geoid": "0649",
+      "state": "CA",
+      "district": 49,
+      "adultMedianAge": 49.6,
+      "member": {
+        "bioguide": "L000593",
+        "name": "Mike Levin",
+        "party": "D",
+        "dobMs": 278398800000
+      },
+      "gapYears": -1.9
+    },
+    {
+      "geoid": "0650",
+      "state": "CA",
+      "district": 50,
+      "adultMedianAge": 43.7,
+      "member": {
+        "bioguide": "P000608",
+        "name": "Scott H. Peters",
+        "party": "D",
+        "dobMs": -364244400000
+      },
+      "gapYears": 24.4
+    },
+    {
+      "geoid": "0651",
+      "state": "CA",
+      "district": 51,
+      "adultMedianAge": 43,
+      "member": {
+        "bioguide": "J000305",
+        "name": "Sara Jacobs",
+        "party": "D",
+        "dobMs": 602312400000
+      },
+      "gapYears": -5.5
+    },
+    {
+      "geoid": "0652",
+      "state": "CA",
+      "district": 52,
+      "adultMedianAge": 44.6,
+      "member": {
+        "bioguide": "V000130",
+        "name": "Juan Vargas",
+        "party": "D",
+        "dobMs": -278362800000
+      },
+      "gapYears": 20.8
+    },
+    {
+      "geoid": "0801",
+      "state": "CO",
+      "district": 1,
+      "adultMedianAge": 39.9,
+      "member": {
+        "bioguide": "D000197",
+        "name": "Diana DeGette",
+        "party": "D",
+        "dobMs": -392151600000
+      },
+      "gapYears": 29.1
+    },
+    {
+      "geoid": "0802",
+      "state": "CO",
+      "district": 2,
+      "adultMedianAge": 44.5,
+      "member": {
+        "bioguide": "N000191",
+        "name": "Joe Neguse",
+        "party": "D",
+        "dobMs": 453272400000
+      },
+      "gapYears": -2.3
+    },
+    {
+      "geoid": "0803",
+      "state": "CO",
+      "district": 3,
+      "adultMedianAge": 50.7,
+      "member": {
+        "bioguide": "H001100",
+        "name": "Jeff Hurd",
+        "party": "R",
+        "dobMs": 303541200000
+      },
+      "gapYears": -3.8
+    },
+    {
+      "geoid": "0804",
+      "state": "CO",
+      "district": 4,
+      "adultMedianAge": 47.3,
+      "member": {
+        "bioguide": "B000825",
+        "name": "Lauren Boebert",
+        "party": "R",
+        "dobMs": 535006800000
+      },
+      "gapYears": -7.7
+    },
+    {
+      "geoid": "0805",
+      "state": "CO",
+      "district": 5,
+      "adultMedianAge": 43.2,
+      "member": {
+        "bioguide": "C001137",
+        "name": "Jeff Crank",
+        "party": "R",
+        "dobMs": -92343600000
+      },
+      "gapYears": 16.3
+    },
+    {
+      "geoid": "0806",
+      "state": "CO",
+      "district": 6,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "C001121",
+        "name": "Jason Crow",
+        "party": "D",
+        "dobMs": 290322000000
+      },
+      "gapYears": 2.3
+    },
+    {
+      "geoid": "0807",
+      "state": "CO",
+      "district": 7,
+      "adultMedianAge": 47.3,
+      "member": {
+        "bioguide": "P000620",
+        "name": "Brittany Pettersen",
+        "party": "D",
+        "dobMs": 376462800000
+      },
+      "gapYears": -2.7
+    },
+    {
+      "geoid": "0808",
+      "state": "CO",
+      "district": 8,
+      "adultMedianAge": 43.1,
+      "member": {
+        "bioguide": "E000300",
+        "name": "Gabe Evans",
+        "party": "R",
+        "dobMs": 522910800000
+      },
+      "gapYears": -3.1
+    },
+    {
+      "geoid": "0901",
+      "state": "CT",
+      "district": 1,
+      "adultMedianAge": 48.1,
+      "member": {
+        "bioguide": "L000557",
+        "name": "John B. Larson",
+        "party": "D",
+        "dobMs": -676753200000
+      },
+      "gapYears": 29.9
+    },
+    {
+      "geoid": "0902",
+      "state": "CT",
+      "district": 2,
+      "adultMedianAge": 50.8,
+      "member": {
+        "bioguide": "C001069",
+        "name": "Joe Courtney",
+        "party": "D",
+        "dobMs": -528231600000
+      },
+      "gapYears": 22.5
+    },
+    {
+      "geoid": "0903",
+      "state": "CT",
+      "district": 3,
+      "adultMedianAge": 47.7,
+      "member": {
+        "bioguide": "D000216",
+        "name": "Rosa L. DeLauro",
+        "party": "D",
+        "dobMs": -846874800000
+      },
+      "gapYears": 35.7
+    },
+    {
+      "geoid": "0904",
+      "state": "CT",
+      "district": 4,
+      "adultMedianAge": 48.7,
+      "member": {
+        "bioguide": "H001047",
+        "name": "James A. Himes",
+        "party": "D",
+        "dobMs": -110228400000
+      },
+      "gapYears": 11.3
+    },
+    {
+      "geoid": "0905",
+      "state": "CT",
+      "district": 5,
+      "adultMedianAge": 51.1,
+      "member": {
+        "bioguide": "H001081",
+        "name": "Jahana Hayes",
+        "party": "D",
+        "dobMs": 100414800000
+      },
+      "gapYears": 2.3
+    },
+    {
+      "geoid": "1000",
+      "state": "DE",
+      "district": 0,
+      "adultMedianAge": 50.9,
+      "member": {
+        "bioguide": "M001238",
+        "name": "Sarah McBride",
+        "party": "D",
+        "dobMs": 650178000000
+      },
+      "gapYears": -15
+    },
+    {
+      "geoid": "1201",
+      "state": "FL",
+      "district": 1,
+      "adultMedianAge": 47.4,
+      "member": {
+        "bioguide": "P000622",
+        "name": "Jimmy Patronis",
+        "party": "R",
+        "dobMs": 71989200000
+      },
+      "gapYears": 6.9
+    },
+    {
+      "geoid": "1202",
+      "state": "FL",
+      "district": 2,
+      "adultMedianAge": 46.4,
+      "member": {
+        "bioguide": "D000628",
+        "name": "Neal P. Dunn",
+        "party": "R",
+        "dobMs": -532465200000
+      },
+      "gapYears": 27
+    },
+    {
+      "geoid": "1203",
+      "state": "FL",
+      "district": 3,
+      "adultMedianAge": 48.6,
+      "member": {
+        "bioguide": "C001039",
+        "name": "Kat Cammack",
+        "party": "R",
+        "dobMs": 571986000000
+      },
+      "gapYears": -10.2
+    },
+    {
+      "geoid": "1204",
+      "state": "FL",
+      "district": 4,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "B001314",
+        "name": "Aaron Bean",
+        "party": "R",
+        "dobMs": -92602800000
+      },
+      "gapYears": 11.1
+    },
+    {
+      "geoid": "1205",
+      "state": "FL",
+      "district": 5,
+      "adultMedianAge": 47.2,
+      "member": {
+        "bioguide": "R000609",
+        "name": "John H. Rutherford",
+        "party": "R",
+        "dobMs": -546894000000
+      },
+      "gapYears": 26.7
+    },
+    {
+      "geoid": "1206",
+      "state": "FL",
+      "district": 6,
+      "adultMedianAge": 56.2,
+      "member": {
+        "bioguide": "F000484",
+        "name": "Randy Fine",
+        "party": "R",
+        "dobMs": 135666000000
+      },
+      "gapYears": -4
+    },
+    {
+      "geoid": "1207",
+      "state": "FL",
+      "district": 7,
+      "adultMedianAge": 49.9,
+      "member": {
+        "bioguide": "M001216",
+        "name": "Cory Mills",
+        "party": "R",
+        "dobMs": 333781200000
+      },
+      "gapYears": -3.9
+    },
+    {
+      "geoid": "1208",
+      "state": "FL",
+      "district": 8,
+      "adultMedianAge": 55.7,
+      "member": {
+        "bioguide": "H001099",
+        "name": "Mike Haridopolos",
+        "party": "R",
+        "dobMs": 6325200000
+      },
+      "gapYears": 0.6
+    },
+    {
+      "geoid": "1209",
+      "state": "FL",
+      "district": 9,
+      "adultMedianAge": 44.9,
+      "member": {
+        "bioguide": "S001200",
+        "name": "Darren Soto",
+        "party": "D",
+        "dobMs": 257230800000
+      },
+      "gapYears": 3.5
+    },
+    {
+      "geoid": "1210",
+      "state": "FL",
+      "district": 10,
+      "adultMedianAge": 42.4,
+      "member": {
+        "bioguide": "F000476",
+        "name": "Maxwell Frost",
+        "party": "D",
+        "dobMs": 853477200000
+      },
+      "gapYears": -12.9
+    },
+    {
+      "geoid": "1211",
+      "state": "FL",
+      "district": 11,
+      "adultMedianAge": 53.1,
+      "member": {
+        "bioguide": "W000806",
+        "name": "Daniel Webster",
+        "party": "R",
+        "dobMs": -652647600000
+      },
+      "gapYears": 24.1
+    },
+    {
+      "geoid": "1212",
+      "state": "FL",
+      "district": 12,
+      "adultMedianAge": 54.2,
+      "member": {
+        "bioguide": "B001257",
+        "name": "Gus M. Bilirakis",
+        "party": "R",
+        "dobMs": -217623600000
+      },
+      "gapYears": 9.2
+    },
+    {
+      "geoid": "1213",
+      "state": "FL",
+      "district": 13,
+      "adultMedianAge": 56.5,
+      "member": {
+        "bioguide": "L000596",
+        "name": "Anna Paulina Luna",
+        "party": "R",
+        "dobMs": 610434000000
+      },
+      "gapYears": -19.3
+    },
+    {
+      "geoid": "1214",
+      "state": "FL",
+      "district": 14,
+      "adultMedianAge": 45.4,
+      "member": {
+        "bioguide": "C001066",
+        "name": "Kathy Castor",
+        "party": "D",
+        "dobMs": -106254000000
+      },
+      "gapYears": 14.5
+    },
+    {
+      "geoid": "1215",
+      "state": "FL",
+      "district": 15,
+      "adultMedianAge": 46.6,
+      "member": {
+        "bioguide": "L000597",
+        "name": "Laurel M. Lee",
+        "party": "R",
+        "dobMs": 133506000000
+      },
+      "gapYears": 5.7
+    },
+    {
+      "geoid": "1216",
+      "state": "FL",
+      "district": 16,
+      "adultMedianAge": 52.1,
+      "member": {
+        "bioguide": "B001260",
+        "name": "Vern Buchanan",
+        "party": "R",
+        "dobMs": -588625200000
+      },
+      "gapYears": 23.1
+    },
+    {
+      "geoid": "1217",
+      "state": "FL",
+      "district": 17,
+      "adultMedianAge": 60.6,
+      "member": {
+        "bioguide": "S001214",
+        "name": "W. Gregory Steube",
+        "party": "R",
+        "dobMs": 264402000000
+      },
+      "gapYears": -12.4
+    },
+    {
+      "geoid": "1218",
+      "state": "FL",
+      "district": 18,
+      "adultMedianAge": 49.4,
+      "member": {
+        "bioguide": "F000472",
+        "name": "Scott Franklin",
+        "party": "R",
+        "dobMs": -169066800000
+      },
+      "gapYears": 12.5
+    },
+    {
+      "geoid": "1219",
+      "state": "FL",
+      "district": 19,
+      "adultMedianAge": 59.2,
+      "member": {
+        "bioguide": "D000032",
+        "name": "Byron Donalds",
+        "party": "R",
+        "dobMs": 278398800000
+      },
+      "gapYears": -11.5
+    },
+    {
+      "geoid": "1220",
+      "state": "FL",
+      "district": 20,
+      "adultMedianAge": 47.7,
+      "member": null,
+      "gapYears": null
+    },
+    {
+      "geoid": "1221",
+      "state": "FL",
+      "district": 21,
+      "adultMedianAge": 55.6,
+      "member": {
+        "bioguide": "M001199",
+        "name": "Brian J. Mast",
+        "party": "R",
+        "dobMs": 332053200000
+      },
+      "gapYears": -9.6
+    },
+    {
+      "geoid": "1222",
+      "state": "FL",
+      "district": 22,
+      "adultMedianAge": 53.7,
+      "member": {
+        "bioguide": "F000462",
+        "name": "Lois Frankel",
+        "party": "D",
+        "dobMs": -682542000000
+      },
+      "gapYears": 24.5
+    },
+    {
+      "geoid": "1223",
+      "state": "FL",
+      "district": 23,
+      "adultMedianAge": 52.1,
+      "member": {
+        "bioguide": "M001217",
+        "name": "Jared Moskowitz",
+        "party": "D",
+        "dobMs": 345963600000
+      },
+      "gapYears": -6.5
+    },
+    {
+      "geoid": "1224",
+      "state": "FL",
+      "district": 24,
+      "adultMedianAge": 46.8,
+      "member": {
+        "bioguide": "W000808",
+        "name": "Frederica S. Wilson",
+        "party": "D",
+        "dobMs": -856983600000
+      },
+      "gapYears": 36.9
+    },
+    {
+      "geoid": "1225",
+      "state": "FL",
+      "district": 25,
+      "adultMedianAge": 48.3,
+      "member": {
+        "bioguide": "W000797",
+        "name": "Debbie Wasserman Schultz",
+        "party": "D",
+        "dobMs": -102970800000
+      },
+      "gapYears": 11.5
+    },
+    {
+      "geoid": "1226",
+      "state": "FL",
+      "district": 26,
+      "adultMedianAge": 50.6,
+      "member": {
+        "bioguide": "D000600",
+        "name": "Mario Diaz-Balart",
+        "party": "R",
+        "dobMs": -260910000000
+      },
+      "gapYears": 14.2
+    },
+    {
+      "geoid": "1227",
+      "state": "FL",
+      "district": 27,
+      "adultMedianAge": 49.2,
+      "member": {
+        "bioguide": "S000168",
+        "name": "Maria Elvira Salazar",
+        "party": "R",
+        "dobMs": -257713200000
+      },
+      "gapYears": 15.5
+    },
+    {
+      "geoid": "1228",
+      "state": "FL",
+      "district": 28,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "G000593",
+        "name": "Carlos A. Gimenez",
+        "party": "R",
+        "dobMs": -503521200000
+      },
+      "gapYears": 24.1
+    },
+    {
+      "geoid": "1301",
+      "state": "GA",
+      "district": 1,
+      "adultMedianAge": 46.1,
+      "member": {
+        "bioguide": "C001103",
+        "name": "Earl L. \"Buddy\" Carter",
+        "party": "R",
+        "dobMs": -388782000000
+      },
+      "gapYears": 22.8
+    },
+    {
+      "geoid": "1302",
+      "state": "GA",
+      "district": 2,
+      "adultMedianAge": 47.3,
+      "member": {
+        "bioguide": "B000490",
+        "name": "Sanford D. Bishop, Jr.",
+        "party": "D",
+        "dobMs": -722890800000
+      },
+      "gapYears": 32.1
+    },
+    {
+      "geoid": "1303",
+      "state": "GA",
+      "district": 3,
+      "adultMedianAge": 48.6,
+      "member": {
+        "bioguide": "J000311",
+        "name": "Brian Jack",
+        "party": "R",
+        "dobMs": 572072400000
+      },
+      "gapYears": -10.2
+    },
+    {
+      "geoid": "1304",
+      "state": "GA",
+      "district": 4,
+      "adultMedianAge": 44.9,
+      "member": {
+        "bioguide": "J000288",
+        "name": "Henry C. \"Hank\" Johnson, Jr.",
+        "party": "D",
+        "dobMs": -481230000000
+      },
+      "gapYears": 26.9
+    },
+    {
+      "geoid": "1305",
+      "state": "GA",
+      "district": 5,
+      "adultMedianAge": 40.5,
+      "member": {
+        "bioguide": "W000788",
+        "name": "Nikema Williams",
+        "party": "D",
+        "dobMs": 270622800000
+      },
+      "gapYears": 7.5
+    },
+    {
+      "geoid": "1306",
+      "state": "GA",
+      "district": 6,
+      "adultMedianAge": 44.3,
+      "member": {
+        "bioguide": "M001208",
+        "name": "Lucy McBath",
+        "party": "D",
+        "dobMs": -302468400000
+      },
+      "gapYears": 21.8
+    },
+    {
+      "geoid": "1307",
+      "state": "GA",
+      "district": 7,
+      "adultMedianAge": 48.1,
+      "member": {
+        "bioguide": "M001218",
+        "name": "Richard McCormick",
+        "party": "R",
+        "dobMs": -38948400000
+      },
+      "gapYears": 9.7
+    },
+    {
+      "geoid": "1308",
+      "state": "GA",
+      "district": 8,
+      "adultMedianAge": 47,
+      "member": {
+        "bioguide": "S001189",
+        "name": "Austin Scott",
+        "party": "R",
+        "dobMs": -1882800000
+      },
+      "gapYears": 9.6
+    },
+    {
+      "geoid": "1309",
+      "state": "GA",
+      "district": 9,
+      "adultMedianAge": 49,
+      "member": {
+        "bioguide": "C001116",
+        "name": "Andrew S. Clyde",
+        "party": "R",
+        "dobMs": -192826800000
+      },
+      "gapYears": 13.6
+    },
+    {
+      "geoid": "1310",
+      "state": "GA",
+      "district": 10,
+      "adultMedianAge": 46.5,
+      "member": {
+        "bioguide": "C001129",
+        "name": "Mike Collins",
+        "party": "R",
+        "dobMs": -78951600000
+      },
+      "gapYears": 12.5
+    },
+    {
+      "geoid": "1311",
+      "state": "GA",
+      "district": 11,
+      "adultMedianAge": 47.7,
+      "member": {
+        "bioguide": "L000583",
+        "name": "Barry Loudermilk",
+        "party": "R",
+        "dobMs": -190234800000
+      },
+      "gapYears": 14.9
+    },
+    {
+      "geoid": "1312",
+      "state": "GA",
+      "district": 12,
+      "adultMedianAge": 46.4,
+      "member": {
+        "bioguide": "A000372",
+        "name": "Rick W. Allen",
+        "party": "R",
+        "dobMs": -572814000000
+      },
+      "gapYears": 28.3
+    },
+    {
+      "geoid": "1313",
+      "state": "GA",
+      "district": 13,
+      "adultMedianAge": 46.1,
+      "member": null,
+      "gapYears": null
+    },
+    {
+      "geoid": "1314",
+      "state": "GA",
+      "district": 14,
+      "adultMedianAge": 48.3,
+      "member": {
+        "bioguide": "F000485",
+        "name": "Clay Fuller",
+        "party": "R",
+        "dobMs": 355640400000
+      },
+      "gapYears": -3
+    },
+    {
+      "geoid": "1501",
+      "state": "HI",
+      "district": 1,
+      "adultMedianAge": 49.4,
+      "member": {
+        "bioguide": "C001055",
+        "name": "Ed Case",
+        "party": "D",
+        "dobMs": -544734000000
+      },
+      "gapYears": 24.4
+    },
+    {
+      "geoid": "1502",
+      "state": "HI",
+      "district": 2,
+      "adultMedianAge": 49.8,
+      "member": {
+        "bioguide": "T000487",
+        "name": "Jill N. Tokuda",
+        "party": "D",
+        "dobMs": 196837200000
+      },
+      "gapYears": 0.5
+    },
+    {
+      "geoid": "1601",
+      "state": "ID",
+      "district": 1,
+      "adultMedianAge": 48.5,
+      "member": {
+        "bioguide": "F000469",
+        "name": "Russ Fulcher",
+        "party": "R",
+        "dobMs": -246654000000
+      },
+      "gapYears": 15.9
+    },
+    {
+      "geoid": "1602",
+      "state": "ID",
+      "district": 2,
+      "adultMedianAge": 44.9,
+      "member": {
+        "bioguide": "S001148",
+        "name": "Michael K. Simpson",
+        "party": "R",
+        "dobMs": -609534000000
+      },
+      "gapYears": 31
+    },
+    {
+      "geoid": "1701",
+      "state": "IL",
+      "district": 1,
+      "adultMedianAge": 48.2,
+      "member": {
+        "bioguide": "J000309",
+        "name": "Jonathan L. Jackson",
+        "party": "D",
+        "dobMs": -125694000000
+      },
+      "gapYears": 12.3
+    },
+    {
+      "geoid": "1702",
+      "state": "IL",
+      "district": 2,
+      "adultMedianAge": 49.8,
+      "member": {
+        "bioguide": "K000385",
+        "name": "Robin L. Kelly",
+        "party": "D",
+        "dobMs": -431463600000
+      },
+      "gapYears": 20.4
+    },
+    {
+      "geoid": "1703",
+      "state": "IL",
+      "district": 3,
+      "adultMedianAge": 44.4,
+      "member": {
+        "bioguide": "R000617",
+        "name": "Delia C. Ramirez",
+        "party": "D",
+        "dobMs": 423378000000
+      },
+      "gapYears": -1.3
+    },
+    {
+      "geoid": "1704",
+      "state": "IL",
+      "district": 4,
+      "adultMedianAge": 46.2,
+      "member": {
+        "bioguide": "G000586",
+        "name": "Jesús G. \"Chuy\" García",
+        "party": "D",
+        "dobMs": -433018800000
+      },
+      "gapYears": 24.1
+    },
+    {
+      "geoid": "1705",
+      "state": "IL",
+      "district": 5,
+      "adultMedianAge": 43.7,
+      "member": {
+        "bioguide": "Q000023",
+        "name": "Mike Quigley",
+        "party": "D",
+        "dobMs": -353703600000
+      },
+      "gapYears": 24
+    },
+    {
+      "geoid": "1706",
+      "state": "IL",
+      "district": 6,
+      "adultMedianAge": 50.7,
+      "member": {
+        "bioguide": "C001117",
+        "name": "Sean Casten",
+        "party": "D",
+        "dobMs": 59720400000
+      },
+      "gapYears": 3.9
+    },
+    {
+      "geoid": "1707",
+      "state": "IL",
+      "district": 7,
+      "adultMedianAge": 39.9,
+      "member": {
+        "bioguide": "D000096",
+        "name": "Danny K. Davis",
+        "party": "D",
+        "dobMs": -893703600000
+      },
+      "gapYears": 45
+    },
+    {
+      "geoid": "1708",
+      "state": "IL",
+      "district": 8,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "K000391",
+        "name": "Raja Krishnamoorthi",
+        "party": "D",
+        "dobMs": 111906000000
+      },
+      "gapYears": 5.1
+    },
+    {
+      "geoid": "1709",
+      "state": "IL",
+      "district": 9,
+      "adultMedianAge": 48.3,
+      "member": {
+        "bioguide": "S001145",
+        "name": "Janice D. Schakowsky",
+        "party": "D",
+        "dobMs": -807908400000
+      },
+      "gapYears": 33.8
+    },
+    {
+      "geoid": "1710",
+      "state": "IL",
+      "district": 10,
+      "adultMedianAge": 49.2,
+      "member": {
+        "bioguide": "S001190",
+        "name": "Bradley Scott Schneider",
+        "party": "D",
+        "dobMs": -264020400000
+      },
+      "gapYears": 15.7
+    },
+    {
+      "geoid": "1711",
+      "state": "IL",
+      "district": 11,
+      "adultMedianAge": 47.8,
+      "member": {
+        "bioguide": "F000454",
+        "name": "Bill Foster",
+        "party": "D",
+        "dobMs": -449262000000
+      },
+      "gapYears": 23
+    },
+    {
+      "geoid": "1712",
+      "state": "IL",
+      "district": 12,
+      "adultMedianAge": 50.7,
+      "member": {
+        "bioguide": "B001295",
+        "name": "Mike Bost",
+        "party": "R",
+        "dobMs": -284151600000
+      },
+      "gapYears": 14.8
+    },
+    {
+      "geoid": "1713",
+      "state": "IL",
+      "district": 13,
+      "adultMedianAge": 45.2,
+      "member": {
+        "bioguide": "B001315",
+        "name": "Nikki Budzinski",
+        "party": "D",
+        "dobMs": 226904400000
+      },
+      "gapYears": 4.1
+    },
+    {
+      "geoid": "1714",
+      "state": "IL",
+      "district": 14,
+      "adultMedianAge": 46.7,
+      "member": {
+        "bioguide": "U000040",
+        "name": "Lauren Underwood",
+        "party": "D",
+        "dobMs": 528786000000
+      },
+      "gapYears": -6.9
+    },
+    {
+      "geoid": "1715",
+      "state": "IL",
+      "district": 15,
+      "adultMedianAge": 52.2,
+      "member": {
+        "bioguide": "M001211",
+        "name": "Mary E. Miller",
+        "party": "R",
+        "dobMs": -326574000000
+      },
+      "gapYears": 14.7
+    },
+    {
+      "geoid": "1716",
+      "state": "IL",
+      "district": 16,
+      "adultMedianAge": 51.4,
+      "member": {
+        "bioguide": "L000585",
+        "name": "Darin LaHood",
+        "party": "R",
+        "dobMs": -47070000000
+      },
+      "gapYears": 6.6
+    },
+    {
+      "geoid": "1717",
+      "state": "IL",
+      "district": 17,
+      "adultMedianAge": 47.1,
+      "member": {
+        "bioguide": "S001225",
+        "name": "Eric Sorensen",
+        "party": "D",
+        "dobMs": 195973200000
+      },
+      "gapYears": 3.2
+    },
+    {
+      "geoid": "1801",
+      "state": "IN",
+      "district": 1,
+      "adultMedianAge": 49.2,
+      "member": {
+        "bioguide": "M001214",
+        "name": "Frank J. Mrvan",
+        "party": "D",
+        "dobMs": -22446000000
+      },
+      "gapYears": 8
+    },
+    {
+      "geoid": "1802",
+      "state": "IN",
+      "district": 2,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "Y000067",
+        "name": "Rudy Yakym III",
+        "party": "R",
+        "dobMs": 446446800000
+      },
+      "gapYears": -5.5
+    },
+    {
+      "geoid": "1803",
+      "state": "IN",
+      "district": 3,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "S001188",
+        "name": "Marlin A. Stutzman",
+        "party": "R",
+        "dobMs": 210315600000
+      },
+      "gapYears": 1.9
+    },
+    {
+      "geoid": "1804",
+      "state": "IN",
+      "district": 4,
+      "adultMedianAge": 46.3,
+      "member": {
+        "bioguide": "B001307",
+        "name": "James R. Baird",
+        "party": "R",
+        "dobMs": -775594800000
+      },
+      "gapYears": 34.8
+    },
+    {
+      "geoid": "1805",
+      "state": "IN",
+      "district": 5,
+      "adultMedianAge": 47.8,
+      "member": {
+        "bioguide": "S000929",
+        "name": "Victoria Spartz",
+        "party": "R",
+        "dobMs": 276498000000
+      },
+      "gapYears": 0
+    },
+    {
+      "geoid": "1806",
+      "state": "IN",
+      "district": 6,
+      "adultMedianAge": 47.4,
+      "member": {
+        "bioguide": "S001229",
+        "name": "Jefferson Shreve",
+        "party": "R",
+        "dobMs": -134766000000
+      },
+      "gapYears": 13.4
+    },
+    {
+      "geoid": "1807",
+      "state": "IN",
+      "district": 7,
+      "adultMedianAge": 43.2,
+      "member": {
+        "bioguide": "C001072",
+        "name": "André Carson",
+        "party": "D",
+        "dobMs": 151131600000
+      },
+      "gapYears": 8.5
+    },
+    {
+      "geoid": "1808",
+      "state": "IN",
+      "district": 8,
+      "adultMedianAge": 49.1,
+      "member": {
+        "bioguide": "M001233",
+        "name": "Mark B. Messmer",
+        "party": "R",
+        "dobMs": -64522800000
+      },
+      "gapYears": 9.5
+    },
+    {
+      "geoid": "1809",
+      "state": "IN",
+      "district": 9,
+      "adultMedianAge": 47.7,
+      "member": {
+        "bioguide": "H001093",
+        "name": "Erin Houchin",
+        "party": "R",
+        "dobMs": 212389200000
+      },
+      "gapYears": 2.1
+    },
+    {
+      "geoid": "1901",
+      "state": "IA",
+      "district": 1,
+      "adultMedianAge": 48.1,
+      "member": {
+        "bioguide": "M001215",
+        "name": "Mariannette Miller-Meeks",
+        "party": "R",
+        "dobMs": -451940400000
+      },
+      "gapYears": 22.8
+    },
+    {
+      "geoid": "1902",
+      "state": "IA",
+      "district": 2,
+      "adultMedianAge": 49.5,
+      "member": {
+        "bioguide": "H001091",
+        "name": "Ashley Hinson",
+        "party": "R",
+        "dobMs": 425538000000
+      },
+      "gapYears": -6.4
+    },
+    {
+      "geoid": "1903",
+      "state": "IA",
+      "district": 3,
+      "adultMedianAge": 46.1,
+      "member": {
+        "bioguide": "N000193",
+        "name": "Zachary Nunn",
+        "party": "R",
+        "dobMs": 294642000000
+      },
+      "gapYears": 1.1
+    },
+    {
+      "geoid": "1904",
+      "state": "IA",
+      "district": 4,
+      "adultMedianAge": 48.6,
+      "member": {
+        "bioguide": "F000446",
+        "name": "Randy Feenstra",
+        "party": "R",
+        "dobMs": -30394800000
+      },
+      "gapYears": 8.9
+    },
+    {
+      "geoid": "2001",
+      "state": "KS",
+      "district": 1,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "M000871",
+        "name": "Tracey Mann",
+        "party": "R",
+        "dobMs": 219646800000
+      },
+      "gapYears": 4.6
+    },
+    {
+      "geoid": "2002",
+      "state": "KS",
+      "district": 2,
+      "adultMedianAge": 48.1,
+      "member": {
+        "bioguide": "S001228",
+        "name": "Derek Schmidt",
+        "party": "R",
+        "dobMs": -61239600000
+      },
+      "gapYears": 10.4
+    },
+    {
+      "geoid": "2003",
+      "state": "KS",
+      "district": 3,
+      "adultMedianAge": 47.2,
+      "member": {
+        "bioguide": "D000629",
+        "name": "Sharice Davids",
+        "party": "D",
+        "dobMs": 327819600000
+      },
+      "gapYears": -1
+    },
+    {
+      "geoid": "2004",
+      "state": "KS",
+      "district": 4,
+      "adultMedianAge": 47.2,
+      "member": {
+        "bioguide": "E000298",
+        "name": "Ron Estes",
+        "party": "R",
+        "dobMs": -424551600000
+      },
+      "gapYears": 22.8
+    },
+    {
+      "geoid": "2101",
+      "state": "KY",
+      "district": 1,
+      "adultMedianAge": 49.3,
+      "member": {
+        "bioguide": "C001108",
+        "name": "James Comer",
+        "party": "R",
+        "dobMs": 83048400000
+      },
+      "gapYears": 4.6
+    },
+    {
+      "geoid": "2102",
+      "state": "KY",
+      "district": 2,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "G000558",
+        "name": "Brett Guthrie",
+        "party": "R",
+        "dobMs": -185223600000
+      },
+      "gapYears": 14.4
+    },
+    {
+      "geoid": "2103",
+      "state": "KY",
+      "district": 3,
+      "adultMedianAge": 46.7,
+      "member": {
+        "bioguide": "M001220",
+        "name": "Morgan McGarvey",
+        "party": "D",
+        "dobMs": 314773200000
+      },
+      "gapYears": -0.1
+    },
+    {
+      "geoid": "2104",
+      "state": "KY",
+      "district": 4,
+      "adultMedianAge": 48.7,
+      "member": {
+        "bioguide": "M001184",
+        "name": "Thomas Massie",
+        "party": "R",
+        "dobMs": 32590800000
+      },
+      "gapYears": 6.8
+    },
+    {
+      "geoid": "2105",
+      "state": "KY",
+      "district": 5,
+      "adultMedianAge": 50.1,
+      "member": {
+        "bioguide": "R000395",
+        "name": "Harold Rogers",
+        "party": "R",
+        "dobMs": -1009911600000
+      },
+      "gapYears": 38.4
+    },
+    {
+      "geoid": "2106",
+      "state": "KY",
+      "district": 6,
+      "adultMedianAge": 45.6,
+      "member": {
+        "bioguide": "B001282",
+        "name": "Andy Barr",
+        "party": "R",
+        "dobMs": 112338000000
+      },
+      "gapYears": 7.4
+    },
+    {
+      "geoid": "2201",
+      "state": "LA",
+      "district": 1,
+      "adultMedianAge": 48.7,
+      "member": {
+        "bioguide": "S001176",
+        "name": "Steve Scalise",
+        "party": "R",
+        "dobMs": -133729200000
+      },
+      "gapYears": 12.1
+    },
+    {
+      "geoid": "2202",
+      "state": "LA",
+      "district": 2,
+      "adultMedianAge": 47.4,
+      "member": {
+        "bioguide": "C001125",
+        "name": "Troy A. Carter",
+        "party": "D",
+        "dobMs": -195159600000
+      },
+      "gapYears": 15.3
+    },
+    {
+      "geoid": "2203",
+      "state": "LA",
+      "district": 3,
+      "adultMedianAge": 47.6,
+      "member": {
+        "bioguide": "H001077",
+        "name": "Clay Higgins",
+        "party": "R",
+        "dobMs": -263674800000
+      },
+      "gapYears": 17.3
+    },
+    {
+      "geoid": "2204",
+      "state": "LA",
+      "district": 4,
+      "adultMedianAge": 48.3,
+      "member": {
+        "bioguide": "J000299",
+        "name": "Mike Johnson",
+        "party": "R",
+        "dobMs": 65595600000
+      },
+      "gapYears": 6.2
+    },
+    {
+      "geoid": "2205",
+      "state": "LA",
+      "district": 5,
+      "adultMedianAge": 46.9,
+      "member": {
+        "bioguide": "L000595",
+        "name": "Julia Letlow",
+        "party": "R",
+        "dobMs": 353566800000
+      },
+      "gapYears": -1.6
+    },
+    {
+      "geoid": "2206",
+      "state": "LA",
+      "district": 6,
+      "adultMedianAge": 45.8,
+      "member": {
+        "bioguide": "F000110",
+        "name": "Cleo Fields",
+        "party": "D",
+        "dobMs": -224362800000
+      },
+      "gapYears": 17.8
+    },
+    {
+      "geoid": "2301",
+      "state": "ME",
+      "district": 1,
+      "adultMedianAge": 52,
+      "member": {
+        "bioguide": "P000597",
+        "name": "Chellie Pingree",
+        "party": "D",
+        "dobMs": -465505200000
+      },
+      "gapYears": 19.3
+    },
+    {
+      "geoid": "2302",
+      "state": "ME",
+      "district": 2,
+      "adultMedianAge": 52.8,
+      "member": {
+        "bioguide": "G000592",
+        "name": "Jared F. Golden",
+        "party": "D",
+        "dobMs": 396421200000
+      },
+      "gapYears": -8.8
+    },
+    {
+      "geoid": "2401",
+      "state": "MD",
+      "district": 1,
+      "adultMedianAge": 50.9,
+      "member": {
+        "bioguide": "H001052",
+        "name": "Andy Harris",
+        "party": "R",
+        "dobMs": -408135600000
+      },
+      "gapYears": 18.6
+    },
+    {
+      "geoid": "2402",
+      "state": "MD",
+      "district": 2,
+      "adultMedianAge": 49,
+      "member": {
+        "bioguide": "O000176",
+        "name": "Johnny Olszewski, Jr.",
+        "party": "D",
+        "dobMs": 400482000000
+      },
+      "gapYears": -5.2
+    },
+    {
+      "geoid": "2403",
+      "state": "MD",
+      "district": 3,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "E000301",
+        "name": "Sarah Elfreth",
+        "party": "D",
+        "dobMs": 589784400000
+      },
+      "gapYears": -10.1
+    },
+    {
+      "geoid": "2404",
+      "state": "MD",
+      "district": 4,
+      "adultMedianAge": 45.8,
+      "member": {
+        "bioguide": "I000058",
+        "name": "Glenn Ivey",
+        "party": "D",
+        "dobMs": -279054000000
+      },
+      "gapYears": 19.6
+    },
+    {
+      "geoid": "2405",
+      "state": "MD",
+      "district": 5,
+      "adultMedianAge": 48.5,
+      "member": {
+        "bioguide": "H000874",
+        "name": "Steny H. Hoyer",
+        "party": "D",
+        "dobMs": -964119600000
+      },
+      "gapYears": 38.6
+    },
+    {
+      "geoid": "2406",
+      "state": "MD",
+      "district": 6,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "M001232",
+        "name": "April McClain Delaney",
+        "party": "D",
+        "dobMs": -176583600000
+      },
+      "gapYears": 14.1
+    },
+    {
+      "geoid": "2407",
+      "state": "MD",
+      "district": 7,
+      "adultMedianAge": 44.2,
+      "member": {
+        "bioguide": "M000687",
+        "name": "Kweisi Mfume",
+        "party": "D",
+        "dobMs": -668631600000
+      },
+      "gapYears": 33.5
+    },
+    {
+      "geoid": "2408",
+      "state": "MD",
+      "district": 8,
+      "adultMedianAge": 49.7,
+      "member": {
+        "bioguide": "R000606",
+        "name": "Jamie Raskin",
+        "party": "D",
+        "dobMs": -222548400000
+      },
+      "gapYears": 13.9
+    },
+    {
+      "geoid": "2501",
+      "state": "MA",
+      "district": 1,
+      "adultMedianAge": 49.5,
+      "member": {
+        "bioguide": "N000015",
+        "name": "Richard E. Neal",
+        "party": "D",
+        "dobMs": -658868400000
+      },
+      "gapYears": 27.9
+    },
+    {
+      "geoid": "2502",
+      "state": "MA",
+      "district": 2,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "M000312",
+        "name": "James P. McGovern",
+        "party": "D",
+        "dobMs": -319230000000
+      },
+      "gapYears": 18.3
+    },
+    {
+      "geoid": "2503",
+      "state": "MA",
+      "district": 3,
+      "adultMedianAge": 48.3,
+      "member": {
+        "bioguide": "T000482",
+        "name": "Lori Trahan",
+        "party": "D",
+        "dobMs": 120546000000
+      },
+      "gapYears": 4.4
+    },
+    {
+      "geoid": "2504",
+      "state": "MA",
+      "district": 4,
+      "adultMedianAge": 49.5,
+      "member": {
+        "bioguide": "A000148",
+        "name": "Jake Auchincloss",
+        "party": "D",
+        "dobMs": 570430800000
+      },
+      "gapYears": -11
+    },
+    {
+      "geoid": "2505",
+      "state": "MA",
+      "district": 5,
+      "adultMedianAge": 45.6,
+      "member": {
+        "bioguide": "C001101",
+        "name": "Katherine M. Clark",
+        "party": "D",
+        "dobMs": -203886000000
+      },
+      "gapYears": 17.4
+    },
+    {
+      "geoid": "2506",
+      "state": "MA",
+      "district": 6,
+      "adultMedianAge": 50.8,
+      "member": {
+        "bioguide": "M001196",
+        "name": "Seth Moulton",
+        "party": "D",
+        "dobMs": 278053200000
+      },
+      "gapYears": -3.1
+    },
+    {
+      "geoid": "2507",
+      "state": "MA",
+      "district": 7,
+      "adultMedianAge": 37,
+      "member": {
+        "bioguide": "P000617",
+        "name": "Ayanna Pressley",
+        "party": "D",
+        "dobMs": 129099600000
+      },
+      "gapYears": 15.4
+    },
+    {
+      "geoid": "2508",
+      "state": "MA",
+      "district": 8,
+      "adultMedianAge": 46.4,
+      "member": {
+        "bioguide": "L000562",
+        "name": "Stephen F. Lynch",
+        "party": "D",
+        "dobMs": -465678000000
+      },
+      "gapYears": 24.9
+    },
+    {
+      "geoid": "2509",
+      "state": "MA",
+      "district": 9,
+      "adultMedianAge": 54.4,
+      "member": {
+        "bioguide": "K000375",
+        "name": "William R. Keating",
+        "party": "D",
+        "dobMs": -546548400000
+      },
+      "gapYears": 19.5
+    },
+    {
+      "geoid": "2601",
+      "state": "MI",
+      "district": 1,
+      "adultMedianAge": 55.1,
+      "member": {
+        "bioguide": "B001301",
+        "name": "Jack Bergman",
+        "party": "R",
+        "dobMs": -723063600000
+      },
+      "gapYears": 24.4
+    },
+    {
+      "geoid": "2602",
+      "state": "MI",
+      "district": 2,
+      "adultMedianAge": 50.9,
+      "member": {
+        "bioguide": "M001194",
+        "name": "John R. Moolenaar",
+        "party": "R",
+        "dobMs": -273006000000
+      },
+      "gapYears": 14.3
+    },
+    {
+      "geoid": "2603",
+      "state": "MI",
+      "district": 3,
+      "adultMedianAge": 44.5,
+      "member": {
+        "bioguide": "S001221",
+        "name": "Hillary J. Scholten",
+        "party": "D",
+        "dobMs": 383202000000
+      },
+      "gapYears": -0.1
+    },
+    {
+      "geoid": "2604",
+      "state": "MI",
+      "district": 4,
+      "adultMedianAge": 46.7,
+      "member": {
+        "bioguide": "H001058",
+        "name": "Bill Huizenga",
+        "party": "R",
+        "dobMs": -28926000000
+      },
+      "gapYears": 10.8
+    },
+    {
+      "geoid": "2605",
+      "state": "MI",
+      "district": 5,
+      "adultMedianAge": 51.3,
+      "member": {
+        "bioguide": "W000798",
+        "name": "Tim Walberg",
+        "party": "R",
+        "dobMs": -590871600000
+      },
+      "gapYears": 24
+    },
+    {
+      "geoid": "2606",
+      "state": "MI",
+      "district": 6,
+      "adultMedianAge": 47.2,
+      "member": {
+        "bioguide": "D000624",
+        "name": "Debbie Dingell",
+        "party": "D",
+        "dobMs": -508273200000
+      },
+      "gapYears": 25.4
+    },
+    {
+      "geoid": "2607",
+      "state": "MI",
+      "district": 7,
+      "adultMedianAge": 47.8,
+      "member": {
+        "bioguide": "B001321",
+        "name": "Tom Barrett",
+        "party": "R",
+        "dobMs": 357454800000
+      },
+      "gapYears": -2.6
+    },
+    {
+      "geoid": "2608",
+      "state": "MI",
+      "district": 8,
+      "adultMedianAge": 50.7,
+      "member": {
+        "bioguide": "M001237",
+        "name": "Kristen McDonald Rivet",
+        "party": "D",
+        "dobMs": 16520400000
+      },
+      "gapYears": 5.3
+    },
+    {
+      "geoid": "2609",
+      "state": "MI",
+      "district": 9,
+      "adultMedianAge": 52,
+      "member": {
+        "bioguide": "M001136",
+        "name": "Lisa C. McClain",
+        "party": "R",
+        "dobMs": -117918000000
+      },
+      "gapYears": 8.3
+    },
+    {
+      "geoid": "2610",
+      "state": "MI",
+      "district": 10,
+      "adultMedianAge": 49.2,
+      "member": {
+        "bioguide": "J000307",
+        "name": "John James",
+        "party": "R",
+        "dobMs": 360824400000
+      },
+      "gapYears": -4.1
+    },
+    {
+      "geoid": "2611",
+      "state": "MI",
+      "district": 11,
+      "adultMedianAge": 48.5,
+      "member": {
+        "bioguide": "S001215",
+        "name": "Haley M. Stevens",
+        "party": "D",
+        "dobMs": 425278800000
+      },
+      "gapYears": -5.4
+    },
+    {
+      "geoid": "2612",
+      "state": "MI",
+      "district": 12,
+      "adultMedianAge": 48.6,
+      "member": {
+        "bioguide": "T000481",
+        "name": "Rashida Tlaib",
+        "party": "D",
+        "dobMs": 207032400000
+      },
+      "gapYears": 1.4
+    },
+    {
+      "geoid": "2613",
+      "state": "MI",
+      "district": 13,
+      "adultMedianAge": 46.2,
+      "member": {
+        "bioguide": "T000488",
+        "name": "Shri Thanedar",
+        "party": "D",
+        "dobMs": -468874800000
+      },
+      "gapYears": 25.2
+    },
+    {
+      "geoid": "2701",
+      "state": "MN",
+      "district": 1,
+      "adultMedianAge": 48.2,
+      "member": {
+        "bioguide": "F000475",
+        "name": "Brad Finstad",
+        "party": "R",
+        "dobMs": 202280400000
+      },
+      "gapYears": 1.9
+    },
+    {
+      "geoid": "2702",
+      "state": "MN",
+      "district": 2,
+      "adultMedianAge": 47.1,
+      "member": {
+        "bioguide": "C001119",
+        "name": "Angie Craig",
+        "party": "D",
+        "dobMs": 66891600000
+      },
+      "gapYears": 7.3
+    },
+    {
+      "geoid": "2703",
+      "state": "MN",
+      "district": 3,
+      "adultMedianAge": 49.6,
+      "member": {
+        "bioguide": "M001234",
+        "name": "Kelly Morrison",
+        "party": "D",
+        "dobMs": -28753200000
+      },
+      "gapYears": 7.8
+    },
+    {
+      "geoid": "2704",
+      "state": "MN",
+      "district": 4,
+      "adultMedianAge": 46,
+      "member": {
+        "bioguide": "M001143",
+        "name": "Betty McCollum",
+        "party": "D",
+        "dobMs": -488314800000
+      },
+      "gapYears": 26
+    },
+    {
+      "geoid": "2705",
+      "state": "MN",
+      "district": 5,
+      "adultMedianAge": 41.6,
+      "member": {
+        "bioguide": "O000173",
+        "name": "Ilhan Omar",
+        "party": "D",
+        "dobMs": 371019600000
+      },
+      "gapYears": 3.2
+    },
+    {
+      "geoid": "2706",
+      "state": "MN",
+      "district": 6,
+      "adultMedianAge": 47,
+      "member": {
+        "bioguide": "E000294",
+        "name": "Tom Emmer",
+        "party": "R",
+        "dobMs": -278708400000
+      },
+      "gapYears": 18.4
+    },
+    {
+      "geoid": "2707",
+      "state": "MN",
+      "district": 7,
+      "adultMedianAge": 51.4,
+      "member": {
+        "bioguide": "F000470",
+        "name": "Michelle Fischbach",
+        "party": "R",
+        "dobMs": -131310000000
+      },
+      "gapYears": 9.3
+    },
+    {
+      "geoid": "2708",
+      "state": "MN",
+      "district": 8,
+      "adultMedianAge": 51.8,
+      "member": {
+        "bioguide": "S001212",
+        "name": "Pete Stauber",
+        "party": "R",
+        "dobMs": -115066800000
+      },
+      "gapYears": 8.4
+    },
+    {
+      "geoid": "2801",
+      "state": "MS",
+      "district": 1,
+      "adultMedianAge": 47.4,
+      "member": {
+        "bioguide": "K000388",
+        "name": "Trent Kelly",
+        "party": "R",
+        "dobMs": -121114800000
+      },
+      "gapYears": 13
+    },
+    {
+      "geoid": "2802",
+      "state": "MS",
+      "district": 2,
+      "adultMedianAge": 49.2,
+      "member": {
+        "bioguide": "T000193",
+        "name": "Bennie G. Thompson",
+        "party": "D",
+        "dobMs": -691959600000
+      },
+      "gapYears": 29.3
+    },
+    {
+      "geoid": "2803",
+      "state": "MS",
+      "district": 3,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "G000591",
+        "name": "Michael Guest",
+        "party": "R",
+        "dobMs": 2955600000
+      },
+      "gapYears": 8.4
+    },
+    {
+      "geoid": "2804",
+      "state": "MS",
+      "district": 4,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "E000235",
+        "name": "Mike Ezell",
+        "party": "R",
+        "dobMs": -338929200000
+      },
+      "gapYears": 18.9
+    },
+    {
+      "geoid": "2901",
+      "state": "MO",
+      "district": 1,
+      "adultMedianAge": 45.7,
+      "member": {
+        "bioguide": "B001324",
+        "name": "Wesley Bell",
+        "party": "D",
+        "dobMs": 152859600000
+      },
+      "gapYears": 6
+    },
+    {
+      "geoid": "2902",
+      "state": "MO",
+      "district": 2,
+      "adultMedianAge": 50.7,
+      "member": {
+        "bioguide": "W000812",
+        "name": "Ann Wagner",
+        "party": "R",
+        "dobMs": -230410800000
+      },
+      "gapYears": 13.1
+    },
+    {
+      "geoid": "2903",
+      "state": "MO",
+      "district": 3,
+      "adultMedianAge": 48.3,
+      "member": {
+        "bioguide": "O000177",
+        "name": "Robert F. Onder, Jr.",
+        "party": "R",
+        "dobMs": -252010800000
+      },
+      "gapYears": 16.2
+    },
+    {
+      "geoid": "2904",
+      "state": "MO",
+      "district": 4,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "A000379",
+        "name": "Mark Alford",
+        "party": "R",
+        "dobMs": -197060400000
+      },
+      "gapYears": 14.4
+    },
+    {
+      "geoid": "2905",
+      "state": "MO",
+      "district": 5,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "C001061",
+        "name": "Emanuel Cleaver",
+        "party": "D",
+        "dobMs": -794689200000
+      },
+      "gapYears": 36.7
+    },
+    {
+      "geoid": "2906",
+      "state": "MO",
+      "district": 6,
+      "adultMedianAge": 49.5,
+      "member": {
+        "bioguide": "G000546",
+        "name": "Sam Graves",
+        "party": "R",
+        "dobMs": -194122800000
+      },
+      "gapYears": 13.2
+    },
+    {
+      "geoid": "2907",
+      "state": "MO",
+      "district": 7,
+      "adultMedianAge": 47.7,
+      "member": {
+        "bioguide": "B001316",
+        "name": "Eric Burlison",
+        "party": "R",
+        "dobMs": 213080400000
+      },
+      "gapYears": 2.1
+    },
+    {
+      "geoid": "2908",
+      "state": "MO",
+      "district": 8,
+      "adultMedianAge": 49.4,
+      "member": {
+        "bioguide": "S001195",
+        "name": "Jason Smith",
+        "party": "R",
+        "dobMs": 329979600000
+      },
+      "gapYears": -3.3
+    },
+    {
+      "geoid": "3001",
+      "state": "MT",
+      "district": 1,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "Z000018",
+        "name": "Ryan K. Zinke",
+        "party": "R",
+        "dobMs": -257713200000
+      },
+      "gapYears": 16.3
+    },
+    {
+      "geoid": "3002",
+      "state": "MT",
+      "district": 2,
+      "adultMedianAge": 50,
+      "member": {
+        "bioguide": "D000634",
+        "name": "Troy Downing",
+        "party": "R",
+        "dobMs": -89319600000
+      },
+      "gapYears": 9.4
+    },
+    {
+      "geoid": "3101",
+      "state": "NE",
+      "district": 1,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "F000474",
+        "name": "Mike Flood",
+        "party": "R",
+        "dobMs": 162363600000
+      },
+      "gapYears": 6.4
+    },
+    {
+      "geoid": "3102",
+      "state": "NE",
+      "district": 2,
+      "adultMedianAge": 44.7,
+      "member": {
+        "bioguide": "B001298",
+        "name": "Don Bacon",
+        "party": "R",
+        "dobMs": -201294000000
+      },
+      "gapYears": 18.2
+    },
+    {
+      "geoid": "3103",
+      "state": "NE",
+      "district": 3,
+      "adultMedianAge": 50.6,
+      "member": {
+        "bioguide": "S001172",
+        "name": "Adrian Smith",
+        "party": "R",
+        "dobMs": 30430800000
+      },
+      "gapYears": 5
+    },
+    {
+      "geoid": "3201",
+      "state": "NV",
+      "district": 1,
+      "adultMedianAge": 47.1,
+      "member": {
+        "bioguide": "T000468",
+        "name": "Dina Titus",
+        "party": "D",
+        "dobMs": -618865200000
+      },
+      "gapYears": 29
+    },
+    {
+      "geoid": "3202",
+      "state": "NV",
+      "district": 2,
+      "adultMedianAge": 48.7,
+      "member": {
+        "bioguide": "A000369",
+        "name": "Mark E. Amodei",
+        "party": "R",
+        "dobMs": -364676400000
+      },
+      "gapYears": 19.4
+    },
+    {
+      "geoid": "3203",
+      "state": "NV",
+      "district": 3,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "L000590",
+        "name": "Susie Lee",
+        "party": "D",
+        "dobMs": -99428400000
+      },
+      "gapYears": 11.7
+    },
+    {
+      "geoid": "3204",
+      "state": "NV",
+      "district": 4,
+      "adultMedianAge": 45.5,
+      "member": {
+        "bioguide": "H001066",
+        "name": "Steven Horsford",
+        "party": "D",
+        "dobMs": 104907600000
+      },
+      "gapYears": 7.7
+    },
+    {
+      "geoid": "3301",
+      "state": "NH",
+      "district": 1,
+      "adultMedianAge": 51.1,
+      "member": {
+        "bioguide": "P000614",
+        "name": "Chris Pappas",
+        "party": "D",
+        "dobMs": 328942800000
+      },
+      "gapYears": -5
+    },
+    {
+      "geoid": "3302",
+      "state": "NH",
+      "district": 2,
+      "adultMedianAge": 51.3,
+      "member": {
+        "bioguide": "G000604",
+        "name": "Maggie Goodlander",
+        "party": "D",
+        "dobMs": 531464400000
+      },
+      "gapYears": -11.6
+    },
+    {
+      "geoid": "3401",
+      "state": "NJ",
+      "district": 1,
+      "adultMedianAge": 47.6,
+      "member": {
+        "bioguide": "N000188",
+        "name": "Donald Norcross",
+        "party": "D",
+        "dobMs": -348778800000
+      },
+      "gapYears": 20
+    },
+    {
+      "geoid": "3402",
+      "state": "NJ",
+      "district": 2,
+      "adultMedianAge": 52,
+      "member": {
+        "bioguide": "V000133",
+        "name": "Jefferson Van Drew",
+        "party": "R",
+        "dobMs": -531860400000
+      },
+      "gapYears": 21.4
+    },
+    {
+      "geoid": "3403",
+      "state": "NJ",
+      "district": 3,
+      "adultMedianAge": 50.2,
+      "member": {
+        "bioguide": "C001136",
+        "name": "Herbert C. Conaway, Jr.",
+        "party": "D",
+        "dobMs": -218401200000
+      },
+      "gapYears": 13.3
+    },
+    {
+      "geoid": "3404",
+      "state": "NJ",
+      "district": 4,
+      "adultMedianAge": 53.1,
+      "member": {
+        "bioguide": "S000522",
+        "name": "Christopher H. Smith",
+        "party": "R",
+        "dobMs": -531082800000
+      },
+      "gapYears": 20.3
+    },
+    {
+      "geoid": "3405",
+      "state": "NJ",
+      "district": 5,
+      "adultMedianAge": 51,
+      "member": {
+        "bioguide": "G000583",
+        "name": "Josh Gottheimer",
+        "party": "D",
+        "dobMs": 163486800000
+      },
+      "gapYears": 0.4
+    },
+    {
+      "geoid": "3406",
+      "state": "NJ",
+      "district": 6,
+      "adultMedianAge": 47,
+      "member": {
+        "bioguide": "P000034",
+        "name": "Frank Pallone, Jr.",
+        "party": "D",
+        "dobMs": -573505200000
+      },
+      "gapYears": 27.7
+    },
+    {
+      "geoid": "3407",
+      "state": "NJ",
+      "district": 7,
+      "adultMedianAge": 51.5,
+      "member": {
+        "bioguide": "K000398",
+        "name": "Thomas H. Kean, Jr.",
+        "party": "R",
+        "dobMs": -41713200000
+      },
+      "gapYears": 6.4
+    },
+    {
+      "geoid": "3408",
+      "state": "NJ",
+      "district": 8,
+      "adultMedianAge": 41,
+      "member": {
+        "bioguide": "M001226",
+        "name": "Robert Menendez",
+        "party": "D",
+        "dobMs": 489992400000
+      },
+      "gapYears": 0
+    },
+    {
+      "geoid": "3409",
+      "state": "NJ",
+      "district": 9,
+      "adultMedianAge": 47.4,
+      "member": {
+        "bioguide": "P000621",
+        "name": "Nellie Pou",
+        "party": "D",
+        "dobMs": -429735600000
+      },
+      "gapYears": 22.8
+    },
+    {
+      "geoid": "3410",
+      "state": "NJ",
+      "district": 10,
+      "adultMedianAge": 45.6,
+      "member": {
+        "bioguide": "M001229",
+        "name": "LaMonica McIver",
+        "party": "D",
+        "dobMs": 519627600000
+      },
+      "gapYears": -5.5
+    },
+    {
+      "geoid": "3411",
+      "state": "NJ",
+      "district": 11,
+      "adultMedianAge": 49.2,
+      "member": {
+        "bioguide": "M001246",
+        "name": "Analilia Mejia",
+        "party": "D",
+        "dobMs": 240814800000
+      },
+      "gapYears": -0.3
+    },
+    {
+      "geoid": "3412",
+      "state": "NJ",
+      "district": 12,
+      "adultMedianAge": 47.4,
+      "member": {
+        "bioguide": "W000822",
+        "name": "Bonnie Watson Coleman",
+        "party": "D",
+        "dobMs": -785790000000
+      },
+      "gapYears": 34
+    },
+    {
+      "geoid": "3501",
+      "state": "NM",
+      "district": 1,
+      "adultMedianAge": 48.9,
+      "member": {
+        "bioguide": "S001218",
+        "name": "Melanie A. Stansbury",
+        "party": "D",
+        "dobMs": 286606800000
+      },
+      "gapYears": -1.4
+    },
+    {
+      "geoid": "3502",
+      "state": "NM",
+      "district": 2,
+      "adultMedianAge": 46.9,
+      "member": {
+        "bioguide": "V000136",
+        "name": "Gabe Vasquez",
+        "party": "D",
+        "dobMs": 460357200000
+      },
+      "gapYears": -4.9
+    },
+    {
+      "geoid": "3503",
+      "state": "NM",
+      "district": 3,
+      "adultMedianAge": 48.9,
+      "member": {
+        "bioguide": "L000273",
+        "name": "Teresa Leger Fernandez",
+        "party": "D",
+        "dobMs": -331498800000
+      },
+      "gapYears": 18.1
+    },
+    {
+      "geoid": "3601",
+      "state": "NY",
+      "district": 1,
+      "adultMedianAge": 51.9,
+      "member": {
+        "bioguide": "L000598",
+        "name": "Nick LaLota",
+        "party": "R",
+        "dobMs": 267426000000
+      },
+      "gapYears": -3.8
+    },
+    {
+      "geoid": "3602",
+      "state": "NY",
+      "district": 2,
+      "adultMedianAge": 48.6,
+      "member": {
+        "bioguide": "G000597",
+        "name": "Andrew R. Garbarino",
+        "party": "R",
+        "dobMs": 465109200000
+      },
+      "gapYears": -6.8
+    },
+    {
+      "geoid": "3603",
+      "state": "NY",
+      "district": 3,
+      "adultMedianAge": 53.1,
+      "member": {
+        "bioguide": "S001201",
+        "name": "Thomas R. Suozzi",
+        "party": "D",
+        "dobMs": -231534000000
+      },
+      "gapYears": 10.8
+    },
+    {
+      "geoid": "3604",
+      "state": "NY",
+      "district": 4,
+      "adultMedianAge": 49.5,
+      "member": {
+        "bioguide": "G000602",
+        "name": "Laura Gillen",
+        "party": "D",
+        "dobMs": -15102000000
+      },
+      "gapYears": 7.5
+    },
+    {
+      "geoid": "3605",
+      "state": "NY",
+      "district": 5,
+      "adultMedianAge": 50.1,
+      "member": {
+        "bioguide": "M001137",
+        "name": "Gregory W. Meeks",
+        "party": "D",
+        "dobMs": -513370800000
+      },
+      "gapYears": 22.7
+    },
+    {
+      "geoid": "3606",
+      "state": "NY",
+      "district": 6,
+      "adultMedianAge": 50.8,
+      "member": {
+        "bioguide": "M001188",
+        "name": "Grace Meng",
+        "party": "D",
+        "dobMs": 181371600000
+      },
+      "gapYears": 0
+    },
+    {
+      "geoid": "3607",
+      "state": "NY",
+      "district": 7,
+      "adultMedianAge": 39.3,
+      "member": {
+        "bioguide": "V000081",
+        "name": "Nydia M. Velázquez",
+        "party": "D",
+        "dobMs": -529009200000
+      },
+      "gapYears": 34
+    },
+    {
+      "geoid": "3608",
+      "state": "NY",
+      "district": 8,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "J000294",
+        "name": "Hakeem S. Jeffries",
+        "party": "D",
+        "dobMs": 18594000000
+      },
+      "gapYears": 7.9
+    },
+    {
+      "geoid": "3609",
+      "state": "NY",
+      "district": 9,
+      "adultMedianAge": 46,
+      "member": {
+        "bioguide": "C001067",
+        "name": "Yvette D. Clarke",
+        "party": "D",
+        "dobMs": -161290800000
+      },
+      "gapYears": 15.6
+    },
+    {
+      "geoid": "3610",
+      "state": "NY",
+      "district": 10,
+      "adultMedianAge": 41.5,
+      "member": {
+        "bioguide": "G000599",
+        "name": "Daniel S. Goldman",
+        "party": "D",
+        "dobMs": 194158800000
+      },
+      "gapYears": 8.9
+    },
+    {
+      "geoid": "3611",
+      "state": "NY",
+      "district": 11,
+      "adultMedianAge": 49.1,
+      "member": {
+        "bioguide": "M000317",
+        "name": "Nicole Malliotakis",
+        "party": "R",
+        "dobMs": 342766800000
+      },
+      "gapYears": -3.4
+    },
+    {
+      "geoid": "3612",
+      "state": "NY",
+      "district": 12,
+      "adultMedianAge": 43.8,
+      "member": {
+        "bioguide": "N000002",
+        "name": "Jerrold Nadler",
+        "party": "D",
+        "dobMs": -711745200000
+      },
+      "gapYears": 35.3
+    },
+    {
+      "geoid": "3613",
+      "state": "NY",
+      "district": 13,
+      "adultMedianAge": 46.1,
+      "member": {
+        "bioguide": "E000297",
+        "name": "Adriano Espaillat",
+        "party": "D",
+        "dobMs": -481662000000
+      },
+      "gapYears": 25.7
+    },
+    {
+      "geoid": "3614",
+      "state": "NY",
+      "district": 14,
+      "adultMedianAge": 44.1,
+      "member": {
+        "bioguide": "O000172",
+        "name": "Alexandria Ocasio-Cortez",
+        "party": "D",
+        "dobMs": 624258000000
+      },
+      "gapYears": -7.3
+    },
+    {
+      "geoid": "3615",
+      "state": "NY",
+      "district": 15,
+      "adultMedianAge": 45.3,
+      "member": {
+        "bioguide": "T000486",
+        "name": "Ritchie Torres",
+        "party": "D",
+        "dobMs": 574146000000
+      },
+      "gapYears": -7
+    },
+    {
+      "geoid": "3616",
+      "state": "NY",
+      "district": 16,
+      "adultMedianAge": 49.2,
+      "member": {
+        "bioguide": "L000606",
+        "name": "George Latimer",
+        "party": "D",
+        "dobMs": -508359600000
+      },
+      "gapYears": 23.4
+    },
+    {
+      "geoid": "3617",
+      "state": "NY",
+      "district": 17,
+      "adultMedianAge": 50.3,
+      "member": {
+        "bioguide": "L000599",
+        "name": "Michael Lawler",
+        "party": "R",
+        "dobMs": 526626000000
+      },
+      "gapYears": -10.4
+    },
+    {
+      "geoid": "3618",
+      "state": "NY",
+      "district": 18,
+      "adultMedianAge": 48.4,
+      "member": {
+        "bioguide": "R000579",
+        "name": "Patrick Ryan",
+        "party": "D",
+        "dobMs": 386139600000
+      },
+      "gapYears": -4.1
+    },
+    {
+      "geoid": "3619",
+      "state": "NY",
+      "district": 19,
+      "adultMedianAge": 49.9,
+      "member": {
+        "bioguide": "R000622",
+        "name": "Josh Riley",
+        "party": "D",
+        "dobMs": 348901200000
+      },
+      "gapYears": -4.4
+    },
+    {
+      "geoid": "3620",
+      "state": "NY",
+      "district": 20,
+      "adultMedianAge": 47.6,
+      "member": {
+        "bioguide": "T000469",
+        "name": "Paul Tonko",
+        "party": "D",
+        "dobMs": -648154800000
+      },
+      "gapYears": 29.5
+    },
+    {
+      "geoid": "3621",
+      "state": "NY",
+      "district": 21,
+      "adultMedianAge": 51.3,
+      "member": {
+        "bioguide": "S001196",
+        "name": "Elise M. Stefanik",
+        "party": "R",
+        "dobMs": 457592400000
+      },
+      "gapYears": -9.3
+    },
+    {
+      "geoid": "3622",
+      "state": "NY",
+      "district": 22,
+      "adultMedianAge": 49.2,
+      "member": {
+        "bioguide": "M001231",
+        "name": "John W. Mannion",
+        "party": "D",
+        "dobMs": -46810800000
+      },
+      "gapYears": 8.8
+    },
+    {
+      "geoid": "3623",
+      "state": "NY",
+      "district": 23,
+      "adultMedianAge": 52.2,
+      "member": {
+        "bioguide": "L000600",
+        "name": "Nicholas A. Langworthy",
+        "party": "R",
+        "dobMs": 352098000000
+      },
+      "gapYears": -6.8
+    },
+    {
+      "geoid": "3624",
+      "state": "NY",
+      "district": 24,
+      "adultMedianAge": 51.6,
+      "member": {
+        "bioguide": "T000478",
+        "name": "Claudia Tenney",
+        "party": "R",
+        "dobMs": -281041200000
+      },
+      "gapYears": 13.8
+    },
+    {
+      "geoid": "3625",
+      "state": "NY",
+      "district": 25,
+      "adultMedianAge": 48.7,
+      "member": {
+        "bioguide": "M001206",
+        "name": "Joseph D. Morelle",
+        "party": "D",
+        "dobMs": -400014000000
+      },
+      "gapYears": 20.5
+    },
+    {
+      "geoid": "3626",
+      "state": "NY",
+      "district": 26,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "K000402",
+        "name": "Timothy M. Kennedy",
+        "party": "D",
+        "dobMs": 214635600000
+      },
+      "gapYears": 1.8
+    },
+    {
+      "geoid": "3701",
+      "state": "NC",
+      "district": 1,
+      "adultMedianAge": 51.1,
+      "member": {
+        "bioguide": "D000230",
+        "name": "Donald G. Davis",
+        "party": "D",
+        "dobMs": 52290000000
+      },
+      "gapYears": 3.8
+    },
+    {
+      "geoid": "3702",
+      "state": "NC",
+      "district": 2,
+      "adultMedianAge": 43.5,
+      "member": {
+        "bioguide": "R000305",
+        "name": "Deborah K. Ross",
+        "party": "D",
+        "dobMs": -206218800000
+      },
+      "gapYears": 19.6
+    },
+    {
+      "geoid": "3703",
+      "state": "NC",
+      "district": 3,
+      "adultMedianAge": 46.1,
+      "member": {
+        "bioguide": "M001210",
+        "name": "Gregory F. Murphy",
+        "party": "R",
+        "dobMs": -215463600000
+      },
+      "gapYears": 17.3
+    },
+    {
+      "geoid": "3704",
+      "state": "NC",
+      "district": 4,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "F000477",
+        "name": "Valerie P. Foushee",
+        "party": "D",
+        "dobMs": -430858800000
+      },
+      "gapYears": 25.2
+    },
+    {
+      "geoid": "3705",
+      "state": "NC",
+      "district": 5,
+      "adultMedianAge": 49.8,
+      "member": {
+        "bioguide": "F000450",
+        "name": "Virginia Foxx",
+        "party": "R",
+        "dobMs": -836593200000
+      },
+      "gapYears": 33.2
+    },
+    {
+      "geoid": "3706",
+      "state": "NC",
+      "district": 6,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "M001240",
+        "name": "Addison P. McDowell",
+        "party": "R",
+        "dobMs": 759128400000
+      },
+      "gapYears": -15.4
+    },
+    {
+      "geoid": "3707",
+      "state": "NC",
+      "district": 7,
+      "adultMedianAge": 51.1,
+      "member": {
+        "bioguide": "R000603",
+        "name": "David Rouzer",
+        "party": "R",
+        "dobMs": 67064400000
+      },
+      "gapYears": 3.3
+    },
+    {
+      "geoid": "3708",
+      "state": "NC",
+      "district": 8,
+      "adultMedianAge": 49,
+      "member": {
+        "bioguide": "H001102",
+        "name": "Mark Harris",
+        "party": "R",
+        "dobMs": -116449200000
+      },
+      "gapYears": 11.2
+    },
+    {
+      "geoid": "3709",
+      "state": "NC",
+      "district": 9,
+      "adultMedianAge": 47.2,
+      "member": {
+        "bioguide": "H001067",
+        "name": "Richard Hudson",
+        "party": "R",
+        "dobMs": 58078800000
+      },
+      "gapYears": 7.5
+    },
+    {
+      "geoid": "3710",
+      "state": "NC",
+      "district": 10,
+      "adultMedianAge": 49.6,
+      "member": {
+        "bioguide": "H001101",
+        "name": "Pat Harrigan",
+        "party": "R",
+        "dobMs": 551250000000
+      },
+      "gapYears": -10.5
+    },
+    {
+      "geoid": "3711",
+      "state": "NC",
+      "district": 11,
+      "adultMedianAge": 52.8,
+      "member": {
+        "bioguide": "E000246",
+        "name": "Chuck Edwards",
+        "party": "R",
+        "dobMs": -293482800000
+      },
+      "gapYears": 13
+    },
+    {
+      "geoid": "3712",
+      "state": "NC",
+      "district": 12,
+      "adultMedianAge": 39.9,
+      "member": {
+        "bioguide": "A000370",
+        "name": "Alma S. Adams",
+        "party": "D",
+        "dobMs": -744750000000
+      },
+      "gapYears": 40.2
+    },
+    {
+      "geoid": "3713",
+      "state": "NC",
+      "district": 13,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "K000405",
+        "name": "Brad Knott",
+        "party": "R",
+        "dobMs": 514098000000
+      },
+      "gapYears": -7.7
+    },
+    {
+      "geoid": "3714",
+      "state": "NC",
+      "district": 14,
+      "adultMedianAge": 49.1,
+      "member": {
+        "bioguide": "M001236",
+        "name": "Tim Moore",
+        "party": "R",
+        "dobMs": 23691600000
+      },
+      "gapYears": 6.7
+    },
+    {
+      "geoid": "3800",
+      "state": "ND",
+      "district": 0,
+      "adultMedianAge": 44.7,
+      "member": {
+        "bioguide": "F000482",
+        "name": "Julie Fedorchak",
+        "party": "R",
+        "dobMs": -39726000000
+      },
+      "gapYears": 13.1
+    },
+    {
+      "geoid": "3901",
+      "state": "OH",
+      "district": 1,
+      "adultMedianAge": 45.2,
+      "member": {
+        "bioguide": "L000601",
+        "name": "Greg Landsman",
+        "party": "D",
+        "dobMs": 218523600000
+      },
+      "gapYears": 4.4
+    },
+    {
+      "geoid": "3902",
+      "state": "OH",
+      "district": 2,
+      "adultMedianAge": 50,
+      "member": {
+        "bioguide": "T000490",
+        "name": "David J. Taylor",
+        "party": "R",
+        "dobMs": -3956400000
+      },
+      "gapYears": 6.7
+    },
+    {
+      "geoid": "3903",
+      "state": "OH",
+      "district": 3,
+      "adultMedianAge": 41.7,
+      "member": {
+        "bioguide": "B001281",
+        "name": "Joyce Beatty",
+        "party": "D",
+        "dobMs": -625086000000
+      },
+      "gapYears": 34.6
+    },
+    {
+      "geoid": "3904",
+      "state": "OH",
+      "district": 4,
+      "adultMedianAge": 49,
+      "member": {
+        "bioguide": "J000289",
+        "name": "Jim Jordan",
+        "party": "R",
+        "dobMs": -185310000000
+      },
+      "gapYears": 13.4
+    },
+    {
+      "geoid": "3905",
+      "state": "OH",
+      "district": 5,
+      "adultMedianAge": 49.9,
+      "member": {
+        "bioguide": "L000566",
+        "name": "Robert E. Latta",
+        "party": "R",
+        "dobMs": -432500400000
+      },
+      "gapYears": 20.3
+    },
+    {
+      "geoid": "3906",
+      "state": "OH",
+      "district": 6,
+      "adultMedianAge": 52.7,
+      "member": {
+        "bioguide": "R000619",
+        "name": "Michael A. Rulli",
+        "party": "R",
+        "dobMs": -25556400000
+      },
+      "gapYears": 4.6
+    },
+    {
+      "geoid": "3907",
+      "state": "OH",
+      "district": 7,
+      "adultMedianAge": 51.5,
+      "member": {
+        "bioguide": "M001222",
+        "name": "Max L. Miller",
+        "party": "R",
+        "dobMs": 595400400000
+      },
+      "gapYears": -13.8
+    },
+    {
+      "geoid": "3908",
+      "state": "OH",
+      "district": 8,
+      "adultMedianAge": 49,
+      "member": {
+        "bioguide": "D000626",
+        "name": "Warren Davidson",
+        "party": "R",
+        "dobMs": 5115600000
+      },
+      "gapYears": 7.4
+    },
+    {
+      "geoid": "3909",
+      "state": "OH",
+      "district": 9,
+      "adultMedianAge": 50,
+      "member": {
+        "bioguide": "K000009",
+        "name": "Marcy Kaptur",
+        "party": "D",
+        "dobMs": -742935600000
+      },
+      "gapYears": 30.1
+    },
+    {
+      "geoid": "3910",
+      "state": "OH",
+      "district": 10,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "T000463",
+        "name": "Michael R. Turner",
+        "party": "R",
+        "dobMs": -314737200000
+      },
+      "gapYears": 18.5
+    },
+    {
+      "geoid": "3911",
+      "state": "OH",
+      "district": 11,
+      "adultMedianAge": 47.2,
+      "member": {
+        "bioguide": "B001313",
+        "name": "Shontel M. Brown",
+        "party": "D",
+        "dobMs": 172818000000
+      },
+      "gapYears": 3.9
+    },
+    {
+      "geoid": "3912",
+      "state": "OH",
+      "district": 12,
+      "adultMedianAge": 49,
+      "member": {
+        "bioguide": "B001306",
+        "name": "Troy Balderson",
+        "party": "R",
+        "dobMs": -251146800000
+      },
+      "gapYears": 15.5
+    },
+    {
+      "geoid": "3913",
+      "state": "OH",
+      "district": 13,
+      "adultMedianAge": 49.7,
+      "member": {
+        "bioguide": "S001223",
+        "name": "Emilia Strong Sykes",
+        "party": "D",
+        "dobMs": 505198800000
+      },
+      "gapYears": -9.2
+    },
+    {
+      "geoid": "3914",
+      "state": "OH",
+      "district": 14,
+      "adultMedianAge": 51.6,
+      "member": {
+        "bioguide": "J000295",
+        "name": "David P. Joyce",
+        "party": "R",
+        "dobMs": -403729200000
+      },
+      "gapYears": 17.7
+    },
+    {
+      "geoid": "3915",
+      "state": "OH",
+      "district": 15,
+      "adultMedianAge": 46.4,
+      "member": {
+        "bioguide": "C001126",
+        "name": "Mike Carey",
+        "party": "R",
+        "dobMs": 37688400000
+      },
+      "gapYears": 8.9
+    },
+    {
+      "geoid": "4001",
+      "state": "OK",
+      "district": 1,
+      "adultMedianAge": 45.8,
+      "member": {
+        "bioguide": "H001082",
+        "name": "Kevin Hern",
+        "party": "R",
+        "dobMs": -254862000000
+      },
+      "gapYears": 18.8
+    },
+    {
+      "geoid": "4002",
+      "state": "OK",
+      "district": 2,
+      "adultMedianAge": 49.6,
+      "member": {
+        "bioguide": "B001317",
+        "name": "Josh Brecheen",
+        "party": "R",
+        "dobMs": 298616400000
+      },
+      "gapYears": -2.5
+    },
+    {
+      "geoid": "4003",
+      "state": "OK",
+      "district": 3,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "L000491",
+        "name": "Frank D. Lucas",
+        "party": "R",
+        "dobMs": -315169200000
+      },
+      "gapYears": 21.5
+    },
+    {
+      "geoid": "4004",
+      "state": "OK",
+      "district": 4,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "C001053",
+        "name": "Tom Cole",
+        "party": "R",
+        "dobMs": -652561200000
+      },
+      "gapYears": 32.2
+    },
+    {
+      "geoid": "4005",
+      "state": "OK",
+      "district": 5,
+      "adultMedianAge": 46.4,
+      "member": {
+        "bioguide": "B000740",
+        "name": "Stephanie I. Bice",
+        "party": "R",
+        "dobMs": 121842000000
+      },
+      "gapYears": 6.3
+    },
+    {
+      "geoid": "4101",
+      "state": "OR",
+      "district": 1,
+      "adultMedianAge": 45.7,
+      "member": {
+        "bioguide": "B001278",
+        "name": "Suzanne Bonamici",
+        "party": "D",
+        "dobMs": -480193200000
+      },
+      "gapYears": 26.1
+    },
+    {
+      "geoid": "4102",
+      "state": "OR",
+      "district": 2,
+      "adultMedianAge": 52.1,
+      "member": {
+        "bioguide": "B000668",
+        "name": "Cliff Bentz",
+        "party": "R",
+        "dobMs": -567111600000
+      },
+      "gapYears": 22.4
+    },
+    {
+      "geoid": "4103",
+      "state": "OR",
+      "district": 3,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "D000635",
+        "name": "Maxine Dexter",
+        "party": "D",
+        "dobMs": 92379600000
+      },
+      "gapYears": 8.6
+    },
+    {
+      "geoid": "4104",
+      "state": "OR",
+      "district": 4,
+      "adultMedianAge": 50.1,
+      "member": {
+        "bioguide": "H001094",
+        "name": "Val T. Hoyle",
+        "party": "D",
+        "dobMs": -185569200000
+      },
+      "gapYears": 12.3
+    },
+    {
+      "geoid": "4105",
+      "state": "OR",
+      "district": 5,
+      "adultMedianAge": 49.8,
+      "member": {
+        "bioguide": "B001326",
+        "name": "Janelle S. Bynum",
+        "party": "D",
+        "dobMs": 160376400000
+      },
+      "gapYears": 1.7
+    },
+    {
+      "geoid": "4106",
+      "state": "OR",
+      "district": 6,
+      "adultMedianAge": 46.4,
+      "member": {
+        "bioguide": "S001226",
+        "name": "Andrea Salinas",
+        "party": "D",
+        "dobMs": -2228400000
+      },
+      "gapYears": 10.2
+    },
+    {
+      "geoid": "4201",
+      "state": "PA",
+      "district": 1,
+      "adultMedianAge": 52.4,
+      "member": {
+        "bioguide": "F000466",
+        "name": "Brian K. Fitzpatrick",
+        "party": "R",
+        "dobMs": 124952400000
+      },
+      "gapYears": 0.2
+    },
+    {
+      "geoid": "4202",
+      "state": "PA",
+      "district": 2,
+      "adultMedianAge": 44.9,
+      "member": {
+        "bioguide": "B001296",
+        "name": "Brendan F. Boyle",
+        "party": "D",
+        "dobMs": 224053200000
+      },
+      "gapYears": 4.5
+    },
+    {
+      "geoid": "4203",
+      "state": "PA",
+      "district": 3,
+      "adultMedianAge": 40.6,
+      "member": {
+        "bioguide": "E000296",
+        "name": "Dwight Evans",
+        "party": "D",
+        "dobMs": -493239600000
+      },
+      "gapYears": 31.6
+    },
+    {
+      "geoid": "4204",
+      "state": "PA",
+      "district": 4,
+      "adultMedianAge": 49.7,
+      "member": {
+        "bioguide": "D000631",
+        "name": "Madeleine Dean",
+        "party": "D",
+        "dobMs": -333658800000
+      },
+      "gapYears": 17.4
+    },
+    {
+      "geoid": "4205",
+      "state": "PA",
+      "district": 5,
+      "adultMedianAge": 47.3,
+      "member": {
+        "bioguide": "S001205",
+        "name": "Mary Gay Scanlon",
+        "party": "D",
+        "dobMs": -326314800000
+      },
+      "gapYears": 19.6
+    },
+    {
+      "geoid": "4206",
+      "state": "PA",
+      "district": 6,
+      "adultMedianAge": 48.7,
+      "member": {
+        "bioguide": "H001085",
+        "name": "Chrissy Houlahan",
+        "party": "D",
+        "dobMs": -81284400000
+      },
+      "gapYears": 10.4
+    },
+    {
+      "geoid": "4207",
+      "state": "PA",
+      "district": 7,
+      "adultMedianAge": 49.1,
+      "member": {
+        "bioguide": "M001230",
+        "name": "Ryan Mackenzie",
+        "party": "R",
+        "dobMs": 397198800000
+      },
+      "gapYears": -5.1
+    },
+    {
+      "geoid": "4208",
+      "state": "PA",
+      "district": 8,
+      "adultMedianAge": 51.3,
+      "member": {
+        "bioguide": "B001327",
+        "name": "Robert P. Bresnahan, Jr.",
+        "party": "R",
+        "dobMs": 640760400000
+      },
+      "gapYears": -15.1
+    },
+    {
+      "geoid": "4209",
+      "state": "PA",
+      "district": 9,
+      "adultMedianAge": 51.5,
+      "member": {
+        "bioguide": "M001204",
+        "name": "Daniel Meuser",
+        "party": "R",
+        "dobMs": -185914800000
+      },
+      "gapYears": 10.9
+    },
+    {
+      "geoid": "4210",
+      "state": "PA",
+      "district": 10,
+      "adultMedianAge": 48.6,
+      "member": {
+        "bioguide": "P000605",
+        "name": "Scott Perry",
+        "party": "R",
+        "dobMs": -239828400000
+      },
+      "gapYears": 15.5
+    },
+    {
+      "geoid": "4211",
+      "state": "PA",
+      "district": 11,
+      "adultMedianAge": 50,
+      "member": {
+        "bioguide": "S001199",
+        "name": "Lloyd Smucker",
+        "party": "R",
+        "dobMs": -187470000000
+      },
+      "gapYears": 12.5
+    },
+    {
+      "geoid": "4212",
+      "state": "PA",
+      "district": 12,
+      "adultMedianAge": 47.7,
+      "member": {
+        "bioguide": "L000602",
+        "name": "Summer L. Lee",
+        "party": "D",
+        "dobMs": 564901200000
+      },
+      "gapYears": -9.1
+    },
+    {
+      "geoid": "4213",
+      "state": "PA",
+      "district": 13,
+      "adultMedianAge": 52.2,
+      "member": {
+        "bioguide": "J000302",
+        "name": "John Joyce",
+        "party": "R",
+        "dobMs": -406926000000
+      },
+      "gapYears": 17.2
+    },
+    {
+      "geoid": "4214",
+      "state": "PA",
+      "district": 14,
+      "adultMedianAge": 53,
+      "member": {
+        "bioguide": "R000610",
+        "name": "Guy Reschenthaler",
+        "party": "R",
+        "dobMs": 419403600000
+      },
+      "gapYears": -9.8
+    },
+    {
+      "geoid": "4215",
+      "state": "PA",
+      "district": 15,
+      "adultMedianAge": 50.6,
+      "member": {
+        "bioguide": "T000467",
+        "name": "Glenn Thompson",
+        "party": "R",
+        "dobMs": -329252400000
+      },
+      "gapYears": 16.4
+    },
+    {
+      "geoid": "4216",
+      "state": "PA",
+      "district": 16,
+      "adultMedianAge": 51.9,
+      "member": {
+        "bioguide": "K000376",
+        "name": "Mike Kelly",
+        "party": "R",
+        "dobMs": -683060400000
+      },
+      "gapYears": 26.3
+    },
+    {
+      "geoid": "4217",
+      "state": "PA",
+      "district": 17,
+      "adultMedianAge": 51.2,
+      "member": {
+        "bioguide": "D000530",
+        "name": "Christopher R. Deluzio",
+        "party": "D",
+        "dobMs": 458542800000
+      },
+      "gapYears": -9.2
+    },
+    {
+      "geoid": "4401",
+      "state": "RI",
+      "district": 1,
+      "adultMedianAge": 48,
+      "member": {
+        "bioguide": "A000380",
+        "name": "Gabe Amo",
+        "party": "D",
+        "dobMs": 566197200000
+      },
+      "gapYears": -9.4
+    },
+    {
+      "geoid": "4402",
+      "state": "RI",
+      "district": 2,
+      "adultMedianAge": 48.8,
+      "member": {
+        "bioguide": "M001223",
+        "name": "Seth Magaziner",
+        "party": "D",
+        "dobMs": 427698000000
+      },
+      "gapYears": -5.8
+    },
+    {
+      "geoid": "4501",
+      "state": "SC",
+      "district": 1,
+      "adultMedianAge": 50.4,
+      "member": {
+        "bioguide": "M000194",
+        "name": "Nancy Mace",
+        "party": "R",
+        "dobMs": 250059600000
+      },
+      "gapYears": -1.8
+    },
+    {
+      "geoid": "4502",
+      "state": "SC",
+      "district": 2,
+      "adultMedianAge": 48.5,
+      "member": {
+        "bioguide": "W000795",
+        "name": "Joe Wilson",
+        "party": "R",
+        "dobMs": -707598000000
+      },
+      "gapYears": 30.5
+    },
+    {
+      "geoid": "4503",
+      "state": "SC",
+      "district": 3,
+      "adultMedianAge": 50.2,
+      "member": {
+        "bioguide": "B001325",
+        "name": "Sheri Biggs",
+        "party": "R",
+        "dobMs": 7448400000
+      },
+      "gapYears": 6.1
+    },
+    {
+      "geoid": "4504",
+      "state": "SC",
+      "district": 4,
+      "adultMedianAge": 46.9,
+      "member": {
+        "bioguide": "T000480",
+        "name": "William R. Timmons IV",
+        "party": "R",
+        "dobMs": 452149200000
+      },
+      "gapYears": -4.7
+    },
+    {
+      "geoid": "4505",
+      "state": "SC",
+      "district": 5,
+      "adultMedianAge": 48.8,
+      "member": {
+        "bioguide": "N000190",
+        "name": "Ralph Norman",
+        "party": "R",
+        "dobMs": -521751600000
+      },
+      "gapYears": 24.3
+    },
+    {
+      "geoid": "4506",
+      "state": "SC",
+      "district": 6,
+      "adultMedianAge": 45.2,
+      "member": {
+        "bioguide": "C000537",
+        "name": "James E. Clyburn",
+        "party": "D",
+        "dobMs": -929300400000
+      },
+      "gapYears": 40.8
+    },
+    {
+      "geoid": "4507",
+      "state": "SC",
+      "district": 7,
+      "adultMedianAge": 54.1,
+      "member": {
+        "bioguide": "F000478",
+        "name": "Russell Fry",
+        "party": "R",
+        "dobMs": 475995600000
+      },
+      "gapYears": -12.6
+    },
+    {
+      "geoid": "4600",
+      "state": "SD",
+      "district": 0,
+      "adultMedianAge": 48.2,
+      "member": {
+        "bioguide": "J000301",
+        "name": "Dusty Johnson",
+        "party": "R",
+        "dobMs": 212907600000
+      },
+      "gapYears": 1.6
+    },
+    {
+      "geoid": "4701",
+      "state": "TN",
+      "district": 1,
+      "adultMedianAge": 51.6,
+      "member": {
+        "bioguide": "H001086",
+        "name": "Diana Harshbarger",
+        "party": "R",
+        "dobMs": -315601200000
+      },
+      "gapYears": 14.9
+    },
+    {
+      "geoid": "4702",
+      "state": "TN",
+      "district": 2,
+      "adultMedianAge": 48.2,
+      "member": {
+        "bioguide": "B001309",
+        "name": "Tim Burchett",
+        "party": "R",
+        "dobMs": -168894000000
+      },
+      "gapYears": 13.7
+    },
+    {
+      "geoid": "4703",
+      "state": "TN",
+      "district": 3,
+      "adultMedianAge": 49.6,
+      "member": {
+        "bioguide": "F000459",
+        "name": "Charles J. \"Chuck\" Fleischmann",
+        "party": "R",
+        "dobMs": -227991600000
+      },
+      "gapYears": 14.2
+    },
+    {
+      "geoid": "4704",
+      "state": "TN",
+      "district": 4,
+      "adultMedianAge": 46.9,
+      "member": {
+        "bioguide": "D000616",
+        "name": "Scott DesJarlais",
+        "party": "R",
+        "dobMs": -184964400000
+      },
+      "gapYears": 15.5
+    },
+    {
+      "geoid": "4705",
+      "state": "TN",
+      "district": 5,
+      "adultMedianAge": 46.5,
+      "member": {
+        "bioguide": "O000175",
+        "name": "Andrew Ogles",
+        "party": "R",
+        "dobMs": 46069200000
+      },
+      "gapYears": 8.6
+    },
+    {
+      "geoid": "4706",
+      "state": "TN",
+      "district": 6,
+      "adultMedianAge": 48.2,
+      "member": {
+        "bioguide": "R000612",
+        "name": "John W. Rose",
+        "party": "R",
+        "dobMs": -153169200000
+      },
+      "gapYears": 13.2
+    },
+    {
+      "geoid": "4707",
+      "state": "TN",
+      "district": 7,
+      "adultMedianAge": 43.5,
+      "member": {
+        "bioguide": "V000139",
+        "name": "Matt Van Epps",
+        "party": "R",
+        "dobMs": 417762000000
+      },
+      "gapYears": -0.2
+    },
+    {
+      "geoid": "4708",
+      "state": "TN",
+      "district": 8,
+      "adultMedianAge": 50.9,
+      "member": {
+        "bioguide": "K000392",
+        "name": "David Kustoff",
+        "party": "R",
+        "dobMs": -102020400000
+      },
+      "gapYears": 8.9
+    },
+    {
+      "geoid": "4709",
+      "state": "TN",
+      "district": 9,
+      "adultMedianAge": 44.2,
+      "member": {
+        "bioguide": "C001068",
+        "name": "Steve Cohen",
+        "party": "D",
+        "dobMs": -650314800000
+      },
+      "gapYears": 32.9
+    },
+    {
+      "geoid": "4801",
+      "state": "TX",
+      "district": 1,
+      "adultMedianAge": 48.5,
+      "member": {
+        "bioguide": "M001224",
+        "name": "Nathaniel Moran",
+        "party": "R",
+        "dobMs": 143701200000
+      },
+      "gapYears": 3.5
+    },
+    {
+      "geoid": "4802",
+      "state": "TX",
+      "district": 2,
+      "adultMedianAge": 45.6,
+      "member": {
+        "bioguide": "C001120",
+        "name": "Dan Crenshaw",
+        "party": "R",
+        "dobMs": 448088400000
+      },
+      "gapYears": -3.3
+    },
+    {
+      "geoid": "4803",
+      "state": "TX",
+      "district": 3,
+      "adultMedianAge": 45.8,
+      "member": {
+        "bioguide": "S001224",
+        "name": "Keith Self",
+        "party": "R",
+        "dobMs": -529700400000
+      },
+      "gapYears": 27.5
+    },
+    {
+      "geoid": "4804",
+      "state": "TX",
+      "district": 4,
+      "adultMedianAge": 46.1,
+      "member": {
+        "bioguide": "F000246",
+        "name": "Pat Fallon",
+        "party": "R",
+        "dobMs": -64263600000
+      },
+      "gapYears": 12.5
+    },
+    {
+      "geoid": "4805",
+      "state": "TX",
+      "district": 5,
+      "adultMedianAge": 46.7,
+      "member": {
+        "bioguide": "G000589",
+        "name": "Lance Gooden",
+        "party": "R",
+        "dobMs": 407566800000
+      },
+      "gapYears": -3.1
+    },
+    {
+      "geoid": "4806",
+      "state": "TX",
+      "district": 6,
+      "adultMedianAge": 44.3,
+      "member": {
+        "bioguide": "E000071",
+        "name": "Jake Ellzey",
+        "party": "R",
+        "dobMs": 2005200000
+      },
+      "gapYears": 12.2
+    },
+    {
+      "geoid": "4807",
+      "state": "TX",
+      "district": 7,
+      "adultMedianAge": 41.9,
+      "member": {
+        "bioguide": "F000468",
+        "name": "Lizzie Fletcher",
+        "party": "D",
+        "dobMs": 161499600000
+      },
+      "gapYears": 9.5
+    },
+    {
+      "geoid": "4808",
+      "state": "TX",
+      "district": 8,
+      "adultMedianAge": 45.3,
+      "member": {
+        "bioguide": "L000603",
+        "name": "Morgan Luttrell",
+        "party": "R",
+        "dobMs": 184568400000
+      },
+      "gapYears": 5.4
+    },
+    {
+      "geoid": "4809",
+      "state": "TX",
+      "district": 9,
+      "adultMedianAge": 43.5,
+      "member": {
+        "bioguide": "G000553",
+        "name": "Al Green",
+        "party": "D",
+        "dobMs": -704833200000
+      },
+      "gapYears": 35.4
+    },
+    {
+      "geoid": "4810",
+      "state": "TX",
+      "district": 10,
+      "adultMedianAge": 45.5,
+      "member": {
+        "bioguide": "M001157",
+        "name": "Michael T. McCaul",
+        "party": "R",
+        "dobMs": -251319600000
+      },
+      "gapYears": 19
+    },
+    {
+      "geoid": "4811",
+      "state": "TX",
+      "district": 11,
+      "adultMedianAge": 43.4,
+      "member": {
+        "bioguide": "P000048",
+        "name": "August Pfluger",
+        "party": "R",
+        "dobMs": 283669200000
+      },
+      "gapYears": 4.1
+    },
+    {
+      "geoid": "4812",
+      "state": "TX",
+      "district": 12,
+      "adultMedianAge": 43.5,
+      "member": {
+        "bioguide": "G000601",
+        "name": "Craig A. Goldman",
+        "party": "R",
+        "dobMs": -39294000000
+      },
+      "gapYears": 14.3
+    },
+    {
+      "geoid": "4813",
+      "state": "TX",
+      "district": 13,
+      "adultMedianAge": 44.6,
+      "member": {
+        "bioguide": "J000304",
+        "name": "Ronny Jackson",
+        "party": "R",
+        "dobMs": -84049200000
+      },
+      "gapYears": 14.6
+    },
+    {
+      "geoid": "4814",
+      "state": "TX",
+      "district": 14,
+      "adultMedianAge": 47.5,
+      "member": {
+        "bioguide": "W000814",
+        "name": "Randy K. Weber, Sr.",
+        "party": "R",
+        "dobMs": -520714800000
+      },
+      "gapYears": 25.5
+    },
+    {
+      "geoid": "4815",
+      "state": "TX",
+      "district": 15,
+      "adultMedianAge": 44,
+      "member": {
+        "bioguide": "D000594",
+        "name": "Monica De La Cruz",
+        "party": "R",
+        "dobMs": 153378000000
+      },
+      "gapYears": 7.7
+    },
+    {
+      "geoid": "4816",
+      "state": "TX",
+      "district": 16,
+      "adultMedianAge": 43.5,
+      "member": {
+        "bioguide": "E000299",
+        "name": "Veronica Escobar",
+        "party": "D",
+        "dobMs": -9313200000
+      },
+      "gapYears": 13.3
+    },
+    {
+      "geoid": "4817",
+      "state": "TX",
+      "district": 17,
+      "adultMedianAge": 45,
+      "member": {
+        "bioguide": "S000250",
+        "name": "Pete Sessions",
+        "party": "R",
+        "dobMs": -466455600000
+      },
+      "gapYears": 26.3
+    },
+    {
+      "geoid": "4818",
+      "state": "TX",
+      "district": 18,
+      "adultMedianAge": 41.1,
+      "member": {
+        "bioguide": "M001245",
+        "name": "Christian D. Menefee",
+        "party": "D",
+        "dobMs": 577342800000
+      },
+      "gapYears": -2.9
+    },
+    {
+      "geoid": "4819",
+      "state": "TX",
+      "district": 19,
+      "adultMedianAge": 43.2,
+      "member": {
+        "bioguide": "A000375",
+        "name": "Jodey C. Arrington",
+        "party": "R",
+        "dobMs": 68965200000
+      },
+      "gapYears": 11.2
+    },
+    {
+      "geoid": "4820",
+      "state": "TX",
+      "district": 20,
+      "adultMedianAge": 42,
+      "member": {
+        "bioguide": "C001091",
+        "name": "Joaquin Castro",
+        "party": "D",
+        "dobMs": 148539600000
+      },
+      "gapYears": 9.8
+    },
+    {
+      "geoid": "4821",
+      "state": "TX",
+      "district": 21,
+      "adultMedianAge": 49.3,
+      "member": {
+        "bioguide": "R000614",
+        "name": "Chip Roy",
+        "party": "R",
+        "dobMs": 82011600000
+      },
+      "gapYears": 4.6
+    },
+    {
+      "geoid": "4822",
+      "state": "TX",
+      "district": 22,
+      "adultMedianAge": 46.1,
+      "member": {
+        "bioguide": "N000026",
+        "name": "Troy E. Nehls",
+        "party": "R",
+        "dobMs": -54759600000
+      },
+      "gapYears": 12.2
+    },
+    {
+      "geoid": "4823",
+      "state": "TX",
+      "district": 23,
+      "adultMedianAge": 45,
+      "member": null,
+      "gapYears": null
+    },
+    {
+      "geoid": "4824",
+      "state": "TX",
+      "district": 24,
+      "adultMedianAge": 48.1,
+      "member": {
+        "bioguide": "V000134",
+        "name": "Beth Van Duyne",
+        "party": "R",
+        "dobMs": 27579600000
+      },
+      "gapYears": 7.6
+    },
+    {
+      "geoid": "4825",
+      "state": "TX",
+      "district": 25,
+      "adultMedianAge": 46.3,
+      "member": {
+        "bioguide": "W000816",
+        "name": "Roger Williams",
+        "party": "R",
+        "dobMs": -640638000000
+      },
+      "gapYears": 30.5
+    },
+    {
+      "geoid": "4826",
+      "state": "TX",
+      "district": 26,
+      "adultMedianAge": 45.9,
+      "member": {
+        "bioguide": "G000603",
+        "name": "Brandon Gill",
+        "party": "R",
+        "dobMs": 762238800000
+      },
+      "gapYears": -13.5
+    },
+    {
+      "geoid": "4827",
+      "state": "TX",
+      "district": 27,
+      "adultMedianAge": 47.2,
+      "member": {
+        "bioguide": "C001115",
+        "name": "Michael Cloud",
+        "party": "R",
+        "dobMs": 169189200000
+      },
+      "gapYears": 4
+    },
+    {
+      "geoid": "4828",
+      "state": "TX",
+      "district": 28,
+      "adultMedianAge": 44.1,
+      "member": {
+        "bioguide": "C001063",
+        "name": "Henry Cuellar",
+        "party": "D",
+        "dobMs": -450817200000
+      },
+      "gapYears": 26.7
+    },
+    {
+      "geoid": "4829",
+      "state": "TX",
+      "district": 29,
+      "adultMedianAge": 43,
+      "member": {
+        "bioguide": "G000587",
+        "name": "Sylvia R. Garcia",
+        "party": "D",
+        "dobMs": -609706800000
+      },
+      "gapYears": 32.9
+    },
+    {
+      "geoid": "4830",
+      "state": "TX",
+      "district": 30,
+      "adultMedianAge": 43.1,
+      "member": {
+        "bioguide": "C001130",
+        "name": "Jasmine Crockett",
+        "party": "D",
+        "dobMs": 354690000000
+      },
+      "gapYears": 2.2
+    },
+    {
+      "geoid": "4831",
+      "state": "TX",
+      "district": 31,
+      "adultMedianAge": 44.8,
+      "member": {
+        "bioguide": "C001051",
+        "name": "John R. Carter",
+        "party": "R",
+        "dobMs": -888433200000
+      },
+      "gapYears": 39.9
+    },
+    {
+      "geoid": "4832",
+      "state": "TX",
+      "district": 32,
+      "adultMedianAge": 39.9,
+      "member": {
+        "bioguide": "J000310",
+        "name": "Julie Johnson",
+        "party": "D",
+        "dobMs": -115758000000
+      },
+      "gapYears": 20.3
+    },
+    {
+      "geoid": "4833",
+      "state": "TX",
+      "district": 33,
+      "adultMedianAge": 41.3,
+      "member": {
+        "bioguide": "V000131",
+        "name": "Marc A. Veasey",
+        "party": "D",
+        "dobMs": 31726800000
+      },
+      "gapYears": 14.2
+    },
+    {
+      "geoid": "4834",
+      "state": "TX",
+      "district": 34,
+      "adultMedianAge": 43.9,
+      "member": {
+        "bioguide": "G000581",
+        "name": "Vicente Gonzalez",
+        "party": "D",
+        "dobMs": -73422000000
+      },
+      "gapYears": 15
+    },
+    {
+      "geoid": "4835",
+      "state": "TX",
+      "district": 35,
+      "adultMedianAge": 39.6,
+      "member": {
+        "bioguide": "C001131",
+        "name": "Greg Casar",
+        "party": "D",
+        "dobMs": 610261200000
+      },
+      "gapYears": -2.4
+    },
+    {
+      "geoid": "4836",
+      "state": "TX",
+      "district": 36,
+      "adultMedianAge": 45.8,
+      "member": {
+        "bioguide": "B001291",
+        "name": "Brian Babin",
+        "party": "R",
+        "dobMs": -687207600000
+      },
+      "gapYears": 32.5
+    },
+    {
+      "geoid": "4837",
+      "state": "TX",
+      "district": 37,
+      "adultMedianAge": 39.9,
+      "member": {
+        "bioguide": "D000399",
+        "name": "Lloyd Doggett",
+        "party": "D",
+        "dobMs": -733345200000
+      },
+      "gapYears": 39.9
+    },
+    {
+      "geoid": "4838",
+      "state": "TX",
+      "district": 38,
+      "adultMedianAge": 46.2,
+      "member": {
+        "bioguide": "H001095",
+        "name": "Wesley Hunt",
+        "party": "R",
+        "dobMs": 374475600000
+      },
+      "gapYears": -1.5
+    },
+    {
+      "geoid": "4901",
+      "state": "UT",
+      "district": 1,
+      "adultMedianAge": 42,
+      "member": {
+        "bioguide": "M001213",
+        "name": "Blake D. Moore",
+        "party": "R",
+        "dobMs": 330498000000
+      },
+      "gapYears": 4.1
+    },
+    {
+      "geoid": "4902",
+      "state": "UT",
+      "district": 2,
+      "adultMedianAge": 43.7,
+      "member": {
+        "bioguide": "M001228",
+        "name": "Celeste Maloy",
+        "party": "R",
+        "dobMs": 359355600000
+      },
+      "gapYears": 1.5
+    },
+    {
+      "geoid": "4903",
+      "state": "UT",
+      "district": 3,
+      "adultMedianAge": 41.8,
+      "member": {
+        "bioguide": "K000403",
+        "name": "Mike Kennedy",
+        "party": "R",
+        "dobMs": -28753200000
+      },
+      "gapYears": 15.6
+    },
+    {
+      "geoid": "4904",
+      "state": "UT",
+      "district": 4,
+      "adultMedianAge": 41.4,
+      "member": {
+        "bioguide": "O000086",
+        "name": "Burgess Owens",
+        "party": "R",
+        "dobMs": -581194800000
+      },
+      "gapYears": 33.6
+    },
+    {
+      "geoid": "5000",
+      "state": "VT",
+      "district": 0,
+      "adultMedianAge": 51.2,
+      "member": {
+        "bioguide": "B001318",
+        "name": "Becca Balint",
+        "party": "D",
+        "dobMs": -52426800000
+      },
+      "gapYears": 7
+    },
+    {
+      "geoid": "5101",
+      "state": "VA",
+      "district": 1,
+      "adultMedianAge": 50.4,
+      "member": {
+        "bioguide": "W000804",
+        "name": "Robert J. Wittman",
+        "party": "R",
+        "dobMs": -344286000000
+      },
+      "gapYears": 17
+    },
+    {
+      "geoid": "5102",
+      "state": "VA",
+      "district": 2,
+      "adultMedianAge": 47.7,
+      "member": {
+        "bioguide": "K000399",
+        "name": "Jennifer A. Kiggans",
+        "party": "R",
+        "dobMs": 46069200000
+      },
+      "gapYears": 7.4
+    },
+    {
+      "geoid": "5103",
+      "state": "VA",
+      "district": 3,
+      "adultMedianAge": 43,
+      "member": {
+        "bioguide": "S000185",
+        "name": "Robert C. \"Bobby\" Scott",
+        "party": "D",
+        "dobMs": -715546800000
+      },
+      "gapYears": 36.2
+    },
+    {
+      "geoid": "5104",
+      "state": "VA",
+      "district": 4,
+      "adultMedianAge": 44.8,
+      "member": {
+        "bioguide": "M001227",
+        "name": "Jennifer L. McClellan",
+        "party": "D",
+        "dobMs": 94366800000
+      },
+      "gapYears": 8.7
+    },
+    {
+      "geoid": "5105",
+      "state": "VA",
+      "district": 5,
+      "adultMedianAge": 50.5,
+      "member": {
+        "bioguide": "M001239",
+        "name": "John J. McGuire III",
+        "party": "R",
+        "dobMs": -42750000000
+      },
+      "gapYears": 7.4
+    },
+    {
+      "geoid": "5106",
+      "state": "VA",
+      "district": 6,
+      "adultMedianAge": 49.5,
+      "member": {
+        "bioguide": "C001118",
+        "name": "Ben Cline",
+        "party": "R",
+        "dobMs": 68187600000
+      },
+      "gapYears": 4.9
+    },
+    {
+      "geoid": "5107",
+      "state": "VA",
+      "district": 7,
+      "adultMedianAge": 46.1,
+      "member": {
+        "bioguide": "V000138",
+        "name": "Eugene Simon Vindman",
+        "party": "D",
+        "dobMs": 171262800000
+      },
+      "gapYears": 5
+    },
+    {
+      "geoid": "5108",
+      "state": "VA",
+      "district": 8,
+      "adultMedianAge": 43.9,
+      "member": {
+        "bioguide": "B001292",
+        "name": "Donald S. Beyer, Jr.",
+        "party": "D",
+        "dobMs": -616446000000
+      },
+      "gapYears": 32.2
+    },
+    {
+      "geoid": "5109",
+      "state": "VA",
+      "district": 9,
+      "adultMedianAge": 51.5,
+      "member": {
+        "bioguide": "G000568",
+        "name": "H. Morgan Griffith",
+        "party": "R",
+        "dobMs": -372366000000
+      },
+      "gapYears": 16.8
+    },
+    {
+      "geoid": "5110",
+      "state": "VA",
+      "district": 10,
+      "adultMedianAge": 46.9,
+      "member": {
+        "bioguide": "S001230",
+        "name": "Suhas Subramanyam",
+        "party": "D",
+        "dobMs": 528094800000
+      },
+      "gapYears": -7.1
+    },
+    {
+      "geoid": "5111",
+      "state": "VA",
+      "district": 11,
+      "adultMedianAge": 46.8,
+      "member": {
+        "bioguide": "W000831",
+        "name": "James R. Walkinshaw",
+        "party": "D",
+        "dobMs": 404110800000
+      },
+      "gapYears": -3.1
+    },
+    {
+      "geoid": "5301",
+      "state": "WA",
+      "district": 1,
+      "adultMedianAge": 43.6,
+      "member": {
+        "bioguide": "D000617",
+        "name": "Suzan K. DelBene",
+        "party": "D",
+        "dobMs": -248382000000
+      },
+      "gapYears": 20.8
+    },
+    {
+      "geoid": "5302",
+      "state": "WA",
+      "district": 2,
+      "adultMedianAge": 48.1,
+      "member": {
+        "bioguide": "L000560",
+        "name": "Rick Larsen",
+        "party": "D",
+        "dobMs": -143492400000
+      },
+      "gapYears": 13
+    },
+    {
+      "geoid": "5303",
+      "state": "WA",
+      "district": 3,
+      "adultMedianAge": 48.9,
+      "member": {
+        "bioguide": "G000600",
+        "name": "Marie Gluesenkamp Perez",
+        "party": "D",
+        "dobMs": 581576400000
+      },
+      "gapYears": -10.8
+    },
+    {
+      "geoid": "5304",
+      "state": "WA",
+      "district": 4,
+      "adultMedianAge": 45.7,
+      "member": {
+        "bioguide": "N000189",
+        "name": "Dan Newhouse",
+        "party": "R",
+        "dobMs": -456951600000
+      },
+      "gapYears": 25.3
+    },
+    {
+      "geoid": "5305",
+      "state": "WA",
+      "district": 5,
+      "adultMedianAge": 46.9,
+      "member": {
+        "bioguide": "B001322",
+        "name": "Michael Baumgartner",
+        "party": "R",
+        "dobMs": 187678800000
+      },
+      "gapYears": 3.7
+    },
+    {
+      "geoid": "5306",
+      "state": "WA",
+      "district": 6,
+      "adultMedianAge": 50.1,
+      "member": {
+        "bioguide": "R000621",
+        "name": "Emily Randall",
+        "party": "D",
+        "dobMs": 499496400000
+      },
+      "gapYears": -9.4
+    },
+    {
+      "geoid": "5307",
+      "state": "WA",
+      "district": 7,
+      "adultMedianAge": 40,
+      "member": {
+        "bioguide": "J000298",
+        "name": "Pramila Jayapal",
+        "party": "D",
+        "dobMs": -135025200000
+      },
+      "gapYears": 20.8
+    },
+    {
+      "geoid": "5308",
+      "state": "WA",
+      "district": 8,
+      "adultMedianAge": 47.9,
+      "member": {
+        "bioguide": "S001216",
+        "name": "Kim Schrier",
+        "party": "D",
+        "dobMs": -42836400000
+      },
+      "gapYears": 10
+    },
+    {
+      "geoid": "5309",
+      "state": "WA",
+      "district": 9,
+      "adultMedianAge": 44.7,
+      "member": {
+        "bioguide": "S000510",
+        "name": "Adam Smith",
+        "party": "D",
+        "dobMs": -143492400000
+      },
+      "gapYears": 16.4
+    },
+    {
+      "geoid": "5310",
+      "state": "WA",
+      "district": 10,
+      "adultMedianAge": 44.9,
+      "member": {
+        "bioguide": "S001159",
+        "name": "Marilyn Strickland",
+        "party": "D",
+        "dobMs": -229374000000
+      },
+      "gapYears": 18.9
+    },
+    {
+      "geoid": "5401",
+      "state": "WV",
+      "district": 1,
+      "adultMedianAge": 52,
+      "member": {
+        "bioguide": "M001205",
+        "name": "Carol D. Miller",
+        "party": "R",
+        "dobMs": -604609200000
+      },
+      "gapYears": 23.7
+    },
+    {
+      "geoid": "5402",
+      "state": "WV",
+      "district": 2,
+      "adultMedianAge": 50,
+      "member": {
+        "bioguide": "M001235",
+        "name": "Riley M. Moore",
+        "party": "R",
+        "dobMs": 331275600000
+      },
+      "gapYears": -4
+    },
+    {
+      "geoid": "5501",
+      "state": "WI",
+      "district": 1,
+      "adultMedianAge": 49.8,
+      "member": {
+        "bioguide": "S001213",
+        "name": "Bryan Steil",
+        "party": "R",
+        "dobMs": 354776400000
+      },
+      "gapYears": -4.5
+    },
+    {
+      "geoid": "5502",
+      "state": "WI",
+      "district": 2,
+      "adultMedianAge": 44.6,
+      "member": {
+        "bioguide": "P000607",
+        "name": "Mark Pocan",
+        "party": "D",
+        "dobMs": -169844400000
+      },
+      "gapYears": 17.3
+    },
+    {
+      "geoid": "5503",
+      "state": "WI",
+      "district": 3,
+      "adultMedianAge": 48.6,
+      "member": {
+        "bioguide": "V000135",
+        "name": "Derrick Van Orden",
+        "party": "R",
+        "dobMs": -9313200000
+      },
+      "gapYears": 8.2
+    },
+    {
+      "geoid": "5504",
+      "state": "WI",
+      "district": 4,
+      "adultMedianAge": 42.9,
+      "member": {
+        "bioguide": "M001160",
+        "name": "Gwen Moore",
+        "party": "D",
+        "dobMs": -590353200000
+      },
+      "gapYears": 32.3
+    },
+    {
+      "geoid": "5505",
+      "state": "WI",
+      "district": 5,
+      "adultMedianAge": 51.4,
+      "member": {
+        "bioguide": "F000471",
+        "name": "Scott Fitzgerald",
+        "party": "R",
+        "dobMs": -193345200000
+      },
+      "gapYears": 11.3
+    },
+    {
+      "geoid": "5506",
+      "state": "WI",
+      "district": 6,
+      "adultMedianAge": 51.1,
+      "member": {
+        "bioguide": "G000576",
+        "name": "Glenn Grothman",
+        "party": "R",
+        "dobMs": -457556400000
+      },
+      "gapYears": 19.9
+    },
+    {
+      "geoid": "5507",
+      "state": "WI",
+      "district": 7,
+      "adultMedianAge": 54.4,
+      "member": {
+        "bioguide": "T000165",
+        "name": "Thomas P. Tiffany",
+        "party": "R",
+        "dobMs": -378846000000
+      },
+      "gapYears": 14.1
+    },
+    {
+      "geoid": "5508",
+      "state": "WI",
+      "district": 8,
+      "adultMedianAge": 50.4,
+      "member": {
+        "bioguide": "W000829",
+        "name": "Tony Wied",
+        "party": "R",
+        "dobMs": 199947600000
+      },
+      "gapYears": -0.2
+    },
+    {
+      "geoid": "5600",
+      "state": "WY",
+      "district": 0,
+      "adultMedianAge": 48.3,
+      "member": {
+        "bioguide": "H001096",
+        "name": "Harriet M. Hageman",
+        "party": "R",
+        "dobMs": -227386800000
+      },
+      "gapYears": 15.4
+    }
+  ]
+}
