@@ -46,8 +46,39 @@ body {
 
 .tnum { font-variant-numeric: tabular-nums; }
 
+/* The Map — 435 district hexes.
+   A hairline of paper between fills keeps neighboring districts countable at
+   this density; the 2px gap a bar chart wants would eat a cartogram whose cells
+   are only ~25 user units across. The stroke also does real work at the neutral
+   end of the ramp: a district whose member matches its adults is drawn nearly
+   white by design, and the outline is what keeps it a shape rather than a hole. */
+.district {
+  stroke: var(--paper);
+  stroke-width: 0.7;
+  outline: none;
+}
+
+/* The mirrored outline drawn last, above every hex. */
+.district-highlight {
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+/* Fallback only: without JS the highlight path is never fed, so focus still has
+   to show itself. */
+.district:focus-visible {
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+/* The map adds no animation of its own: the readout swaps text and the outline
+   jumps to the next hex. There is nothing here for prefers-reduced-motion to
+   turn off, which is the intended answer rather than an oversight. */
+
 /* Every ticking digit is boxed to a fixed advance so a changing glyph never
-   shifts its neighbours. The width is in `em`, so it tracks the digit's own
+   shifts its neighbors. The width is in `em`, so it tracks the digit's own
    font-size — which is what lets the hero taper each decimal down in size
    without any of them losing their column or leaving the shared baseline. */
 .digit { display: inline-block; width: 0.56em; text-align: center; }

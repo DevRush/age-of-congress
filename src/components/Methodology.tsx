@@ -1,5 +1,6 @@
 import data from '@/data/congress.json'
 import population from '@/data/population.json'
+import districts from '@/data/districts.json'
 
 /**
  * The citability layer: a newspaper's fine-print methodology box. It is set
@@ -60,6 +61,34 @@ export function Methodology() {
           those members are excluded and affected years are drawn lighter. From 1850 onward, coverage
           exceeds 99%. Values were validated against Congressional Research Service figures for recent
           Congresses and FiveThirtyEight&rsquo;s member-level dataset (66th&ndash;118th Congresses).
+        </Row>
+        <Row term="Districts">
+          The map compares each representative against the people they represent. District
+          age is the median age of adults 18 and older, derived from{' '}
+          <a className={link} href={districts.source.url}>
+            {districts.source.survey}
+          </a>
+          , table {districts.source.table}, by interpolating across the published 18+ age
+          brackets; the national figure on that basis is{' '}
+          {districts.nationalAdultMedianAge.toFixed(1)} years. Boundaries are the
+          119th-Congress districts, which match this roster seat for seat. The gap is the
+          member&rsquo;s age at the edition date minus that median, so it moves with the
+          roster rather than with the reader&rsquo;s clock. Of {districts.districts.length}{' '}
+          districts, {districts.stats.joined} have a sitting member and{' '}
+          {districts.stats.vacant} are vacant; vacant seats are hatched, not shaded, because
+          an empty seat has no age and is not a gap of zero.
+        </Row>
+        <Row term="Hex map">
+          The cartogram gives every district equal area, so the map shows seats rather than
+          acreage. Layout:{' '}
+          <a className={link} href={districts.layout.url}>
+            {districts.layout.layout}
+          </a>{' '}
+          by {districts.layout.author}, used under{' '}
+          <a className={link} href={districts.layout.licenseUrl}>
+            {districts.layout.license}
+          </a>
+          .
         </Row>
         <Row term="Portraits">
           Portraits are official congressional photographs (public domain), courtesy of the U.S.

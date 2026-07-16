@@ -3,12 +3,15 @@ import { Hero } from '@/components/Hero'
 import { ChamberSplit } from '@/components/ChamberSplit'
 import { Decades } from '@/components/Decades'
 import { Rankings } from '@/components/Rankings'
+import { DistrictMap } from '@/components/DistrictMap'
 import { Histogram } from '@/components/Histogram'
 import { HistoryChart } from '@/components/HistoryChart'
 import { GenerationGap } from '@/components/GenerationGap'
 import { Methodology } from '@/components/Methodology'
 import congress from '@/data/congress.json'
 import population from '@/data/population.json'
+import districts from '@/data/districts.json'
+import { GAP_CLAMP } from '@/lib/districtMap'
 
 export default function Page() {
   return (
@@ -38,6 +41,27 @@ export default function Page() {
 
       <Section title="The Rankings">
         <Rankings />
+      </Section>
+
+      <Section
+        title="The Map"
+        footnote={
+          <>
+            Each hexagon is one of the 435 House districts, shaded by its age gap:
+            the representative&rsquo;s age at the edition date minus the median age
+            of adults 18 and older living in the district. District medians are
+            derived from {districts.source.survey}, table{' '}
+            {districts.source.table}, by interpolating across the 18+ age brackets;
+            boundaries are the {districts.districts.length} districts of the 119th
+            Congress. The scale is clamped at ±{GAP_CLAMP} years and is symmetric
+            about zero, so a gap of a given size is shaded with the same strength
+            whichever way it runs; {districts.stats.vacant} vacant seats
+            (CA-14, FL-20, GA-13, TX-23) have no member and are hatched rather
+            than shaded. Hex layout by Daniel Donner / The Downballot, CC BY 4.0.
+          </>
+        }
+      >
+        <DistrictMap />
       </Section>
 
       <Section
