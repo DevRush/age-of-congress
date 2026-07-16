@@ -1,5 +1,5 @@
 import districtsData from '@/data/districts.json'
-import topo from '@/data/hex435.topo.json'
+import topo from '@/data/districtsGeo.topo.json'
 import { ageYears } from '@/lib/age'
 import {
   GAP_CLAMP,
@@ -20,10 +20,10 @@ import { DistrictMapReadout } from './DistrictMapReadout'
  * The whole figure is server-rendered: the TopoJSON is decoded during the static
  * export and the browser receives finished path strings. The only client code is
  * the readout island, which delegates from this container by id (see
- * DistrictMapReadout for why it does not own the hexes).
+ * DistrictMapReadout for why it does not own the districts).
  *
- * Hex layout: Daily Kos / Downballot Hexmap v3.1, by Daniel Donner, CC BY 4.0 —
- * credited under the figure and again in the Methodology, as the licence requires.
+ * Geography: U.S. Census Bureau TIGER/Line cartographic boundaries for the 119th
+ * Congress, projected to Albers USA (Alaska and Hawaii inset). Public domain.
  */
 
 type District = {
@@ -239,7 +239,7 @@ export function DistrictMap() {
             viewBox={`0 0 ${width} ${height}`}
             className="block h-auto w-full"
             role="img"
-            aria-label={`Hex cartogram of all 435 U.S. House districts, shaded by the difference between each member's age and the median age of adults in their district. ${pctOlder} of members are older than their district's median adult. ${vacant.length} seats are vacant and unshaded.`}
+            aria-label={`Map of all 435 U.S. House districts, shaded by the difference between each member's age and the median age of adults in their district. ${pctOlder} of members are older than their district's median adult. ${vacant.length} seats are vacant and unshaded.`}
           >
             <defs>
               {/* Vacancy is drawn in texture, never in color. A muted gray fill
@@ -350,21 +350,8 @@ export function DistrictMap() {
       </figcaption>
 
       <p className="meta mt-4 text-[0.6875rem] text-[var(--ink-faint)]">
-        Hex layout:{' '}
-        <a
-          className="underline decoration-1 underline-offset-2 decoration-[color:var(--rule-strong)] transition-colors hover:text-[var(--ink)]"
-          href="https://the-db.co/maps"
-        >
-          Daniel Donner / The Downballot
-        </a>
-        , licensed{' '}
-        <a
-          className="underline decoration-1 underline-offset-2 decoration-[color:var(--rule-strong)] transition-colors hover:text-[var(--ink)]"
-          href="https://creativecommons.org/licenses/by/4.0/"
-        >
-          CC BY 4.0
-        </a>
-        .
+        Geography: U.S. Census Bureau TIGER/Line cartographic boundaries, 119th Congress,
+        projected to Albers USA. Public domain.
       </p>
     </figure>
   )

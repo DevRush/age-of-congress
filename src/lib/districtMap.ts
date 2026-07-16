@@ -193,7 +193,7 @@ export function gapExtremes<T extends GapDistrict>(
 
 const round1 = (n: number) => Math.round(n * 10) / 10
 
-type HexProps = { GEOID: string }
+type DistrictProps = { GEOID: string }
 
 /**
  * Drop the points in a closed ring that draw nothing: exact repeats, and points
@@ -203,12 +203,11 @@ type HexProps = { GEOID: string }
  * contributes nothing to the outline, so the polygon drawn afterwards is
  * identical, and the tests hold it to that by comparing areas.
  *
- * Worth calibrating expectations: this removes ~3% of vertices, and nearly all
- * of that is exact repeats left where the topology's arcs were split. The
- * cluster outlines are otherwise all real corners — there is no fat here to cut,
- * which is itself the answer to "should this be simplified further?". Anything
- * more would move the shape, and at 435 districts a moved boundary is a wrong
- * boundary. The map's ~130KB of geometry is the data, not overhead.
+ * The TIGER geometry is already simplified upstream, so on the current data this
+ * finds almost nothing to drop — it stays as a guard against any redundant point
+ * a future re-export might introduce, never as a shape-changing simplification.
+ * Anything that actually moved a boundary would be a wrong boundary at 435
+ * districts; the map's geometry is the data, not overhead.
  */
 export function pruneRing(ring: number[][]): number[][] {
   const dd = ring.filter((p, i) => i === 0 || p[0] !== ring[i - 1][0] || p[1] !== ring[i - 1][1])
@@ -228,22 +227,23 @@ export function pruneRing(ring: number[][]): number[][] {
 }
 
 /**
- * Decode the hex cartogram into SVG paths.
+ * Decode the district geography into SVG paths.
  *
- * The layout's coordinates look like longitude/latitude but are not: this is the
- * Daily Kos / Downballot hexmap, in which every district is an equal-area cluster
- * of hexagons packed into a recognizable state outline. The numbers are design
- * space, already proportioned to be drawn 1:1 — rendering it with any projection
- * correction (an equirectangular cos-latitude squeeze, say) visibly stretches the
- * country. So the mapping is a plain linear fit to the viewBox with the y axis
- * flipped, and nothing else.
+ * The source is the U.S. Census Bureau's TIGER/Line cartographic boundaries for
+ * the 119th Congress, already projected to Albers USA (with Alaska and Hawaii
+ * inset) and simplified. So the coordinates are a planar, equal-area projection
+ * measured in projection units, not longitude/latitude — the correct rendering
+ * is a plain isotropic fit to the viewBox with the y axis flipped, which is
+ * exactly what a projected coordinate system asks for. Applying a second
+ * projection here would distort a country that is already projected.
  *
- * `width` is fixed and `height` follows from the layout's own aspect ratio, so
- * the map can never be squashed by its container.
+ * `width` is fixed and `height` follows from the projection's own aspect ratio
+ * (~1.6, the shape of the country), so the map can never be squashed by its
+ * container.
  */
 export function buildCells(topology: unknown, width = 1000): CellSet {
-  const topo = topology as unknown as Topology<{ HexCDv31: GeometryCollection<HexProps> }>
-  const fc = feature(topo, topo.objects.HexCDv31)
+  const topo = topology as unknown as Topology<{ districts: GeometryCollection<DistrictProps> }>
+  const fc = feature(topo, topo.objects.districts)
 
   /** Every district is a Polygon or a MultiPolygon; nothing else is drawable here. */
   const polysOf = (g: (typeof fc.features)[number]['geometry']): number[][][][] => {

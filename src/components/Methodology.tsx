@@ -111,17 +111,11 @@ export function Methodology() {
           {districts.stats.vacant} are vacant; vacant seats are hatched, not shaded, because
           an empty seat has no age and is not a gap of zero.
         </Row>
-        <Row term="Hex map">
-          The cartogram gives every district equal area, so the map shows seats rather than
-          acreage. Layout:{' '}
-          <a className={link} href={districts.layout.url}>
-            {districts.layout.layout}
-          </a>{' '}
-          by {districts.layout.author}, used under{' '}
-          <a className={link} href={districts.layout.licenseUrl}>
-            {districts.layout.license}
-          </a>
-          .
+        <Row term="Map">
+          Districts are drawn from U.S. Census Bureau TIGER/Line cartographic boundaries for
+          the 119th Congress, projected to Albers USA with Alaska and Hawaii inset. It is a
+          real geographic map, so a physically small urban district reads small and a large
+          rural one large; the color, not the area, carries the data. Public domain.
         </Row>
         <Row term="Birthdays">
           Birth dates come from the same{' '}
