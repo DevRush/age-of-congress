@@ -2,7 +2,9 @@ import { Section } from '@/components/Section'
 import { Hero } from '@/components/Hero'
 import { ChamberSplit } from '@/components/ChamberSplit'
 import { Decades } from '@/components/Decades'
+import { ContextAside } from '@/components/ContextAside'
 import { Rankings } from '@/components/Rankings'
+import { PartyAge } from '@/components/PartyAge'
 import { DistrictMap } from '@/components/DistrictMap'
 import { Histogram } from '@/components/Histogram'
 import { HistoryChart } from '@/components/HistoryChart'
@@ -10,6 +12,7 @@ import { Birthdays } from '@/components/Birthdays'
 import { GenerationGap } from '@/components/GenerationGap'
 import { Methodology } from '@/components/Methodology'
 import congress from '@/data/congress.json'
+import partyAge from '@/data/party-age.json'
 import population from '@/data/population.json'
 import districts from '@/data/districts.json'
 import birthdays from '@/data/birthdays.json'
@@ -43,10 +46,29 @@ export default function Page() {
         }
       >
         <Decades />
+        <ContextAside />
       </Section>
 
       <Section title="The Rankings">
         <Rankings />
+      </Section>
+
+      <Section
+        title="Across the Aisle"
+        footnote={
+          <>
+            Party is each member&rsquo;s current-term party; the {partyAge.overall.find((p) => p.party === 'I')?.n ?? 0}{' '}
+            independents are counted on their own, not with the party they caucus with. Ages use the
+            same edition-year convention as the sections above. The average comparison is a Welch
+            two-sample t-test (unequal variance) of Democratic against Republican ages &mdash; the
+            gap is {Math.abs((partyAge.overall.find((p) => p.party === 'D')!.meanAge) - (partyAge.overall.find((p) => p.party === 'R')!.meanAge)).toFixed(1)}{' '}
+            years, well within the range chance produces. The tail figures are plain counts of the
+            roster at several age thresholds (65, 70, 75, 80); because more than one threshold was
+            examined, they are reported as counts rather than as significance tests.
+          </>
+        }
+      >
+        <PartyAge />
       </Section>
 
       <Section

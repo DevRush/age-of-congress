@@ -1,0 +1,365 @@
+{
+  "atYear": 2026,
+  "convention": "edition-year age (atYear − birthYear); current-term party; Independents shown separately",
+  "overall": [
+    {
+      "party": "D",
+      "n": 257,
+      "meanAge": 60.35408560311284
+    },
+    {
+      "party": "R",
+      "n": 271,
+      "meanAge": 59.708487084870846
+    },
+    {
+      "party": "I",
+      "n": 3,
+      "meanAge": 69.33333333333333
+    }
+  ],
+  "senate": [
+    {
+      "party": "D",
+      "n": 45,
+      "meanAge": 65.04444444444445
+    },
+    {
+      "party": "R",
+      "n": 53,
+      "meanAge": 65.33962264150944
+    },
+    {
+      "party": "I",
+      "n": 2,
+      "meanAge": 83.5
+    }
+  ],
+  "house": [
+    {
+      "party": "D",
+      "n": 212,
+      "meanAge": 59.35849056603774
+    },
+    {
+      "party": "R",
+      "n": 218,
+      "meanAge": 58.3394495412844
+    },
+    {
+      "party": "I",
+      "n": 1,
+      "meanAge": 41
+    }
+  ],
+  "bands": [
+    {
+      "threshold": 65,
+      "D": 99,
+      "R": 95,
+      "I": 2,
+      "total": 196
+    },
+    {
+      "threshold": 70,
+      "D": 75,
+      "R": 57,
+      "I": 2,
+      "total": 134
+    },
+    {
+      "threshold": 75,
+      "D": 45,
+      "R": 26,
+      "I": 2,
+      "total": 73
+    },
+    {
+      "threshold": 80,
+      "D": 18,
+      "R": 7,
+      "I": 2,
+      "total": 27
+    }
+  ],
+  "houseBands": [
+    {
+      "threshold": 65,
+      "D": 75,
+      "R": 65,
+      "I": 0,
+      "total": 140
+    },
+    {
+      "threshold": 70,
+      "D": 60,
+      "R": 37,
+      "I": 0,
+      "total": 97
+    },
+    {
+      "threshold": 75,
+      "D": 34,
+      "R": 17,
+      "I": 0,
+      "total": 51
+    },
+    {
+      "threshold": 80,
+      "D": 15,
+      "R": 4,
+      "I": 0,
+      "total": 19
+    }
+  ],
+  "over80": {
+    "total": 27,
+    "D": 18,
+    "R": 7,
+    "I": 2,
+    "members": [
+      {
+        "bioguide": "G000386",
+        "name": "Chuck Grassley",
+        "party": "R",
+        "chamber": "senate",
+        "state": "IA",
+        "age": 93
+      },
+      {
+        "bioguide": "R000395",
+        "name": "Harold Rogers",
+        "party": "R",
+        "chamber": "house",
+        "state": "KY",
+        "age": 89
+      },
+      {
+        "bioguide": "W000187",
+        "name": "Maxine Waters",
+        "party": "D",
+        "chamber": "house",
+        "state": "CA",
+        "age": 88
+      },
+      {
+        "bioguide": "H000874",
+        "name": "Steny H. Hoyer",
+        "party": "D",
+        "chamber": "house",
+        "state": "MD",
+        "age": 87
+      },
+      {
+        "bioguide": "C000537",
+        "name": "James E. Clyburn",
+        "party": "D",
+        "chamber": "house",
+        "state": "SC",
+        "age": 86
+      },
+      {
+        "bioguide": "P000197",
+        "name": "Nancy Pelosi",
+        "party": "D",
+        "chamber": "house",
+        "state": "CA",
+        "age": 86
+      },
+      {
+        "bioguide": "S000033",
+        "name": "Bernard Sanders",
+        "party": "I",
+        "chamber": "senate",
+        "state": "VT",
+        "age": 85
+      },
+      {
+        "bioguide": "D000096",
+        "name": "Danny K. Davis",
+        "party": "D",
+        "chamber": "house",
+        "state": "IL",
+        "age": 85
+      },
+      {
+        "bioguide": "C001051",
+        "name": "John R. Carter",
+        "party": "R",
+        "chamber": "house",
+        "state": "TX",
+        "age": 85
+      },
+      {
+        "bioguide": "W000808",
+        "name": "Frederica S. Wilson",
+        "party": "D",
+        "chamber": "house",
+        "state": "FL",
+        "age": 84
+      },
+      {
+        "bioguide": "M000355",
+        "name": "Mitch McConnell",
+        "party": "R",
+        "chamber": "senate",
+        "state": "KY",
+        "age": 84
+      },
+      {
+        "bioguide": "R000584",
+        "name": "James E. Risch",
+        "party": "R",
+        "chamber": "senate",
+        "state": "ID",
+        "age": 83
+      },
+      {
+        "bioguide": "D000216",
+        "name": "Rosa L. DeLauro",
+        "party": "D",
+        "chamber": "house",
+        "state": "CT",
+        "age": 83
+      },
+      {
+        "bioguide": "F000450",
+        "name": "Virginia Foxx",
+        "party": "R",
+        "chamber": "house",
+        "state": "NC",
+        "age": 83
+      },
+      {
+        "bioguide": "K000383",
+        "name": "Angus S. King, Jr.",
+        "party": "I",
+        "chamber": "senate",
+        "state": "ME",
+        "age": 82
+      },
+      {
+        "bioguide": "M001163",
+        "name": "Doris O. Matsui",
+        "party": "D",
+        "chamber": "house",
+        "state": "CA",
+        "age": 82
+      },
+      {
+        "bioguide": "C001061",
+        "name": "Emanuel Cleaver",
+        "party": "D",
+        "chamber": "house",
+        "state": "MO",
+        "age": 82
+      },
+      {
+        "bioguide": "S001145",
+        "name": "Janice D. Schakowsky",
+        "party": "D",
+        "chamber": "house",
+        "state": "IL",
+        "age": 82
+      },
+      {
+        "bioguide": "D000563",
+        "name": "Richard J. Durbin",
+        "party": "D",
+        "chamber": "senate",
+        "state": "IL",
+        "age": 82
+      },
+      {
+        "bioguide": "W000822",
+        "name": "Bonnie Watson Coleman",
+        "party": "D",
+        "chamber": "house",
+        "state": "NJ",
+        "age": 81
+      },
+      {
+        "bioguide": "B001307",
+        "name": "James R. Baird",
+        "party": "R",
+        "chamber": "house",
+        "state": "IN",
+        "age": 81
+      },
+      {
+        "bioguide": "G000559",
+        "name": "John Garamendi",
+        "party": "D",
+        "chamber": "house",
+        "state": "CA",
+        "age": 81
+      },
+      {
+        "bioguide": "A000370",
+        "name": "Alma S. Adams",
+        "party": "D",
+        "chamber": "house",
+        "state": "NC",
+        "age": 80
+      },
+      {
+        "bioguide": "M000133",
+        "name": "Edward J. Markey",
+        "party": "D",
+        "chamber": "senate",
+        "state": "MA",
+        "age": 80
+      },
+      {
+        "bioguide": "D000399",
+        "name": "Lloyd Doggett",
+        "party": "D",
+        "chamber": "house",
+        "state": "TX",
+        "age": 80
+      },
+      {
+        "bioguide": "K000009",
+        "name": "Marcy Kaptur",
+        "party": "D",
+        "chamber": "house",
+        "state": "OH",
+        "age": 80
+      },
+      {
+        "bioguide": "B001277",
+        "name": "Richard Blumenthal",
+        "party": "D",
+        "chamber": "senate",
+        "state": "CT",
+        "age": 80
+      }
+    ]
+  },
+  "welch": {
+    "overall": {
+      "group": "overall",
+      "nD": 257,
+      "nR": 271,
+      "meanD": 60.35408560311284,
+      "meanR": 59.708487084870846,
+      "meanDiff": 0.6455985182419965,
+      "t": 0.5987364879664224,
+      "df": 507.6853054976397,
+      "p": 0.5496156671662755,
+      "cohenD": 0.05232218975081123
+    },
+    "senate": {
+      "group": "senate",
+      "nD": 45,
+      "nR": 53,
+      "meanD": 65.04444444444445,
+      "meanR": 65.33962264150944,
+      "meanDiff": -0.2951781970649847,
+      "t": -0.13739078671864494,
+      "df": 93.36506679015392,
+      "p": 0.8910177679257065,
+      "cohenD": -0.0278557324738574
+    }
+  }
+}

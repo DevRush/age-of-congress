@@ -15,6 +15,7 @@ import {
 } from './districts'
 import { computeHistorical, congressNumber, flattenTerms } from './historical'
 import { httpGet } from './http'
+import { assertPartyAge, computePartyAge } from './party-age'
 import overrides from './photo-overrides.json'
 import { parseMembers } from './parse-members'
 import { resolvePhoto } from './photos'
@@ -106,6 +107,12 @@ async function main() {
   const contextLines = generateContextLines(overall.meanDobMs, overall.count)
   gate(contextLines.length >= 4, `only ${contextLines.length} context lines generated`)
 
+  // "Across the Aisle" — party ages on the edition-year convention (same as The
+  // Decades / The Shape of Congress), so the bands here line up with those bars.
+  const editionYear = new Date(nowMs).getUTCFullYear()
+  const partyAge = computePartyAge(members, editionYear)
+  assertPartyAge(partyAge, members) // means present for D/R, bands partition, and the "same age" claim still holds
+
   console.log('Fetching district ages (ACS B01001, adult 18+ basis)…')
   const parsed = await fetchDistrictAges()
   assertDistrictAges(parsed) // 435 districts, 119th-Congress vintage, national ≈47.5
@@ -167,6 +174,7 @@ async function main() {
   await writeFile('src/data/congress.json', JSON.stringify(siteData, null, 2))
   await writeFile('src/data/historical.json', JSON.stringify(historical, null, 2))
   await writeFile('src/data/context-lines.json', JSON.stringify(contextLines, null, 2))
+  await writeFile('src/data/party-age.json', JSON.stringify(partyAge, null, 2))
   await writeFile(
     'src/data/districts.json',
     JSON.stringify(
@@ -196,6 +204,16 @@ async function main() {
     ),
   )
   console.log(`OK — ${overall.count} voting members, mean age ${meanAge.toFixed(2)}, ${ranked.length} portraits, ${contextLines.length} context lines, ${historical.length} congresses`)
+  {
+    const d = partyAge.overall.find((p) => p.party === 'D')!
+    const r = partyAge.overall.find((p) => p.party === 'R')!
+    const w = partyAge.welch.overall
+    console.log(
+      `   party — D ${d.meanAge.toFixed(1)} (n${d.n}) vs R ${r.meanAge.toFixed(1)} (n${r.n}), ` +
+        `gap ${w.meanDiff.toFixed(2)}yr, Welch p=${w.p.toFixed(3)}, d=${w.cohenD.toFixed(3)}; ` +
+        `80+ split D${partyAge.over80.D}/R${partyAge.over80.R}/I${partyAge.over80.I} of ${partyAge.over80.total}`,
+    )
+  }
   console.log(
     `   districts — ${districtRows.length} seats (${gaps.joined} joined, ${gaps.vacant} vacant), ` +
       `national adult median ${parsed.nationalAdultMedianAge?.toFixed(2)}, mean gap ${gaps.meanGap.toFixed(2)}, ` +

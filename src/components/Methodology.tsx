@@ -3,6 +3,8 @@ import population from '@/data/population.json'
 import districts from '@/data/districts.json'
 import birthdays from '@/data/birthdays.json'
 import historical from '@/data/historical.json'
+import partyAge from '@/data/party-age.json'
+import type { Party } from '@/lib/types'
 import { coverageSince, ordinal } from '@/lib/coverage'
 import type { HistoricalPoint } from '@/lib/types'
 
@@ -57,6 +59,18 @@ export function Methodology() {
           reduce the divisor rather than being imputed — figures are currently based on{' '}
           {data.senate.count} sitting senators (of 100 seats) and {data.house.count} voting
           representatives (of 435 seats).
+        </Row>
+        <Row term="Party">
+          &ldquo;Across the Aisle&rdquo; compares members by their current-term party. Party mean
+          ages use the same edition-year age convention as the rest of the page. The average
+          Democratic&ndash;Republican comparison is a Welch two-sample t-test, which does not assume
+          the two parties&rsquo; age spreads are equal; the difference is well within what chance
+          produces, so the two averages are treated as indistinguishable. The tail figures &mdash;
+          how many members pass 65, 70, 75 and 80 &mdash; are plain counts, and because several
+          thresholds were examined they are reported as counts rather than as significance tests.
+          The {partyAge.overall.find((p) => (p.party as Party) === 'I')?.n ?? 0} independents (Sanders
+          and King in the Senate, and one representative) are shown on their own and are never folded
+          into the party they caucus with.
         </Row>
         <Row term="Sources">
           Membership, birth dates, party, and term histories come from the{' '}
