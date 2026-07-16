@@ -1,6 +1,7 @@
 import data from '@/data/congress.json'
 import population from '@/data/population.json'
 import districts from '@/data/districts.json'
+import birthdays from '@/data/birthdays.json'
 
 /**
  * The citability layer: a newspaper's fine-print methodology box. It is set
@@ -89,6 +90,21 @@ export function Methodology() {
             {districts.layout.license}
           </a>
           .
+        </Row>
+        <Row term="Birthdays">
+          Birth dates come from the same{' '}
+          <a className={link} href="https://github.com/unitedstates/congress-legislators">
+            @unitedstates congress-legislators dataset
+          </a>{' '}
+          (CC0) as every other figure here, and the comparison covers voting members only
+          &mdash; {birthdays.stats.totalMembers} of them, on the same basis as the averages
+          above. The calendar carries all 366 dates a birthday can fall on; the roster
+          currently occupies {birthdays.stats.distinctDaysUsed} of them and leaves{' '}
+          {birthdays.stats.emptyDays} empty. The random baseline against which those are
+          measured is the textbook uniform model, in which every birthday is equally likely
+          and February 29 is ignored: n(n−1)/2 ÷ 365 expected sharing pairs, and 365 × (1 −
+          1/365)<sup>n</sup> expected days with nobody. Only birth years are shown by name;
+          the section makes no claim about why the year is shaped the way it is.
         </Row>
         <Row term="Portraits">
           Portraits are official congressional photographs (public domain), courtesy of the U.S.

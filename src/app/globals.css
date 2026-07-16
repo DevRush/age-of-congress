@@ -77,6 +77,51 @@ body {
    jumps to the next hex. There is nothing here for prefers-reduced-motion to
    turn off, which is the intended answer rather than an oversight. */
 
+/* Shared Birthdays — 366 dates, shaded by how many members were born on each.
+   Two shadow slots rather than one `box-shadow` per state: an empty date that is
+   also the hovered one needs its socket AND its ring at the same time, and the
+   two rules would otherwise overwrite each other. Compositing them through
+   custom properties lets each state set only its own slot. */
+.bday-cell {
+  aspect-ratio: 1;
+  border-radius: 1.5px;
+  outline: none;
+  --bday-socket: 0 0 0 0 transparent;
+  --bday-ring: 0 0 0 0 transparent;
+  box-shadow: var(--bday-socket), var(--bday-ring);
+}
+
+/* A date nobody was born on — 105 of the 366.
+   Not the pale end of the ramp. A shade-zero fill would file these days as the
+   quietest members of the same series and the eye would scan straight over them;
+   they are the finding, so they are drawn as absence: the paper itself, ringed by
+   a hairline that says "this is a date" while the empty middle says "and nobody
+   is in it". The ramp has no zero step for the same reason (see COUNT_RAMP). */
+.bday-empty {
+  --bday-socket: inset 0 0 0 1px var(--rule);
+}
+
+/* The busiest day, and the day under the cursor, wear the same ink ring — the
+   map's device for "look here", and the peak is permanently being looked at. The
+   ring is detached by a hairline of paper so it stays legible against the
+   darkest step of the ramp, which is nearly ink itself. */
+.bday-peak,
+.bday-cell[data-active],
+.bday-cell:focus-visible {
+  --bday-ring: 0 0 0 1.5px var(--paper), 0 0 0 3px var(--ink);
+}
+
+.bday-swatch {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 1.5px;
+}
+
+/* Like the map, this figure animates nothing: the readout swaps text and the
+   ring moves to the next date. There is nothing here for prefers-reduced-motion
+   to turn off, which is the intended answer rather than an oversight. */
+
 /* Every ticking digit is boxed to a fixed advance so a changing glyph never
    shifts its neighbors. The width is in `em`, so it tracks the digit's own
    font-size — which is what lets the hero taper each decimal down in size

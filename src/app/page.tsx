@@ -6,12 +6,15 @@ import { Rankings } from '@/components/Rankings'
 import { DistrictMap } from '@/components/DistrictMap'
 import { Histogram } from '@/components/Histogram'
 import { HistoryChart } from '@/components/HistoryChart'
+import { Birthdays } from '@/components/Birthdays'
 import { GenerationGap } from '@/components/GenerationGap'
 import { Methodology } from '@/components/Methodology'
 import congress from '@/data/congress.json'
 import population from '@/data/population.json'
 import districts from '@/data/districts.json'
+import birthdays from '@/data/birthdays.json'
 import { GAP_CLAMP } from '@/lib/districtMap'
+import { uniformBaseline } from '@/lib/birthdays'
 
 export default function Page() {
   return (
@@ -87,6 +90,33 @@ export default function Page() {
         }
       >
         <HistoryChart />
+      </Section>
+
+      <Section
+        title="Shared Birthdays"
+        footnote={
+          <>
+            Every date a birthday can fall on, including February 29 &mdash; one member,
+            Ben Cline, has it. A &ldquo;sharing pair&rdquo; is any two members born on the
+            same month and day, counted once; a day with{' '}
+            {birthdays.stats.maxDay.count} members on it therefore contributes{' '}
+            {(birthdays.stats.maxDay.count * (birthdays.stats.maxDay.count - 1)) / 2} pairs,
+            not {birthdays.stats.maxDay.count}. The random baseline is the textbook uniform
+            model &mdash; every birthday equally likely, February 29 ignored: expected pairs
+            are n(n−1)/2 ÷ 365 and expected empty days are 365 × (1 − 1/365)
+            <sup>n</sup>, which at n = {birthdays.stats.totalMembers} gives{' '}
+            {birthdays.expected.expectedSharingPairs.toFixed(1)} and{' '}
+            {birthdays.expected.expectedEmptyDays.toFixed(1)}. The calendar drawn above has
+            366 days while that baseline has 365; running it on 366 instead gives{' '}
+            {uniformBaseline(birthdays.stats.totalMembers, 366).expectedSharingPairs.toFixed(1)}{' '}
+            pairs and{' '}
+            {uniformBaseline(birthdays.stats.totalMembers, 366).expectedEmptyDays.toFixed(1)}{' '}
+            empty days, so the excess holds under either convention and is not an artifact of
+            the choice. Voting members only, on the same basis as every other figure here.
+          </>
+        }
+      >
+        <Birthdays />
       </Section>
 
       <Section
