@@ -64,8 +64,9 @@ export function Methodology() {
             @unitedstates congress-legislators dataset
           </a>{' '}
           (CC0), maintained within days of congressional changes; this site rebuilds from it daily.
-          The birth date of every member shown by name is additionally cross-checked against Wikidata
-          at build time; the site does not publish if the two sources disagree.
+          The birth date of every member shown with a portrait — the oldest and youngest of each
+          chamber — is additionally cross-checked against Wikidata at build time; the site does not
+          publish if the two sources disagree.
         </Row>
         <Row term="History">
           Historical averages are computed from the same project&rsquo;s records of the roughly

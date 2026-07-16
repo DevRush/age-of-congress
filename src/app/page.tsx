@@ -74,7 +74,8 @@ export default function Page() {
         title="The Shape of Congress"
         footnote={
           <>
-            Voting members binned by age at the edition date; each dot is one member.
+            Voting members binned by the age each reaches during the edition year, computed
+            from birth year; each dot is one member.
             Population silhouette: {population.source}, rescaled to the member count.
           </>
         }

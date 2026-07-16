@@ -7,6 +7,7 @@ import {
   populationShares,
   type PopBin,
 } from '@/lib/generations'
+import { trunc1 } from '@/lib/format'
 
 /**
  * "The Generation Gap" — the roster against the country it is drawn from.
@@ -67,7 +68,7 @@ export function GenerationGap() {
           GENERATIONS.map((g, i) => {
             const c = inCongress[i]
             const p = inCountry[i]
-            return `${g.name}, ${pct(c.share)} of Congress against ${pct(p.share)} of the country`
+            return `${g.name}, ${pct(c.share)} of Congress against ${pctFloor(p.share)} of the country`
           }).join('; ') +
           '.'
         }
@@ -91,7 +92,7 @@ export function GenerationGap() {
         </strong>{' '}
         of the seats and makes up{' '}
         <strong className="tnum font-semibold text-[var(--ink)]">
-          {pct(genZCountry.share)}
+          {pctFloor(genZCountry.share)}
         </strong>{' '}
         of the Americans old enough to fill them.
       </figcaption>
@@ -135,11 +136,12 @@ function Row({
       </div>
 
       <div aria-hidden className="mt-2 space-y-[3px]">
-        <Bar value={congress} max={max} fill="var(--ink)" />
+        <Bar value={congress} max={max} fill="var(--ink)" format={pct} />
         <Bar
           value={country}
           max={max}
           fill="color-mix(in srgb, var(--ink) 22%, var(--paper))"
+          format={pctFloor}
         />
       </div>
     </div>
@@ -147,7 +149,17 @@ function Row({
 }
 
 /** One bar, with its share direct-labelled in a fixed column at the right. */
-function Bar({ value, max, fill }: { value: number; max: number; fill: string }) {
+function Bar({
+  value,
+  max,
+  fill,
+  format,
+}: {
+  value: number
+  max: number
+  fill: string
+  format: (share: number) => string
+}) {
   return (
     <div className="grid grid-cols-[1fr_2.75rem] items-center gap-2.5">
       <span className="block">
@@ -157,7 +169,7 @@ function Bar({ value, max, fill }: { value: number; max: number; fill: string })
         />
       </span>
       <span className="meta tnum text-right text-[0.75rem] text-[var(--ink-soft)]">
-        {pct(value)}
+        {format(value)}
       </span>
     </div>
   )
@@ -176,7 +188,21 @@ function Key({ fill, children }: { fill: string; children: ReactNode }) {
   )
 }
 
-/** One decimal throughout: Gen Z's 0.2% would round away at zero. */
+/**
+ * Congress shares, rounded to one decimal. Every voting member falls in a band
+ * (all were born 1928–2012), so these cover the whole roster and rounding to the
+ * nearest tenth keeps each figure — including Gen Z's lone 0.2% — honest.
+ */
 function pct(share: number): string {
   return `${(share * 100).toFixed(1)}%`
+}
+
+/**
+ * Country shares, truncated to one decimal. The five bands leave out adults 98
+ * and older, so the country's shares genuinely sum to just under 100; truncating
+ * (rather than rounding up) is what lets the printed figures reflect that
+ * shortfall instead of rounding back up to a false 100.0.
+ */
+function pctFloor(share: number): string {
+  return `${trunc1(share * 100)}%`
 }

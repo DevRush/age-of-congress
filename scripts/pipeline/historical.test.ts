@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { ageYears, dobToMs } from '../../src/lib/age'
 import raw from './__fixtures__/historical-fixture.json'
 import { computeHistorical, congressNumber, conveningDate, flattenTerms } from './historical'
 
@@ -47,5 +48,27 @@ describe('computeHistorical', () => {
     const dup = flattenTerms(raw as any[])
     dup.push({ ...dup.find((t) => t.pid === 'H000003')! })
     expect(computeHistorical(dup, '1795-01-01').find((p) => p.congress === 1)!.senateN).toBe(1)
+  })
+  it('counts a seat once when its member is replaced mid-Congress (death + replacement)', () => {
+    // The core bug: deduping by PERSON let a member who left mid-term AND the
+    // replacement who filled the seat both count. Deduping by SEAT counts the
+    // seat once — and the member sitting on the convening date (here the older
+    // incumbent) represents it, so the younger replacement never pulls the
+    // average down. Both hold Delaware's single district-1 seat this Congress.
+    const people = [
+      {
+        id: { bioguide: 'X000001' },
+        bio: { birthday: '1740-01-01' },
+        terms: [{ type: 'rep', start: '1789-03-04', end: '1790-06-01', state: 'DE', district: 1 }],
+      },
+      {
+        id: { bioguide: 'X000002' },
+        bio: { birthday: '1765-01-01' },
+        terms: [{ type: 'rep', start: '1790-07-01', end: '1791-03-03', state: 'DE', district: 1 }],
+      },
+    ]
+    const p1 = computeHistorical(flattenTerms(people), '1795-01-01').find((p) => p.congress === 1)!
+    expect(p1.houseN).toBe(1)
+    expect(p1.houseMean!).toBeCloseTo(ageYears(dobToMs('1740-01-01'), dobToMs('1789-03-04')), 5)
   })
 })

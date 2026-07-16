@@ -2,6 +2,7 @@ import congress from '@/data/congress.json'
 import historical from '@/data/historical.json'
 import { ageYears } from '@/lib/age'
 import { linePath, scaleLinear } from '@/lib/chart'
+import { trunc1 } from '@/lib/format'
 import type { HistoricalPoint } from '@/lib/types'
 
 /**
@@ -81,12 +82,17 @@ export function HistoryChart() {
   const todayHouse = ageYears(congress.house.meanDobMs, baselineMs)
   const todayX = x(2026.5)
 
-  // The postwar trough: the youngest Congress of the modern era.
+  // The postwar trough: the youngest Congress of the modern era, by its combined
+  // (both-chamber) average. It is anchored to that overall mean — a point that
+  // falls between the two chamber lines — and NOT to the House line: the marker
+  // describes the whole institution, and the House's own post-1900 low is a
+  // different, earlier year, so sitting the label on the House series would claim
+  // something about the House that is not true.
   const modernLow = points
     .filter((p) => p.year >= 1900)
     .reduce((a, b) => ((a.overallMean ?? 99) < (b.overallMean ?? 99) ? a : b))
   const lowX = x(modernLow.year)
-  const lowY = y(modernLow.houseMean!)
+  const lowY = y(modernLow.overallMean!)
 
   // Right edge of the shaded low-coverage band, midway to the first solid Congress.
   const bandRight = x(1842)
@@ -210,7 +216,7 @@ export function HistoryChart() {
             strokeLinejoin="round"
           />
 
-          {/* Modern-low annotation, anchored to the valley floor (House line). */}
+          {/* Modern-low annotation, anchored to the combined-average trough. */}
           <line
             x1={lowX}
             x2={lowX}
@@ -239,7 +245,7 @@ export function HistoryChart() {
             fontStyle="italic"
             fill="var(--ink-soft)"
           >
-            the modern low
+            Congress&rsquo;s modern low
           </text>
 
           {/* Solid endpoints at the final Congress. */}
@@ -311,7 +317,7 @@ export function HistoryChart() {
         {last.year}. Dashed, paler segments mark the early Congresses, where birth
         dates are unknown for more than a tenth of members. The open dots at the
         right are today&rsquo;s sitting members, now averaging{' '}
-        {todaySenate.toFixed(1)} in the Senate and {todayHouse.toFixed(1)} in the
+        {trunc1(todaySenate)} in the Senate and {trunc1(todayHouse)} in the
         House.
       </figcaption>
     </figure>

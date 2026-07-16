@@ -70,10 +70,37 @@ async function main() {
   console.log('Computing 1789→today averages…')
   const historical = computeHistorical(flattenTerms([...historicalRaw, ...currentRaw]), today)
   const at = (n: number) => historical.find((p) => p.congress === n)!
-  gate(close(at(119).senateMean!, 63.9, 1.5), `119th senate ${at(119).senateMean?.toFixed(2)} vs CRS 63.9`)
-  gate(close(at(119).houseMean!, 57.9, 1.5), `119th house ${at(119).houseMean?.toFixed(2)} vs CRS 57.9`)
-  gate(close(at(66).overallMean!, 51.7, 1.5), `66th overall ${at(66).overallMean?.toFixed(2)} vs 538 51.7`)
-  gate(close(at(97).overallMean!, 49.5, 1.5), `97th overall ${at(97).overallMean?.toFixed(2)} vs 538 49.5`)
+
+  // Seat-count sanity — the sharpest catch for the seat-vs-person bug. Counting a
+  // member AND the replacement who filled their seat inflated the headcount and,
+  // because replacements skew younger, biased every average low (the 119th read
+  // 104 senators / 443 reps before the fix). The Senate has never seated more
+  // than 100; the House has held its permanent 435 single-member-district size
+  // since the 73rd Congress (1933). Earlier Congresses — the growing early House
+  // and the 1913–1932 stretch when several states elected members "at large" ON
+  // TOP of their districts — carry seats the @unitedstates data labels such that
+  // one member per (state, district) key can still top 435, so they take the
+  // wider historical ceiling. These bounds are hard: the corrected data must sit
+  // under them for every Congress, not on average.
+  const houseCap = (congress: number) => (congress >= 73 ? 435 : 442)
+  const overseated = historical.filter((p) => p.houseN > houseCap(p.congress))
+  gate(
+    historical.every((p) => p.senateN <= 100),
+    `a Congress seats more than 100 senators: ${historical.filter((p) => p.senateN > 100).map((p) => `${p.congress}=${p.senateN}`).join(', ')}`,
+  )
+  gate(
+    overseated.length === 0,
+    `a Congress seats more representatives than its chamber holds: ${overseated.map((p) => `${p.congress}=${p.houseN}`).join(', ')}`,
+  )
+
+  // Recent Congresses against the Congressional Research Service (R48535, the
+  // 119th) and FiveThirtyEight's member-level set (66th, 97th). Tightened from
+  // ±1.5 — the old tolerance was loose enough to swallow a 0.3-year bias, which
+  // is exactly what the seat bug produced and how it went unnoticed.
+  gate(close(at(119).senateMean!, 63.9, 0.3), `119th senate ${at(119).senateMean?.toFixed(2)} vs CRS 63.9`)
+  gate(close(at(119).houseMean!, 57.9, 0.3), `119th house ${at(119).houseMean?.toFixed(2)} vs CRS 57.9`)
+  gate(close(at(66).overallMean!, 51.7, 0.4), `66th overall ${at(66).overallMean?.toFixed(2)} vs 538 51.7`)
+  gate(close(at(97).overallMean!, 49.5, 0.3), `97th overall ${at(97).overallMean?.toFixed(2)} vs 538 49.5`)
   gate(historical.filter((p) => p.congress >= 31).every((p) => p.birthdayCoverage >= 0.9), 'post-1849 birthday coverage below 90%')
 
   const contextLines = generateContextLines(overall.meanDobMs, overall.count)
