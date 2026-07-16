@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import sharp from 'sharp'
 import { ageYears } from '../../src/lib/age'
 import type { Member } from '../../src/lib/types'
+import { assertBirthdaySummary, computeBirthdays } from './birthdays'
 import { generateContextLines } from './context-lines'
 import {
   CENSUS_SOURCE,
@@ -102,6 +103,21 @@ async function main() {
   const missingHex = districtRows.filter((r) => !hexGeoids.has(r.geoid)).map((r) => r.geoid)
   gate(missingHex.length === 0, `districts with no hex in the layout: ${missingHex.join(', ')}`)
 
+  console.log('Grouping birthdays onto the calendar…')
+  const birthdays = computeBirthdays(members)
+  assertBirthdaySummary(birthdays, members) // partition of the voting roster: no member lost, none doubled
+  const bstats = birthdays.stats
+
+  gate(bstats.totalMembers === overall.count, `birthdays cover ${bstats.totalMembers} members, overall stats say ${overall.count}`)
+  gate(bstats.maxDay.md !== null, 'no busiest birthday — the calendar is empty')
+  // Seasonal clustering means actual collisions should EXCEED the uniform baseline. If they
+  // ever fall far short, the grouping has broken (e.g. dates parsed to the wrong day).
+  gate(
+    bstats.sharingPairs >= birthdays.expected.expectedSharingPairs * 0.5,
+    `only ${bstats.sharingPairs} sharing pairs vs a uniform expectation of ` +
+      `${birthdays.expected.expectedSharingPairs.toFixed(1)} — birthday grouping looks broken`,
+  )
+
   const toCard = (m: Member & { rank: number }) => ({ ...m, photo: `/images/members/${m.bioguide}-320.webp` })
   const siteData = {
     generatedAt: nowIso,
@@ -139,11 +155,30 @@ async function main() {
       2,
     ),
   )
+  await writeFile(
+    'src/data/birthdays.json',
+    JSON.stringify(
+      {
+        generatedAt: nowIso,
+        stats: bstats,
+        expected: birthdays.expected, // uniform-random baseline — actual runs ahead of it, by intent
+        days: birthdays.days,
+      },
+      null,
+      2,
+    ),
+  )
   console.log(`OK — ${overall.count} voting members, mean age ${meanAge.toFixed(2)}, ${ranked.length} portraits, ${contextLines.length} context lines, ${historical.length} congresses`)
   console.log(
     `   districts — ${districtRows.length} seats (${gaps.joined} joined, ${gaps.vacant} vacant), ` +
       `national adult median ${parsed.nationalAdultMedianAge?.toFixed(2)}, mean gap ${gaps.meanGap.toFixed(2)}, ` +
       `${(gaps.pctOlder * 100).toFixed(1)}% older than their district, range ${gaps.minGap}…${gaps.maxGap}`,
+  )
+  console.log(
+    `   birthdays — ${bstats.distinctDaysUsed} days used, ${bstats.emptyDays} empty (expected ` +
+      `${birthdays.expected.expectedEmptyDays.toFixed(1)}), ${bstats.sharingPairs} sharing pairs (expected ` +
+      `${birthdays.expected.expectedSharingPairs.toFixed(1)}), ${bstats.membersSharing} members sharing, ` +
+      `busiest ${bstats.maxDay.md} with ${bstats.maxDay.count}`,
   )
 }
 

@@ -1,0 +1,5577 @@
+{
+  "generatedAt": "2026-07-16T04:15:25.656Z",
+  "stats": {
+    "totalMembers": 531,
+    "distinctDaysUsed": 261,
+    "emptyDays": 105,
+    "sharingPairs": 425,
+    "membersSharing": 426,
+    "daysWith2plus": 156,
+    "daysWith3plus": 82,
+    "daysWith4plus": 24,
+    "daysWith5plus": 7,
+    "maxDay": {
+      "md": "10-24",
+      "count": 6
+    }
+  },
+  "expected": {
+    "expectedEmptyDays": 85.03868889358542,
+    "expectedSharingPairs": 385.52054794520546
+  },
+  "days": [
+    {
+      "md": "01-01",
+      "members": [
+        {
+          "bioguide": "H001086",
+          "name": "Diana Harshbarger",
+          "party": "R",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1960
+        },
+        {
+          "bioguide": "S001185",
+          "name": "Terri A. Sewell",
+          "party": "D",
+          "chamber": "house",
+          "state": "AL",
+          "birthYear": 1965
+        }
+      ]
+    },
+    {
+      "md": "01-03",
+      "members": [
+        {
+          "bioguide": "C001132",
+          "name": "Elijah Crane",
+          "party": "R",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1980
+        },
+        {
+          "bioguide": "V000131",
+          "name": "Marc A. Veasey",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "01-04",
+      "members": [
+        {
+          "bioguide": "S001223",
+          "name": "Emilia Strong Sykes",
+          "party": "D",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1986
+        }
+      ]
+    },
+    {
+      "md": "01-06",
+      "members": [
+        {
+          "bioguide": "L000491",
+          "name": "Frank D. Lucas",
+          "party": "R",
+          "chamber": "house",
+          "state": "OK",
+          "birthYear": 1960
+        },
+        {
+          "bioguide": "O000177",
+          "name": "Robert F. Onder, Jr.",
+          "party": "R",
+          "chamber": "house",
+          "state": "MO",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "01-07",
+      "members": [
+        {
+          "bioguide": "T000250",
+          "name": "John Thune",
+          "party": "R",
+          "chamber": "senate",
+          "state": "SD",
+          "birthYear": 1961
+        },
+        {
+          "bioguide": "J000309",
+          "name": "Jonathan L. Jackson",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1966
+        },
+        {
+          "bioguide": "P000603",
+          "name": "Rand Paul",
+          "party": "R",
+          "chamber": "senate",
+          "state": "KY",
+          "birthYear": 1963
+        }
+      ]
+    },
+    {
+      "md": "01-10",
+      "members": [
+        {
+          "bioguide": "V000128",
+          "name": "Chris Van Hollen",
+          "party": "D",
+          "chamber": "senate",
+          "state": "MD",
+          "birthYear": 1959
+        }
+      ]
+    },
+    {
+      "md": "01-11",
+      "members": [
+        {
+          "bioguide": "T000463",
+          "name": "Michael R. Turner",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1960
+        }
+      ]
+    },
+    {
+      "md": "01-12",
+      "members": [
+        {
+          "bioguide": "B000668",
+          "name": "Cliff Bentz",
+          "party": "R",
+          "chamber": "house",
+          "state": "OR",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "01-13",
+      "members": [
+        {
+          "bioguide": "M001184",
+          "name": "Thomas Massie",
+          "party": "R",
+          "chamber": "house",
+          "state": "KY",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "01-14",
+      "members": [
+        {
+          "bioguide": "M001157",
+          "name": "Michael T. McCaul",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "F000446",
+          "name": "Randy Feenstra",
+          "party": "R",
+          "chamber": "house",
+          "state": "IA",
+          "birthYear": 1969
+        }
+      ]
+    },
+    {
+      "md": "01-16",
+      "members": [
+        {
+          "bioguide": "B001306",
+          "name": "Troy Balderson",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "01-17",
+      "members": [
+        {
+          "bioguide": "G000593",
+          "name": "Carlos A. Gimenez",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1954
+        },
+        {
+          "bioguide": "F000476",
+          "name": "Maxwell Frost",
+          "party": "D",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1997
+        }
+      ]
+    },
+    {
+      "md": "01-21",
+      "members": [
+        {
+          "bioguide": "M001240",
+          "name": "Addison P. McDowell",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1994
+        },
+        {
+          "bioguide": "R000622",
+          "name": "Josh Riley",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1981
+        },
+        {
+          "bioguide": "C001096",
+          "name": "Kevin Cramer",
+          "party": "R",
+          "chamber": "senate",
+          "state": "ND",
+          "birthYear": 1961
+        }
+      ]
+    },
+    {
+      "md": "01-22",
+      "members": [
+        {
+          "bioguide": "C001087",
+          "name": "Eric A. \"Rick\" Crawford",
+          "party": "R",
+          "chamber": "house",
+          "state": "AR",
+          "birthYear": 1966
+        }
+      ]
+    },
+    {
+      "md": "01-23",
+      "members": [
+        {
+          "bioguide": "S001228",
+          "name": "Derek Schmidt",
+          "party": "R",
+          "chamber": "house",
+          "state": "KS",
+          "birthYear": 1968
+        },
+        {
+          "bioguide": "S001199",
+          "name": "Lloyd Smucker",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "01-24",
+      "members": [
+        {
+          "bioguide": "C001110",
+          "name": "J. Luis Correa",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1958
+        },
+        {
+          "bioguide": "E000071",
+          "name": "Jake Ellzey",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "G000559",
+          "name": "John Garamendi",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1945
+        },
+        {
+          "bioguide": "T000460",
+          "name": "Mike Thompson",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1951
+        }
+      ]
+    },
+    {
+      "md": "01-25",
+      "members": [
+        {
+          "bioguide": "B001314",
+          "name": "Aaron Bean",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1967
+        },
+        {
+          "bioguide": "H001052",
+          "name": "Andy Harris",
+          "party": "R",
+          "chamber": "house",
+          "state": "MD",
+          "birthYear": 1957
+        }
+      ]
+    },
+    {
+      "md": "01-28",
+      "members": [
+        {
+          "bioguide": "T000193",
+          "name": "Bennie G. Thompson",
+          "party": "D",
+          "chamber": "house",
+          "state": "MS",
+          "birthYear": 1948
+        },
+        {
+          "bioguide": "S001181",
+          "name": "Jeanne Shaheen",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NH",
+          "birthYear": 1947
+        },
+        {
+          "bioguide": "C001137",
+          "name": "Jeff Crank",
+          "party": "R",
+          "chamber": "house",
+          "state": "CO",
+          "birthYear": 1967
+        },
+        {
+          "bioguide": "S001156",
+          "name": "Linda T. Sánchez",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1969
+        }
+      ]
+    },
+    {
+      "md": "01-29",
+      "members": [
+        {
+          "bioguide": "A000148",
+          "name": "Jake Auchincloss",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1988
+        },
+        {
+          "bioguide": "S001231",
+          "name": "Lateefah Simon",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1977
+        }
+      ]
+    },
+    {
+      "md": "01-30",
+      "members": [
+        {
+          "bioguide": "C001136",
+          "name": "Herbert C. Conaway, Jr.",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1963
+        },
+        {
+          "bioguide": "K000401",
+          "name": "Kevin Kiley",
+          "party": "I",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1985
+        },
+        {
+          "bioguide": "J000299",
+          "name": "Mike Johnson",
+          "party": "R",
+          "chamber": "house",
+          "state": "LA",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "01-31",
+      "members": [
+        {
+          "bioguide": "H001058",
+          "name": "Bill Huizenga",
+          "party": "R",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "B001326",
+          "name": "Janelle S. Bynum",
+          "party": "D",
+          "chamber": "house",
+          "state": "OR",
+          "birthYear": 1975
+        },
+        {
+          "bioguide": "S001218",
+          "name": "Melanie A. Stansbury",
+          "party": "D",
+          "chamber": "house",
+          "state": "NM",
+          "birthYear": 1979
+        },
+        {
+          "bioguide": "F000478",
+          "name": "Russell Fry",
+          "party": "R",
+          "chamber": "house",
+          "state": "SC",
+          "birthYear": 1985
+        }
+      ]
+    },
+    {
+      "md": "02-01",
+      "members": [
+        {
+          "bioguide": "J000305",
+          "name": "Sara Jacobs",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1989
+        }
+      ]
+    },
+    {
+      "md": "02-02",
+      "members": [
+        {
+          "bioguide": "B001301",
+          "name": "Jack Bergman",
+          "party": "R",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1947
+        },
+        {
+          "bioguide": "C001056",
+          "name": "John Cornyn",
+          "party": "R",
+          "chamber": "senate",
+          "state": "TX",
+          "birthYear": 1952
+        },
+        {
+          "bioguide": "B001319",
+          "name": "Katie Boyd Britt",
+          "party": "R",
+          "chamber": "senate",
+          "state": "AL",
+          "birthYear": 1982
+        },
+        {
+          "bioguide": "M001234",
+          "name": "Kelly Morrison",
+          "party": "D",
+          "chamber": "house",
+          "state": "MN",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "K000403",
+          "name": "Mike Kennedy",
+          "party": "R",
+          "chamber": "house",
+          "state": "UT",
+          "birthYear": 1969
+        }
+      ]
+    },
+    {
+      "md": "02-03",
+      "members": [
+        {
+          "bioguide": "P000617",
+          "name": "Ayanna Pressley",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1974
+        },
+        {
+          "bioguide": "W000804",
+          "name": "Robert J. Wittman",
+          "party": "R",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1959
+        }
+      ]
+    },
+    {
+      "md": "02-04",
+      "members": [
+        {
+          "bioguide": "T000478",
+          "name": "Claudia Tenney",
+          "party": "R",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1961
+        },
+        {
+          "bioguide": "G000591",
+          "name": "Michael Guest",
+          "party": "R",
+          "chamber": "house",
+          "state": "MS",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "B000490",
+          "name": "Sanford D. Bishop, Jr.",
+          "party": "D",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1947
+        }
+      ]
+    },
+    {
+      "md": "02-06",
+      "members": [
+        {
+          "bioguide": "W000822",
+          "name": "Bonnie Watson Coleman",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1945
+        },
+        {
+          "bioguide": "B001296",
+          "name": "Brendan F. Boyle",
+          "party": "D",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1977
+        },
+        {
+          "bioguide": "R000620",
+          "name": "Luz M. Rivas",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1974
+        }
+      ]
+    },
+    {
+      "md": "02-07",
+      "members": [
+        {
+          "bioguide": "H000273",
+          "name": "John W. Hickenlooper",
+          "party": "D",
+          "chamber": "senate",
+          "state": "CO",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "02-08",
+      "members": [
+        {
+          "bioguide": "B001257",
+          "name": "Gus M. Bilirakis",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1963
+        },
+        {
+          "bioguide": "J000302",
+          "name": "John Joyce",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1957
+        }
+      ]
+    },
+    {
+      "md": "02-10",
+      "members": [
+        {
+          "bioguide": "M001204",
+          "name": "Daniel Meuser",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "B001303",
+          "name": "Lisa Blunt Rochester",
+          "party": "D",
+          "chamber": "senate",
+          "state": "DE",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "02-11",
+      "members": [
+        {
+          "bioguide": "B001230",
+          "name": "Tammy Baldwin",
+          "party": "D",
+          "chamber": "senate",
+          "state": "WI",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "02-12",
+      "members": [
+        {
+          "bioguide": "C001123",
+          "name": "Gilbert Ray Cisneros, Jr.",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "02-13",
+      "members": [
+        {
+          "bioguide": "F000468",
+          "name": "Lizzie Fletcher",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1975
+        },
+        {
+          "bioguide": "B001277",
+          "name": "Richard Blumenthal",
+          "party": "D",
+          "chamber": "senate",
+          "state": "CT",
+          "birthYear": 1946
+        }
+      ]
+    },
+    {
+      "md": "02-14",
+      "members": [
+        {
+          "bioguide": "C001119",
+          "name": "Angie Craig",
+          "party": "D",
+          "chamber": "house",
+          "state": "MN",
+          "birthYear": 1972
+        },
+        {
+          "bioguide": "M001242",
+          "name": "Bernie Moreno",
+          "party": "R",
+          "chamber": "senate",
+          "state": "OH",
+          "birthYear": 1967
+        },
+        {
+          "bioguide": "N000015",
+          "name": "Richard E. Neal",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1949
+        },
+        {
+          "bioguide": "H001094",
+          "name": "Val T. Hoyle",
+          "party": "D",
+          "chamber": "house",
+          "state": "OR",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "02-16",
+      "members": [
+        {
+          "bioguide": "R000603",
+          "name": "David Rouzer",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1972
+        },
+        {
+          "bioguide": "O000174",
+          "name": "Jon Ossoff",
+          "party": "D",
+          "chamber": "senate",
+          "state": "GA",
+          "birthYear": 1987
+        },
+        {
+          "bioguide": "C001039",
+          "name": "Kat Cammack",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1988
+        },
+        {
+          "bioguide": "D000628",
+          "name": "Neal P. Dunn",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1953
+        }
+      ]
+    },
+    {
+      "md": "02-17",
+      "members": [
+        {
+          "bioguide": "J000311",
+          "name": "Brian Jack",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1988
+        },
+        {
+          "bioguide": "J000289",
+          "name": "Jim Jordan",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "D000617",
+          "name": "Suzan K. DelBene",
+          "party": "D",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "02-18",
+      "members": [
+        {
+          "bioguide": "G000558",
+          "name": "Brett Guthrie",
+          "party": "R",
+          "chamber": "house",
+          "state": "KY",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "H001068",
+          "name": "Jared Huffman",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "W000809",
+          "name": "Steve Womack",
+          "party": "R",
+          "chamber": "house",
+          "state": "AR",
+          "birthYear": 1957
+        }
+      ]
+    },
+    {
+      "md": "02-20",
+      "members": [
+        {
+          "bioguide": "M000355",
+          "name": "Mitch McConnell",
+          "party": "R",
+          "chamber": "senate",
+          "state": "KY",
+          "birthYear": 1942
+        }
+      ]
+    },
+    {
+      "md": "02-21",
+      "members": [
+        {
+          "bioguide": "K000377",
+          "name": "Mark Kelly",
+          "party": "D",
+          "chamber": "senate",
+          "state": "AZ",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "D000616",
+          "name": "Scott DesJarlais",
+          "party": "R",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "02-22",
+      "members": [
+        {
+          "bioguide": "S001221",
+          "name": "Hillary J. Scholten",
+          "party": "D",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1982
+        },
+        {
+          "bioguide": "T000488",
+          "name": "Shri Thanedar",
+          "party": "D",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1955
+        }
+      ]
+    },
+    {
+      "md": "02-23",
+      "members": [
+        {
+          "bioguide": "A000382",
+          "name": "Angela D. Alsobrooks",
+          "party": "D",
+          "chamber": "senate",
+          "state": "MD",
+          "birthYear": 1971
+        },
+        {
+          "bioguide": "V000133",
+          "name": "Jefferson Van Drew",
+          "party": "R",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "R000612",
+          "name": "John W. Rose",
+          "party": "R",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1965
+        },
+        {
+          "bioguide": "F000474",
+          "name": "Mike Flood",
+          "party": "R",
+          "chamber": "house",
+          "state": "NE",
+          "birthYear": 1975
+        }
+      ]
+    },
+    {
+      "md": "02-24",
+      "members": [
+        {
+          "bioguide": "Y000067",
+          "name": "Rudy Yakym III",
+          "party": "R",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1984
+        }
+      ]
+    },
+    {
+      "md": "02-25",
+      "members": [
+        {
+          "bioguide": "S001200",
+          "name": "Darren Soto",
+          "party": "D",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1978
+        }
+      ]
+    },
+    {
+      "md": "02-26",
+      "members": [
+        {
+          "bioguide": "G000603",
+          "name": "Brandon Gill",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1994
+        },
+        {
+          "bioguide": "G000599",
+          "name": "Daniel S. Goldman",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "K000384",
+          "name": "Tim Kaine",
+          "party": "D",
+          "chamber": "senate",
+          "state": "VA",
+          "birthYear": 1958
+        }
+      ]
+    },
+    {
+      "md": "02-27",
+      "members": [
+        {
+          "bioguide": "I000058",
+          "name": "Glenn Ivey",
+          "party": "D",
+          "chamber": "house",
+          "state": "MD",
+          "birthYear": 1961
+        },
+        {
+          "bioguide": "H001076",
+          "name": "Margaret Wood Hassan",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NH",
+          "birthYear": 1958
+        },
+        {
+          "bioguide": "L000600",
+          "name": "Nicholas A. Langworthy",
+          "party": "R",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1981
+        }
+      ]
+    },
+    {
+      "md": "02-29",
+      "members": [
+        {
+          "bioguide": "C001118",
+          "name": "Ben Cline",
+          "party": "R",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "03-01",
+      "members": [
+        {
+          "bioguide": "F000463",
+          "name": "Deb Fischer",
+          "party": "R",
+          "chamber": "senate",
+          "state": "NE",
+          "birthYear": 1951
+        },
+        {
+          "bioguide": "K000388",
+          "name": "Trent Kelly",
+          "party": "R",
+          "chamber": "house",
+          "state": "MS",
+          "birthYear": 1966
+        },
+        {
+          "bioguide": "D000626",
+          "name": "Warren Davidson",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "03-02",
+      "members": [
+        {
+          "bioguide": "B001287",
+          "name": "Ami Bera",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1965
+        },
+        {
+          "bioguide": "D000216",
+          "name": "Rosa L. DeLauro",
+          "party": "D",
+          "chamber": "house",
+          "state": "CT",
+          "birthYear": 1943
+        }
+      ]
+    },
+    {
+      "md": "03-03",
+      "members": [
+        {
+          "bioguide": "S001183",
+          "name": "David Schweikert",
+          "party": "R",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "W000830",
+          "name": "George Whitesides",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1974
+        },
+        {
+          "bioguide": "E000294",
+          "name": "Tom Emmer",
+          "party": "R",
+          "chamber": "house",
+          "state": "MN",
+          "birthYear": 1961
+        }
+      ]
+    },
+    {
+      "md": "03-04",
+      "members": [
+        {
+          "bioguide": "S000522",
+          "name": "Christopher H. Smith",
+          "party": "R",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "L000575",
+          "name": "James Lankford",
+          "party": "R",
+          "chamber": "senate",
+          "state": "OK",
+          "birthYear": 1968
+        },
+        {
+          "bioguide": "S001203",
+          "name": "Tina Smith",
+          "party": "D",
+          "chamber": "senate",
+          "state": "MN",
+          "birthYear": 1958
+        },
+        {
+          "bioguide": "D000634",
+          "name": "Troy Downing",
+          "party": "R",
+          "chamber": "house",
+          "state": "MT",
+          "birthYear": 1967
+        }
+      ]
+    },
+    {
+      "md": "03-05",
+      "members": [
+        {
+          "bioguide": "M001241",
+          "name": "Dave Min",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "M001210",
+          "name": "Gregory F. Murphy",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1963
+        }
+      ]
+    },
+    {
+      "md": "03-07",
+      "members": [
+        {
+          "bioguide": "G000607",
+          "name": "James Gallagher",
+          "party": "R",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1981
+        },
+        {
+          "bioguide": "V000130",
+          "name": "Juan Vargas",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1961
+        }
+      ]
+    },
+    {
+      "md": "03-08",
+      "members": [
+        {
+          "bioguide": "S001211",
+          "name": "Greg Stanton",
+          "party": "D",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "H001081",
+          "name": "Jahana Hayes",
+          "party": "D",
+          "chamber": "house",
+          "state": "CT",
+          "birthYear": 1973
+        },
+        {
+          "bioguide": "G000583",
+          "name": "Josh Gottheimer",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1975
+        }
+      ]
+    },
+    {
+      "md": "03-09",
+      "members": [
+        {
+          "bioguide": "A000375",
+          "name": "Jodey C. Arrington",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1972
+        },
+        {
+          "bioguide": "F000469",
+          "name": "Russ Fulcher",
+          "party": "R",
+          "chamber": "house",
+          "state": "ID",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "03-11",
+      "members": [
+        {
+          "bioguide": "R000619",
+          "name": "Michael A. Rulli",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "B001315",
+          "name": "Nikki Budzinski",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1977
+        }
+      ]
+    },
+    {
+      "md": "03-12",
+      "members": [
+        {
+          "bioguide": "B001281",
+          "name": "Joyce Beatty",
+          "party": "D",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1950
+        },
+        {
+          "bioguide": "T000486",
+          "name": "Ritchie Torres",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1988
+        },
+        {
+          "bioguide": "D000622",
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "chamber": "senate",
+          "state": "IL",
+          "birthYear": 1968
+        }
+      ]
+    },
+    {
+      "md": "03-13",
+      "members": [
+        {
+          "bioguide": "H001061",
+          "name": "John Hoeven",
+          "party": "R",
+          "chamber": "senate",
+          "state": "ND",
+          "birthYear": 1957
+        },
+        {
+          "bioguide": "C001126",
+          "name": "Mike Carey",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "03-14",
+      "members": [
+        {
+          "bioguide": "C001120",
+          "name": "Dan Crenshaw",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1984
+        }
+      ]
+    },
+    {
+      "md": "03-15",
+      "members": [
+        {
+          "bioguide": "G000568",
+          "name": "H. Morgan Griffith",
+          "party": "R",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1958
+        },
+        {
+          "bioguide": "C001121",
+          "name": "Jason Crow",
+          "party": "D",
+          "chamber": "house",
+          "state": "CO",
+          "birthYear": 1979
+        },
+        {
+          "bioguide": "H001099",
+          "name": "Mike Haridopolos",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "03-16",
+      "members": [
+        {
+          "bioguide": "L000595",
+          "name": "Julia Letlow",
+          "party": "R",
+          "chamber": "house",
+          "state": "LA",
+          "birthYear": 1981
+        }
+      ]
+    },
+    {
+      "md": "03-17",
+      "members": [
+        {
+          "bioguide": "J000295",
+          "name": "David P. Joyce",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1957
+        }
+      ]
+    },
+    {
+      "md": "03-18",
+      "members": [
+        {
+          "bioguide": "S001225",
+          "name": "Eric Sorensen",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1976
+        }
+      ]
+    },
+    {
+      "md": "03-20",
+      "members": [
+        {
+          "bioguide": "S001224",
+          "name": "Keith Self",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1953
+        }
+      ]
+    },
+    {
+      "md": "03-22",
+      "members": [
+        {
+          "bioguide": "P000145",
+          "name": "Alex Padilla",
+          "party": "D",
+          "chamber": "senate",
+          "state": "CA",
+          "birthYear": 1973
+        },
+        {
+          "bioguide": "S000250",
+          "name": "Pete Sessions",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1955
+        }
+      ]
+    },
+    {
+      "md": "03-23",
+      "members": [
+        {
+          "bioguide": "B001291",
+          "name": "Brian Babin",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1948
+        }
+      ]
+    },
+    {
+      "md": "03-26",
+      "members": [
+        {
+          "bioguide": "L000597",
+          "name": "Laurel M. Lee",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1974
+        },
+        {
+          "bioguide": "P000197",
+          "name": "Nancy Pelosi",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1940
+        }
+      ]
+    },
+    {
+      "md": "03-28",
+      "members": [
+        {
+          "bioguide": "M001244",
+          "name": "Ashley Moody",
+          "party": "R",
+          "chamber": "senate",
+          "state": "FL",
+          "birthYear": 1975
+        },
+        {
+          "bioguide": "T000487",
+          "name": "Jill N. Tokuda",
+          "party": "D",
+          "chamber": "house",
+          "state": "HI",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "V000081",
+          "name": "Nydia M. Velázquez",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "R000579",
+          "name": "Patrick Ryan",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1982
+        },
+        {
+          "bioguide": "B001325",
+          "name": "Sheri Biggs",
+          "party": "R",
+          "chamber": "house",
+          "state": "SC",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "03-29",
+      "members": [
+        {
+          "bioguide": "C001113",
+          "name": "Catherine Cortez Masto",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NV",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "C001130",
+          "name": "Jasmine Crockett",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1981
+        },
+        {
+          "bioguide": "V000139",
+          "name": "Matt Van Epps",
+          "party": "R",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1983
+        },
+        {
+          "bioguide": "L000582",
+          "name": "Ted Lieu",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1969
+        }
+      ]
+    },
+    {
+      "md": "03-30",
+      "members": [
+        {
+          "bioguide": "S001213",
+          "name": "Bryan Steil",
+          "party": "R",
+          "chamber": "house",
+          "state": "WI",
+          "birthYear": 1981
+        }
+      ]
+    },
+    {
+      "md": "03-31",
+      "members": [
+        {
+          "bioguide": "K000383",
+          "name": "Angus S. King, Jr.",
+          "party": "I",
+          "chamber": "senate",
+          "state": "ME",
+          "birthYear": 1944
+        },
+        {
+          "bioguide": "D000623",
+          "name": "Mark DeSaulnier",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1952
+        },
+        {
+          "bioguide": "L000562",
+          "name": "Stephen F. Lynch",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1955
+        }
+      ]
+    },
+    {
+      "md": "04-02",
+      "members": [
+        {
+          "bioguide": "P000597",
+          "name": "Chellie Pingree",
+          "party": "D",
+          "chamber": "house",
+          "state": "ME",
+          "birthYear": 1955
+        }
+      ]
+    },
+    {
+      "md": "04-04",
+      "members": [
+        {
+          "bioguide": "T000474",
+          "name": "Norma J. Torres",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1965
+        }
+      ]
+    },
+    {
+      "md": "04-06",
+      "members": [
+        {
+          "bioguide": "C001069",
+          "name": "Joe Courtney",
+          "party": "D",
+          "chamber": "house",
+          "state": "CT",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "E000235",
+          "name": "Mike Ezell",
+          "party": "R",
+          "chamber": "house",
+          "state": "MS",
+          "birthYear": 1959
+        }
+      ]
+    },
+    {
+      "md": "04-07",
+      "members": [
+        {
+          "bioguide": "M001136",
+          "name": "Lisa C. McClain",
+          "party": "R",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1966
+        },
+        {
+          "bioguide": "N000026",
+          "name": "Troy E. Nehls",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1968
+        },
+        {
+          "bioguide": "A000381",
+          "name": "Yassamin Ansari",
+          "party": "D",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1992
+        }
+      ]
+    },
+    {
+      "md": "04-08",
+      "members": [
+        {
+          "bioguide": "J000293",
+          "name": "Ron Johnson",
+          "party": "R",
+          "chamber": "senate",
+          "state": "WI",
+          "birthYear": 1955
+        }
+      ]
+    },
+    {
+      "md": "04-09",
+      "members": [
+        {
+          "bioguide": "F000485",
+          "name": "Clay Fuller",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1981
+        }
+      ]
+    },
+    {
+      "md": "04-12",
+      "members": [
+        {
+          "bioguide": "G000586",
+          "name": "Jesús G. \"Chuy\" García",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1956
+        },
+        {
+          "bioguide": "W000798",
+          "name": "Tim Walberg",
+          "party": "R",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1951
+        }
+      ]
+    },
+    {
+      "md": "04-13",
+      "members": [
+        {
+          "bioguide": "C001059",
+          "name": "Jim Costa",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1952
+        },
+        {
+          "bioguide": "P000622",
+          "name": "Jimmy Patronis",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "04-14",
+      "members": [
+        {
+          "bioguide": "V000129",
+          "name": "David G. Valadao",
+          "party": "R",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1977
+        }
+      ]
+    },
+    {
+      "md": "04-16",
+      "members": [
+        {
+          "bioguide": "M001214",
+          "name": "Frank J. Mrvan",
+          "party": "D",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "L000607",
+          "name": "Sam T. Liccardo",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "04-17",
+      "members": [
+        {
+          "bioguide": "K000405",
+          "name": "Brad Knott",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1986
+        },
+        {
+          "bioguide": "R000610",
+          "name": "Guy Reschenthaler",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1983
+        }
+      ]
+    },
+    {
+      "md": "04-18",
+      "members": [
+        {
+          "bioguide": "M001245",
+          "name": "Christian D. Menefee",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1988
+        },
+        {
+          "bioguide": "M001160",
+          "name": "Gwen Moore",
+          "party": "D",
+          "chamber": "house",
+          "state": "WI",
+          "birthYear": 1951
+        },
+        {
+          "bioguide": "L000566",
+          "name": "Robert E. Latta",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1956
+        }
+      ]
+    },
+    {
+      "md": "04-20",
+      "members": [
+        {
+          "bioguide": "F000484",
+          "name": "Randy Fine",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1974
+        }
+      ]
+    },
+    {
+      "md": "04-22",
+      "members": [
+        {
+          "bioguide": "B001327",
+          "name": "Robert P. Bresnahan, Jr.",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1990
+        }
+      ]
+    },
+    {
+      "md": "04-24",
+      "members": [
+        {
+          "bioguide": "H001102",
+          "name": "Mark Harris",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1966
+        }
+      ]
+    },
+    {
+      "md": "04-27",
+      "members": [
+        {
+          "bioguide": "B001288",
+          "name": "Cory A. Booker",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NJ",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "W000806",
+          "name": "Daniel Webster",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1949
+        },
+        {
+          "bioguide": "J000312",
+          "name": "James C. Justice",
+          "party": "R",
+          "chamber": "senate",
+          "state": "WV",
+          "birthYear": 1951
+        }
+      ]
+    },
+    {
+      "md": "04-28",
+      "members": [
+        {
+          "bioguide": "C001053",
+          "name": "Tom Cole",
+          "party": "R",
+          "chamber": "house",
+          "state": "OK",
+          "birthYear": 1949
+        }
+      ]
+    },
+    {
+      "md": "04-29",
+      "members": [
+        {
+          "bioguide": "M001206",
+          "name": "Joseph D. Morelle",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1957
+        },
+        {
+          "bioguide": "H001066",
+          "name": "Steven Horsford",
+          "party": "D",
+          "chamber": "house",
+          "state": "NV",
+          "birthYear": 1973
+        }
+      ]
+    },
+    {
+      "md": "04-30",
+      "members": [
+        {
+          "bioguide": "S000185",
+          "name": "Robert C. \"Bobby\" Scott",
+          "party": "D",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1947
+        },
+        {
+          "bioguide": "K000385",
+          "name": "Robin L. Kelly",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1956
+        },
+        {
+          "bioguide": "B001321",
+          "name": "Tom Barrett",
+          "party": "R",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1981
+        },
+        {
+          "bioguide": "T000480",
+          "name": "William R. Timmons IV",
+          "party": "R",
+          "chamber": "house",
+          "state": "SC",
+          "birthYear": 1984
+        }
+      ]
+    },
+    {
+      "md": "05-02",
+      "members": [
+        {
+          "bioguide": "J000310",
+          "name": "Julie Johnson",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1966
+        },
+        {
+          "bioguide": "W000800",
+          "name": "Peter Welch",
+          "party": "D",
+          "chamber": "senate",
+          "state": "VT",
+          "birthYear": 1947
+        }
+      ]
+    },
+    {
+      "md": "05-03",
+      "members": [
+        {
+          "bioguide": "R000584",
+          "name": "James E. Risch",
+          "party": "R",
+          "chamber": "senate",
+          "state": "ID",
+          "birthYear": 1943
+        },
+        {
+          "bioguide": "W000779",
+          "name": "Ron Wyden",
+          "party": "D",
+          "chamber": "senate",
+          "state": "OR",
+          "birthYear": 1949
+        },
+        {
+          "bioguide": "W000829",
+          "name": "Tony Wied",
+          "party": "R",
+          "chamber": "house",
+          "state": "WI",
+          "birthYear": 1976
+        }
+      ]
+    },
+    {
+      "md": "05-04",
+      "members": [
+        {
+          "bioguide": "B001318",
+          "name": "Becca Balint",
+          "party": "D",
+          "chamber": "house",
+          "state": "VT",
+          "birthYear": 1968
+        },
+        {
+          "bioguide": "C001131",
+          "name": "Greg Casar",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1989
+        },
+        {
+          "bioguide": "J000304",
+          "name": "Ronny Jackson",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1967
+        },
+        {
+          "bioguide": "N000193",
+          "name": "Zachary Nunn",
+          "party": "R",
+          "chamber": "house",
+          "state": "IA",
+          "birthYear": 1979
+        }
+      ]
+    },
+    {
+      "md": "05-06",
+      "members": [
+        {
+          "bioguide": "L000596",
+          "name": "Anna Paulina Luna",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1989
+        }
+      ]
+    },
+    {
+      "md": "05-07",
+      "members": [
+        {
+          "bioguide": "F000477",
+          "name": "Valerie P. Foushee",
+          "party": "D",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1956
+        }
+      ]
+    },
+    {
+      "md": "05-08",
+      "members": [
+        {
+          "bioguide": "S001220",
+          "name": "Dale W. Strong",
+          "party": "R",
+          "chamber": "house",
+          "state": "AL",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "M001194",
+          "name": "John R. Moolenaar",
+          "party": "R",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1961
+        },
+        {
+          "bioguide": "B001260",
+          "name": "Vern Buchanan",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1951
+        }
+      ]
+    },
+    {
+      "md": "05-10",
+      "members": [
+        {
+          "bioguide": "H001079",
+          "name": "Cindy Hyde-Smith",
+          "party": "R",
+          "chamber": "senate",
+          "state": "MS",
+          "birthYear": 1959
+        },
+        {
+          "bioguide": "C001114",
+          "name": "John R. Curtis",
+          "party": "R",
+          "chamber": "senate",
+          "state": "UT",
+          "birthYear": 1960
+        },
+        {
+          "bioguide": "K000376",
+          "name": "Mike Kelly",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1948
+        },
+        {
+          "bioguide": "S001212",
+          "name": "Pete Stauber",
+          "party": "R",
+          "chamber": "house",
+          "state": "MN",
+          "birthYear": 1966
+        }
+      ]
+    },
+    {
+      "md": "05-13",
+      "members": [
+        {
+          "bioguide": "N000191",
+          "name": "Joe Neguse",
+          "party": "D",
+          "chamber": "house",
+          "state": "CO",
+          "birthYear": 1984
+        },
+        {
+          "bioguide": "C001115",
+          "name": "Michael Cloud",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1975
+        },
+        {
+          "bioguide": "C001095",
+          "name": "Tom Cotton",
+          "party": "R",
+          "chamber": "senate",
+          "state": "AR",
+          "birthYear": 1977
+        }
+      ]
+    },
+    {
+      "md": "05-14",
+      "members": [
+        {
+          "bioguide": "P000609",
+          "name": "Gary J. Palmer",
+          "party": "R",
+          "chamber": "house",
+          "state": "AL",
+          "birthYear": 1954
+        }
+      ]
+    },
+    {
+      "md": "05-15",
+      "members": [
+        {
+          "bioguide": "H001098",
+          "name": "Abraham J. Hamadeh",
+          "party": "R",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1991
+        }
+      ]
+    },
+    {
+      "md": "05-16",
+      "members": [
+        {
+          "bioguide": "E000296",
+          "name": "Dwight Evans",
+          "party": "D",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1954
+        },
+        {
+          "bioguide": "F000462",
+          "name": "Lois Frankel",
+          "party": "D",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1948
+        }
+      ]
+    },
+    {
+      "md": "05-19",
+      "members": [
+        {
+          "bioguide": "S001214",
+          "name": "W. Gregory Steube",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1978
+        }
+      ]
+    },
+    {
+      "md": "05-20",
+      "members": [
+        {
+          "bioguide": "C000880",
+          "name": "Mike Crapo",
+          "party": "R",
+          "chamber": "senate",
+          "state": "ID",
+          "birthYear": 1951
+        },
+        {
+          "bioguide": "P000621",
+          "name": "Nellie Pou",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1956
+        }
+      ]
+    },
+    {
+      "md": "05-22",
+      "members": [
+        {
+          "bioguide": "M001228",
+          "name": "Celeste Maloy",
+          "party": "R",
+          "chamber": "house",
+          "state": "UT",
+          "birthYear": 1981
+        },
+        {
+          "bioguide": "M001153",
+          "name": "Lisa Murkowski",
+          "party": "R",
+          "chamber": "senate",
+          "state": "AK",
+          "birthYear": 1957
+        },
+        {
+          "bioguide": "D000629",
+          "name": "Sharice Davids",
+          "party": "D",
+          "chamber": "house",
+          "state": "KS",
+          "birthYear": 1980
+        }
+      ]
+    },
+    {
+      "md": "05-23",
+      "members": [
+        {
+          "bioguide": "T000468",
+          "name": "Dina Titus",
+          "party": "D",
+          "chamber": "house",
+          "state": "NV",
+          "birthYear": 1950
+        }
+      ]
+    },
+    {
+      "md": "05-24",
+      "members": [
+        {
+          "bioguide": "C001068",
+          "name": "Steve Cohen",
+          "party": "D",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1949
+        }
+      ]
+    },
+    {
+      "md": "05-25",
+      "members": [
+        {
+          "bioguide": "K000367",
+          "name": "Amy Klobuchar",
+          "party": "D",
+          "chamber": "senate",
+          "state": "MN",
+          "birthYear": 1960
+        }
+      ]
+    },
+    {
+      "md": "05-26",
+      "members": [
+        {
+          "bioguide": "S001145",
+          "name": "Janice D. Schakowsky",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1944
+        }
+      ]
+    },
+    {
+      "md": "05-27",
+      "members": [
+        {
+          "bioguide": "A000370",
+          "name": "Alma S. Adams",
+          "party": "D",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1946
+        },
+        {
+          "bioguide": "P000605",
+          "name": "Scott Perry",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "05-28",
+      "members": [
+        {
+          "bioguide": "M001232",
+          "name": "April McClain Delaney",
+          "party": "D",
+          "chamber": "house",
+          "state": "MD",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "05-29",
+      "members": [
+        {
+          "bioguide": "M000934",
+          "name": "Jerry Moran",
+          "party": "R",
+          "chamber": "senate",
+          "state": "KS",
+          "birthYear": 1954
+        }
+      ]
+    },
+    {
+      "md": "05-30",
+      "members": [
+        {
+          "bioguide": "F000475",
+          "name": "Brad Finstad",
+          "party": "R",
+          "chamber": "house",
+          "state": "MN",
+          "birthYear": 1976
+        }
+      ]
+    },
+    {
+      "md": "06-01",
+      "members": [
+        {
+          "bioguide": "M001208",
+          "name": "Lucy McBath",
+          "party": "D",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1960
+        }
+      ]
+    },
+    {
+      "md": "06-02",
+      "members": [
+        {
+          "bioguide": "R000617",
+          "name": "Delia C. Ramirez",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1983
+        }
+      ]
+    },
+    {
+      "md": "06-04",
+      "members": [
+        {
+          "bioguide": "P000614",
+          "name": "Chris Pappas",
+          "party": "D",
+          "chamber": "house",
+          "state": "NH",
+          "birthYear": 1980
+        },
+        {
+          "bioguide": "B001307",
+          "name": "James R. Baird",
+          "party": "R",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1945
+        },
+        {
+          "bioguide": "L000577",
+          "name": "Mike Lee",
+          "party": "R",
+          "chamber": "senate",
+          "state": "UT",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "06-05",
+      "members": [
+        {
+          "bioguide": "H001085",
+          "name": "Chrissy Houlahan",
+          "party": "D",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1967
+        }
+      ]
+    },
+    {
+      "md": "06-06",
+      "members": [
+        {
+          "bioguide": "V000138",
+          "name": "Eugene Simon Vindman",
+          "party": "D",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1975
+        },
+        {
+          "bioguide": "D000631",
+          "name": "Madeleine Dean",
+          "party": "D",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1959
+        },
+        {
+          "bioguide": "G000600",
+          "name": "Marie Gluesenkamp Perez",
+          "party": "D",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1988
+        },
+        {
+          "bioguide": "B001243",
+          "name": "Marsha Blackburn",
+          "party": "R",
+          "chamber": "senate",
+          "state": "TN",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "06-07",
+      "members": [
+        {
+          "bioguide": "L000570",
+          "name": "Ben Ray Luján",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NM",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "06-08",
+      "members": [
+        {
+          "bioguide": "J000307",
+          "name": "John James",
+          "party": "R",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1981
+        },
+        {
+          "bioguide": "C000059",
+          "name": "Ken Calvert",
+          "party": "R",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1953
+        }
+      ]
+    },
+    {
+      "md": "06-12",
+      "members": [
+        {
+          "bioguide": "G000608",
+          "name": "Darline Graham",
+          "party": "R",
+          "chamber": "senate",
+          "state": "SC",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "A000369",
+          "name": "Mark E. Amodei",
+          "party": "R",
+          "chamber": "house",
+          "state": "NV",
+          "birthYear": 1958
+        }
+      ]
+    },
+    {
+      "md": "06-13",
+      "members": [
+        {
+          "bioguide": "N000002",
+          "name": "Jerrold Nadler",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1947
+        }
+      ]
+    },
+    {
+      "md": "06-14",
+      "members": [
+        {
+          "bioguide": "H000874",
+          "name": "Steny H. Hoyer",
+          "party": "D",
+          "chamber": "house",
+          "state": "MD",
+          "birthYear": 1939
+        }
+      ]
+    },
+    {
+      "md": "06-15",
+      "members": [
+        {
+          "bioguide": "S000510",
+          "name": "Adam Smith",
+          "party": "D",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1965
+        },
+        {
+          "bioguide": "M001225",
+          "name": "Kevin Mullin",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "L000560",
+          "name": "Rick Larsen",
+          "party": "D",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1965
+        }
+      ]
+    },
+    {
+      "md": "06-16",
+      "members": [
+        {
+          "bioguide": "S001195",
+          "name": "Jason Smith",
+          "party": "R",
+          "chamber": "house",
+          "state": "MO",
+          "birthYear": 1980
+        }
+      ]
+    },
+    {
+      "md": "06-17",
+      "members": [
+        {
+          "bioguide": "K000009",
+          "name": "Marcy Kaptur",
+          "party": "D",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1946
+        },
+        {
+          "bioguide": "P000608",
+          "name": "Scott H. Peters",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1958
+        }
+      ]
+    },
+    {
+      "md": "06-18",
+      "members": [
+        {
+          "bioguide": "O000175",
+          "name": "Andrew Ogles",
+          "party": "R",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1971
+        },
+        {
+          "bioguide": "K000399",
+          "name": "Jennifer A. Kiggans",
+          "party": "R",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1971
+        },
+        {
+          "bioguide": "T000469",
+          "name": "Paul Tonko",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1949
+        }
+      ]
+    },
+    {
+      "md": "06-19",
+      "members": [
+        {
+          "bioguide": "B001317",
+          "name": "Josh Brecheen",
+          "party": "R",
+          "chamber": "house",
+          "state": "OK",
+          "birthYear": 1979
+        },
+        {
+          "bioguide": "A000371",
+          "name": "Pete Aguilar",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1979
+        }
+      ]
+    },
+    {
+      "md": "06-20",
+      "members": [
+        {
+          "bioguide": "R000305",
+          "name": "Deborah K. Ross",
+          "party": "D",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1963
+        },
+        {
+          "bioguide": "B001292",
+          "name": "Donald S. Beyer, Jr.",
+          "party": "D",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1950
+        },
+        {
+          "bioguide": "S001227",
+          "name": "Eric Schmitt",
+          "party": "R",
+          "chamber": "senate",
+          "state": "MO",
+          "birthYear": 1975
+        },
+        {
+          "bioguide": "M001229",
+          "name": "LaMonica McIver",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1986
+        },
+        {
+          "bioguide": "N000190",
+          "name": "Ralph Norman",
+          "party": "R",
+          "chamber": "house",
+          "state": "SC",
+          "birthYear": 1953
+        }
+      ]
+    },
+    {
+      "md": "06-21",
+      "members": [
+        {
+          "bioguide": "H001101",
+          "name": "Pat Harrigan",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1987
+        }
+      ]
+    },
+    {
+      "md": "06-22",
+      "members": [
+        {
+          "bioguide": "S001150",
+          "name": "Adam B. Schiff",
+          "party": "D",
+          "chamber": "senate",
+          "state": "CA",
+          "birthYear": 1960
+        },
+        {
+          "bioguide": "M001213",
+          "name": "Blake D. Moore",
+          "party": "R",
+          "chamber": "house",
+          "state": "UT",
+          "birthYear": 1980
+        },
+        {
+          "bioguide": "W000817",
+          "name": "Elizabeth Warren",
+          "party": "D",
+          "chamber": "senate",
+          "state": "MA",
+          "birthYear": 1949
+        }
+      ]
+    },
+    {
+      "md": "06-23",
+      "members": [
+        {
+          "bioguide": "L000598",
+          "name": "Nick LaLota",
+          "party": "R",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1978
+        }
+      ]
+    },
+    {
+      "md": "06-24",
+      "members": [
+        {
+          "bioguide": "S001215",
+          "name": "Haley M. Stevens",
+          "party": "D",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1983
+        },
+        {
+          "bioguide": "B001313",
+          "name": "Shontel M. Brown",
+          "party": "D",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1975
+        }
+      ]
+    },
+    {
+      "md": "06-27",
+      "members": [
+        {
+          "bioguide": "H001091",
+          "name": "Ashley Hinson",
+          "party": "R",
+          "chamber": "house",
+          "state": "IA",
+          "birthYear": 1983
+        }
+      ]
+    },
+    {
+      "md": "06-29",
+      "members": [
+        {
+          "bioguide": "F000450",
+          "name": "Virginia Foxx",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1943
+        }
+      ]
+    },
+    {
+      "md": "07-01",
+      "members": [
+        {
+          "bioguide": "E000295",
+          "name": "Joni Ernst",
+          "party": "R",
+          "chamber": "senate",
+          "state": "IA",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "M001235",
+          "name": "Riley M. Moore",
+          "party": "R",
+          "chamber": "house",
+          "state": "WV",
+          "birthYear": 1980
+        },
+        {
+          "bioguide": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "party": "D",
+          "chamber": "house",
+          "state": "NM",
+          "birthYear": 1959
+        }
+      ]
+    },
+    {
+      "md": "07-02",
+      "members": [
+        {
+          "bioguide": "S001196",
+          "name": "Elise M. Stefanik",
+          "party": "R",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1984
+        },
+        {
+          "bioguide": "C001129",
+          "name": "Mike Collins",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1967
+        },
+        {
+          "bioguide": "W000814",
+          "name": "Randy K. Weber, Sr.",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1953
+        }
+      ]
+    },
+    {
+      "md": "07-03",
+      "members": [
+        {
+          "bioguide": "G000576",
+          "name": "Glenn Grothman",
+          "party": "R",
+          "chamber": "house",
+          "state": "WI",
+          "birthYear": 1955
+        }
+      ]
+    },
+    {
+      "md": "07-05",
+      "members": [
+        {
+          "bioguide": "L000585",
+          "name": "Darin LaHood",
+          "party": "R",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1968
+        },
+        {
+          "bioguide": "H001047",
+          "name": "James A. Himes",
+          "party": "D",
+          "chamber": "house",
+          "state": "CT",
+          "birthYear": 1966
+        },
+        {
+          "bioguide": "W000437",
+          "name": "Roger F. Wicker",
+          "party": "R",
+          "chamber": "senate",
+          "state": "MS",
+          "birthYear": 1951
+        }
+      ]
+    },
+    {
+      "md": "07-07",
+      "members": [
+        {
+          "bioguide": "C001080",
+          "name": "Judy Chu",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1953
+        }
+      ]
+    },
+    {
+      "md": "07-08",
+      "members": [
+        {
+          "bioguide": "M001231",
+          "name": "John W. Mannion",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1968
+        }
+      ]
+    },
+    {
+      "md": "07-10",
+      "members": [
+        {
+          "bioguide": "M001199",
+          "name": "Brian J. Mast",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1980
+        },
+        {
+          "bioguide": "N000189",
+          "name": "Dan Newhouse",
+          "party": "R",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1955
+        },
+        {
+          "bioguide": "S001208",
+          "name": "Elissa Slotkin",
+          "party": "D",
+          "chamber": "senate",
+          "state": "MI",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "G000602",
+          "name": "Laura Gillen",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "M001177",
+          "name": "Tom McClintock",
+          "party": "R",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1956
+        }
+      ]
+    },
+    {
+      "md": "07-11",
+      "members": [
+        {
+          "bioguide": "A000383",
+          "name": "Alan Armstrong",
+          "party": "R",
+          "chamber": "senate",
+          "state": "OK",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "M000133",
+          "name": "Edward J. Markey",
+          "party": "D",
+          "chamber": "senate",
+          "state": "MA",
+          "birthYear": 1946
+        },
+        {
+          "bioguide": "M001237",
+          "name": "Kristen McDonald Rivet",
+          "party": "D",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "07-12",
+      "members": [
+        {
+          "bioguide": "K000394",
+          "name": "Andy Kim",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NJ",
+          "birthYear": 1982
+        },
+        {
+          "bioguide": "M001143",
+          "name": "Betty McCollum",
+          "party": "D",
+          "chamber": "house",
+          "state": "MN",
+          "birthYear": 1954
+        },
+        {
+          "bioguide": "M001226",
+          "name": "Robert Menendez",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1985
+        }
+      ]
+    },
+    {
+      "md": "07-13",
+      "members": [
+        {
+          "bioguide": "D000530",
+          "name": "Christopher R. Deluzio",
+          "party": "D",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1984
+        }
+      ]
+    },
+    {
+      "md": "07-16",
+      "members": [
+        {
+          "bioguide": "B001299",
+          "name": "Jim Banks",
+          "party": "R",
+          "chamber": "senate",
+          "state": "IN",
+          "birthYear": 1979
+        },
+        {
+          "bioguide": "R000575",
+          "name": "Mike Rogers",
+          "party": "R",
+          "chamber": "house",
+          "state": "AL",
+          "birthYear": 1958
+        }
+      ]
+    },
+    {
+      "md": "07-17",
+      "members": [
+        {
+          "bioguide": "C001101",
+          "name": "Katherine M. Clark",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1963
+        }
+      ]
+    },
+    {
+      "md": "07-19",
+      "members": [
+        {
+          "bioguide": "K000391",
+          "name": "Raja Krishnamoorthi",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1973
+        },
+        {
+          "bioguide": "E000298",
+          "name": "Ron Estes",
+          "party": "R",
+          "chamber": "house",
+          "state": "KS",
+          "birthYear": 1956
+        }
+      ]
+    },
+    {
+      "md": "07-20",
+      "members": [
+        {
+          "bioguide": "K000400",
+          "name": "Sydney Kamlager-Dove",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "07-21",
+      "members": [
+        {
+          "bioguide": "C000537",
+          "name": "James E. Clyburn",
+          "party": "D",
+          "chamber": "house",
+          "state": "SC",
+          "birthYear": 1940
+        },
+        {
+          "bioguide": "B001261",
+          "name": "John Barrasso",
+          "party": "R",
+          "chamber": "senate",
+          "state": "WY",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "07-22",
+      "members": [
+        {
+          "bioguide": "L000557",
+          "name": "John B. Larson",
+          "party": "D",
+          "chamber": "house",
+          "state": "CT",
+          "birthYear": 1948
+        },
+        {
+          "bioguide": "M001224",
+          "name": "Nathaniel Moran",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1974
+        },
+        {
+          "bioguide": "A000055",
+          "name": "Robert B. Aderholt",
+          "party": "R",
+          "chamber": "house",
+          "state": "AL",
+          "birthYear": 1965
+        },
+        {
+          "bioguide": "M001223",
+          "name": "Seth Magaziner",
+          "party": "D",
+          "chamber": "house",
+          "state": "RI",
+          "birthYear": 1983
+        }
+      ]
+    },
+    {
+      "md": "07-23",
+      "members": [
+        {
+          "bioguide": "W000790",
+          "name": "Raphael G. Warnock",
+          "party": "D",
+          "chamber": "senate",
+          "state": "GA",
+          "birthYear": 1969
+        }
+      ]
+    },
+    {
+      "md": "07-24",
+      "members": [
+        {
+          "bioguide": "B001282",
+          "name": "Andy Barr",
+          "party": "R",
+          "chamber": "house",
+          "state": "KY",
+          "birthYear": 1973
+        },
+        {
+          "bioguide": "T000481",
+          "name": "Rashida Tlaib",
+          "party": "D",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1976
+        }
+      ]
+    },
+    {
+      "md": "07-25",
+      "members": [
+        {
+          "bioguide": "G000592",
+          "name": "Jared F. Golden",
+          "party": "D",
+          "chamber": "house",
+          "state": "ME",
+          "birthYear": 1982
+        }
+      ]
+    },
+    {
+      "md": "07-27",
+      "members": [
+        {
+          "bioguide": "T000467",
+          "name": "Glenn Thompson",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1959
+        }
+      ]
+    },
+    {
+      "md": "07-28",
+      "members": [
+        {
+          "bioguide": "E000300",
+          "name": "Gabe Evans",
+          "party": "R",
+          "chamber": "house",
+          "state": "CO",
+          "birthYear": 1986
+        }
+      ]
+    },
+    {
+      "md": "07-29",
+      "members": [
+        {
+          "bioguide": "D000197",
+          "name": "Diana DeGette",
+          "party": "D",
+          "chamber": "house",
+          "state": "CO",
+          "birthYear": 1957
+        }
+      ]
+    },
+    {
+      "md": "07-30",
+      "members": [
+        {
+          "bioguide": "M001216",
+          "name": "Cory Mills",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1980
+        },
+        {
+          "bioguide": "W000788",
+          "name": "Nikema Williams",
+          "party": "D",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1978
+        }
+      ]
+    },
+    {
+      "md": "07-31",
+      "members": [
+        {
+          "bioguide": "W000795",
+          "name": "Joe Wilson",
+          "party": "R",
+          "chamber": "house",
+          "state": "SC",
+          "birthYear": 1947
+        }
+      ]
+    },
+    {
+      "md": "08-01",
+      "members": [
+        {
+          "bioguide": "H001090",
+          "name": "Josh Harder",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1986
+        }
+      ]
+    },
+    {
+      "md": "08-02",
+      "members": [
+        {
+          "bioguide": "O000086",
+          "name": "Burgess Owens",
+          "party": "R",
+          "chamber": "house",
+          "state": "UT",
+          "birthYear": 1951
+        },
+        {
+          "bioguide": "R000608",
+          "name": "Jacky Rosen",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NV",
+          "birthYear": 1957
+        }
+      ]
+    },
+    {
+      "md": "08-03",
+      "members": [
+        {
+          "bioguide": "M001169",
+          "name": "Christopher Murphy",
+          "party": "D",
+          "chamber": "senate",
+          "state": "CT",
+          "birthYear": 1973
+        },
+        {
+          "bioguide": "V000136",
+          "name": "Gabe Vasquez",
+          "party": "D",
+          "chamber": "house",
+          "state": "NM",
+          "birthYear": 1984
+        },
+        {
+          "bioguide": "M001230",
+          "name": "Ryan Mackenzie",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1982
+        }
+      ]
+    },
+    {
+      "md": "08-04",
+      "members": [
+        {
+          "bioguide": "J000294",
+          "name": "Hakeem S. Jeffries",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "08-07",
+      "members": [
+        {
+          "bioguide": "R000614",
+          "name": "Chip Roy",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "08-09",
+      "members": [
+        {
+          "bioguide": "M001198",
+          "name": "Roger Marshall",
+          "party": "R",
+          "chamber": "senate",
+          "state": "KS",
+          "birthYear": 1960
+        },
+        {
+          "bioguide": "M001238",
+          "name": "Sarah McBride",
+          "party": "D",
+          "chamber": "house",
+          "state": "DE",
+          "birthYear": 1990
+        }
+      ]
+    },
+    {
+      "md": "08-14",
+      "members": [
+        {
+          "bioguide": "H000601",
+          "name": "Bill Hagerty",
+          "party": "R",
+          "chamber": "senate",
+          "state": "TN",
+          "birthYear": 1959
+        },
+        {
+          "bioguide": "P000607",
+          "name": "Mark Pocan",
+          "party": "D",
+          "chamber": "house",
+          "state": "WI",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "08-15",
+      "members": [
+        {
+          "bioguide": "H001100",
+          "name": "Jeff Hurd",
+          "party": "R",
+          "chamber": "house",
+          "state": "CO",
+          "birthYear": 1979
+        },
+        {
+          "bioguide": "F000479",
+          "name": "John Fetterman",
+          "party": "D",
+          "chamber": "senate",
+          "state": "PA",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "W000187",
+          "name": "Maxine Waters",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1938
+        }
+      ]
+    },
+    {
+      "md": "08-16",
+      "members": [
+        {
+          "bioguide": "B001298",
+          "name": "Don Bacon",
+          "party": "R",
+          "chamber": "house",
+          "state": "NE",
+          "birthYear": 1963
+        }
+      ]
+    },
+    {
+      "md": "08-17",
+      "members": [
+        {
+          "bioguide": "M001243",
+          "name": "David McCormick",
+          "party": "R",
+          "chamber": "senate",
+          "state": "PA",
+          "birthYear": 1965
+        }
+      ]
+    },
+    {
+      "md": "08-18",
+      "members": [
+        {
+          "bioguide": "O000019",
+          "name": "Jay Obernolte",
+          "party": "R",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "08-19",
+      "members": [
+        {
+          "bioguide": "M001246",
+          "name": "Analilia Mejia",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1977
+        },
+        {
+          "bioguide": "C001108",
+          "name": "James Comer",
+          "party": "R",
+          "chamber": "house",
+          "state": "KY",
+          "birthYear": 1972
+        },
+        {
+          "bioguide": "R000618",
+          "name": "Pete Ricketts",
+          "party": "R",
+          "chamber": "senate",
+          "state": "NE",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "08-20",
+      "members": [
+        {
+          "bioguide": "S001190",
+          "name": "Bradley Scott Schneider",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1961
+        },
+        {
+          "bioguide": "C001066",
+          "name": "Kathy Castor",
+          "party": "D",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1966
+        },
+        {
+          "bioguide": "D000618",
+          "name": "Steve Daines",
+          "party": "R",
+          "chamber": "senate",
+          "state": "MT",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "08-23",
+      "members": [
+        {
+          "bioguide": "S001216",
+          "name": "Kim Schrier",
+          "party": "D",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1968
+        },
+        {
+          "bioguide": "F000472",
+          "name": "Scott Franklin",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "08-24",
+      "members": [
+        {
+          "bioguide": "H001077",
+          "name": "Clay Higgins",
+          "party": "R",
+          "chamber": "house",
+          "state": "LA",
+          "birthYear": 1961
+        },
+        {
+          "bioguide": "M001239",
+          "name": "John J. McGuire III",
+          "party": "R",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1968
+        },
+        {
+          "bioguide": "Y000064",
+          "name": "Todd Young",
+          "party": "R",
+          "chamber": "senate",
+          "state": "IN",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "08-25",
+      "members": [
+        {
+          "bioguide": "H001104",
+          "name": "Jon Husted",
+          "party": "R",
+          "chamber": "senate",
+          "state": "OH",
+          "birthYear": 1967
+        },
+        {
+          "bioguide": "R000599",
+          "name": "Raul Ruiz",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1972
+        },
+        {
+          "bioguide": "B001309",
+          "name": "Tim Burchett",
+          "party": "R",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "08-27",
+      "members": [
+        {
+          "bioguide": "M001211",
+          "name": "Mary E. Miller",
+          "party": "R",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1959
+        }
+      ]
+    },
+    {
+      "md": "08-28",
+      "members": [
+        {
+          "bioguide": "B001285",
+          "name": "Julia Brownley",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "08-29",
+      "members": [
+        {
+          "bioguide": "D000230",
+          "name": "Donald G. Davis",
+          "party": "D",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "08-30",
+      "members": [
+        {
+          "bioguide": "C001133",
+          "name": "Juan Ciscomani",
+          "party": "R",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1982
+        },
+        {
+          "bioguide": "S001205",
+          "name": "Mary Gay Scanlon",
+          "party": "D",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1959
+        },
+        {
+          "bioguide": "T000476",
+          "name": "Thom Tillis",
+          "party": "R",
+          "chamber": "senate",
+          "state": "NC",
+          "birthYear": 1960
+        }
+      ]
+    },
+    {
+      "md": "08-31",
+      "members": [
+        {
+          "bioguide": "S001188",
+          "name": "Marlin A. Stutzman",
+          "party": "R",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "S001201",
+          "name": "Thomas R. Suozzi",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "09-01",
+      "members": [
+        {
+          "bioguide": "G000553",
+          "name": "Al Green",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1947
+        }
+      ]
+    },
+    {
+      "md": "09-02",
+      "members": [
+        {
+          "bioguide": "R000609",
+          "name": "John H. Rutherford",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "09-03",
+      "members": [
+        {
+          "bioguide": "F000481",
+          "name": "Shomari Figures",
+          "party": "D",
+          "chamber": "house",
+          "state": "AL",
+          "birthYear": 1985
+        }
+      ]
+    },
+    {
+      "md": "09-04",
+      "members": [
+        {
+          "bioguide": "G000581",
+          "name": "Vicente Gonzalez",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1967
+        }
+      ]
+    },
+    {
+      "md": "09-05",
+      "members": [
+        {
+          "bioguide": "K000398",
+          "name": "Thomas H. Kean, Jr.",
+          "party": "R",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1968
+        }
+      ]
+    },
+    {
+      "md": "09-06",
+      "members": [
+        {
+          "bioguide": "D000096",
+          "name": "Danny K. Davis",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1941
+        },
+        {
+          "bioguide": "C001103",
+          "name": "Earl L. \"Buddy\" Carter",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1957
+        },
+        {
+          "bioguide": "M001215",
+          "name": "Mariannette Miller-Meeks",
+          "party": "R",
+          "chamber": "house",
+          "state": "IA",
+          "birthYear": 1955
+        },
+        {
+          "bioguide": "G000587",
+          "name": "Sylvia R. Garcia",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1950
+        },
+        {
+          "bioguide": "K000375",
+          "name": "William R. Keating",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "09-08",
+      "members": [
+        {
+          "bioguide": "S000033",
+          "name": "Bernard Sanders",
+          "party": "I",
+          "chamber": "senate",
+          "state": "VT",
+          "birthYear": 1941
+        },
+        {
+          "bioguide": "S001148",
+          "name": "Michael K. Simpson",
+          "party": "R",
+          "chamber": "house",
+          "state": "ID",
+          "birthYear": 1950
+        }
+      ]
+    },
+    {
+      "md": "09-09",
+      "members": [
+        {
+          "bioguide": "C001088",
+          "name": "Christopher A. Coons",
+          "party": "D",
+          "chamber": "senate",
+          "state": "DE",
+          "birthYear": 1963
+        },
+        {
+          "bioguide": "L000599",
+          "name": "Michael Lawler",
+          "party": "R",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1986
+        },
+        {
+          "bioguide": "E000301",
+          "name": "Sarah Elfreth",
+          "party": "D",
+          "chamber": "house",
+          "state": "MD",
+          "birthYear": 1988
+        }
+      ]
+    },
+    {
+      "md": "09-10",
+      "members": [
+        {
+          "bioguide": "L000571",
+          "name": "Cynthia M. Lummis",
+          "party": "R",
+          "chamber": "senate",
+          "state": "WY",
+          "birthYear": 1954
+        },
+        {
+          "bioguide": "O000176",
+          "name": "Johnny Olszewski, Jr.",
+          "party": "D",
+          "chamber": "house",
+          "state": "MD",
+          "birthYear": 1982
+        }
+      ]
+    },
+    {
+      "md": "09-13",
+      "members": [
+        {
+          "bioguide": "W000812",
+          "name": "Ann Wagner",
+          "party": "R",
+          "chamber": "house",
+          "state": "MO",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "E000246",
+          "name": "Chuck Edwards",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1960
+        },
+        {
+          "bioguide": "K000389",
+          "name": "Ro Khanna",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "W000816",
+          "name": "Roger Williams",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1949
+        }
+      ]
+    },
+    {
+      "md": "09-15",
+      "members": [
+        {
+          "bioguide": "V000135",
+          "name": "Derrick Van Orden",
+          "party": "R",
+          "chamber": "house",
+          "state": "WI",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "B001300",
+          "name": "Nanette Diaz Barragán",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "E000299",
+          "name": "Veronica Escobar",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1969
+        }
+      ]
+    },
+    {
+      "md": "09-16",
+      "members": [
+        {
+          "bioguide": "C001091",
+          "name": "Joaquin Castro",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1974
+        }
+      ]
+    },
+    {
+      "md": "09-17",
+      "members": [
+        {
+          "bioguide": "G000386",
+          "name": "Chuck Grassley",
+          "party": "R",
+          "chamber": "senate",
+          "state": "IA",
+          "birthYear": 1933
+        }
+      ]
+    },
+    {
+      "md": "09-18",
+      "members": [
+        {
+          "bioguide": "T000278",
+          "name": "Tommy Tuberville",
+          "party": "R",
+          "chamber": "senate",
+          "state": "AL",
+          "birthYear": 1954
+        }
+      ]
+    },
+    {
+      "md": "09-19",
+      "members": [
+        {
+          "bioguide": "C001063",
+          "name": "Henry Cuellar",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1955
+        },
+        {
+          "bioguide": "S001184",
+          "name": "Tim Scott",
+          "party": "R",
+          "chamber": "senate",
+          "state": "SC",
+          "birthYear": 1965
+        }
+      ]
+    },
+    {
+      "md": "09-21",
+      "members": [
+        {
+          "bioguide": "J000298",
+          "name": "Pramila Jayapal",
+          "party": "D",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1965
+        }
+      ]
+    },
+    {
+      "md": "09-23",
+      "members": [
+        {
+          "bioguide": "G000605",
+          "name": "Adam Gray",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1977
+        }
+      ]
+    },
+    {
+      "md": "09-24",
+      "members": [
+        {
+          "bioguide": "H001093",
+          "name": "Erin Houchin",
+          "party": "R",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "S001229",
+          "name": "Jefferson Shreve",
+          "party": "R",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1965
+        }
+      ]
+    },
+    {
+      "md": "09-25",
+      "members": [
+        {
+          "bioguide": "M001163",
+          "name": "Doris O. Matsui",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1944
+        },
+        {
+          "bioguide": "M001137",
+          "name": "Gregory W. Meeks",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "S001159",
+          "name": "Marilyn Strickland",
+          "party": "D",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "D000600",
+          "name": "Mario Diaz-Balart",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1961
+        }
+      ]
+    },
+    {
+      "md": "09-26",
+      "members": [
+        {
+          "bioguide": "M001212",
+          "name": "Barry Moore",
+          "party": "R",
+          "chamber": "house",
+          "state": "AL",
+          "birthYear": 1966
+        },
+        {
+          "bioguide": "S001230",
+          "name": "Suhas Subramanyam",
+          "party": "D",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1986
+        }
+      ]
+    },
+    {
+      "md": "09-27",
+      "members": [
+        {
+          "bioguide": "E000297",
+          "name": "Adriano Espaillat",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1954
+        },
+        {
+          "bioguide": "G000597",
+          "name": "Andrew R. Garbarino",
+          "party": "R",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1984
+        },
+        {
+          "bioguide": "W000797",
+          "name": "Debbie Wasserman Schultz",
+          "party": "D",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1966
+        },
+        {
+          "bioguide": "C001055",
+          "name": "Ed Case",
+          "party": "D",
+          "chamber": "house",
+          "state": "HI",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "09-28",
+      "members": [
+        {
+          "bioguide": "C001075",
+          "name": "Bill Cassidy",
+          "party": "R",
+          "chamber": "senate",
+          "state": "LA",
+          "birthYear": 1957
+        },
+        {
+          "bioguide": "F000482",
+          "name": "Julie Fedorchak",
+          "party": "R",
+          "chamber": "house",
+          "state": "ND",
+          "birthYear": 1968
+        }
+      ]
+    },
+    {
+      "md": "09-30",
+      "members": [
+        {
+          "bioguide": "J000301",
+          "name": "Dusty Johnson",
+          "party": "R",
+          "chamber": "house",
+          "state": "SD",
+          "birthYear": 1976
+        }
+      ]
+    },
+    {
+      "md": "10-01",
+      "members": [
+        {
+          "bioguide": "M001188",
+          "name": "Grace Meng",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1975
+        },
+        {
+          "bioguide": "P000613",
+          "name": "Jimmy Panetta",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1969
+        }
+      ]
+    },
+    {
+      "md": "10-02",
+      "members": [
+        {
+          "bioguide": "B001316",
+          "name": "Eric Burlison",
+          "party": "R",
+          "chamber": "house",
+          "state": "MO",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "J000288",
+          "name": "Henry C. \"Hank\" Johnson, Jr.",
+          "party": "D",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1954
+        },
+        {
+          "bioguide": "M001236",
+          "name": "Tim Moore",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "10-03",
+      "members": [
+        {
+          "bioguide": "G000601",
+          "name": "Craig A. Goldman",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1968
+        }
+      ]
+    },
+    {
+      "md": "10-04",
+      "members": [
+        {
+          "bioguide": "O000173",
+          "name": "Ilhan Omar",
+          "party": "D",
+          "chamber": "house",
+          "state": "MN",
+          "birthYear": 1981
+        },
+        {
+          "bioguide": "U000040",
+          "name": "Lauren Underwood",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1986
+        },
+        {
+          "bioguide": "A000379",
+          "name": "Mark Alford",
+          "party": "R",
+          "chamber": "house",
+          "state": "MO",
+          "birthYear": 1963
+        }
+      ]
+    },
+    {
+      "md": "10-06",
+      "members": [
+        {
+          "bioguide": "D000399",
+          "name": "Lloyd Doggett",
+          "party": "D",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1946
+        },
+        {
+          "bioguide": "S001176",
+          "name": "Steve Scalise",
+          "party": "R",
+          "chamber": "house",
+          "state": "LA",
+          "birthYear": 1965
+        },
+        {
+          "bioguide": "S000929",
+          "name": "Victoria Spartz",
+          "party": "R",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1978
+        }
+      ]
+    },
+    {
+      "md": "10-07",
+      "members": [
+        {
+          "bioguide": "F000454",
+          "name": "Bill Foster",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1955
+        },
+        {
+          "bioguide": "M001218",
+          "name": "Richard McCormick",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1968
+        }
+      ]
+    },
+    {
+      "md": "10-08",
+      "members": [
+        {
+          "bioguide": "K000392",
+          "name": "David Kustoff",
+          "party": "R",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1966
+        }
+      ]
+    },
+    {
+      "md": "10-11",
+      "members": [
+        {
+          "bioguide": "F000459",
+          "name": "Charles J. \"Chuck\" Fleischmann",
+          "party": "R",
+          "chamber": "house",
+          "state": "TN",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "M001111",
+          "name": "Patty Murray",
+          "party": "D",
+          "chamber": "senate",
+          "state": "WA",
+          "birthYear": 1950
+        }
+      ]
+    },
+    {
+      "md": "10-13",
+      "members": [
+        {
+          "bioguide": "O000172",
+          "name": "Alexandria Ocasio-Cortez",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1989
+        },
+        {
+          "bioguide": "C000127",
+          "name": "Maria Cantwell",
+          "party": "D",
+          "chamber": "senate",
+          "state": "WA",
+          "birthYear": 1958
+        }
+      ]
+    },
+    {
+      "md": "10-14",
+      "members": [
+        {
+          "bioguide": "B001278",
+          "name": "Suzanne Bonamici",
+          "party": "D",
+          "chamber": "house",
+          "state": "OR",
+          "birthYear": 1954
+        }
+      ]
+    },
+    {
+      "md": "10-16",
+      "members": [
+        {
+          "bioguide": "C001072",
+          "name": "André Carson",
+          "party": "D",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1974
+        }
+      ]
+    },
+    {
+      "md": "10-17",
+      "members": [
+        {
+          "bioguide": "H001046",
+          "name": "Martin Heinrich",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NM",
+          "birthYear": 1971
+        },
+        {
+          "bioguide": "Q000023",
+          "name": "Mike Quigley",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1958
+        }
+      ]
+    },
+    {
+      "md": "10-18",
+      "members": [
+        {
+          "bioguide": "H001096",
+          "name": "Harriet M. Hageman",
+          "party": "R",
+          "chamber": "house",
+          "state": "WY",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "K000397",
+          "name": "Young Kim",
+          "party": "R",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1962
+        }
+      ]
+    },
+    {
+      "md": "10-20",
+      "members": [
+        {
+          "bioguide": "S001194",
+          "name": "Brian Schatz",
+          "party": "D",
+          "chamber": "senate",
+          "state": "HI",
+          "birthYear": 1972
+        },
+        {
+          "bioguide": "W000802",
+          "name": "Sheldon Whitehouse",
+          "party": "D",
+          "chamber": "senate",
+          "state": "RI",
+          "birthYear": 1955
+        },
+        {
+          "bioguide": "K000402",
+          "name": "Timothy M. Kennedy",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1976
+        }
+      ]
+    },
+    {
+      "md": "10-21",
+      "members": [
+        {
+          "bioguide": "B001323",
+          "name": "Nicholas J. Begich III",
+          "party": "R",
+          "chamber": "house",
+          "state": "AK",
+          "birthYear": 1977
+        },
+        {
+          "bioguide": "B001305",
+          "name": "Ted Budd",
+          "party": "R",
+          "chamber": "senate",
+          "state": "NC",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "10-22",
+      "members": [
+        {
+          "bioguide": "W000831",
+          "name": "James R. Walkinshaw",
+          "party": "D",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1982
+        }
+      ]
+    },
+    {
+      "md": "10-24",
+      "members": [
+        {
+          "bioguide": "S000344",
+          "name": "Brad Sherman",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1954
+        },
+        {
+          "bioguide": "M001176",
+          "name": "Jeff Merkley",
+          "party": "D",
+          "chamber": "senate",
+          "state": "OR",
+          "birthYear": 1956
+        },
+        {
+          "bioguide": "M000687",
+          "name": "Kweisi Mfume",
+          "party": "D",
+          "chamber": "house",
+          "state": "MD",
+          "birthYear": 1948
+        },
+        {
+          "bioguide": "R000605",
+          "name": "Mike Rounds",
+          "party": "R",
+          "chamber": "senate",
+          "state": "SD",
+          "birthYear": 1954
+        },
+        {
+          "bioguide": "M001196",
+          "name": "Seth Moulton",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1978
+        },
+        {
+          "bioguide": "F000480",
+          "name": "Vince Fong",
+          "party": "R",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1979
+        }
+      ]
+    },
+    {
+      "md": "10-26",
+      "members": [
+        {
+          "bioguide": "C001061",
+          "name": "Emanuel Cleaver",
+          "party": "D",
+          "chamber": "house",
+          "state": "MO",
+          "birthYear": 1944
+        },
+        {
+          "bioguide": "C001125",
+          "name": "Troy A. Carter",
+          "party": "D",
+          "chamber": "house",
+          "state": "LA",
+          "birthYear": 1963
+        }
+      ]
+    },
+    {
+      "md": "10-27",
+      "members": [
+        {
+          "bioguide": "T000482",
+          "name": "Lori Trahan",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1973
+        }
+      ]
+    },
+    {
+      "md": "10-28",
+      "members": [
+        {
+          "bioguide": "D000032",
+          "name": "Byron Donalds",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1978
+        },
+        {
+          "bioguide": "L000593",
+          "name": "Mike Levin",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1978
+        }
+      ]
+    },
+    {
+      "md": "10-30",
+      "members": [
+        {
+          "bioguide": "G000606",
+          "name": "Adelita S. Grijalva",
+          "party": "D",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "R000621",
+          "name": "Emily Randall",
+          "party": "D",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1985
+        },
+        {
+          "bioguide": "P000034",
+          "name": "Frank Pallone, Jr.",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1951
+        }
+      ]
+    },
+    {
+      "md": "11-01",
+      "members": [
+        {
+          "bioguide": "I000056",
+          "name": "Darrell Issa",
+          "party": "R",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "S000168",
+          "name": "Maria Elvira Salazar",
+          "party": "R",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1961
+        },
+        {
+          "bioguide": "Z000018",
+          "name": "Ryan K. Zinke",
+          "party": "R",
+          "chamber": "house",
+          "state": "MT",
+          "birthYear": 1961
+        }
+      ]
+    },
+    {
+      "md": "11-03",
+      "members": [
+        {
+          "bioguide": "H001042",
+          "name": "Mazie K. Hirono",
+          "party": "D",
+          "chamber": "senate",
+          "state": "HI",
+          "birthYear": 1947
+        },
+        {
+          "bioguide": "F000470",
+          "name": "Michelle Fischbach",
+          "party": "R",
+          "chamber": "house",
+          "state": "MN",
+          "birthYear": 1965
+        }
+      ]
+    },
+    {
+      "md": "11-04",
+      "members": [
+        {
+          "bioguide": "M001205",
+          "name": "Carol D. Miller",
+          "party": "R",
+          "chamber": "house",
+          "state": "WV",
+          "birthYear": 1950
+        },
+        {
+          "bioguide": "G000604",
+          "name": "Maggie Goodlander",
+          "party": "D",
+          "chamber": "house",
+          "state": "NH",
+          "birthYear": 1986
+        },
+        {
+          "bioguide": "H001067",
+          "name": "Richard Hudson",
+          "party": "R",
+          "chamber": "house",
+          "state": "NC",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "11-05",
+      "members": [
+        {
+          "bioguide": "W000808",
+          "name": "Frederica S. Wilson",
+          "party": "D",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1942
+        },
+        {
+          "bioguide": "B001324",
+          "name": "Wesley Bell",
+          "party": "D",
+          "chamber": "house",
+          "state": "MO",
+          "birthYear": 1974
+        }
+      ]
+    },
+    {
+      "md": "11-06",
+      "members": [
+        {
+          "bioguide": "C001051",
+          "name": "John R. Carter",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1941
+        }
+      ]
+    },
+    {
+      "md": "11-07",
+      "members": [
+        {
+          "bioguide": "B001302",
+          "name": "Andy Biggs",
+          "party": "R",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1958
+        },
+        {
+          "bioguide": "L000603",
+          "name": "Morgan Luttrell",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1975
+        },
+        {
+          "bioguide": "A000372",
+          "name": "Rick W. Allen",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1951
+        },
+        {
+          "bioguide": "G000546",
+          "name": "Sam Graves",
+          "party": "R",
+          "chamber": "house",
+          "state": "MO",
+          "birthYear": 1963
+        },
+        {
+          "bioguide": "L000590",
+          "name": "Susie Lee",
+          "party": "D",
+          "chamber": "house",
+          "state": "NV",
+          "birthYear": 1966
+        }
+      ]
+    },
+    {
+      "md": "11-11",
+      "members": [
+        {
+          "bioguide": "D000594",
+          "name": "Monica De La Cruz",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1974
+        },
+        {
+          "bioguide": "M000317",
+          "name": "Nicole Malliotakis",
+          "party": "R",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1980
+        },
+        {
+          "bioguide": "B000740",
+          "name": "Stephanie I. Bice",
+          "party": "R",
+          "chamber": "house",
+          "state": "OK",
+          "birthYear": 1973
+        }
+      ]
+    },
+    {
+      "md": "11-12",
+      "members": [
+        {
+          "bioguide": "R000122",
+          "name": "Jack Reed",
+          "party": "D",
+          "chamber": "senate",
+          "state": "RI",
+          "birthYear": 1949
+        }
+      ]
+    },
+    {
+      "md": "11-13",
+      "members": [
+        {
+          "bioguide": "S001198",
+          "name": "Dan Sullivan",
+          "party": "R",
+          "chamber": "senate",
+          "state": "AK",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "M001222",
+          "name": "Max L. Miller",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1988
+        },
+        {
+          "bioguide": "H001095",
+          "name": "Wesley Hunt",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1981
+        }
+      ]
+    },
+    {
+      "md": "11-16",
+      "members": [
+        {
+          "bioguide": "V000134",
+          "name": "Beth Van Duyne",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "T000490",
+          "name": "David J. Taylor",
+          "party": "R",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "F000471",
+          "name": "Scott Fitzgerald",
+          "party": "R",
+          "chamber": "house",
+          "state": "WI",
+          "birthYear": 1963
+        }
+      ]
+    },
+    {
+      "md": "11-18",
+      "members": [
+        {
+          "bioguide": "W000821",
+          "name": "Bruce Westerman",
+          "party": "R",
+          "chamber": "house",
+          "state": "AR",
+          "birthYear": 1967
+        },
+        {
+          "bioguide": "C001112",
+          "name": "Salud O. Carbajal",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1964
+        },
+        {
+          "bioguide": "S001232",
+          "name": "Tim Sheehy",
+          "party": "R",
+          "chamber": "senate",
+          "state": "MT",
+          "birthYear": 1985
+        }
+      ]
+    },
+    {
+      "md": "11-20",
+      "members": [
+        {
+          "bioguide": "M000312",
+          "name": "James P. McGovern",
+          "party": "D",
+          "chamber": "house",
+          "state": "MA",
+          "birthYear": 1959
+        },
+        {
+          "bioguide": "G000574",
+          "name": "Ruben Gallego",
+          "party": "D",
+          "chamber": "senate",
+          "state": "AZ",
+          "birthYear": 1979
+        }
+      ]
+    },
+    {
+      "md": "11-21",
+      "members": [
+        {
+          "bioguide": "K000393",
+          "name": "John Kennedy",
+          "party": "R",
+          "chamber": "senate",
+          "state": "LA",
+          "birthYear": 1951
+        },
+        {
+          "bioguide": "D000563",
+          "name": "Richard J. Durbin",
+          "party": "D",
+          "chamber": "senate",
+          "state": "IL",
+          "birthYear": 1944
+        },
+        {
+          "bioguide": "C001067",
+          "name": "Yvette D. Clarke",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "11-22",
+      "members": [
+        {
+          "bioguide": "C001116",
+          "name": "Andrew S. Clyde",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1963
+        },
+        {
+          "bioguide": "F000110",
+          "name": "Cleo Fields",
+          "party": "D",
+          "chamber": "house",
+          "state": "LA",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "L000606",
+          "name": "George Latimer",
+          "party": "D",
+          "chamber": "house",
+          "state": "NY",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "G000565",
+          "name": "Paul A. Gosar",
+          "party": "R",
+          "chamber": "house",
+          "state": "AZ",
+          "birthYear": 1958
+        }
+      ]
+    },
+    {
+      "md": "11-23",
+      "members": [
+        {
+          "bioguide": "S000148",
+          "name": "Charles E. Schumer",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NY",
+          "birthYear": 1950
+        },
+        {
+          "bioguide": "D000624",
+          "name": "Debbie Dingell",
+          "party": "D",
+          "chamber": "house",
+          "state": "MI",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "C001117",
+          "name": "Sean Casten",
+          "party": "D",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1971
+        }
+      ]
+    },
+    {
+      "md": "11-25",
+      "members": [
+        {
+          "bioguide": "G000585",
+          "name": "Jimmy Gomez",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1974
+        }
+      ]
+    },
+    {
+      "md": "11-26",
+      "members": [
+        {
+          "bioguide": "C001047",
+          "name": "Shelley Moore Capito",
+          "party": "R",
+          "chamber": "senate",
+          "state": "WV",
+          "birthYear": 1953
+        },
+        {
+          "bioguide": "L000602",
+          "name": "Summer L. Lee",
+          "party": "D",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1987
+        }
+      ]
+    },
+    {
+      "md": "11-28",
+      "members": [
+        {
+          "bioguide": "B001267",
+          "name": "Michael F. Bennet",
+          "party": "D",
+          "chamber": "senate",
+          "state": "CO",
+          "birthYear": 1964
+        }
+      ]
+    },
+    {
+      "md": "12-01",
+      "members": [
+        {
+          "bioguide": "P000595",
+          "name": "Gary C. Peters",
+          "party": "D",
+          "chamber": "senate",
+          "state": "MI",
+          "birthYear": 1958
+        },
+        {
+          "bioguide": "G000589",
+          "name": "Lance Gooden",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1982
+        },
+        {
+          "bioguide": "S001217",
+          "name": "Rick Scott",
+          "party": "R",
+          "chamber": "senate",
+          "state": "FL",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "12-02",
+      "members": [
+        {
+          "bioguide": "G000598",
+          "name": "Robert Garcia",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1977
+        }
+      ]
+    },
+    {
+      "md": "12-03",
+      "members": [
+        {
+          "bioguide": "F000483",
+          "name": "Laura Friedman",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1966
+        }
+      ]
+    },
+    {
+      "md": "12-04",
+      "members": [
+        {
+          "bioguide": "L000601",
+          "name": "Greg Landsman",
+          "party": "D",
+          "chamber": "house",
+          "state": "OH",
+          "birthYear": 1976
+        },
+        {
+          "bioguide": "H001082",
+          "name": "Kevin Hern",
+          "party": "R",
+          "chamber": "house",
+          "state": "OK",
+          "birthYear": 1961
+        },
+        {
+          "bioguide": "M000194",
+          "name": "Nancy Mace",
+          "party": "R",
+          "chamber": "house",
+          "state": "SC",
+          "birthYear": 1977
+        }
+      ]
+    },
+    {
+      "md": "12-05",
+      "members": [
+        {
+          "bioguide": "H001072",
+          "name": "J. French Hill",
+          "party": "R",
+          "chamber": "house",
+          "state": "AR",
+          "birthYear": 1956
+        },
+        {
+          "bioguide": "D000635",
+          "name": "Maxine Dexter",
+          "party": "D",
+          "chamber": "house",
+          "state": "OR",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "12-06",
+      "members": [
+        {
+          "bioguide": "S001226",
+          "name": "Andrea Salinas",
+          "party": "D",
+          "chamber": "house",
+          "state": "OR",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "P000620",
+          "name": "Brittany Pettersen",
+          "party": "D",
+          "chamber": "house",
+          "state": "CO",
+          "birthYear": 1981
+        }
+      ]
+    },
+    {
+      "md": "12-07",
+      "members": [
+        {
+          "bioguide": "C001035",
+          "name": "Susan M. Collins",
+          "party": "R",
+          "chamber": "senate",
+          "state": "ME",
+          "birthYear": 1952
+        }
+      ]
+    },
+    {
+      "md": "12-09",
+      "members": [
+        {
+          "bioguide": "G000555",
+          "name": "Kirsten E. Gillibrand",
+          "party": "D",
+          "chamber": "senate",
+          "state": "NY",
+          "birthYear": 1966
+        }
+      ]
+    },
+    {
+      "md": "12-10",
+      "members": [
+        {
+          "bioguide": "S001189",
+          "name": "Austin Scott",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1969
+        },
+        {
+          "bioguide": "B001236",
+          "name": "John Boozman",
+          "party": "R",
+          "chamber": "senate",
+          "state": "AR",
+          "birthYear": 1950
+        },
+        {
+          "bioguide": "T000472",
+          "name": "Mark Takano",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1960
+        }
+      ]
+    },
+    {
+      "md": "12-11",
+      "members": [
+        {
+          "bioguide": "A000380",
+          "name": "Gabe Amo",
+          "party": "D",
+          "chamber": "house",
+          "state": "RI",
+          "birthYear": 1987
+        }
+      ]
+    },
+    {
+      "md": "12-13",
+      "members": [
+        {
+          "bioguide": "N000188",
+          "name": "Donald Norcross",
+          "party": "D",
+          "chamber": "house",
+          "state": "NJ",
+          "birthYear": 1958
+        },
+        {
+          "bioguide": "R000606",
+          "name": "Jamie Raskin",
+          "party": "D",
+          "chamber": "house",
+          "state": "MD",
+          "birthYear": 1962
+        },
+        {
+          "bioguide": "B001322",
+          "name": "Michael Baumgartner",
+          "party": "R",
+          "chamber": "house",
+          "state": "WA",
+          "birthYear": 1975
+        }
+      ]
+    },
+    {
+      "md": "12-15",
+      "members": [
+        {
+          "bioguide": "B000825",
+          "name": "Lauren Boebert",
+          "party": "R",
+          "chamber": "house",
+          "state": "CO",
+          "birthYear": 1986
+        },
+        {
+          "bioguide": "W000805",
+          "name": "Mark R. Warner",
+          "party": "D",
+          "chamber": "senate",
+          "state": "VA",
+          "birthYear": 1954
+        }
+      ]
+    },
+    {
+      "md": "12-16",
+      "members": [
+        {
+          "bioguide": "M001233",
+          "name": "Mark B. Messmer",
+          "party": "R",
+          "chamber": "house",
+          "state": "IN",
+          "birthYear": 1967
+        }
+      ]
+    },
+    {
+      "md": "12-17",
+      "members": [
+        {
+          "bioguide": "F000466",
+          "name": "Brian K. Fitzpatrick",
+          "party": "R",
+          "chamber": "house",
+          "state": "PA",
+          "birthYear": 1973
+        },
+        {
+          "bioguide": "M000871",
+          "name": "Tracey Mann",
+          "party": "R",
+          "chamber": "house",
+          "state": "KS",
+          "birthYear": 1976
+        }
+      ]
+    },
+    {
+      "md": "12-18",
+      "members": [
+        {
+          "bioguide": "M001217",
+          "name": "Jared Moskowitz",
+          "party": "D",
+          "chamber": "house",
+          "state": "FL",
+          "birthYear": 1980
+        }
+      ]
+    },
+    {
+      "md": "12-19",
+      "members": [
+        {
+          "bioguide": "S001172",
+          "name": "Adrian Smith",
+          "party": "R",
+          "chamber": "house",
+          "state": "NE",
+          "birthYear": 1970
+        },
+        {
+          "bioguide": "F000246",
+          "name": "Pat Fallon",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1967
+        }
+      ]
+    },
+    {
+      "md": "12-21",
+      "members": [
+        {
+          "bioguide": "L000397",
+          "name": "Zoe Lofgren",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1947
+        }
+      ]
+    },
+    {
+      "md": "12-22",
+      "members": [
+        {
+          "bioguide": "L000583",
+          "name": "Barry Loudermilk",
+          "party": "R",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1963
+        },
+        {
+          "bioguide": "T000491",
+          "name": "Derek Tran",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1980
+        },
+        {
+          "bioguide": "C001098",
+          "name": "Ted Cruz",
+          "party": "R",
+          "chamber": "senate",
+          "state": "TX",
+          "birthYear": 1970
+        }
+      ]
+    },
+    {
+      "md": "12-23",
+      "members": [
+        {
+          "bioguide": "M001220",
+          "name": "Morgan McGarvey",
+          "party": "D",
+          "chamber": "house",
+          "state": "KY",
+          "birthYear": 1979
+        }
+      ]
+    },
+    {
+      "md": "12-28",
+      "members": [
+        {
+          "bioguide": "P000048",
+          "name": "August Pfluger",
+          "party": "R",
+          "chamber": "house",
+          "state": "TX",
+          "birthYear": 1978
+        },
+        {
+          "bioguide": "M001227",
+          "name": "Jennifer L. McClellan",
+          "party": "D",
+          "chamber": "house",
+          "state": "VA",
+          "birthYear": 1972
+        }
+      ]
+    },
+    {
+      "md": "12-30",
+      "members": [
+        {
+          "bioguide": "B001295",
+          "name": "Mike Bost",
+          "party": "R",
+          "chamber": "house",
+          "state": "IL",
+          "birthYear": 1960
+        },
+        {
+          "bioguide": "T000165",
+          "name": "Thomas P. Tiffany",
+          "party": "R",
+          "chamber": "house",
+          "state": "WI",
+          "birthYear": 1957
+        }
+      ]
+    },
+    {
+      "md": "12-31",
+      "members": [
+        {
+          "bioguide": "R000395",
+          "name": "Harold Rogers",
+          "party": "R",
+          "chamber": "house",
+          "state": "KY",
+          "birthYear": 1937
+        },
+        {
+          "bioguide": "H001089",
+          "name": "Josh Hawley",
+          "party": "R",
+          "chamber": "senate",
+          "state": "MO",
+          "birthYear": 1979
+        }
+      ]
+    }
+  ]
+}
