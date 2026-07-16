@@ -17,6 +17,24 @@
   --dem: #2560c9;
   --rep: #d1382c;
   --ind: #6a6f78;
+
+  /* Age intensity — the one non-party accent the research sections are allowed.
+     The map already teaches the reader that OLDER = amber (its teal→amber
+     diverging ramp); this is that same warm arm pulled out as a shared
+     sequential scale so every section that encodes age speaks one language
+     rather than inventing a palette of its own. Light gold → deep amber, six
+     monotone-darkening steps drawn from the map's own gold family (--age-3 is
+     the map's mid-gold #bb8825; --age-5 sits on its deep #785300). Reused by
+     The Decades (retirement-age rows), The Generation Gap (the Congress series),
+     and Shared Birthdays (the calendar heat scale). Never party, never purple:
+     it always means "older / more". Cool youth and every non-age baseline stay
+     in the monochrome ink tints, so warmth reads only where age is the point. */
+  --age-1: #dcb463;
+  --age-2: #cf9f42;
+  --age-3: #bb8825;
+  --age-4: #9c6c18;
+  --age-5: #7d5300;
+  --age-6: #573900;
 }
 
 body {

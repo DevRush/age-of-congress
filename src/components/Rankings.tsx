@@ -12,9 +12,11 @@ import { Clock } from './Clock'
  *
  * Ages run to one decimal. They are still live Clocks — computed in the reader's
  * browser, so a cached page can never show a stale age — but at one decimal a
- * figure only moves every few weeks and should sit still. Two facts are doing the
- * work in each row, so both are set in the ink: the age, and the number of terms
- * that produced it.
+ * figure only moves every few weeks and should sit still. The age is the point of
+ * a list ranked by age, so it is the largest, heaviest thing in the row — set
+ * well above the name and metadata, full ink, tabular — and it anchors the right
+ * edge as a ledger the eye can run straight down. The tenure is the second fact
+ * and stays in the ink beside the name; everything else recedes.
  *
  * Numbering is earned here — these lists are a genuine ranked order (by age), so
  * the rank figure leading each row carries real information, not decoration.
@@ -138,8 +140,8 @@ function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
       </div>
 
       <span
-        className={`serif shrink-0 text-right tabular-nums tracking-[-0.01em] text-[var(--ink)] ${
-          compact ? 'text-[0.875rem]' : 'text-[1rem] sm:text-[1.125rem]'
+        className={`serif shrink-0 pl-2 text-right font-semibold tabular-nums leading-none tracking-[-0.01em] text-[var(--ink)] ${
+          compact ? 'text-[1.0625rem]' : 'text-[1.375rem] sm:text-[1.5rem]'
         }`}
       >
         <Clock dobMs={m.dobMs} decimals={1} dim={0} baselineMs={baselineMs} />

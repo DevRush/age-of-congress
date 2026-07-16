@@ -11,12 +11,14 @@ import { countAtLeast, decadeRows } from '@/lib/decades'
  * headcount at the end of each row rather than making anyone read a bar against
  * an axis. There is no axis. The numbers are the axis.
  *
- * The one drawn line is at 70. Above it the bars are a quiet ink tint; at and
- * below it they go to full ink — the same "ink weight carries emphasis"
- * convention the chambers and "The Long View" already teach, so the shift reads
- * as significance and never as hue. Length still carries the count (the 60s row
- * is the longest bar on the chart and stays pale), and because every count is
- * printed, the ink can editorialize without the geometry lying.
+ * The one drawn line is at 70. Below it the bars are a cool, neutral ink tint —
+ * baseline, unremarked. At and above it they warm through the site's shared
+ * age-intensity ramp (--age-*, the map's amber "older" arm), a step deeper each
+ * decade, so a member in their 90s is visibly further along the same scale than
+ * one in their 70s. It encodes "past retirement" without alarm: warmth, not red.
+ * Length still carries the count independently of hue — the 60s row is the
+ * longest bar on the chart and stays neutral — and because every count is
+ * printed, the color can editorialize without the geometry lying.
  *
  * Server-rendered: the figures are fixed at build time from the same data the
  * cron refreshes, so they move when the roster moves and never drift.
@@ -53,6 +55,20 @@ const THRESHOLD = 70
 // every other figure on the page.
 const COLUMN = 600
 
+// The cool baseline every below-70 row shares: a neutral ink tint, no warmth.
+const NEUTRAL = 'color-mix(in srgb, var(--ink) 22%, var(--paper))'
+
+// The warm arm, one shared step per decade past the line. 70s→--age-2, 80s→
+// --age-4, 90s→--age-6, and anything deeper (a future centenarian row) holds at
+// the darkest step rather than running off the ramp.
+const WARM = ['var(--age-2)', 'var(--age-4)', 'var(--age-6)'] as const
+
+/** The bar fill for a decade whose floor is `min`. Cool below 70, warming above. */
+function decadeFill(min: number): string {
+  if (min < THRESHOLD) return NEUTRAL
+  return WARM[Math.min(Math.floor((min - THRESHOLD) / 10), WARM.length - 1)]
+}
+
 export function Decades() {
   const atYear = new Date(data.generatedAt).getUTCFullYear()
   const entries = data.histogram as { birthYear: number }[]
@@ -65,6 +81,14 @@ export function Decades() {
 
   return (
     <figure className="mx-auto my-0" style={{ maxWidth: COLUMN }}>
+      {/* The dek exists to settle one question before the reader counts a single
+          bar: these are ages, not birth decades. "In their 70s" means 70-something
+          today — the decade of life they are living in now. */}
+      <p className="serif mb-6 max-w-prose text-[1.0625rem] leading-relaxed text-[var(--ink-soft)]">
+        Members of Congress by the decade of life they are in &mdash; how old they
+        are now, not the decade they were born.
+      </p>
+
       <div
         role="img"
         aria-label={
@@ -72,7 +96,7 @@ export function Decades() {
           rows.map((r) => `${r.count} in their ${r.label}`).join(', ') +
           `. ${past70} are ${THRESHOLD} or older.`
         }
-        className="grid grid-cols-[2.25rem_1fr_2.5rem] items-center gap-x-3 gap-y-1.5"
+        className="grid grid-cols-[5.5rem_1fr_2.5rem] items-center gap-x-3 gap-y-1.5"
       >
         {rows.map((row, i) => {
           const past = row.min >= THRESHOLD
@@ -80,11 +104,18 @@ export function Decades() {
           const opensThreshold = past && !(rows[i - 1]?.min >= THRESHOLD)
           return (
             <ThresholdGroup key={row.label} draw={opensThreshold}>
+              {/* Rendered in normal case, NOT small-caps: an uppercase transform
+                  turns the trailing "s" into "70S". The number keeps its lowercase
+                  decade "s", and "In their" removes the birth-decade ambiguity at
+                  the row level too. */}
               <span
-                className="smallcaps tnum text-[0.6875rem] tracking-[0.1em]"
-                style={{ color: past ? 'var(--ink)' : 'var(--ink-soft)' }}
+                className="meta tnum text-[0.8125rem] leading-tight"
+                style={{
+                  color: past ? 'var(--ink)' : 'var(--ink-soft)',
+                  fontWeight: past ? 600 : 400,
+                }}
               >
-                {row.label}
+                In their {row.label}
               </span>
 
               <span aria-hidden className="block">
@@ -94,9 +125,7 @@ export function Decades() {
                     // A count of 1 is a tick, not a nothing: the sliver is
                     // floored so the row still reads as present.
                     width: `max(2px, ${(row.count / max) * 100}%)`,
-                    background: past
-                      ? 'var(--ink)'
-                      : 'color-mix(in srgb, var(--ink) 26%, var(--paper))',
+                    background: decadeFill(row.min),
                   }}
                 />
               </span>
