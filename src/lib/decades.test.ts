@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { ageAt, countAtLeast, countOutliving, decadeRows } from './decades'
+import { readFileSync } from 'node:fs'
+import { ageAt, countAtLeast, decadeRows } from './decades'
 
 describe('ageAt', () => {
   it('is the age the member reaches during the edition year', () => {
@@ -57,19 +58,43 @@ describe('countAtLeast', () => {
   })
 })
 
-describe('countOutliving', () => {
-  // The claim is "has outlived", so the comparison is strict: at a life
-  // expectancy of 78.4 a member must be 79, not 78. Rounding the threshold down
-  // would count six members who have not, in fact, outlived it.
-  const roster = [
-    { birthYear: 1947 }, // 79
-    { birthYear: 1948 }, // 78
-    { birthYear: 1949 }, // 77
-  ]
-  it('counts only members strictly past a fractional threshold', () => {
-    expect(countOutliving(roster, 2026, 78.4)).toBe(1)
+/**
+ * The Decades once ended on "37 have outlived US life expectancy (78.4)", which
+ * read life expectancy AT BIRTH as a forecast for people already in their
+ * seventies — the survivorship fallacy, printed on a page that asks to be
+ * trusted on arithmetic. The claim, its helper (`countOutliving`), and its
+ * constant are all gone.
+ *
+ * This is the gate that keeps them gone. The section is welcome to count the
+ * roster; it is not welcome to make an actuarial claim about it.
+ */
+describe('The Decades makes no actuarial claim', () => {
+  // page.tsx carries the section's footnote, which is where the claim's source
+  // citation lived — and where it survived the first removal of the claim
+  // itself. A gate that only watched the component would have missed it.
+  const sources = ['../components/Decades.tsx', './decades.ts', '../app/page.tsx'] as const
+
+  for (const rel of sources) {
+    const src = readFileSync(new URL(rel, import.meta.url), 'utf8')
+    // Strip comments: the files explain at length WHY the claim is gone, and
+    // that prose must not trip the gate that keeps it gone.
+    const code = src.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/.*$/gm, '')
+
+    it(`${rel} states no life expectancy, in code`, () => {
+      expect(code).not.toMatch(/life.?expectancy/i)
+      expect(code).not.toMatch(/outliv/i)
+      expect(code).not.toMatch(/78\.4/)
+    })
+  }
+
+  it('exports no strict-threshold counter for a fractional actuarial figure', () => {
+    const lib = readFileSync(new URL('./decades.ts', import.meta.url), 'utf8')
+    expect(lib).not.toMatch(/export function countOutliving/)
   })
-  it('excludes a member whose age equals a whole-year threshold', () => {
-    expect(countOutliving(roster, 2026, 79)).toBe(0)
+
+  it('still counts the roster, which is all it ever needed to do', () => {
+    const roster = [{ birthYear: 1947 }, { birthYear: 1948 }, { birthYear: 1949 }]
+    expect(countAtLeast(roster, 2026, 79)).toBe(1)
+    expect(countAtLeast(roster, 2026, 70)).toBe(3)
   })
 })

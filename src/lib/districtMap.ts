@@ -118,6 +118,77 @@ export function formatGap(gap: number): string {
   return '0.0'
 }
 
+// ── The ends of the range ────────────────────────────────────────────────────
+
+/** The little a district needs to be ranked by its gap. */
+export type GapDistrict = {
+  geoid: string
+  state: string
+  district: number
+  member: { name: string } | null
+  gapYears: number | null
+}
+
+/** A district at one end of the range, with its gap already proven to exist. */
+export type Extreme<T> = { d: T; gap: number; name: string }
+
+/**
+ * Every district that actually has a gap to draw, with the gap lifted out of its
+ * nullable field and into a plain number.
+ *
+ * This is the one place vacancy is decided, and it is the answer to a cast that
+ * used to appear wherever a gap was consumed: `d.gapYears as number`. A vacant
+ * seat carries `member: null` and `gapYears: null`, and that cast quietly turned
+ * "nobody holds this seat" into 0.0 — a real-looking, near-zero reading for an
+ * empty chair, printed at the exact middle of a diverging scale where zero means
+ * "this member is precisely their district's age".
+ *
+ * `Array.prototype.filter` does not narrow, which is why the cast kept coming
+ * back. Narrowing once, here, and handing callers a `gap: number` they cannot
+ * un-narrow is what stops it from coming back again.
+ *
+ * A member and a measurement are checked separately and deliberately: holding a
+ * seat does not guarantee a gap was computed for it, and inferring one from the
+ * other is the shape of the original bug.
+ */
+export function seatedGaps<T extends GapDistrict>(districts: readonly T[]): Extreme<T>[] {
+  const out: Extreme<T>[] = []
+  for (const d of districts) {
+    if (d.member === null || d.gapYears === null) continue
+    out.push({ d, gap: d.gapYears, name: d.member.name })
+  }
+  return out
+}
+
+/**
+ * The two ends of the gap distribution — derived, because the figure names them.
+ *
+ * The strip annotates both ends, the map rings them, and the caption names them
+ * again: six statements about a distribution that is recomputed from a fresh
+ * roster every night. Written by hand they were true on the day they were typed
+ * and drifted from the arithmetic beside them the first time a member had a
+ * birthday. So they are asked of the data instead.
+ *
+ * Throws rather than returning empty. A roster in which nothing has a gap is a
+ * broken build, and this runs during the static export — so it fails `next
+ * build`, which is where a data fault should stop, rather than on the page.
+ */
+export function gapExtremes<T extends GapDistrict>(
+  districts: readonly T[],
+): { min: Extreme<T>; max: Extreme<T> } {
+  const seated = seatedGaps(districts)
+  if (seated.length === 0) {
+    throw new Error('gapExtremes: no district has both a member and a gap')
+  }
+  let min = seated[0]
+  let max = seated[0]
+  for (const e of seated) {
+    if (e.gap < min.gap) min = e
+    if (e.gap > max.gap) max = e
+  }
+  return { min, max }
+}
+
 // ── The geometry ─────────────────────────────────────────────────────────────
 
 const round1 = (n: number) => Math.round(n * 10) / 10

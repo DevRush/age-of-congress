@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import data from '@/data/congress.json'
-import { countAtLeast, countOutliving, decadeRows } from '@/lib/decades'
+import { countAtLeast, decadeRows } from '@/lib/decades'
 
 /**
  * "The Decades" — the intuition made countable. Everyone has a private sense
@@ -26,11 +26,27 @@ import { countAtLeast, countOutliving, decadeRows } from '@/lib/decades'
 // is a named constant rather than a magic number buried in a comparison.
 const THRESHOLD = 70
 
-// U.S. life expectancy at birth, 78.4 years (CDC/NCHS, 2023). Held to one
-// decimal on purpose: `countOutliving` compares strictly against it, so the
-// fraction is what keeps the 78-year-olds — who have not outlived it — out of
-// the count.
-const LIFE_EXPECTANCY = 78.4
+/*
+ * The cascade used to end on a third clause: "37 have outlived US life
+ * expectancy (78.4)". It is gone, and should not come back in any form.
+ *
+ * 78.4 was life expectancy AT BIRTH, and it cannot be read as a forecast for a
+ * living 79-year-old. A member who has reached 79 has already survived every
+ * death that pulls the at-birth average down — infant mortality, accidents at
+ * 20, heart attacks at 55 — and their remaining expectancy is calculated from a
+ * different row of the life table entirely. "Outliving" a figure that was never
+ * about them is the survivorship fallacy in one sentence, on a page whose whole
+ * claim on the reader is that its arithmetic is careful. Any stats-literate
+ * critic gets a free win, and the rest of the page pays for it. (The 78.4
+ * attribution to CDC/NCHS could not be confirmed either, which is its own
+ * reason.)
+ *
+ * The replacement is nothing. A period-life-expectancy-at-79 figure would be
+ * arithmetically defensible and would still be an actuarial claim this page has
+ * no need to make and no source to back. The two clauses that remain are plain
+ * counts of the roster — the reader can check them against the bars directly —
+ * and a short true line beats a long false one.
+ */
 
 // The bars are a measure, not a banner: a column narrow enough that the eye
 // reads label → length → count in one movement, centered under the kicker like
@@ -46,7 +62,6 @@ export function Decades() {
 
   const past70 = countAtLeast(entries, atYear, THRESHOLD)
   const past65 = countAtLeast(entries, atYear, 65)
-  const outlived = countOutliving(entries, atYear, LIFE_EXPECTANCY)
 
   return (
     <figure className="mx-auto my-0" style={{ maxWidth: COLUMN }}>
@@ -100,13 +115,11 @@ export function Decades() {
         })}
       </div>
 
-      {/* `text-balance` keeps the line from dropping a lone "(78.4)" onto a
-          second row: the three clauses wrap into even lines instead. */}
+      {/* `text-balance` splits the two clauses evenly rather than leaving a
+          widow, on the rare narrow width where they wrap at all. */}
       <p className="serif mt-7 text-balance text-[1.0625rem] leading-relaxed text-[var(--ink-soft)]">
-        <Figure n={past70} /> are {THRESHOLD} or older{' '}
-        <Dot /> <Figure n={past65} /> have reached 65 <Dot />{' '}
-        <Figure n={outlived} /> have outlived U.S. life expectancy (
-        {LIFE_EXPECTANCY})
+        <Figure n={past70} /> are {THRESHOLD} or older <Dot />{' '}
+        <Figure n={past65} /> have reached 65
       </p>
     </figure>
   )

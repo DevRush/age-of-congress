@@ -60,16 +60,14 @@ export function countAtLeast(
   return entries.filter((e) => ageAt(e.birthYear, atYear) >= minAge).length
 }
 
-/**
- * Members who have outlived `years`. The comparison is strict, which matters
- * where the threshold is fractional: against a life expectancy of 78.4, a
- * member has to be 79 to have outlived it. Flooring 78.4 to 78 would pad the
- * count with members who have not.
+/*
+ * `countOutliving` used to live here — members strictly older than a fractional
+ * threshold, which existed only to count who had "outlived" a life expectancy of
+ * 78.4. That claim is gone from The Decades (see the note in Decades.tsx: it
+ * read life expectancy at birth as a forecast for the already-old), and the
+ * function went with it rather than sitting here as a loaded gun. It had no
+ * other caller, and its only plausible next caller would be someone re-making
+ * the same mistake.
+ *
+ * `countAtLeast` covers every honest counting question this section asks.
  */
-export function countOutliving(
-  entries: readonly { birthYear: number }[],
-  atYear: number,
-  years: number,
-): number {
-  return entries.filter((e) => ageAt(e.birthYear, atYear) > years).length
-}

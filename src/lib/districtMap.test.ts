@@ -5,7 +5,17 @@ import topo from '@/data/hex435.topo.json'
 import districts from '@/data/districts.json'
 
 type Topo = Topology<{ HexCDv31: GeometryCollection<{ GEOID: string }> }>
-import { GAP_CLAMP, RAMP, buildCells, formatGap, gapColor, pruneRing } from './districtMap'
+import { readFileSync } from 'node:fs'
+import {
+  GAP_CLAMP,
+  type GapDistrict,
+  RAMP,
+  buildCells,
+  formatGap,
+  gapColor,
+  gapExtremes,
+  pruneRing,
+} from './districtMap'
 
 /** Shoelace area of a closed ring. */
 function ringArea(pts: number[][]): number {
@@ -164,5 +174,115 @@ describe('buildCells', () => {
     expect(at('0612').cx).toBeLessThan(at('3612').cx)
     // FL-27 (Miami) sits south of MN-8 (northern Minnesota).
     expect(at('1227').cy).toBeGreaterThan(at('2708').cy)
+  })
+})
+
+/**
+ * The ends of the range are annotated on the strip, ringed on the map, and named
+ * again in the caption. They used to be six hand-written literals sitting beside
+ * live-computed neighbours; these are the gates that keep them derived.
+ */
+describe('gapExtremes', () => {
+  const d = (
+    geoid: string,
+    gapYears: number | null,
+    member: { name: string } | null = { name: `Rep ${geoid}` },
+  ): GapDistrict => ({ geoid, state: 'XX', district: 1, member, gapYears })
+
+  it('returns the least and greatest gap, with the member who owns each', () => {
+    const { min, max } = gapExtremes([d('a', 3), d('b', -12.5), d('c', 41.2), d('d', 0)])
+    expect(min.gap).toBe(-12.5)
+    expect(min.name).toBe('Rep b')
+    expect(max.gap).toBe(41.2)
+    expect(max.name).toBe('Rep c')
+  })
+
+  it('never lets a vacant seat become a numeric gap', () => {
+    // The failure this exists for: the largest gap in the country going vacant
+    // and rendering as "0.0" — a real-looking, near-zero reading for an empty
+    // chair — because a null was cast to a number.
+    const vacant = d('vacant', null, null)
+    const { min, max } = gapExtremes([vacant, d('a', 5), d('b', 9)])
+    expect(min.d.geoid).not.toBe('vacant')
+    expect(max.d.geoid).not.toBe('vacant')
+    expect(min.gap).toBe(5)
+    expect(max.gap).toBe(9)
+  })
+
+  it('skips a seated member whose gap is missing — a member is not a measurement', () => {
+    const unmeasured = d('unmeasured', null, { name: 'Someone' })
+    const { min, max } = gapExtremes([unmeasured, d('a', 7)])
+    expect(min.d.geoid).toBe('a')
+    expect(max.d.geoid).toBe('a')
+  })
+
+  it('throws rather than inventing a range when nothing is measurable', () => {
+    // Runs during `next build`, so this stops a broken roster at the build.
+    expect(() => gapExtremes([d('v1', null, null), d('v2', null, null)])).toThrow(/no district/)
+    expect(() => gapExtremes([])).toThrow(/no district/)
+  })
+})
+
+describe('the map annotates the range the committed data actually has', () => {
+  const rows = districts.districts as GapDistrict[]
+  const { min, max } = gapExtremes(rows)
+
+  it('agrees with the pipeline’s own independently computed min/max', () => {
+    // Two computations from opposite ends of the build — the pipeline's
+    // districtGapStats and the component's gapExtremes — must name the same
+    // numbers, or one of them is lying to the reader.
+    expect(max.gap).toBe(districts.stats.maxGap)
+    expect(min.gap).toBe(districts.stats.minGap)
+  })
+
+  it('names a real, seated member at each end', () => {
+    for (const e of [min, max]) {
+      expect(e.d.member).not.toBeNull()
+      expect(e.name.length).toBeGreaterThan(0)
+      expect(Number.isFinite(e.gap)).toBe(true)
+    }
+  })
+
+  it('has no district that is half-vacant — a member without a gap, or a gap without a member', () => {
+    for (const r of rows) {
+      expect(r.member === null).toBe(r.gapYears === null)
+    }
+  })
+
+  it('keeps both ends inside the strip they are positioned on', () => {
+    // The strip's axis is a design constant (−22…+47) and the extremes are
+    // placed as a percentage along it. If the data ever outgrows the axis, the
+    // annotation lands off the figure — so the constants are held to the data.
+    const src = readFileSync(new URL('../components/DistrictMap.tsx', import.meta.url), 'utf8')
+    const stripMin = Number(src.match(/const STRIP_MIN = (-?[\d.]+)/)![1])
+    const stripMax = Number(src.match(/const STRIP_MAX = (-?[\d.]+)/)![1])
+    expect(min.gap).toBeGreaterThan(stripMin)
+    expect(max.gap).toBeLessThan(stripMax)
+  })
+})
+
+/**
+ * The recurrence gate. The bug was not that the numbers were wrong on the day
+ * they were typed — they were right — it was that they were *stated* next to
+ * figures that recompute nightly, with nothing binding the two together.
+ */
+describe('DistrictMap states no extreme as a literal', () => {
+  const src = readFileSync(new URL('../components/DistrictMap.tsx', import.meta.url), 'utf8')
+
+  it('hardcodes no gap figure', () => {
+    expect(src).not.toMatch(/formatGap\(\s*-?\d/)
+  })
+
+  it('hardcodes no district geoid', () => {
+    expect(src).not.toMatch(/geoid:\s*['"]\d+['"]/)
+    expect(src).not.toMatch(/['"]\d{4}['"]/)
+  })
+
+  it('casts no nullable gap into a number', () => {
+    expect(src).not.toMatch(/as number/)
+  })
+
+  it('takes both ends from gapExtremes', () => {
+    expect(src).toMatch(/gapExtremes\(/)
   })
 })

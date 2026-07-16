@@ -2,6 +2,9 @@ import data from '@/data/congress.json'
 import population from '@/data/population.json'
 import districts from '@/data/districts.json'
 import birthdays from '@/data/birthdays.json'
+import historical from '@/data/historical.json'
+import { coverageSince, ordinal } from '@/lib/coverage'
+import type { HistoricalPoint } from '@/lib/types'
 
 /**
  * The citability layer: a newspaper's fine-print methodology box. It is set
@@ -27,8 +30,18 @@ function Row({ term, children }: { term: string; children: React.ReactNode }) {
   )
 }
 
+/**
+ * The coverage sentence is the one figure in this box that used to be asserted
+ * rather than read. It said "From 1850 onward, coverage exceeds 99%" — which the
+ * committed record beside it contradicted in eight Congresses. It now states the
+ * measured floor and the honest count of Congresses that miss the bar it quotes.
+ */
+const COVERAGE_FROM = 1850
+const COVERAGE_BAR = 0.99
+
 export function Methodology() {
   const n = data.notes
+  const cov = coverageSince(historical as HistoricalPoint[], COVERAGE_FROM, COVERAGE_BAR)
   return (
     <div className="max-w-2xl text-[0.8125rem] leading-relaxed text-[var(--ink-soft)]">
       <dl className="space-y-6">
@@ -59,9 +72,13 @@ export function Methodology() {
           12,500 people who have served since 1789: for each Congress, the mean age of members
           serving on its constitutional first day (March 4 through the 73rd Congress, January 3
           thereafter). Birth dates are unknown for about 18% of members who served before 1850 —
-          those members are excluded and affected years are drawn lighter. From 1850 onward, coverage
-          exceeds 99%. Values were validated against Congressional Research Service figures for recent
-          Congresses and FiveThirtyEight&rsquo;s member-level dataset (66th&ndash;118th Congresses).
+          those members are excluded and affected years are drawn lighter. From {COVERAGE_FROM}{' '}
+          onward coverage never falls below{' '}
+          {(cov.worst.birthdayCoverage * 100).toFixed(1)}% (the {ordinal(cov.worst.congress)}{' '}
+          Congress, {cov.worst.year}); it is short of {(COVERAGE_BAR * 100).toFixed(0)}% in{' '}
+          {cov.below} of the {cov.total} Congresses since. Values were validated against
+          Congressional Research Service figures for recent Congresses and
+          FiveThirtyEight&rsquo;s member-level dataset (66th&ndash;118th Congresses).
         </Row>
         <Row term="Districts">
           The map compares each representative against the people they represent. District

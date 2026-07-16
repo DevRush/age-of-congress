@@ -17,9 +17,24 @@ describe('parseMembers', () => {
     expect(alice.state).toBe('IA')
     expect(alice.district).toBeUndefined()
   })
-  it('first elected year = earliest term start; termsServed = term count', () => {
-    expect(by('S000001').firstElectedYear).toBe(1975)
-    expect(by('S000001').termsServed).toBe(2)
+  /**
+   * Alice is the fixture's chamber-switcher: a House term from 1975, a Senate
+   * term from 1981, and she sits in the Senate now. Both tenure figures are
+   * lifetime totals that carry her House service across into her Senate row —
+   * which is exactly why src/lib/tenure.ts refuses to let either be printed
+   * under a chamber-specific label. Pin the semantics here: if these ever become
+   * current-chamber figures (1 term, 1981), the label has to be rewritten too,
+   * and this test is what forces that conversation.
+   */
+  it('firstTookOfficeYear/termsServed are LIFETIME totals that cross chambers', () => {
+    const alice = by('S000001')
+    expect(alice.chamber).toBe('senate')
+    expect(alice.firstTookOfficeYear).toBe(1975) // her House arrival, not her Senate one (1981)
+    expect(alice.termsServed).toBe(2) // both terms, not just the Senate one
+  })
+  it('firstTookOfficeYear is the term-start year, not the election year', () => {
+    // The fixture's first term starts 1975-01-14 — the member won it in Nov 1974.
+    expect(by('S000001').firstTookOfficeYear).toBe(1975)
   })
   it('DC delegate is not voting; VT at-large (district 0) is voting', () => {
     expect(by('D000003').isVoting).toBe(false)

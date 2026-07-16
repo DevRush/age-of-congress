@@ -28,14 +28,17 @@ export default function Page() {
       <Section
         title="The Decades"
         footnote={
+          /* The life-expectancy half of this footnote left with the claim it
+             sourced — see the note in Decades.tsx. It cited 78.4 years to
+             CDC/NCHS and then explained the strictness of a comparison the
+             section no longer makes, which would have made it the last thing on
+             the page still asserting a fallacy nothing renders. What remains is
+             the age convention, which the counts above genuinely need. */
           <>
             Age is the age each member reaches during the edition year, computed
             from birth year &mdash; the same convention as The Shape of Congress
             &mdash; so a member&rsquo;s age today sits a year below the figure
-            shown until their birthday falls. U.S. life expectancy at birth:
-            78.4 years (CDC/NCHS, 2023). &ldquo;Outlived&rdquo; is counted
-            strictly against that figure, so it takes 79 years to clear it, not
-            78.
+            shown until their birthday falls.
           </>
         }
       >

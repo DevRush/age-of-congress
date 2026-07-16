@@ -1,4 +1,5 @@
 import data from '@/data/congress.json'
+import { termsPhrase, tookOfficePhrase } from '@/lib/tenure'
 import { Clock } from './Clock'
 
 /**
@@ -116,13 +117,22 @@ function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
           }`}
         >
           <PartyChip m={m} compact={compact} />
+          {/* The tenure is the point of the row — how long this has been true —
+              so it steps up out of the metadata line into the ink, and it leads.
+              Both figures are lifetime totals across both chambers (see
+              @/lib/tenure), which is why the scope travels inside the bolded
+              phrase rather than being left to the column heading above: this
+              line sits under "The Ten Oldest Senators", and ten of the forty
+              members on these lists got there from the other chamber. Leading
+              with it also fixes the truncation: at 390px this line clips, and
+              what must survive the ellipsis is the figure that carries its own
+              scope, not the one that would be left dangling under a heading
+              that contradicts it. */}
           <span className="truncate">
-            first elected {m.firstElectedYear} ·{' '}
-            {/* The tenure is the point of the row — how long this has been true —
-                so it steps up out of the metadata line into the ink. */}
             <span className="font-semibold text-[var(--ink)]">
-              {m.termsServed} {m.termsServed === 1 ? 'term' : 'terms'}
-            </span>
+              {termsPhrase(m.termsServed)}
+            </span>{' '}
+            · {tookOfficePhrase(m.firstTookOfficeYear)}
           </span>
         </p>
       </div>

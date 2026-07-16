@@ -24,7 +24,19 @@ export function parseMembers(raw: any[]): { members: Member[]; excludedNoBirthda
       district: t.type === 'rep' ? t.district : undefined,
       birthday: p.bio.birthday,
       dobMs: dobToMs(p.bio.birthday),
-      firstElectedYear: Math.min(...p.terms.map((x: any) => Number(x.start.slice(0, 4)))),
+      /**
+       * Both figures are LIFETIME and cross both chambers. 43 of the current
+       * roster moved from the House to the Senate — Markey's 23 terms are 20
+       * House terms and 3 Senate ones — so neither figure describes service in
+       * the seat the member currently holds, and neither may be printed under a
+       * chamber-specific label. src/lib/tenure.ts owns the wording that keeps
+       * that honest.
+       *
+       * `start` is when the term began, not when the member won it: a member
+       * elected in November 1974 has a term starting January 1975. The year is
+       * an office-taking year and is labelled as one.
+       */
+      firstTookOfficeYear: Math.min(...p.terms.map((x: any) => Number(x.start.slice(0, 4)))),
       termsServed: p.terms.length,
       isVoting: t.type === 'sen' || STATES_50.has(t.state),
     })

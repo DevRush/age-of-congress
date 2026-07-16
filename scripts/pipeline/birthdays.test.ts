@@ -23,7 +23,7 @@ const member = (birthday: string, over: Partial<Member> = {}): Member => {
     district: 1,
     birthday,
     dobMs: dobToMs(birthday),
-    firstElectedYear: 2000,
+    firstTookOfficeYear: 2000,
     termsServed: 1,
     isVoting: true,
     ...over,

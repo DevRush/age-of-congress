@@ -41,7 +41,7 @@ const member = (over: Partial<Member> & Pick<Member, 'bioguide' | 'state'>): Mem
   district: 1,
   birthday: '1960-01-01',
   dobMs: dobToMs('1960-01-01'),
-  firstElectedYear: 2000,
+  firstTookOfficeYear: 2000,
   termsServed: 1,
   isVoting: true,
   ...over,

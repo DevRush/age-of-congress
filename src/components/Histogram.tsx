@@ -121,7 +121,16 @@ export function Histogram() {
                 type="button"
                 aria-pressed={active}
                 onClick={() => setView(v.key)}
-                className="smallcaps rounded-full px-3.5 py-1 text-[0.6875rem] tracking-[0.1em] transition-colors"
+                // 44px is the floor, and the button itself has to meet it — not
+                // a padded parent, and not a transparent pseudo-element that
+                // measures 44 while the control still looks 25. These are the
+                // only three controls on the page and they sit under a thumb on
+                // a phone; at 25px they were a miss waiting to happen. The type
+                // stays 11px small-caps and the pill keeps its shape, so the
+                // height arrives as breathing room around the label rather than
+                // as bigger text — which is what a segmented control should have
+                // looked like in the first place.
+                className="smallcaps inline-flex min-h-[44px] items-center justify-center rounded-full px-4 text-[0.6875rem] tracking-[0.1em] transition-colors"
                 style={{
                   background: active ? 'var(--ink)' : 'transparent',
                   color: active ? 'var(--paper)' : 'var(--ink-soft)',

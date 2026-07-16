@@ -11,7 +11,13 @@ export interface Member {
   district?: number
   birthday: string // YYYY-MM-DD
   dobMs: number
-  firstElectedYear: number
+  /**
+   * Lifetime, both chambers — see src/lib/tenure.ts, which owns the only wording
+   * allowed to print them. The year is when the first congressional term BEGAN
+   * (not the election that produced it), and the count spans the House and the
+   * Senate, so neither may be set under a chamber-specific label.
+   */
+  firstTookOfficeYear: number
   termsServed: number
   isVoting: boolean
 }

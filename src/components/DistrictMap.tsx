@@ -1,7 +1,16 @@
 import districtsData from '@/data/districts.json'
 import topo from '@/data/hex435.topo.json'
 import { ageYears } from '@/lib/age'
-import { GAP_CLAMP, RAMP, VACANT_INK, buildCells, formatGap, gapColor } from '@/lib/districtMap'
+import {
+  GAP_CLAMP,
+  RAMP,
+  VACANT_INK,
+  buildCells,
+  formatGap,
+  gapColor,
+  gapExtremes,
+  seatedGaps,
+} from '@/lib/districtMap'
 import { DistrictMapReadout } from './DistrictMapReadout'
 
 /**
@@ -51,7 +60,9 @@ export function DistrictMap() {
   const { cells, width, height } = buildCells(topo)
   const byGeoid = new Map(districts.map((d) => [d.geoid, d]))
 
-  const seated = districts.filter((d) => d.member !== null && d.gapYears !== null)
+  // Vacancy is decided once, in the library, and every consumer below reads a
+  // gap that is a number by type rather than by cast.
+  const seated = seatedGaps(districts)
   const vacant = districts.filter((d) => d.member === null)
   const pctOlder = `${(districtsData.stats.pctOlder * 100).toFixed(1)}%`
   const nationalMedian = districtsData.nationalAdultMedianAge.toFixed(1)
@@ -59,8 +70,8 @@ export function DistrictMap() {
   // The histogram under the ramp: one bar per 2.5-year bin, colored by the very
   // scale it is explaining.
   const bins = new Map<number, number>()
-  for (const d of seated) {
-    const b = Math.floor((d.gapYears as number) / BIN) * BIN
+  for (const s of seated) {
+    const b = Math.floor(s.gap / BIN) * BIN
     bins.set(b, (bins.get(b) ?? 0) + 1)
   }
   const tallest = Math.max(...bins.values())
@@ -76,14 +87,18 @@ export function DistrictMap() {
   ]
   const gradientCss = `linear-gradient(to right, ${gapColor(STRIP_MIN)} 0%, ${gradient.join(', ')})`
 
+  // The ends of the range, asked of the data rather than named. The strip labels
+  // them, the caption repeats them, and the map rings them — six statements about
+  // a distribution that is rebuilt from a fresh roster nightly, so all six read
+  // from this one derivation. `gapExtremes` skips vacancies rather than casting
+  // their null gap to a number: the largest gap in the country sits in a seat
+  // that could go vacant, and "0.0" is the one thing this figure must never say
+  // about an empty chair.
+  const { min, max } = gapExtremes(districts)
   const extremes = [
-    { geoid: '1707', side: 'right' as const },
-    { geoid: '1213', side: 'left' as const },
-  ].map((e) => {
-    const d = byGeoid.get(e.geoid)!
-    return { ...e, d, gap: d.gapYears as number, cell: cells.find((c) => c.geoid === e.geoid)! }
-  })
-  const ringed = new Set(extremes.map((e) => e.geoid))
+    { ...max, side: 'right' as const },
+    { ...min, side: 'left' as const },
+  ].map((e) => ({ ...e, cell: cells.find((c) => c.geoid === e.d.geoid)! }))
 
   return (
     <figure className="my-0">
@@ -149,7 +164,7 @@ export function DistrictMap() {
         <div className="relative mt-1 h-[2.4rem] text-[0.6875rem] leading-tight">
           {extremes.map((e) => (
             <span
-              key={e.geoid}
+              key={e.d.geoid}
               className={`meta absolute top-0 ${e.side === 'left' ? '' : 'text-right'}`}
               style={
                 e.side === 'left'
@@ -162,7 +177,7 @@ export function DistrictMap() {
                 {formatGap(e.gap)}
               </span>
               <span className="block whitespace-nowrap text-[var(--ink-faint)]">
-                {e.d.member?.name.split(' ').slice(-1)[0]}, {labelOf(e.d)}
+                {e.name.split(' ').slice(-1)[0]}, {labelOf(e.d)}
               </span>
             </span>
           ))}
@@ -248,10 +263,16 @@ export function DistrictMap() {
               {cells.map((c, i) => {
                 const d = byGeoid.get(c.geoid)
                 if (!d) return null
-                const isVacant = d.member === null
-                const age = d.member ? ageYears(d.member.dobMs, asOfMs) : null
+                const member = d.member
                 const gap = d.gapYears
-                const name = d.member?.name ?? ''
+                // Two separate facts, checked separately. "Has a member" does not
+                // imply "has a gap" — a seat filled after the census vintage, or
+                // a member the roster cannot age, has one and not the other — and
+                // the old code inferred the gap from the member and cast the
+                // result, which is how a null became 0.0.
+                const hasGap = member !== null && gap !== null
+                const age = member ? ageYears(member.dobMs, asOfMs) : null
+                const name = member?.name ?? ''
                 const label = labelOf(d)
                 return (
                   <path
@@ -264,15 +285,15 @@ export function DistrictMap() {
                     data-cy={c.cy}
                     data-label={label}
                     data-name={name}
-                    data-party={d.member?.party ?? ''}
+                    data-party={member?.party ?? ''}
                     data-age={age === null ? '' : age.toFixed(1)}
                     data-median={d.adultMedianAge.toFixed(1)}
-                    data-gap={gap === null ? '' : formatGap(gap)}
-                    fill={isVacant ? 'url(#vacant-hatch)' : gapColor(gap as number)}
+                    data-gap={hasGap ? formatGap(gap) : ''}
+                    fill={hasGap ? gapColor(gap) : 'url(#vacant-hatch)'}
                     aria-label={
-                      isVacant
-                        ? `${label}, vacant seat. District adults median age ${d.adultMedianAge.toFixed(1)}.`
-                        : `${label}, ${name}, age ${age?.toFixed(1)}, district adults ${d.adultMedianAge.toFixed(1)}, gap ${formatGap(gap as number)} years.`
+                      hasGap
+                        ? `${label}, ${name}, age ${age?.toFixed(1)}, district adults ${d.adultMedianAge.toFixed(1)}, gap ${formatGap(gap)} years.`
+                        : `${label}, vacant seat. District adults median age ${d.adultMedianAge.toFixed(1)}.`
                     }
                   />
                 )
@@ -285,7 +306,7 @@ export function DistrictMap() {
             <g fill="none" pointerEvents="none">
               {extremes.map((e) => (
                 <circle
-                  key={e.geoid}
+                  key={e.d.geoid}
                   cx={e.cell.cx}
                   cy={e.cell.cy}
                   r="15"
@@ -314,10 +335,18 @@ export function DistrictMap() {
           {districtsData.stats.meanGap.toFixed(1)}
         </strong>{' '}
         years. The two ringed districts are the ends of the range:{' '}
-        <strong className="font-semibold text-[var(--ink)]">Danny K. Davis</strong> of Illinois&rsquo;s
-        7th, {formatGap(45)} years older than his district&rsquo;s median adult, and{' '}
-        <strong className="font-semibold text-[var(--ink)]">Anna Paulina Luna</strong> of
-        Florida&rsquo;s 13th, {formatGap(-19.3)}.
+        {/* Both names and both figures come from the same derivation that
+            annotates the strip and rings the map, so the caption cannot drift
+            from the picture it is captioning. The district is named in the
+            figure's own shorthand (IL-7) rather than in prose, because that is
+            derivable and "Illinois's 7th" is not; and the gap is described
+            against "the district's" median adult rather than "his", because the
+            member at either end is whoever the data says, not who it said in
+            July. */}
+        <strong className="font-semibold text-[var(--ink)]">{max.name}</strong> of{' '}
+        {labelOf(max.d)}, {formatGap(max.gap)} years older than the district&rsquo;s median
+        adult, and <strong className="font-semibold text-[var(--ink)]">{min.name}</strong> of{' '}
+        {labelOf(min.d)}, {formatGap(min.gap)}.
       </figcaption>
 
       <p className="meta mt-4 text-[0.6875rem] text-[var(--ink-faint)]">
