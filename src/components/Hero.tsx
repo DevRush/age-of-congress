@@ -45,7 +45,7 @@ export function Hero() {
         </p>
 
         <div className="serif mt-5 whitespace-nowrap text-[clamp(2.75rem,12vw,9.25rem)] font-medium leading-[0.84] tracking-[-0.01em]">
-          <Clock dobMs={data.overall.meanDobMs} decimals={9} dim={2} baselineMs={baselineMs} taper />
+          <Clock dobMs={data.overall.meanDobMs} decimals={9} dim={0} baselineMs={baselineMs} taper />
         </div>
         <p className="serif mt-5 text-xl italic text-[var(--ink-soft)] sm:text-2xl">
           years old, on average

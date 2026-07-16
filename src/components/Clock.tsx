@@ -73,7 +73,7 @@ export function Clock({ dobMs, decimals, dim = 2, baselineMs, className, taper =
   const { int, frac } = agePartsAt(dobMs, now, decimals)
   return (
     <span className={`tnum ${className ?? ''}`} suppressHydrationWarning>
-      {int}
+      <span className="clock-int">{int}</span>
       <span>.</span>
       <Digits s={frac.slice(0, decimals - dim)} taper={taper} />
       <Digits s={frac.slice(decimals - dim)} from={decimals - dim} dimmed taper={taper} />

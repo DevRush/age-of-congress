@@ -127,3 +127,8 @@ body {
    font-size — which is what lets the hero taper each decimal down in size
    without any of them losing their column or leaving the shared baseline. */
 .digit { display: inline-block; width: 0.56em; text-align: center; }
+
+/* The whole-years figure carries the weight — it is the number that matters,
+   so it sits heavier than the decimals running out to its right. Applies to
+   every Clock (hero, chambers, rankings) so the integer always reads first. */
+.clock-int { font-weight: 700; }
