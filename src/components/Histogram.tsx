@@ -34,18 +34,27 @@ const VIEWS = [
 type ViewKey = (typeof VIEWS)[number]['key']
 type Entry = { birthYear: number; party: Party; chamber: Chamber }
 
-// Plot geometry (SVG user units). Small, densely packed dots read as a crowd;
-// the wide, short field is deliberately newspaper-graphic in proportion.
-const PAD = 26 // left/right margin
-const BIN_W = 46 // horizontal room per age bin
-const DOT = 7 // vertical distance between stacked dot centers
-const COL = 7 // horizontal distance between dots in a row
-const R = 2.6 // dot radius
-const PLOT_H = 133 // height available to the tallest stack
-const TOP = 12 // headroom above the tallest stack
+// Plot geometry (SVG user units). Densely packed dots read as a crowd; the wide,
+// short field is deliberately newspaper-graphic in proportion.
+//
+// The whole field is drawn about a third larger than the type around it asks
+// for, and that is the point: this chart carries the page's actual argument —
+// the offset between the colored pile and the gray silhouette — so it is given
+// the room of a lead graphic rather than a supporting figure. The scale is
+// bounded by the 984px text column: at 14 bins the plot lands near 930px, so it
+// sits at full size on a desktop and still scrolls inside its own container on a
+// phone without ever widening the page.
+const PAD = 32 // left/right margin
+const BIN_W = 62 // horizontal room per age bin
+const DOT = 9.5 // vertical distance between stacked dot centers
+const COL = 9.5 // horizontal distance between dots in a row
+const R = 3.5 // dot radius
+const PLOT_H = 180 // height available to the tallest stack
+const TOP = 16 // headroom above the tallest stack
 const BASE = TOP + PLOT_H // y of the baseline
-const LABEL_Y = BASE + 16
-const SVG_H = BASE + 30
+const LABEL_Y = BASE + 20
+const SVG_H = BASE + 38
+const TICK_SIZE = 11.5 // axis + annotation type
 
 export function Histogram() {
   const [view, setView] = useState<ViewKey>('all')
@@ -143,7 +152,7 @@ export function Histogram() {
             fill="none"
             stroke="var(--ind)"
             strokeOpacity={0.55}
-            strokeWidth={1.25}
+            strokeWidth={1.5}
             strokeLinejoin="round"
           />
 
@@ -186,7 +195,7 @@ export function Histogram() {
               x={binLeft(bi) + BIN_W / 2}
               y={LABEL_Y}
               textAnchor="middle"
-              fontSize={9.5}
+              fontSize={TICK_SIZE}
               fill="var(--ink-soft)"
             >
               {bin.label}
@@ -196,7 +205,7 @@ export function Histogram() {
             x={width - PAD}
             y={SVG_H - 4}
             textAnchor="end"
-            fontSize={9.5}
+            fontSize={TICK_SIZE}
             fontStyle="italic"
             fill="var(--ink-soft)"
           >
@@ -241,7 +250,7 @@ function Legend() {
           className="inline-block h-[11px] w-[16px]"
           style={{
             background: 'color-mix(in srgb, var(--ind) 13%, transparent)',
-            borderTop: '1.25px solid color-mix(in srgb, var(--ind) 55%, transparent)',
+            borderTop: '1.5px solid color-mix(in srgb, var(--ind) 55%, transparent)',
           }}
         />
         U.S. adult population

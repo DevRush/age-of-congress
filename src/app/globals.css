@@ -45,12 +45,9 @@ body {
 .meta { font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); }
 
 .tnum { font-variant-numeric: tabular-nums; }
+
+/* Every ticking digit is boxed to a fixed advance so a changing glyph never
+   shifts its neighbours. The width is in `em`, so it tracks the digit's own
+   font-size — which is what lets the hero taper each decimal down in size
+   without any of them losing their column or leaving the shared baseline. */
 .digit { display: inline-block; width: 0.56em; text-align: center; }
-
-/* A slow pulse on the hero's live dot signals the counter is running. */
-@keyframes live-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
-.live-dot { animation: live-pulse 2.2s ease-in-out infinite; }
-
-@media (prefers-reduced-motion: reduce) {
-  .live-dot { animation: none; }
-}

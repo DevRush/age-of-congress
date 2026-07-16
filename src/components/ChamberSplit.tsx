@@ -3,12 +3,18 @@ import { ageYears } from '@/lib/age'
 import { Clock } from './Clock'
 
 /**
- * One chamber as a bold, free-standing stat card: a standing-head rule across
- * the top, a tracked sans label, then a big live serif mean age ticking to seven
- * places (last two dimmed), the "years old, on average" descriptor so the
- * vocabulary carries down from the hero, a quiet metadata line with the static
- * median and member count, and the chamber's oldest sitting member as a clean
- * circular avatar.
+ * One chamber as a bold, free-standing column: a standing-head rule across the
+ * top, a tracked sans label naming the institution, then the mean age to a
+ * single decimal, the "years old, on average" descriptor so the vocabulary
+ * carries down from the hero, a quiet metadata line with the median and member
+ * count, and the chamber's oldest sitting member as a clean circular avatar.
+ * Everything stacks downward in one order, so each card reads top-to-bottom as
+ * its own column and the pair reads as two, not as one split panel.
+ *
+ * The age stays a live Clock — it is computed in the reader's browser, so it can
+ * never go stale between data runs — but at one decimal it only moves every few
+ * weeks, and it should look still. The hero is the page's only running figure;
+ * a second one competing with it would cost the first its shock.
  *
  * The head rule encodes the chamber the same way "The Long View" chart does —
  * the Senate in heavy ink, the House a step below in soft gray — so ink weight
@@ -30,14 +36,14 @@ function Chamber({ label, stats, oldest, countLine, rule }: {
 
   return (
     <div className="overflow-hidden rounded-2xl border border-[var(--surface-line)] bg-[var(--surface)]">
-      <div aria-hidden className="h-[3px]" style={{ background: rule }} />
+      <div aria-hidden className="h-[4px]" style={{ background: rule }} />
       <div className="px-6 py-9 text-center sm:px-8 sm:py-10 lg:px-10">
-        <h3 className="smallcaps text-[0.8125rem] tracking-[0.16em] text-[var(--ink-soft)]">
+        <h3 className="smallcaps text-[0.875rem] tracking-[0.16em] text-[var(--ink)]">
           {label}
         </h3>
 
         <div className="serif mt-4 text-[clamp(2.75rem,8vw,4.5rem)] font-medium leading-[0.9] tracking-[-0.015em] text-[var(--ink)]">
-          <Clock dobMs={stats.meanDobMs} decimals={7} dim={2} baselineMs={baselineMs} />
+          <Clock dobMs={stats.meanDobMs} decimals={1} dim={0} baselineMs={baselineMs} />
         </div>
         <p className="serif mt-2 text-base italic text-[var(--ink-soft)]">years old, on average</p>
 
@@ -51,7 +57,7 @@ function Chamber({ label, stats, oldest, countLine, rule }: {
             alt=""
             width={48}
             height={48}
-            className="h-12 w-12 shrink-0 rounded-full object-cover ring-1 ring-[var(--rule-strong)]"
+            className="h-12 w-12 shrink-0 rounded-full object-cover ring-2 ring-[var(--rule-strong)]"
             style={{ objectPosition: '50% 22%' }}
           />
           <div className="text-left">
@@ -70,14 +76,17 @@ function Chamber({ label, stats, oldest, countLine, rule }: {
 }
 
 /**
- * Two chambers, two separate cards, a real gutter between them. They are
+ * Two chambers, two separate columns, a wide gutter between them. They are
  * genuinely separate institutions, so they are drawn as separate objects rather
- * than as two halves of one panel — the structure states the fact. The pair
- * stays the second thing the eye lands on after the hero counter.
+ * than as two halves of one panel — the structure states the fact, and the
+ * gutter is set wide enough that the eye reads each card down its own length
+ * before it reads across. Senate left, House right, the order they take
+ * everywhere else on the page. The pair stays the second thing the eye lands on
+ * after the hero counter.
  */
 export function ChamberSplit() {
   return (
-    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
+    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-8 lg:gap-10">
       <Chamber
         label="The Senate"
         stats={data.senate}

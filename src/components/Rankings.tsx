@@ -4,10 +4,16 @@ import { Clock } from './Clock'
 /**
  * The leaderboard. This is the one section, with the histogram, where party color
  * is allowed onto the page — carried in two coordinated places per member: a
- * rounded party–state pill, and a matching hairline ring around the circular
- * portrait, so a whole column can be scanned by color at a glance. Everything
- * else stays in the paper's monochrome: light rules between rows and a right-hand
- * column of live ages all ticking at once and aligned to the digit.
+ * rounded party–state pill, and a matching ring around the circular portrait,
+ * weighted enough to hold the face and to be scanned down a column at a glance.
+ * Everything else stays in the paper's monochrome: light rules between rows and a
+ * right-hand column of ages aligned to the digit.
+ *
+ * Ages run to one decimal. They are still live Clocks — computed in the reader's
+ * browser, so a cached page can never show a stale age — but at one decimal a
+ * figure only moves every few weeks and should sit still. Two facts are doing the
+ * work in each row, so both are set in the ink: the age, and the number of terms
+ * that produced it.
  *
  * Numbering is earned here — these lists are a genuine ranked order (by age), so
  * the rank figure leading each row carries real information, not decoration.
@@ -58,8 +64,9 @@ function PartyChip({ m, compact = false }: { m: Card; compact?: boolean }) {
 /**
  * One member. The big variant leads the oldest lists; the compact variant forms
  * the subordinate "youngest" strip beneath. The circular portrait wears a party-
- * colored ring; the live age sits in a fixed right column so the ticking figures
- * align into a single running ledger.
+ * colored ring, set on a thin paper gap so the hue reads as a ring and not as a
+ * halo bleeding into the photograph; the age sits in a fixed right column so the
+ * figures align into a single ledger.
  */
 function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
   const img = compact ? m.photo.replace('-320', '-160') : m.photo
@@ -91,7 +98,7 @@ function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
           width: size,
           height: size,
           objectPosition: '50% 20%',
-          boxShadow: `0 0 0 1.5px var(--paper), 0 0 0 ${compact ? 2.5 : 3}px color-mix(in srgb, ${hue} 60%, transparent)`,
+          boxShadow: `0 0 0 1.5px var(--paper), 0 0 0 ${compact ? 3.5 : 4.5}px color-mix(in srgb, ${hue} 60%, transparent)`,
         }}
       />
 
@@ -110,8 +117,12 @@ function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
         >
           <PartyChip m={m} compact={compact} />
           <span className="truncate">
-            first elected {m.firstElectedYear} · {m.termsServed}{' '}
-            {m.termsServed === 1 ? 'term' : 'terms'}
+            first elected {m.firstElectedYear} ·{' '}
+            {/* The tenure is the point of the row — how long this has been true —
+                so it steps up out of the metadata line into the ink. */}
+            <span className="font-semibold text-[var(--ink)]">
+              {m.termsServed} {m.termsServed === 1 ? 'term' : 'terms'}
+            </span>
           </span>
         </p>
       </div>
@@ -121,7 +132,7 @@ function Row({ m, compact = false }: { m: Card; compact?: boolean }) {
           compact ? 'text-[0.875rem]' : 'text-[1rem] sm:text-[1.125rem]'
         }`}
       >
-        <Clock dobMs={m.dobMs} decimals={7} dim={2} baselineMs={baselineMs} />
+        <Clock dobMs={m.dobMs} decimals={1} dim={0} baselineMs={baselineMs} />
       </span>
     </li>
   )
@@ -151,7 +162,9 @@ function ChamberColumn({
         ))}
       </ol>
 
-      <h4 className="smallcaps mt-9 mb-2 text-[0.75rem] tracking-[0.14em] text-[var(--ink-faint)]">
+      {/* A deliberate hole in the column: the turn from oldest to youngest is the
+          only place the ranking reverses, and the white space is what marks it. */}
+      <h4 className="smallcaps mt-16 mb-2 text-[0.75rem] tracking-[0.14em] text-[var(--ink-faint)]">
         …and the ten youngest
       </h4>
       <ol>
