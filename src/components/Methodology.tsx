@@ -97,6 +97,15 @@ export function Methodology() {
           Congressional Research Service figures for recent Congresses and
           FiveThirtyEight&rsquo;s member-level dataset (66th&ndash;118th Congresses).
         </Row>
+        <Row term="Arrivals">
+          &ldquo;Why It Stays Old&rdquo; counts a person as a new House member exactly once, at
+          the Congress where their earliest voting House term began — a returning member counts
+          at their first arrival, a representative who becomes a senator does not count twice,
+          and territorial delegates never count. Cohort ages are medians taken at the convening
+          date. The series is recomputed from the rosters each build and validated against the
+          published medians for 1979 (&asymp;39) and the current Congress (&asymp;50) before it
+          can publish.
+        </Row>
         <Row term="Districts">
           The map compares each representative against the people they represent. District
           age is the median age of adults 18 and older, derived from{' '}

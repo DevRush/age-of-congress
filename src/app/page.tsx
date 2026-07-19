@@ -8,6 +8,7 @@ import { PartyAge } from '@/components/PartyAge'
 import { DistrictMap } from '@/components/DistrictMap'
 import { Histogram } from '@/components/Histogram'
 import { HistoryChart } from '@/components/HistoryChart'
+import { WhyItStaysOld } from '@/components/WhyItStaysOld'
 import { Birthdays } from '@/components/Birthdays'
 import { GenerationGap } from '@/components/GenerationGap'
 import { Methodology } from '@/components/Methodology'
@@ -115,6 +116,21 @@ export default function Page() {
         }
       >
         <HistoryChart />
+      </Section>
+
+      <Section
+        title="Why It Stays Old"
+        footnote={
+          <>
+            The arrivals series counts each person once, at the Congress where their first
+            voting House term began; ages are taken at that Congress&rsquo;s convening date,
+            the same basis as The Long View. The build validates the series against published
+            figures for 1979 and the current Congress and fails rather than shipping a
+            mismatch. Findings quoted are from the peer-reviewed studies cited beside them.
+          </>
+        }
+      >
+        <WhyItStaysOld />
       </Section>
 
       <Section

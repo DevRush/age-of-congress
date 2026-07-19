@@ -51,3 +51,18 @@ export interface ContextLine {
   text: string
   footnote: string
 }
+
+/**
+ * One Congress on the "Why It Stays Old" chart: the median age of the
+ * representatives whose FIRST House term began at that Congress — the people
+ * arriving, not the people serving. `n` counts every such arrival (including
+ * members whose birth date is unknown); `medianAge` is the median over those
+ * with a birth date, taken at the Congress's convening date, and is null only
+ * when the whole cohort's birth dates are missing.
+ */
+export interface NewcomerPoint {
+  congress: number
+  year: number
+  n: number
+  medianAge: number | null
+}

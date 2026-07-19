@@ -1,0 +1,716 @@
+[
+  {
+    "congress": 1,
+    "year": 1789,
+    "n": 66,
+    "medianAge": 43.691520017522606
+  },
+  {
+    "congress": 2,
+    "year": 1791,
+    "n": 33,
+    "medianAge": 36.370356680835336
+  },
+  {
+    "congress": 3,
+    "year": 1793,
+    "n": 62,
+    "medianAge": 40.860524172296486
+  },
+  {
+    "congress": 4,
+    "year": 1795,
+    "n": 45,
+    "medianAge": 37.70919320725272
+  },
+  {
+    "congress": 5,
+    "year": 1797,
+    "n": 50,
+    "medianAge": 41.241093246267894
+  },
+  {
+    "congress": 6,
+    "year": 1799,
+    "n": 43,
+    "medianAge": 39.15207019993566
+  },
+  {
+    "congress": 7,
+    "year": 1801,
+    "n": 50,
+    "medianAge": 37.73383437031561
+  },
+  {
+    "congress": 8,
+    "year": 1803,
+    "n": 72,
+    "medianAge": 40.18973695558431
+  },
+  {
+    "congress": 9,
+    "year": 1805,
+    "n": 56,
+    "medianAge": 40.959088824548076
+  },
+  {
+    "congress": 10,
+    "year": 1807,
+    "n": 52,
+    "medianAge": 42.594988261223705
+  },
+  {
+    "congress": 11,
+    "year": 1809,
+    "n": 57,
+    "medianAge": 43.06180140591525
+  },
+  {
+    "congress": 12,
+    "year": 1811,
+    "n": 59,
+    "medianAge": 39.653107182214555
+  },
+  {
+    "congress": 13,
+    "year": 1813,
+    "n": 106,
+    "medianAge": 42.38416942168559
+  },
+  {
+    "congress": 14,
+    "year": 1815,
+    "n": 90,
+    "medianAge": 36.27179202858375
+  },
+  {
+    "congress": 15,
+    "year": 1817,
+    "n": 116,
+    "medianAge": 38.9275618253626
+  },
+  {
+    "congress": 16,
+    "year": 1819,
+    "n": 86,
+    "medianAge": 40.70446347289814
+  },
+  {
+    "congress": 17,
+    "year": 1821,
+    "n": 97,
+    "medianAge": 37.48742273968664
+  },
+  {
+    "congress": 18,
+    "year": 1823,
+    "n": 91,
+    "medianAge": 38.820783452090055
+  },
+  {
+    "congress": 19,
+    "year": 1825,
+    "n": 90,
+    "medianAge": 39.28759659678159
+  },
+  {
+    "congress": 20,
+    "year": 1827,
+    "n": 76,
+    "medianAge": 38.56068228642614
+  },
+  {
+    "congress": 21,
+    "year": 1829,
+    "n": 94,
+    "medianAge": 40.712677193919106
+  },
+  {
+    "congress": 22,
+    "year": 1831,
+    "n": 83,
+    "medianAge": 40.72225986844357
+  },
+  {
+    "congress": 23,
+    "year": 1833,
+    "n": 135,
+    "medianAge": 41.58606952914844
+  },
+  {
+    "congress": 24,
+    "year": 1835,
+    "n": 105,
+    "medianAge": 40.70720137990513
+  },
+  {
+    "congress": 25,
+    "year": 1837,
+    "n": 128,
+    "medianAge": 39.580552646529355
+  },
+  {
+    "congress": 26,
+    "year": 1839,
+    "n": 118,
+    "medianAge": 38.793404382020164
+  },
+  {
+    "congress": 27,
+    "year": 1841,
+    "n": 99,
+    "medianAge": 39.74072020643819
+  },
+  {
+    "congress": 28,
+    "year": 1843,
+    "n": 158,
+    "medianAge": 39.9529079994798
+  },
+  {
+    "congress": 29,
+    "year": 1845,
+    "n": 118,
+    "medianAge": 39.751671834466144
+  },
+  {
+    "congress": 30,
+    "year": 1847,
+    "n": 122,
+    "medianAge": 40.6195883556815
+  },
+  {
+    "congress": 31,
+    "year": 1849,
+    "n": 131,
+    "medianAge": 40.99741952264591
+  },
+  {
+    "congress": 32,
+    "year": 1851,
+    "n": 130,
+    "medianAge": 40.74826998500996
+  },
+  {
+    "congress": 33,
+    "year": 1853,
+    "n": 154,
+    "medianAge": 40.801659171646236
+  },
+  {
+    "congress": 34,
+    "year": 1855,
+    "n": 139,
+    "medianAge": 41.21371417619801
+  },
+  {
+    "congress": 35,
+    "year": 1857,
+    "n": 117,
+    "medianAge": 41.21918999021198
+  },
+  {
+    "congress": 36,
+    "year": 1859,
+    "n": 114,
+    "medianAge": 41.14115964051281
+  },
+  {
+    "congress": 37,
+    "year": 1861,
+    "n": 111,
+    "medianAge": 42.677125471433364
+  },
+  {
+    "congress": 38,
+    "year": 1863,
+    "n": 114,
+    "medianAge": 43.93793164815157
+  },
+  {
+    "congress": 39,
+    "year": 1865,
+    "n": 92,
+    "medianAge": 43.865377112466376
+  },
+  {
+    "congress": 40,
+    "year": 1867,
+    "n": 115,
+    "medianAge": 43.89001827552927
+  },
+  {
+    "congress": 41,
+    "year": 1869,
+    "n": 128,
+    "medianAge": 42.15829209360904
+  },
+  {
+    "congress": 42,
+    "year": 1871,
+    "n": 123,
+    "medianAge": 44.80311026235994
+  },
+  {
+    "congress": 43,
+    "year": 1873,
+    "n": 165,
+    "medianAge": 44.63609793493364
+  },
+  {
+    "congress": 44,
+    "year": 1875,
+    "n": 181,
+    "medianAge": 44.920840263660445
+  },
+  {
+    "congress": 45,
+    "year": 1877,
+    "n": 134,
+    "medianAge": 45.6710267835753
+  },
+  {
+    "congress": 46,
+    "year": 1879,
+    "n": 131,
+    "medianAge": 45.18641724333833
+  },
+  {
+    "congress": 47,
+    "year": 1881,
+    "n": 104,
+    "medianAge": 45.364381198792586
+  },
+  {
+    "congress": 48,
+    "year": 1883,
+    "n": 176,
+    "medianAge": 45.409556664407894
+  },
+  {
+    "congress": 49,
+    "year": 1885,
+    "n": 129,
+    "medianAge": 44.74287630820619
+  },
+  {
+    "congress": 50,
+    "year": 1887,
+    "n": 119,
+    "medianAge": 45.547820968260815
+  },
+  {
+    "congress": 51,
+    "year": 1889,
+    "n": 136,
+    "medianAge": 43.68056838949465
+  },
+  {
+    "congress": 52,
+    "year": 1891,
+    "n": 154,
+    "medianAge": 47.4342388960759
+  },
+  {
+    "congress": 53,
+    "year": 1893,
+    "n": 155,
+    "medianAge": 44.81406189038789
+  },
+  {
+    "congress": 54,
+    "year": 1895,
+    "n": 182,
+    "medianAge": 45.37807073382753
+  },
+  {
+    "congress": 55,
+    "year": 1897,
+    "n": 148,
+    "medianAge": 44.57860188778688
+  },
+  {
+    "congress": 56,
+    "year": 1899,
+    "n": 119,
+    "medianAge": 43.9297179271306
+  },
+  {
+    "congress": 57,
+    "year": 1901,
+    "n": 99,
+    "medianAge": 43.16036605816684
+  },
+  {
+    "congress": 58,
+    "year": 1903,
+    "n": 133,
+    "medianAge": 43.20006570976817
+  },
+  {
+    "congress": 59,
+    "year": 1905,
+    "n": 92,
+    "medianAge": 44.23362560490633
+  },
+  {
+    "congress": 60,
+    "year": 1907,
+    "n": 97,
+    "medianAge": 43.976262346249406
+  },
+  {
+    "congress": 61,
+    "year": 1909,
+    "n": 89,
+    "medianAge": 44.83048933242982
+  },
+  {
+    "congress": 62,
+    "year": 1911,
+    "n": 135,
+    "medianAge": 47.31924680178238
+  },
+  {
+    "congress": 63,
+    "year": 1913,
+    "n": 166,
+    "medianAge": 44.950957240737324
+  },
+  {
+    "congress": 64,
+    "year": 1915,
+    "n": 124,
+    "medianAge": 45.06047352101686
+  },
+  {
+    "congress": 65,
+    "year": 1917,
+    "n": 92,
+    "medianAge": 45.85720446005051
+  },
+  {
+    "congress": 66,
+    "year": 1919,
+    "n": 117,
+    "medianAge": 46.459544001587986
+  },
+  {
+    "congress": 67,
+    "year": 1921,
+    "n": 122,
+    "medianAge": 46.67173179462959
+  },
+  {
+    "congress": 68,
+    "year": 1923,
+    "n": 125,
+    "medianAge": 47.34388796484527
+  },
+  {
+    "congress": 69,
+    "year": 1925,
+    "n": 74,
+    "medianAge": 47.28365401069152
+  },
+  {
+    "congress": 70,
+    "year": 1927,
+    "n": 61,
+    "medianAge": 46.35550353532242
+  },
+  {
+    "congress": 71,
+    "year": 1929,
+    "n": 81,
+    "medianAge": 48.9346119359056
+  },
+  {
+    "congress": 72,
+    "year": 1931,
+    "n": 84,
+    "medianAge": 47.44792843111084
+  },
+  {
+    "congress": 73,
+    "year": 1933,
+    "n": 166,
+    "medianAge": 48.98663216903838
+  },
+  {
+    "congress": 74,
+    "year": 1935,
+    "n": 108,
+    "medianAge": 45.56151050329576
+  },
+  {
+    "congress": 75,
+    "year": 1937,
+    "n": 104,
+    "medianAge": 44.0967302545569
+  },
+  {
+    "congress": 76,
+    "year": 1939,
+    "n": 128,
+    "medianAge": 45.2179031739187
+  },
+  {
+    "congress": 77,
+    "year": 1941,
+    "n": 79,
+    "medianAge": 42.97145047468463
+  },
+  {
+    "congress": 78,
+    "year": 1943,
+    "n": 112,
+    "medianAge": 47.89968308726394
+  },
+  {
+    "congress": 79,
+    "year": 1945,
+    "n": 82,
+    "medianAge": 46.196704928917086
+  },
+  {
+    "congress": 80,
+    "year": 1947,
+    "n": 108,
+    "medianAge": 45.028987590436486
+  },
+  {
+    "congress": 81,
+    "year": 1949,
+    "n": 104,
+    "medianAge": 43.63402397037585
+  },
+  {
+    "congress": 82,
+    "year": 1951,
+    "n": 69,
+    "medianAge": 48.24465937014449
+  },
+  {
+    "congress": 83,
+    "year": 1953,
+    "n": 87,
+    "medianAge": 43.79008466977419
+  },
+  {
+    "congress": 84,
+    "year": 1955,
+    "n": 53,
+    "medianAge": 41.742130228546785
+  },
+  {
+    "congress": 85,
+    "year": 1957,
+    "n": 51,
+    "medianAge": 41.85986022984729
+  },
+  {
+    "congress": 86,
+    "year": 1959,
+    "n": 90,
+    "medianAge": 43.254823849907936
+  },
+  {
+    "congress": 87,
+    "year": 1961,
+    "n": 66,
+    "medianAge": 41.70106162344196
+  },
+  {
+    "congress": 88,
+    "year": 1963,
+    "n": 77,
+    "medianAge": 42.84687570586665
+  },
+  {
+    "congress": 89,
+    "year": 1965,
+    "n": 92,
+    "medianAge": 43.14256966262141
+  },
+  {
+    "congress": 90,
+    "year": 1967,
+    "n": 66,
+    "medianAge": 42.74557314660807
+  },
+  {
+    "congress": 91,
+    "year": 1969,
+    "n": 49,
+    "medianAge": 42.952285125635704
+  },
+  {
+    "congress": 92,
+    "year": 1971,
+    "n": 58,
+    "medianAge": 43.275358152460356
+  },
+  {
+    "congress": 93,
+    "year": 1973,
+    "n": 76,
+    "medianAge": 41.3109098749461
+  },
+  {
+    "congress": 94,
+    "year": 1975,
+    "n": 95,
+    "medianAge": 39.86666392875966
+  },
+  {
+    "congress": 95,
+    "year": 1977,
+    "n": 69,
+    "medianAge": 40.45805184226918
+  },
+  {
+    "congress": 96,
+    "year": 1979,
+    "n": 82,
+    "medianAge": 39.24515903817327
+  },
+  {
+    "congress": 97,
+    "year": 1981,
+    "n": 81,
+    "medianAge": 41.51214603995975
+  },
+  {
+    "congress": 98,
+    "year": 1983,
+    "n": 85,
+    "medianAge": 41.69284790242099
+  },
+  {
+    "congress": 99,
+    "year": 1985,
+    "n": 43,
+    "medianAge": 44.2883837450461
+  },
+  {
+    "congress": 100,
+    "year": 1987,
+    "n": 54,
+    "medianAge": 43.30410617603373
+  },
+  {
+    "congress": 101,
+    "year": 1989,
+    "n": 42,
+    "medianAge": 43.73121966912394
+  },
+  {
+    "congress": 102,
+    "year": 1991,
+    "n": 49,
+    "medianAge": 44.66347700500353
+  },
+  {
+    "congress": 103,
+    "year": 1993,
+    "n": 116,
+    "medianAge": 44.92220921716394
+  },
+  {
+    "congress": 104,
+    "year": 1995,
+    "n": 89,
+    "medianAge": 43.79282257678118
+  },
+  {
+    "congress": 105,
+    "year": 1997,
+    "n": 77,
+    "medianAge": 46.98248423992279
+  },
+  {
+    "congress": 106,
+    "year": 1999,
+    "n": 42,
+    "medianAge": 48.335010301375114
+  },
+  {
+    "congress": 107,
+    "year": 2001,
+    "n": 48,
+    "medianAge": 43.67646152898416
+  },
+  {
+    "congress": 108,
+    "year": 2003,
+    "n": 57,
+    "medianAge": 48.66082123520675
+  },
+  {
+    "congress": 109,
+    "year": 2005,
+    "n": 42,
+    "medianAge": 51.41789359124417
+  },
+  {
+    "congress": 110,
+    "year": 2007,
+    "n": 64,
+    "medianAge": 49.9353169469599
+  },
+  {
+    "congress": 111,
+    "year": 2009,
+    "n": 65,
+    "medianAge": 50.21595241517622
+  },
+  {
+    "congress": 112,
+    "year": 2011,
+    "n": 99,
+    "medianAge": 49.06055565822707
+  },
+  {
+    "congress": 113,
+    "year": 2013,
+    "n": 82,
+    "medianAge": 50.34189613749769
+  },
+  {
+    "congress": 114,
+    "year": 2015,
+    "n": 62,
+    "medianAge": 52.03802952832707
+  },
+  {
+    "congress": 115,
+    "year": 2017,
+    "n": 65,
+    "medianAge": 54.714333627658334
+  },
+  {
+    "congress": 116,
+    "year": 2019,
+    "n": 92,
+    "medianAge": 46.866123192125784
+  },
+  {
+    "congress": 117,
+    "year": 2021,
+    "n": 72,
+    "medianAge": 48.57868402499709
+  },
+  {
+    "congress": 118,
+    "year": 2023,
+    "n": 83,
+    "medianAge": 46.20491864993806
+  },
+  {
+    "congress": 119,
+    "year": 2025,
+    "n": 69,
+    "medianAge": 49.925734272435434
+  }
+]

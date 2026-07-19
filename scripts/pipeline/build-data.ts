@@ -14,6 +14,7 @@ import {
   fetchDistrictAges,
 } from './districts'
 import { computeHistorical, congressNumber, flattenTerms } from './historical'
+import { computeNewcomers } from './newcomers'
 import { httpGet } from './http'
 import { assertPartyAge, computePartyAge } from './party-age'
 import overrides from './photo-overrides.json'
@@ -141,6 +142,23 @@ async function main() {
     `pre-1850 missing-birthday share ${(pre1850.missingShare * 100).toFixed(1)}% (${pre1850Missing}/${pre1850People.length}) is outside the plausible band`,
   )
 
+  // "Why It Stays Old" — the median age of each Congress's ARRIVING House
+  // members. The two anchors are the published figures the section's argument
+  // leans on (median new House member ≈39 in 1979, ≈50.2 in 2025, per The Age
+  // Divide); if our definition of "arrival" ever drifts from the one those
+  // numbers were computed under, the build stops rather than shipping a chart
+  // that quietly disagrees with its own citations.
+  console.log('Computing new-member medians…')
+  const newcomers = computeNewcomers([...historicalRaw, ...currentRaw], today)
+  const nc = (n: number) => newcomers.find((p) => p.congress === n)!
+  gate(newcomers.length === congressNumber(today), 'newcomer series does not cover every Congress')
+  gate(close(nc(96).medianAge!, 39, 1.5), `96th new-member median ${nc(96).medianAge?.toFixed(2)} vs published ≈39`)
+  gate(close(nc(119).medianAge!, 50.2, 1.5), `119th new-member median ${nc(119).medianAge?.toFixed(2)} vs published ≈50.2`)
+  gate(
+    newcomers.filter((p) => p.n === 0).length <= 3,
+    `implausibly many Congresses with zero new House members: ${newcomers.filter((p) => p.n === 0).map((p) => p.congress).join(', ')}`,
+  )
+
   const contextLines = generateContextLines(overall.meanDobMs, overall.count)
   gate(contextLines.length >= 4, `only ${contextLines.length} context lines generated`)
 
@@ -211,6 +229,7 @@ async function main() {
   await mkdir('src/data', { recursive: true })
   await writeFile('src/data/congress.json', JSON.stringify(siteData, null, 2))
   await writeFile('src/data/historical.json', JSON.stringify(historical, null, 2))
+  await writeFile('src/data/newcomers.json', JSON.stringify(newcomers, null, 2))
   await writeFile('src/data/context-lines.json', JSON.stringify(contextLines, null, 2))
   await writeFile('src/data/party-age.json', JSON.stringify(partyAge, null, 2))
   await writeFile(
