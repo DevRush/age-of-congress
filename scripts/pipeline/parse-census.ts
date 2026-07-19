@@ -58,12 +58,27 @@ export function summarizePopulation(rows: { age: number; pop: number }[]): Popul
   }
 }
 
-async function main() {
+/**
+ * Fetch, summarize, sanity-gate, and write the population baseline. Called by
+ * the daily pipeline (so population.json is re-derived nightly and can never
+ * silently diverge from its pinned source) and by `npm run census` directly.
+ *
+ * Note what a nightly run does NOT fix: the source URL, its POPESTIMATE column,
+ * and `asOf` are pinned to one Census vintage, so freshness needs its own gate —
+ * build-data fails loudly when the vintage is old enough that a newer one must
+ * exist, which is a maintainer's cue to bump all three tokens here.
+ */
+export async function refreshPopulation(): Promise<Population> {
   const csv = await (await fetch(CENSUS_URL)).text()
   const pop = summarizePopulation(parseCensusCsv(csv))
   if (pop.adultMeanAge18 < 48 || pop.adultMeanAge18 > 50) throw new Error(`implausible adult mean age ${pop.adultMeanAge18}`)
   await mkdir('src/data', { recursive: true })
   await writeFile('src/data/population.json', JSON.stringify(pop, null, 2))
+  return pop
+}
+
+async function main() {
+  const pop = await refreshPopulation()
   console.log(`population.json written — adult mean ${pop.adultMeanAge18}, median ${pop.adultMedianAge18}`)
 }
 

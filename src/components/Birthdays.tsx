@@ -1,5 +1,7 @@
 import birthdays from '@/data/birthdays.json'
 import {
+  AGE_RAMP,
+  ageFill,
   buildCalendar,
   byBirthYear,
   describeChambers,
@@ -31,41 +33,11 @@ const days = birthdays.days as BirthdayDay[]
 const stats = birthdays.stats as BirthdayStats
 const expected = birthdays.expected as BirthdayExpected
 
-/**
- * The calendar's heat scale: the site's shared age-intensity ramp (--age-*),
- * light gold → deep amber, one step per member (1–6) born on a day. It replaces
- * an earlier violet ramp that spoke a color no other section did; on a page whose
- * one warm accent already means "older / more" everywhere else, a busier day
- * should read in that same vocabulary rather than introduce a new hue.
- *
- * The ramp starts at ONE, not zero. Zero is not a small amount of something — it
- * is the absence of it, and 105 of the 366 dates are empty. A "shade zero" at the
- * pale end would file those days as the quietest members of the same series and
- * the reader would scan past them; they are the finding, so they are drawn as
- * hollow sockets instead (see `.bday-empty`), off this scale entirely. Not
- * reserving the pale end for zero is also what lets step 1 start dark enough to be
- * unmistakably a fill against the white page. Magnitude is carried by lightness,
- * which is monotone across the six steps and so survives every color vision.
- */
-const AGE_RAMP = [
-  'var(--age-1)',
-  'var(--age-2)',
-  'var(--age-3)',
-  'var(--age-4)',
-  'var(--age-5)',
-  'var(--age-6)',
-] as const
-
-/**
- * The fill for a day, or `null` for a day nobody was born on — the caller draws
- * that absence rather than shading it. Counts past the ramp take its darkest
- * step; the roster's busiest day currently holds six, but a ramp that returned
- * `undefined` past its end would be a trap for a later, more crowded one.
- */
-function ageFill(count: number): string | null {
-  if (count <= 0) return null
-  return AGE_RAMP[Math.min(count, AGE_RAMP.length) - 1]
-}
+// The heat scale (the shared age-intensity amber, starting at one member — zero
+// is drawn as absence, not shade) lives in @/lib/birthdays as `ageFill`, beside
+// the calendar math and under the same tests. An earlier draft kept a private
+// copy here while the lib still carried the rejected violet ramp; one source of
+// truth means the swatch legend, the cells, and the tests can never disagree.
 
 /** Column headers every fifth day; 31 numbered columns would be noise. */
 const showColumnLabel = (day: number) => day === 1 || day % 5 === 0

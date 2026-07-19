@@ -86,7 +86,9 @@ export function Methodology() {
           Historical averages are computed from the same project&rsquo;s records of the roughly
           12,500 people who have served since 1789: for each Congress, the mean age of members
           serving on its constitutional first day (March 4 through the 73rd Congress, January 3
-          thereafter). Birth dates are unknown for about 18% of members who served before 1850 —
+          thereafter). Birth dates are unknown for{' '}
+          {Math.round(n.pre1850.missingShare * 100)}% of the{' '}
+          {n.pre1850.people.toLocaleString('en-US')} people whose service ended before 1850 —
           those members are excluded and affected years are drawn lighter. From {COVERAGE_FROM}{' '}
           onward coverage never falls below{' '}
           {(cov.worst.birthdayCoverage * 100).toFixed(1)}% (the {ordinal(cov.worst.congress)}{' '}

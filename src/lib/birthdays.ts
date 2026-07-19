@@ -116,7 +116,14 @@ export const CALENDAR_COLUMNS = 31
  * be read at all: the magnitude is carried by lightness, which survives every
  * form of color blindness intact.
  */
-export const COUNT_RAMP = ['#bba2ea', '#a088cc', '#866faf', '#6d5793', '#554078', '#3d285c'] as const
+export const AGE_RAMP = [
+  'var(--age-1)',
+  'var(--age-2)',
+  'var(--age-3)',
+  'var(--age-4)',
+  'var(--age-5)',
+  'var(--age-6)',
+] as const
 
 /**
  * The fill for a day, or `null` for a day nobody was born on — the caller is
@@ -124,9 +131,9 @@ export const COUNT_RAMP = ['#bba2ea', '#a088cc', '#866faf', '#6d5793', '#554078'
  * its darkest step; at n=531 that is not currently reachable, but a ramp that
  * silently returned `undefined` past its end would be a trap for a later roster.
  */
-export function countFill(count: number): string | null {
+export function ageFill(count: number): string | null {
   if (count <= 0) return null
-  return COUNT_RAMP[Math.min(count, COUNT_RAMP.length) - 1]
+  return AGE_RAMP[Math.min(count, AGE_RAMP.length) - 1]
 }
 
 // ── The calendar ─────────────────────────────────────────────────────────────

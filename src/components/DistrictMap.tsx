@@ -290,11 +290,11 @@ export function DistrictMap() {
                     data-median={d.adultMedianAge.toFixed(1)}
                     data-gap={hasGap ? formatGap(gap) : ''}
                     fill={hasGap ? gapColor(gap) : 'url(#vacant-hatch)'}
-                    aria-label={
-                      hasGap
-                        ? `${label}, ${name}, age ${age?.toFixed(1)}, district adults ${d.adultMedianAge.toFixed(1)}, gap ${formatGap(gap)} years.`
-                        : `${label}, vacant seat. District adults median age ${d.adultMedianAge.toFixed(1)}.`
-                    }
+                    // A short name, not a sentence: the aria-live readout below
+                    // the map speaks the full facts when a district is focused,
+                    // so a per-path paragraph is ~30KB of markup screen readers
+                    // never needed. Focusable elements still deserve a name.
+                    aria-label={hasGap ? `${label}, ${name}` : `${label}, vacant seat`}
                   />
                 )
               })}

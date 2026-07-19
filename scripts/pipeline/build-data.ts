@@ -17,6 +17,7 @@ import { computeHistorical, congressNumber, flattenTerms } from './historical'
 import { httpGet } from './http'
 import { assertPartyAge, computePartyAge } from './party-age'
 import overrides from './photo-overrides.json'
+import { refreshPopulation } from './parse-census'
 import { parseMembers } from './parse-members'
 import { resolvePhoto } from './photos'
 import { chamberStats, overallStats, rankOldest, rankYoungest, withRanks } from './stats'
@@ -34,6 +35,22 @@ async function main() {
   const nowMs = Date.now()
   const nowIso = new Date(nowMs).toISOString()
   const today = nowIso.slice(0, 10)
+
+  // The population baseline is re-derived nightly so population.json can never
+  // silently diverge from its pinned Census source — but the source itself is
+  // pinned to one vintage, so freshness gets its own gate: the Census publishes
+  // a new vintage yearly, and once ours is ~18 months old a newer one must
+  // exist. Failing here is the maintainer's cue to bump CENSUS_URL, the
+  // POPESTIMATE column, and asOf in parse-census.ts. (This will fire around the
+  // same time the 120th-Congress district-vintage gate does — one maintenance
+  // session, on purpose.)
+  console.log('Refreshing population baseline…')
+  const population = await refreshPopulation()
+  const POPULATION_MAX_AGE_DAYS = 550
+  gate(
+    nowMs - Date.parse(population.asOf) < POPULATION_MAX_AGE_DAYS * 86_400_000,
+    `population baseline is dated ${population.asOf} — a newer Census vintage exists; bump CENSUS_URL, the POPESTIMATE column, and asOf in parse-census.ts`,
+  )
 
   console.log('Fetching rosters…')
   const currentRaw = (await (await fetch(CURRENT_URL)).json()) as any[]
@@ -104,6 +121,26 @@ async function main() {
   gate(close(at(97).overallMean!, 49.5, 0.3), `97th overall ${at(97).overallMean?.toFixed(2)} vs 538 49.5`)
   gate(historical.filter((p) => p.congress >= 31).every((p) => p.birthdayCoverage >= 0.9), 'post-1849 birthday coverage below 90%')
 
+  // "About 18% of members who served before 1850 lack birth dates" was the last
+  // hand-asserted statistic in the Methodology. Now it is measured the way the
+  // original research measured it — distinct people whose service ended before
+  // 1850, counted once each — and written into notes so the page prints the
+  // number this gate actually saw.
+  const pre1850People = historicalRaw.filter((p: any) => {
+    const ends = (p.terms ?? []).map((t: any) => t?.end).filter(Boolean)
+    return ends.length > 0 && ends.sort().at(-1)! < '1850'
+  })
+  const pre1850Missing = pre1850People.filter((p: any) => !p.bio?.birthday).length
+  const pre1850 = {
+    people: pre1850People.length,
+    missingBirthday: pre1850Missing,
+    missingShare: pre1850Missing / Math.max(1, pre1850People.length),
+  }
+  gate(
+    pre1850.people > 2000 && pre1850.missingShare > 0.05 && pre1850.missingShare < 0.35,
+    `pre-1850 missing-birthday share ${(pre1850.missingShare * 100).toFixed(1)}% (${pre1850Missing}/${pre1850People.length}) is outside the plausible band`,
+  )
+
   const contextLines = generateContextLines(overall.meanDobMs, overall.count)
   gate(contextLines.length >= 4, `only ${contextLines.length} context lines generated`)
 
@@ -164,6 +201,7 @@ async function main() {
       houseVacancies: 435 - house.count,
       houseDelegatesExcluded: members.filter((m) => m.chamber === 'house' && !m.isVoting).length,
       excludedNoBirthday,
+      pre1850,
     },
     oldest: { senate: oldest.senate.map(toCard), house: oldest.house.map(toCard) },
     youngest: { senate: youngest.senate.map(toCard), house: youngest.house.map(toCard) },

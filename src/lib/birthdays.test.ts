@@ -1,14 +1,14 @@
 import { describe, expect, it } from 'vitest'
 import data from '@/data/birthdays.json'
 import {
+  AGE_RAMP,
   CALENDAR_DAYS,
-  COUNT_RAMP,
   DAYS_IN_MONTH,
   MEMBER_ENTRY_SEP,
   MEMBER_FIELD_SEP,
+  ageFill,
   buildCalendar,
   byBirthYear,
-  countFill,
   encodeMembers,
   describeChambers,
   describeParties,
@@ -112,26 +112,26 @@ describe('the calendar', () => {
   })
 })
 
-describe('countFill', () => {
+describe('ageFill', () => {
   it('refuses to shade a day nobody was born on', () => {
-    expect(countFill(0)).toBeNull()
-    expect(countFill(-1)).toBeNull()
+    expect(ageFill(0)).toBeNull()
+    expect(ageFill(-1)).toBeNull()
   })
 
   it('starts the ramp at one member and deepens from there', () => {
-    expect(countFill(1)).toBe(COUNT_RAMP[0])
-    expect(countFill(6)).toBe(COUNT_RAMP[5])
-    const fills = [1, 2, 3, 4, 5, 6].map(countFill)
+    expect(ageFill(1)).toBe(AGE_RAMP[0])
+    expect(ageFill(6)).toBe(AGE_RAMP[5])
+    const fills = [1, 2, 3, 4, 5, 6].map(ageFill)
     expect(new Set(fills).size).toBe(6)
   })
 
   it('clamps past the end of the ramp rather than returning nothing', () => {
-    expect(countFill(7)).toBe(COUNT_RAMP[COUNT_RAMP.length - 1])
-    expect(countFill(99)).toBe(COUNT_RAMP[COUNT_RAMP.length - 1])
+    expect(ageFill(7)).toBe(AGE_RAMP[AGE_RAMP.length - 1])
+    expect(ageFill(99)).toBe(AGE_RAMP[AGE_RAMP.length - 1])
   })
 
   it('covers the range the roster actually reaches', () => {
-    expect(COUNT_RAMP.length).toBeGreaterThanOrEqual(stats.maxDay.count)
+    expect(AGE_RAMP.length).toBeGreaterThanOrEqual(stats.maxDay.count)
   })
 })
 

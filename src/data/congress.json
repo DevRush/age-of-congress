@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T18:57:42.429Z",
+  "generatedAt": "2026-07-19T20:05:36.711Z",
   "congress": 119,
   "overall": {
     "meanDobMs": -113269647458,
@@ -23,7 +23,12 @@
     "senateVacancies": 0,
     "houseVacancies": 4,
     "houseDelegatesExcluded": 6,
-    "excludedNoBirthday": []
+    "excludedNoBirthday": [],
+    "pre1850": {
+      "people": 2585,
+      "missingBirthday": 476,
+      "missingShare": 0.18413926499032882
+    }
   },
   "oldest": {
     "senate": [
