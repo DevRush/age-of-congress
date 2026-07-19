@@ -30,13 +30,14 @@ export const NATIONAL_ADULT_MEDIAN_TOLERANCE = 0.3
 /** Any member-vs-district gap outside this is a join or parse failure, not a fact. */
 export const GAP_RANGE = { min: -40, max: 60 } as const
 
-/** Hex cartogram layout is CC BY 4.0 — attribution is a licence condition, not a courtesy. */
-export const HEX_LAYOUT_CREDIT = {
-  layout: 'Daily Kos / Downballot Hexmap v3.1',
-  author: 'Daniel Donner / The Downballot',
-  url: 'https://the-db.co/maps',
-  license: 'CC BY 4.0',
-  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+/** The map's geometry source. TIGER/Line is a U.S. government work — public domain. */
+export const MAP_GEOGRAPHY_CREDIT = {
+  layout: 'U.S. Census Bureau TIGER/Line cartographic boundaries (cb_2024_us_cd119_20m)',
+  author: 'U.S. Census Bureau',
+  url: 'https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_cd119_20m.zip',
+  license: 'Public domain',
+  licenseUrl: 'https://www.census.gov/about/policies/open-gov/open-data.html',
+  projection: 'Albers USA (Alaska and Hawaii inset), pre-projected at build',
 } as const
 
 export const CENSUS_SOURCE = {

@@ -7,7 +7,7 @@ import { generateContextLines } from './context-lines'
 import {
   CENSUS_SOURCE,
   GAP_RANGE,
-  HEX_LAYOUT_CREDIT,
+  MAP_GEOGRAPHY_CREDIT,
   assertDistrictAges,
   buildDistrictRows,
   districtGapStats,
@@ -129,13 +129,13 @@ async function main() {
 
   // The hex layout is committed, not fetched — but a roster/vintage shift must not silently
   // leave a district with no hex to colour, so re-verify the 435↔435 join every build.
-  const hexTopo = JSON.parse(await readFile('src/data/hex435.topo.json', 'utf8'))
-  const hexGeoids = new Set<string>(
-    (hexTopo.objects.HexCDv31.geometries as { properties: { GEOID: string } }[]).map((g) => g.properties.GEOID),
+  const geoTopo = JSON.parse(await readFile('src/data/districtsGeo.topo.json', 'utf8'))
+  const geoIds = new Set<string>(
+    (geoTopo.objects.districts.geometries as { properties: { GEOID: string } }[]).map((g) => g.properties.GEOID),
   )
-  gate(hexGeoids.size === 435, `hex layout has ${hexGeoids.size} districts, expected 435`)
-  const missingHex = districtRows.filter((r) => !hexGeoids.has(r.geoid)).map((r) => r.geoid)
-  gate(missingHex.length === 0, `districts with no hex in the layout: ${missingHex.join(', ')}`)
+  gate(geoIds.size === 435, `map geometry has ${geoIds.size} districts, expected 435`)
+  const missingShape = districtRows.filter((r) => !geoIds.has(r.geoid)).map((r) => r.geoid)
+  gate(missingShape.length === 0, `districts with no shape in the map geometry: ${missingShape.join(', ')}`)
 
   console.log('Grouping birthdays onto the calendar…')
   const birthdays = computeBirthdays(members)
@@ -181,7 +181,7 @@ async function main() {
       {
         generatedAt: nowIso, // gapYears are ages as of this instant
         source: CENSUS_SOURCE,
-        layout: HEX_LAYOUT_CREDIT, // CC BY 4.0 — attribution is required wherever the hexmap renders
+        layout: MAP_GEOGRAPHY_CREDIT, // TIGER/Line, public domain — cited in the Methodology
         nationalAdultMedianAge: parsed.nationalAdultMedianAge,
         stats: gaps,
         districts: districtRows,

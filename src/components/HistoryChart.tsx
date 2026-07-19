@@ -80,7 +80,9 @@ export function HistoryChart() {
   const baselineMs = Date.parse(congress.generatedAt)
   const todaySenate = ageYears(congress.senate.meanDobMs, baselineMs)
   const todayHouse = ageYears(congress.house.meanDobMs, baselineMs)
-  const todayX = x(2026.5)
+  // Mid-edition-year, derived from the data's own date — a hardcoded 2026.5
+  // would strand the dots the first January this site outlives.
+  const todayX = x(new Date(congress.generatedAt).getUTCFullYear() + 0.5)
 
   // The postwar trough: the youngest Congress of the modern era, by its combined
   // (both-chamber) average. It is anchored to that overall mean — a point that
