@@ -53,6 +53,25 @@ async function main() {
     `population baseline is dated ${population.asOf} — a newer Census vintage exists; bump CENSUS_URL, the POPESTIMATE column, and asOf in parse-census.ts`,
   )
 
+  // The Long View's U.S.-adults line is committed history (derived once by
+  // scripts/derive-us-medians.ts, never fetched nightly). Two things must stay
+  // true anyway: its endpoint has to agree with tonight's independently derived
+  // adult median (the two use different interpolation conventions, which
+  // accounts for ~0.15), and it must not silently fall behind the vintage the
+  // rest of the site has moved to.
+  const usSeries = JSON.parse(await readFile('src/data/us-adult-median.json', 'utf8')) as {
+    points: { year: number; medianAge18: number }[]
+  }
+  const usLast = usSeries.points[usSeries.points.length - 1]
+  gate(
+    Math.abs(usLast.medianAge18 - population.adultMedianAge18) < 0.35,
+    `us-adult-median.json endpoint ${usLast.medianAge18} disagrees with tonight's adult median ${population.adultMedianAge18}`,
+  )
+  gate(
+    usLast.year >= new Date(nowMs).getUTCFullYear() - 2,
+    `us-adult-median.json ends at ${usLast.year} — rerun scripts/derive-us-medians.ts against the current vintage`,
+  )
+
   console.log('Fetching rosters…')
   const currentRaw = (await (await fetch(CURRENT_URL)).json()) as any[]
   const historicalRaw = (await (await fetch(HISTORICAL_URL)).json()) as any[]

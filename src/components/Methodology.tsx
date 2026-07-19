@@ -95,7 +95,12 @@ export function Methodology() {
           Congress, {cov.worst.year}); it is short of {(COVERAGE_BAR * 100).toFixed(0)}% in{' '}
           {cov.below} of the {cov.total} Congresses since. Values were validated against
           Congressional Research Service figures for recent Congresses and
-          FiveThirtyEight&rsquo;s member-level dataset (66th&ndash;118th Congresses).
+          FiveThirtyEight&rsquo;s member-level dataset (66th&ndash;118th Congresses). The
+          chart&rsquo;s U.S. line is the median age of adults 18 and older, 1980 to the
+          present, derived from Census Bureau single-year-of-age estimates (five keyless
+          published series) by linear interpolation; it is fixed history, derived once and
+          committed, and each build checks its endpoint against the independently derived
+          population baseline before publishing.
         </Row>
         <Row term="Arrivals">
           &ldquo;Why It Stays Old&rdquo; counts a person as a new House member exactly once, at
