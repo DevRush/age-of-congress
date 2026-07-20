@@ -81,48 +81,33 @@ export const CALENDAR_COLUMNS = 31
 // ── The scale ────────────────────────────────────────────────────────────────
 
 /**
- * Six steps of one violet, light → dark, for one to six members born on a day.
+ * Six steps of one sage green, light → dark, for one to six members born on a
+ * day (--heat-*). This section's own hue: an earlier version reached for a
+ * violet, then shared the map's amber with two other charts — three sections in
+ * the same gold read as one repeated smudge, so each count chart now carries a
+ * distinct color and this one is the green.
  *
  * The ramp starts at ONE. There is no step for zero, because zero is not a small
- * amount of something — it is the absence of it, and 105 of the 366 dates are
+ * amount of something — it is the absence of it, and ~105 of the 366 dates are
  * empty. A "shade zero" at the pale end would file those days as the quietest
  * members of the same series and the reader would scan past them; they are drawn
  * as hollow sockets instead, off this scale entirely (see `.bday-empty`). Not
- * having to reserve the pale end for zero is also what lets step 1 start dark
- * enough to be unmistakably a fill — it clears the white page at 2.22:1, where a
- * conventional 0-anchored ramp would have had to start near-invisible.
+ * reserving the pale end for zero is also what lets step 1 start dark enough to
+ * be unmistakably a fill against the white page.
  *
- * Violet at OKLCH hue 300°, chroma ~0.105 — chosen against everything this page
- * has already spent, and measured rather than eyeballed. Party owns blue (--dem,
- * hue 261°), red (--rep, 29°) and gray (--ind); the district map owns teal (189°)
- * and amber (79°). That leaves green and violet, and green is disqualified on the
- * numbers: under protanopia a moss ramp lands ΔE 4.3 from the map's amber arm and
- * 9.4 from party red, because red-green-amber is precisely the axis red-green
- * color blindness destroys. Violet is the one free family left.
- *
- * Within violet, 300° is not a compromise between the two failure modes but the
- * point where both are avoided. Drift toward blue and the ramp reads as a
- * washed-out Democratic blue whatever the ΔE says. Drift toward magenta and it
- * collapses onto the map's teal under deuteranopia (ΔE 8.8 at 325°, 1.6 at 340°)
- * — and lands on the mauve at ~340° that American election maps use to mean "a
- * blend of the two parties", which on this page of all pages would be an active
- * misreading, and one this very section could invite: October 24 genuinely is a
- * mix of four Democrats and two Republicans. The perceptual math and the
- * political semantics happen to point at the same place. Every step here clears
- * ΔE 21 against all ten of those colors under normal, protanopic and deuteranopic
- * vision — worst case 21.0, the light step against the map's mid teal.
- *
- * Being a single hue with monotone lightness, the ramp does not depend on hue to
- * be read at all: the magnitude is carried by lightness, which survives every
- * form of color blindness intact.
+ * Green sits clear of the reserved families — party blue and red, the map's
+ * amber, and the rejected violet — and stays yellow enough (a sage, not a
+ * blue-green) to hold apart from the map's teal. Magnitude is carried by
+ * lightness across the six steps, so the scale reads without leaning on hue at
+ * all and survives every form of color blindness.
  */
-export const AGE_RAMP = [
-  'var(--age-1)',
-  'var(--age-2)',
-  'var(--age-3)',
-  'var(--age-4)',
-  'var(--age-5)',
-  'var(--age-6)',
+export const HEAT_RAMP = [
+  'var(--heat-1)',
+  'var(--heat-2)',
+  'var(--heat-3)',
+  'var(--heat-4)',
+  'var(--heat-5)',
+  'var(--heat-6)',
 ] as const
 
 /**
@@ -131,9 +116,9 @@ export const AGE_RAMP = [
  * its darkest step; at n=531 that is not currently reachable, but a ramp that
  * silently returned `undefined` past its end would be a trap for a later roster.
  */
-export function ageFill(count: number): string | null {
+export function heatFill(count: number): string | null {
   if (count <= 0) return null
-  return AGE_RAMP[Math.min(count, AGE_RAMP.length) - 1]
+  return HEAT_RAMP[Math.min(count, HEAT_RAMP.length) - 1]
 }
 
 // ── The calendar ─────────────────────────────────────────────────────────────

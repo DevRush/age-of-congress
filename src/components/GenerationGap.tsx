@@ -12,19 +12,21 @@ import { trunc1 } from '@/lib/format'
 /**
  * "The Generation Gap" — the roster against the country it is drawn from.
  *
- * Two bars per generation: Congress in the site's age amber, the population in a
- * quiet neutral tint, on one shared scale, with the gap between them printed at
- * the right. The pairing is the whole argument, so the two bars sit directly on
- * top of one another with a hairline of paper between them — near enough to read
- * as one measurement taken twice, not as two charts.
+ * Two bars per generation: Congress in ink, the population in a quiet neutral
+ * tint, on one shared scale, with the gap between them printed
+ * at the right. The pairing is the whole argument, so the two bars sit directly
+ * on top of one another with a hairline of paper between them — near enough to
+ * read as one measurement taken twice, not as two charts.
  *
- * The one hue here is the age-intensity amber (--age-3, the map's older arm),
- * carried by the Congress series because Congress is the body that skews old;
- * the country stays a cool ink tint. It is deliberately NOT a party hue — these
- * are not member-level marks, so red/blue would be a category error and could be
- * misread as one. The two series are still told apart by a legend AND by a large
- * lightness difference (deep amber against pale gray), so identity survives any
- * color vision without leaning on hue.
+ * No hue here, on purpose. This is a two-series comparison, not a heat scale, so
+ * it reads cleanest as ink (Congress) against a pale gray (the country) — the
+ * standard before/after treatment. The other two count charts each took a
+ * distinct color (The Decades a rose, Shared Birthdays a sage); the only distinct
+ * hue left for this one would have been a blue-gray, and measured ΔE put that
+ * within ~10 of party blue, so a "Congress" bar would have flirted with reading
+ * as "Democrat" — the exact misread this page reserves blue to prevent. Ink
+ * versus gray keeps it unambiguous, and the two series stay far apart in
+ * lightness, so they survive any color vision without leaning on hue.
  *
  * The baseline is adults 25 and older, not all adults — see `populationShares`
  * and the section's footnote. That is what `population.json` describes, and it
@@ -55,7 +57,7 @@ export function GenerationGap() {
     <figure className="mx-auto my-0" style={{ maxWidth: COLUMN }}>
       <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <ul className="smallcaps flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[0.6875rem] tracking-[0.08em] text-[var(--ink-soft)]">
-          <Key fill="var(--age-3)">Congress</Key>
+          <Key fill="var(--ink)">Congress</Key>
           <Key fill="color-mix(in srgb, var(--ink) 22%, var(--paper))">
             U.S. adults 25+
           </Key>
@@ -140,7 +142,7 @@ function Row({
       </div>
 
       <div aria-hidden className="mt-2 space-y-[3px]">
-        <Bar value={congress} max={max} fill="var(--age-3)" format={pct} />
+        <Bar value={congress} max={max} fill="var(--ink)" format={pct} />
         <Bar
           value={country}
           max={max}

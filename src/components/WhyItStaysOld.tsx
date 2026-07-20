@@ -106,7 +106,7 @@ export function WhyItStaysOld() {
           <text x={x(low.year)} y={y(low.medianAge) + 20} textAnchor="middle" fontSize={10} className="tnum" fill="var(--ink-soft)">
             {low.medianAge.toFixed(1)} in {low.year}
           </text>
-          <circle cx={x(latest.year)} cy={y(latest.medianAge)} r={4} fill="var(--age-3)" stroke="var(--ink)" strokeWidth={1.2} />
+          <circle cx={x(latest.year)} cy={y(latest.medianAge)} r={4} fill="var(--ink)" stroke="var(--paper)" strokeWidth={1.4} />
           <text
             x={x(latest.year) + 8}
             y={y(latest.medianAge) - 8}

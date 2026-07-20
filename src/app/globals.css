@@ -18,23 +18,46 @@
   --rep: #d1382c;
   --ind: #6a6f78;
 
-  /* Age intensity — the one non-party accent the research sections are allowed.
-     The map already teaches the reader that OLDER = amber (its teal→amber
-     diverging ramp); this is that same warm arm pulled out as a shared
-     sequential scale so every section that encodes age speaks one language
-     rather than inventing a palette of its own. Light gold → deep amber, six
-     monotone-darkening steps drawn from the map's own gold family (--age-3 is
-     the map's mid-gold #bb8825; --age-5 sits on its deep #785300). Reused by
-     The Decades (retirement-age rows), The Generation Gap (the Congress series),
-     and Shared Birthdays (the calendar heat scale). Never party, never purple:
-     it always means "older / more". Cool youth and every non-age baseline stay
-     in the monochrome ink tints, so warmth reads only where age is the point. */
+  /* Amber — the map's warm arm, and now ONLY the map's. An earlier version
+     pulled it out as a shared "age intensity" scale worn by three other
+     sections at once; three charts in the same muddy gold read as one repeated
+     smudge rather than a system, so each of those sections now carries its own
+     hue below and amber is left where a diverging scale genuinely needs a warm
+     pole. --age-2 also tints the faint gap band on The Long View — the space
+     between Congress and the country — which is the same "gap" idea the map
+     colors, so the two share the accent on purpose. */
   --age-1: #dcb463;
   --age-2: #cf9f42;
   --age-3: #bb8825;
   --age-4: #9c6c18;
   --age-5: #7d5300;
   --age-6: #573900;
+
+  /* Per-section identity hues. The three count/heat charts each get ONE
+     restrained, muted single-hue scale, so no two sections wear the same color
+     and none wears the map's amber. Chosen clear of everything already spoken
+     for — party blue/red, the map's teal and amber, and the violet that was
+     tried and rejected — leaving a muted secondary triad: a dusty rose, a sage
+     green, a slate blue. Each is desaturated enough to read as newsroom-quiet
+     rather than a primary, and magnitude is carried by lightness within each
+     ramp, so every one survives color-blindness on its own. */
+  /* The Decades — dusty rose, deepening through the retirement-age rows. */
+  --dec-1: #cb9ba3;
+  --dec-2: #a86b78;
+  --dec-3: #6f3f48;
+  /* Shared Birthdays — sage-green calendar heat, one step per member on a day. */
+  --heat-1: #cdd8bf;
+  --heat-2: #adbf94;
+  --heat-3: #8ca86e;
+  --heat-4: #6c8a4e;
+  --heat-5: #4f6837;
+  --heat-6: #354724;
+  /* The Generation Gap takes no hue of its own: it is a two-series comparison,
+     not a heat scale, so it reads cleanest as ink (Congress) against a pale gray
+     (the country). A third distinct hue would have had to be a blue-gray, and
+     measured ΔE put that within ~10 of party blue — a "Congress" bar in blue is
+     exactly the party misread this page reserves blue to avoid. Ink vs gray is
+     both the safer and the more standard treatment for before/after pairs. */
 }
 
 body {

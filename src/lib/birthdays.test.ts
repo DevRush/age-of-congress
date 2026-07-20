@@ -1,15 +1,15 @@
 import { describe, expect, it } from 'vitest'
 import data from '@/data/birthdays.json'
 import {
-  AGE_RAMP,
   CALENDAR_DAYS,
   DAYS_IN_MONTH,
+  HEAT_RAMP,
   MEMBER_ENTRY_SEP,
   MEMBER_FIELD_SEP,
-  ageFill,
   buildCalendar,
   byBirthYear,
   encodeMembers,
+  heatFill,
   describeChambers,
   describeParties,
   excess,
@@ -112,26 +112,26 @@ describe('the calendar', () => {
   })
 })
 
-describe('ageFill', () => {
+describe('heatFill', () => {
   it('refuses to shade a day nobody was born on', () => {
-    expect(ageFill(0)).toBeNull()
-    expect(ageFill(-1)).toBeNull()
+    expect(heatFill(0)).toBeNull()
+    expect(heatFill(-1)).toBeNull()
   })
 
   it('starts the ramp at one member and deepens from there', () => {
-    expect(ageFill(1)).toBe(AGE_RAMP[0])
-    expect(ageFill(6)).toBe(AGE_RAMP[5])
-    const fills = [1, 2, 3, 4, 5, 6].map(ageFill)
+    expect(heatFill(1)).toBe(HEAT_RAMP[0])
+    expect(heatFill(6)).toBe(HEAT_RAMP[5])
+    const fills = [1, 2, 3, 4, 5, 6].map(heatFill)
     expect(new Set(fills).size).toBe(6)
   })
 
   it('clamps past the end of the ramp rather than returning nothing', () => {
-    expect(ageFill(7)).toBe(AGE_RAMP[AGE_RAMP.length - 1])
-    expect(ageFill(99)).toBe(AGE_RAMP[AGE_RAMP.length - 1])
+    expect(heatFill(7)).toBe(HEAT_RAMP[HEAT_RAMP.length - 1])
+    expect(heatFill(99)).toBe(HEAT_RAMP[HEAT_RAMP.length - 1])
   })
 
   it('covers the range the roster actually reaches', () => {
-    expect(AGE_RAMP.length).toBeGreaterThanOrEqual(stats.maxDay.count)
+    expect(HEAT_RAMP.length).toBeGreaterThanOrEqual(stats.maxDay.count)
   })
 })
 

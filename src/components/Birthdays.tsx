@@ -1,8 +1,8 @@
 import birthdays from '@/data/birthdays.json'
 import {
-  AGE_RAMP,
-  ageFill,
+  HEAT_RAMP,
   buildCalendar,
+  heatFill,
   byBirthYear,
   describeChambers,
   describeParties,
@@ -34,7 +34,7 @@ const stats = birthdays.stats as BirthdayStats
 const expected = birthdays.expected as BirthdayExpected
 
 // The heat scale (the shared age-intensity amber, starting at one member — zero
-// is drawn as absence, not shade) lives in @/lib/birthdays as `ageFill`, beside
+// is drawn as absence, not shade) lives in @/lib/birthdays as `heatFill`, beside
 // the calendar math and under the same tests. An earlier draft kept a private
 // copy here while the lib still carried the rejected violet ramp; one source of
 // truth means the swatch legend, the cells, and the tests can never disagree.
@@ -112,7 +112,7 @@ export function Birthdays() {
             Members born that day
           </span>
           <div className="mt-2 flex items-center gap-[3px]">
-            {AGE_RAMP.map((fill, i) => (
+            {HEAT_RAMP.map((fill, i) => (
               <span key={fill} className="flex flex-col items-center gap-1">
                 <span className="bday-swatch" style={{ background: fill }} aria-hidden />
                 <span className="meta tnum text-[0.5625rem] text-[var(--ink-faint)]">{i + 1}</span>
@@ -164,7 +164,7 @@ export function Birthdays() {
                 // date: that one is a real day that simply has no one in it.
                 if (cell === null) return <span key={i} aria-hidden />
 
-                const fill = ageFill(cell.count)
+                const fill = heatFill(cell.count)
                 const label = formatMd(cell.md)
                 const isPeak = cell.md === stats.maxDay.md
                 return (

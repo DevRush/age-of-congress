@@ -12,13 +12,15 @@ import { countAtLeast, decadeRows } from '@/lib/decades'
  * an axis. There is no axis. The numbers are the axis.
  *
  * The one drawn line is at 70. Below it the bars are a cool, neutral ink tint —
- * baseline, unremarked. At and above it they warm through the site's shared
- * age-intensity ramp (--age-*, the map's amber "older" arm), a step deeper each
- * decade, so a member in their 90s is visibly further along the same scale than
- * one in their 70s. It encodes "past retirement" without alarm: warmth, not red.
- * Length still carries the count independently of hue — the 60s row is the
- * longest bar on the chart and stays neutral — and because every count is
- * printed, the color can editorialize without the geometry lying.
+ * baseline, unremarked. At and above it they deepen through this section's own
+ * hue, a dusty rose (--dec-*), a step darker each decade, so a member in their
+ * 90s is visibly further along the scale than one in their 70s. Rose rather than
+ * the map's amber because three sections all wearing that gold read as one
+ * repeated smudge; every count chart now carries its own color. It marks "past
+ * retirement" with a little warmth, not alarm. Length still carries the count
+ * independently of hue — the 60s row is the longest bar and stays neutral — and
+ * because every count is printed, the color can editorialize without the
+ * geometry lying.
  *
  * Server-rendered: the figures are fixed at build time from the same data the
  * cron refreshes, so they move when the roster moves and never drift.
@@ -58,15 +60,15 @@ const COLUMN = 600
 // The cool baseline every below-70 row shares: a neutral ink tint, no warmth.
 const NEUTRAL = 'color-mix(in srgb, var(--ink) 22%, var(--paper))'
 
-// The warm arm, one shared step per decade past the line. 70s→--age-2, 80s→
-// --age-4, 90s→--age-6, and anything deeper (a future centenarian row) holds at
-// the darkest step rather than running off the ramp.
-const WARM = ['var(--age-2)', 'var(--age-4)', 'var(--age-6)'] as const
+// The rose arm, one step per decade past the line: 70s→--dec-1, 80s→--dec-2,
+// 90s→--dec-3, and anything deeper (a future centenarian row) holds at the
+// darkest step rather than running off the ramp.
+const ROSE = ['var(--dec-1)', 'var(--dec-2)', 'var(--dec-3)'] as const
 
-/** The bar fill for a decade whose floor is `min`. Cool below 70, warming above. */
+/** The bar fill for a decade whose floor is `min`. Neutral below 70, rose above. */
 function decadeFill(min: number): string {
   if (min < THRESHOLD) return NEUTRAL
-  return WARM[Math.min(Math.floor((min - THRESHOLD) / 10), WARM.length - 1)]
+  return ROSE[Math.min(Math.floor((min - THRESHOLD) / 10), ROSE.length - 1)]
 }
 
 export function Decades() {
