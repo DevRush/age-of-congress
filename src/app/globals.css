@@ -64,15 +64,17 @@ body {
 
 .tnum { font-variant-numeric: tabular-nums; }
 
-/* The Map — 435 district hexes.
-   A hairline of paper between fills keeps neighboring districts countable at
-   this density; the 2px gap a bar chart wants would eat a cartogram whose cells
-   are only ~25 user units across. The stroke also does real work at the neutral
-   end of the ramp: a district whose member matches its adults is drawn nearly
-   white by design, and the outline is what keeps it a shape rather than a hole. */
+/* The Map — 435 geographic districts.
+   A faint gray hairline, not white: on a real map a white border reads as a gap
+   between tiles, and — the reason it changed — a district whose member matches
+   its adults is filled a near-white #e5e8ec, so a white outline let it dissolve
+   into the page (1.2:1 against paper). The gray edge is a hair darker than that
+   neutral fill, so a near-zero district stays a drawn shape rather than a hole,
+   while still receding as the diverging scale intends. Colored districts read
+   the gray as ordinary map linework. */
 .district {
-  stroke: var(--paper);
-  stroke-width: 0.7;
+  stroke: var(--rule-strong);
+  stroke-width: 0.6;
   outline: none;
 }
 

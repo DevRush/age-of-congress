@@ -46,22 +46,31 @@ export const GAP_CLAMP = 30
  *
  * Chosen against a hard constraint: this page already spends red and blue on
  * party identity, so an age-gap map must not read as a party map. Both poles sit
- * in hue territory the party palette does not occupy, and the separation is
- * measured rather than eyeballed — every hued stop below clears CIE ΔE ≥ 12
- * against BOTH --dem (#2560c9) and --rep (#d1382c) under protanopia and
- * deuteranopia (worst case: +20 vs party red, ΔE 12.8), while the two poles sit
- * ΔE 61 apart from each other. Sepia was the first instinct for "older" and had
- * to be rejected: mid-brown collapses onto party red under deuteranopia (ΔE 8.3).
- * Holding the warm arm in the gold/olive family instead of letting it drift to
- * brown is what keeps it clear of red.
+ * in hue territory the party palette does not occupy, and the poles are ΔE2000
+ * ~61 apart from each other. Sepia was the first instinct for "older" and had to
+ * be rejected: mid-brown collapses onto party red under deuteranopia. Holding
+ * the warm arm in the gold/olive family keeps it clearer of red than brown was.
  *
- * The lightness profile is symmetric arm-to-arm (equal |gap| → equal contrast,
- * within 0.63), so the two directions carry equal visual weight.
+ * Honest limit, measured (Machado 2009 dichromacy + CIEDE2000, not eyeballed):
+ * the warm arm's closest approach to party red is the +20 stop against #d1382c
+ * under DEUTERANOPIA, at ΔE ~9.2 — distinguishable but not comfortably so, and
+ * short of the ΔE≥12 an earlier version of this note claimed. It does not bite
+ * in practice because amber and red never encode different things in the SAME
+ * figure: red is party-only (rankings, histogram, "Across the Aisle"), this
+ * amber is gap-only. A deuteranope never has to tell a red mark from an amber
+ * one to read a single chart; the cost is a mild cross-page warmth similarity,
+ * not a misread. The cool arm vs party blue is safer (ΔE ~20+ under both
+ * red-green deficiencies). Magnitude is also carried by lightness on both arms,
+ * so the scale survives dichromacy without leaning on hue at all.
+ *
+ * The lightness profile is symmetric arm-to-arm (teal 41/63/80 vs amber 38/60/78
+ * in L*), so equal |gap| carries equal visual weight in either direction.
  *
  * The midpoint is a near-white neutral, not a hue — a district whose member is
  * the same age as its adults should recede, and low salience at zero is the
- * point. Every hex carries a hairline stroke so a near-zero cell is still a
- * countable shape rather than a hole in the map.
+ * point. The neutral is near-white on purpose, so the district's OUTLINE, not
+ * its fill, is what keeps a near-zero cell a drawn shape rather than a hole — see
+ * the faint-gray (not white) `.district` stroke in globals.css.
  */
 export const RAMP: readonly (readonly [number, string])[] = [
   [-30, '#006c67'],
