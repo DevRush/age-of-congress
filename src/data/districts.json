@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T10:25:05.627Z",
+  "generatedAt": "2026-08-10T11:00:47.376Z",
   "source": {
     "table": "B01001 (Sex by Age)",
     "survey": "U.S. Census Bureau, 2024 American Community Survey 1-Year Estimates",
@@ -18,7 +18,7 @@
   "stats": {
     "joined": 431,
     "vacant": 4,
-    "meanGap": 11.312296983758706,
+    "meanGap": 11.315313225058013,
     "medianGap": 10.9,
     "pctOlder": 0.7865429234338747,
     "minGap": -19.2,
@@ -629,7 +629,7 @@
         "party": "D",
         "dobMs": -547326000000
       },
-      "gapYears": 25.1
+      "gapYears": 25.2
     },
     {
       "geoid": "0627",
@@ -746,7 +746,7 @@
         "party": "D",
         "dobMs": -149713200000
       },
-      "gapYears": 17.9
+      "gapYears": 18
     },
     {
       "geoid": "0636",
@@ -1919,7 +1919,7 @@
         "party": "D",
         "dobMs": 528786000000
       },
-      "gapYears": -6.9
+      "gapYears": -6.8
     },
     {
       "geoid": "1715",
@@ -2062,7 +2062,7 @@
         "party": "R",
         "dobMs": -64522800000
       },
-      "gapYears": 9.5
+      "gapYears": 9.6
     },
     {
       "geoid": "1809",
@@ -2413,7 +2413,7 @@
         "party": "D",
         "dobMs": -279054000000
       },
-      "gapYears": 19.6
+      "gapYears": 19.7
     },
     {
       "geoid": "2405",
@@ -2816,7 +2816,7 @@
         "party": "D",
         "dobMs": 371019600000
       },
-      "gapYears": 3.2
+      "gapYears": 3.3
     },
     {
       "geoid": "2706",
@@ -2959,7 +2959,7 @@
         "party": "R",
         "dobMs": -197060400000
       },
-      "gapYears": 14.4
+      "gapYears": 14.5
     },
     {
       "geoid": "2905",
@@ -3011,7 +3011,7 @@
         "party": "R",
         "dobMs": 329979600000
       },
-      "gapYears": -3.3
+      "gapYears": -3.2
     },
     {
       "geoid": "3001",
@@ -3596,7 +3596,7 @@
         "party": "D",
         "dobMs": 348901200000
       },
-      "gapYears": -4.4
+      "gapYears": -4.3
     },
     {
       "geoid": "3620",
@@ -3700,7 +3700,7 @@
         "party": "D",
         "dobMs": 52290000000
       },
-      "gapYears": 3.8
+      "gapYears": 3.9
     },
     {
       "geoid": "3702",
@@ -3765,7 +3765,7 @@
         "party": "R",
         "dobMs": 759128400000
       },
-      "gapYears": -15.4
+      "gapYears": -15.3
     },
     {
       "geoid": "3707",
@@ -3999,7 +3999,7 @@
         "party": "D",
         "dobMs": -742935600000
       },
-      "gapYears": 30.1
+      "gapYears": 30.2
     },
     {
       "geoid": "3910",
@@ -4844,7 +4844,7 @@
         "party": "R",
         "dobMs": -39294000000
       },
-      "gapYears": 14.3
+      "gapYears": 14.4
     },
     {
       "geoid": "4813",
