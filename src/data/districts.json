@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T10:30:18.636Z",
+  "generatedAt": "2026-08-25T10:23:41.561Z",
   "source": {
     "table": "B01001 (Sex by Age)",
     "survey": "U.S. Census Bureau, 2024 American Community Survey 1-Year Estimates",
@@ -18,7 +18,7 @@
   "stats": {
     "joined": 431,
     "vacant": 4,
-    "meanGap": 11.356844547563815,
+    "meanGap": 11.357772621809755,
     "medianGap": 10.9,
     "pctOlder": 0.7888631090487239,
     "minGap": -19.2,
@@ -1638,7 +1638,7 @@
         "party": "R",
         "dobMs": -78951600000
       },
-      "gapYears": 12.6
+      "gapYears": 12.7
     },
     {
       "geoid": "1311",
@@ -1854,7 +1854,7 @@
         "party": "D",
         "dobMs": -807908400000
       },
-      "gapYears": 33.9
+      "gapYears": 34
     },
     {
       "geoid": "1710",
@@ -2244,7 +2244,7 @@
         "party": "R",
         "dobMs": -1009911600000
       },
-      "gapYears": 38.5
+      "gapYears": 38.6
     },
     {
       "geoid": "2106",
@@ -5541,7 +5541,7 @@
         "party": "R",
         "dobMs": 331275600000
       },
-      "gapYears": -3.9
+      "gapYears": -3.8
     },
     {
       "geoid": "5501",
