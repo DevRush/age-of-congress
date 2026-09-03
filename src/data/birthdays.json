@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-02T13:59:27.297Z",
+  "generatedAt": "2026-09-03T14:01:36.981Z",
   "stats": {
-    "totalMembers": 531,
-    "distinctDaysUsed": 261,
-    "emptyDays": 105,
-    "sharingPairs": 425,
-    "membersSharing": 426,
-    "daysWith2plus": 156,
+    "totalMembers": 533,
+    "distinctDaysUsed": 262,
+    "emptyDays": 104,
+    "sharingPairs": 426,
+    "membersSharing": 428,
+    "daysWith2plus": 157,
     "daysWith3plus": 82,
     "daysWith4plus": 24,
     "daysWith5plus": 7,
@@ -16,8 +16,8 @@
     }
   },
   "expected": {
-    "expectedEmptyDays": 85.03868889358542,
-    "expectedSharingPairs": 385.52054794520546
+    "expectedEmptyDays": 84.57336178378301,
+    "expectedSharingPairs": 388.4328767123288
   },
   "days": [
     {
@@ -141,6 +141,14 @@
     {
       "md": "01-11",
       "members": [
+        {
+          "bioguide": "W000832",
+          "name": "Aisha Wahab",
+          "party": "D",
+          "chamber": "house",
+          "state": "CA",
+          "birthYear": 1987
+        },
         {
           "bioguide": "T000463",
           "name": "Michael R. Turner",
@@ -1840,6 +1848,19 @@
           "chamber": "house",
           "state": "PA",
           "birthYear": 1990
+        }
+      ]
+    },
+    {
+      "md": "04-23",
+      "members": [
+        {
+          "bioguide": "B001328",
+          "name": "Everton Blair Jr.",
+          "party": "D",
+          "chamber": "house",
+          "state": "GA",
+          "birthYear": 1992
         }
       ]
     },

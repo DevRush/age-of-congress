@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T13:59:27.297Z",
+  "generatedAt": "2026-09-03T14:01:36.981Z",
   "source": {
     "table": "B01001 (Sex by Age)",
     "survey": "U.S. Census Bureau, 2024 American Community Survey 1-Year Estimates",
@@ -16,11 +16,11 @@
   },
   "nationalAdultMedianAge": 47.49766306122099,
   "stats": {
-    "joined": 431,
-    "vacant": 4,
-    "meanGap": 11.374941995359634,
+    "joined": 433,
+    "vacant": 2,
+    "meanGap": 11.27898383371825,
     "medianGap": 10.9,
-    "pctOlder": 0.7888631090487239,
+    "pctOlder": 0.7852193995381063,
     "minGap": -19.2,
     "maxGap": 45.1
   },
@@ -361,7 +361,7 @@
         "party": "R",
         "dobMs": -425329200000
       },
-      "gapYears": 19
+      "gapYears": 19.1
     },
     {
       "geoid": "0606",
@@ -472,8 +472,13 @@
       "state": "CA",
       "district": 14,
       "adultMedianAge": 47.9,
-      "member": null,
-      "gapYears": null
+      "member": {
+        "bioguide": "W000832",
+        "name": "Aisha Wahab",
+        "party": "D",
+        "dobMs": 537339600000
+      },
+      "gapYears": -8.3
     },
     {
       "geoid": "0615",
@@ -928,7 +933,7 @@
         "party": "D",
         "dobMs": 278398800000
       },
-      "gapYears": -1.8
+      "gapYears": -1.7
     },
     {
       "geoid": "0650",
@@ -1396,7 +1401,7 @@
         "party": "R",
         "dobMs": 278398800000
       },
-      "gapYears": -11.4
+      "gapYears": -11.3
     },
     {
       "geoid": "1220",
@@ -1417,7 +1422,7 @@
         "party": "R",
         "dobMs": 332053200000
       },
-      "gapYears": -9.5
+      "gapYears": -9.4
     },
     {
       "geoid": "1222",
@@ -1671,8 +1676,13 @@
       "state": "GA",
       "district": 13,
       "adultMedianAge": 46.1,
-      "member": null,
-      "gapYears": null
+      "member": {
+        "bioguide": "B001328",
+        "name": "Everton Blair Jr.",
+        "party": "D",
+        "dobMs": 704005200000
+      },
+      "gapYears": -11.7
     },
     {
       "geoid": "1314",
@@ -2010,7 +2020,7 @@
         "party": "R",
         "dobMs": -775594800000
       },
-      "gapYears": 34.9
+      "gapYears": 35
     },
     {
       "geoid": "1805",
@@ -2478,7 +2488,7 @@
         "party": "D",
         "dobMs": -658868400000
       },
-      "gapYears": 28
+      "gapYears": 28.1
     },
     {
       "geoid": "2502",
@@ -2686,7 +2696,7 @@
         "party": "D",
         "dobMs": 16520400000
       },
-      "gapYears": 5.4
+      "gapYears": 5.5
     },
     {
       "geoid": "2609",
@@ -3063,7 +3073,7 @@
         "party": "R",
         "dobMs": -201294000000
       },
-      "gapYears": 18.3
+      "gapYears": 18.4
     },
     {
       "geoid": "3103",
@@ -3401,7 +3411,7 @@
         "party": "D",
         "dobMs": -15102000000
       },
-      "gapYears": 7.6
+      "gapYears": 7.7
     },
     {
       "geoid": "3605",
@@ -4129,7 +4139,7 @@
         "party": "R",
         "dobMs": -652561200000
       },
-      "gapYears": 32.3
+      "gapYears": 32.4
     },
     {
       "geoid": "4005",
@@ -5151,7 +5161,7 @@
         "party": "R",
         "dobMs": -687207600000
       },
-      "gapYears": 32.6
+      "gapYears": 32.7
     },
     {
       "geoid": "4837",
@@ -5476,7 +5486,7 @@
         "party": "D",
         "dobMs": -135025200000
       },
-      "gapYears": 20.9
+      "gapYears": 21
     },
     {
       "geoid": "5308",
