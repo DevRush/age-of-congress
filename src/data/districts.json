@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T13:55:08.657Z",
+  "generatedAt": "2026-09-05T13:09:27.445Z",
   "source": {
     "table": "B01001 (Sex by Age)",
     "survey": "U.S. Census Bureau, 2024 American Community Survey 1-Year Estimates",
@@ -18,7 +18,7 @@
   "stats": {
     "joined": 433,
     "vacant": 2,
-    "meanGap": 11.281524249422635,
+    "meanGap": 11.28568129330254,
     "medianGap": 10.9,
     "pctOlder": 0.7852193995381063,
     "minGap": -19.2,
@@ -218,7 +218,7 @@
         "party": "D",
         "dobMs": 26110800000
       },
-      "gapYears": 12.5
+      "gapYears": 12.6
     },
     {
       "geoid": "0408",
@@ -270,7 +270,7 @@
         "party": "R",
         "dobMs": -412542000000
       },
-      "gapYears": 22
+      "gapYears": 22.1
     },
     {
       "geoid": "0503",
@@ -465,7 +465,7 @@
         "party": "D",
         "dobMs": 243838800000
       },
-      "gapYears": 6.8
+      "gapYears": 6.9
     },
     {
       "geoid": "0614",
@@ -478,7 +478,7 @@
         "party": "D",
         "dobMs": 537339600000
       },
-      "gapYears": -8.3
+      "gapYears": -8.2
     },
     {
       "geoid": "0615",
@@ -595,7 +595,7 @@
         "party": "R",
         "dobMs": 19803600000
       },
-      "gapYears": 10.7
+      "gapYears": 10.8
     },
     {
       "geoid": "0624",
@@ -1180,7 +1180,7 @@
         "party": "R",
         "dobMs": -532465200000
       },
-      "gapYears": 27.1
+      "gapYears": 27.2
     },
     {
       "geoid": "1203",
@@ -1552,7 +1552,7 @@
         "party": "R",
         "dobMs": 572072400000
       },
-      "gapYears": -10.1
+      "gapYears": -10
     },
     {
       "geoid": "1304",
@@ -1773,7 +1773,7 @@
         "party": "D",
         "dobMs": -431463600000
       },
-      "gapYears": 20.5
+      "gapYears": 20.6
     },
     {
       "geoid": "1703",
@@ -2683,7 +2683,7 @@
         "party": "R",
         "dobMs": 357454800000
       },
-      "gapYears": -2.5
+      "gapYears": -2.4
     },
     {
       "geoid": "2608",
@@ -3242,7 +3242,7 @@
         "party": "D",
         "dobMs": -573505200000
       },
-      "gapYears": 27.8
+      "gapYears": 27.9
     },
     {
       "geoid": "3407",
@@ -3268,7 +3268,7 @@
         "party": "D",
         "dobMs": 489992400000
       },
-      "gapYears": 0.1
+      "gapYears": 0.2
     },
     {
       "geoid": "3409",
@@ -3944,7 +3944,7 @@
         "party": "R",
         "dobMs": -185310000000
       },
-      "gapYears": 13.5
+      "gapYears": 13.6
     },
     {
       "geoid": "3905",
@@ -4022,7 +4022,7 @@
         "party": "R",
         "dobMs": -314737200000
       },
-      "gapYears": 18.6
+      "gapYears": 18.7
     },
     {
       "geoid": "3911",
@@ -4191,7 +4191,7 @@
         "party": "D",
         "dobMs": 92379600000
       },
-      "gapYears": 8.7
+      "gapYears": 8.8
     },
     {
       "geoid": "4104",
@@ -4282,7 +4282,7 @@
         "party": "D",
         "dobMs": -333658800000
       },
-      "gapYears": 17.5
+      "gapYears": 17.6
     },
     {
       "geoid": "4205",
@@ -4529,7 +4529,7 @@
         "party": "R",
         "dobMs": 452149200000
       },
-      "gapYears": -4.6
+      "gapYears": -4.5
     },
     {
       "geoid": "4505",
@@ -5343,7 +5343,7 @@
         "party": "D",
         "dobMs": 171262800000
       },
-      "gapYears": 5.1
+      "gapYears": 5.2
     },
     {
       "geoid": "5108",
@@ -5473,7 +5473,7 @@
         "party": "D",
         "dobMs": 499496400000
       },
-      "gapYears": -9.3
+      "gapYears": -9.2
     },
     {
       "geoid": "5307",
