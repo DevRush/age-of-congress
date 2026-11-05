@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T17:40:32.462Z",
+  "generatedAt": "2026-11-05T17:46:49.847Z",
   "source": {
     "table": "B01001 (Sex by Age)",
     "survey": "U.S. Census Bureau, 2024 American Community Survey 1-Year Estimates",
@@ -18,7 +18,7 @@
   "stats": {
     "joined": 433,
     "vacant": 2,
-    "meanGap": 11.455658198614321,
+    "meanGap": 11.457967667436494,
     "medianGap": 11.1,
     "pctOlder": 0.7944572748267898,
     "minGap": -19,
@@ -816,7 +816,7 @@
         "party": "R",
         "dobMs": -227386800000
       },
-      "gapYears": 13.4
+      "gapYears": 13.5
     },
     {
       "geoid": "0641",
@@ -1903,7 +1903,7 @@
         "party": "R",
         "dobMs": -284151600000
       },
-      "gapYears": 15.1
+      "gapYears": 15.2
     },
     {
       "geoid": "1713",
@@ -3359,7 +3359,7 @@
         "party": "D",
         "dobMs": -331498800000
       },
-      "gapYears": 18.4
+      "gapYears": 18.5
     },
     {
       "geoid": "3601",
@@ -3554,7 +3554,7 @@
         "party": "D",
         "dobMs": 574146000000
       },
-      "gapYears": -6.7
+      "gapYears": -6.6
     },
     {
       "geoid": "3616",
@@ -3671,7 +3671,7 @@
         "party": "R",
         "dobMs": -281041200000
       },
-      "gapYears": 14.1
+      "gapYears": 14.2
     },
     {
       "geoid": "3625",
@@ -3957,7 +3957,7 @@
         "party": "R",
         "dobMs": -432500400000
       },
-      "gapYears": 20.6
+      "gapYears": 20.7
     },
     {
       "geoid": "3906",
@@ -4087,7 +4087,7 @@
         "party": "R",
         "dobMs": 37688400000
       },
-      "gapYears": 9.2
+      "gapYears": 9.3
     },
     {
       "geoid": "4001",
@@ -4932,7 +4932,7 @@
         "party": "D",
         "dobMs": 577342800000
       },
-      "gapYears": -2.6
+      "gapYears": -2.5
     },
     {
       "geoid": "4819",
@@ -5642,7 +5642,7 @@
         "party": "R",
         "dobMs": -378846000000
       },
-      "gapYears": 14.4
+      "gapYears": 14.5
     },
     {
       "geoid": "5508",
@@ -5668,7 +5668,7 @@
         "party": "R",
         "dobMs": -227386800000
       },
-      "gapYears": 15.7
+      "gapYears": 15.8
     }
   ]
 }
